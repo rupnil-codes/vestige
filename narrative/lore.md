@@ -47,7 +47,7 @@ The story progression is something like this:
 2. Likes to Hike.
 3. Goes to a hike for the week
 4. Drifts off course which is usual for him.
-5. Finds the remnants (vestige) of an abandoned campsite
+5. Finds the vestige (remnants) of an abandoned campsite
 6. Follows the trail, starts seeing silhouettes.
 7. Gradually increases in intensity and frequency.
 8. Cryptic Notes, Photos. Sees himself in one of the images.
