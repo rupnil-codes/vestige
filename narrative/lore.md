@@ -1,6 +1,4 @@
 
-# Chapter 1:
----
 ## Plot:
 > A deeply traumatized man uses hiking as an escape from his deteriorating mind, only to become the source of a tragedy he cannot bear to remember.
 
@@ -33,12 +31,34 @@ So horrific and terrible that his mind couldnt accept it.
 Failing to comprehend the situation, his subconscious did everything to bury the memory.
 The fragments of memories remained in nightmares and vague ideas.
 
-Years and years later, when he supposedly "became normal" and had a job, the forest tragedy resurfaces.
-He gets drawn into the investigation not realizing it is intimately connected with him.
+Some Years later, he supposedly "became normal" and had a job. Taking a week off from work to hike-- he takes a strange route.
+On the less troden route, he goes off course and finds the vestige (remnant) of an abandoned campsite. 
 ```
 
 ---
 
-The story is something like this:
-> An investigator/detective/detective stumbles upon the mysterious
-> death of a group of hikers. While investigating he sees the silhouette of the riders.
+## Chapter 1:
+
+> I am going to keep the scope small for the first chapter
+> Targeting about ~30 minutes gameplay.
+
+The story progression is something like this:
+1. Protagonist works at a normal place (to think)
+2. Likes to Hike.
+3. Goes to a hike for the week
+4. Drifts off course which is usual for him.
+5. Finds the remnants (vestige) of an abandoned campsite
+6. Follows the trail, starts seeing silhouettes.
+7. Gradually increases in intensity and frequency.
+8. Cryptic Notes, Photos. Sees himself in one of the images.
+9. Ultimately reaches a log cabin, hand built but old.
+10. Log cabin seems familiar.
+11. Long hallway
+12. At the end of the hallway there are all the silhouettes staring at the player.
+13. They come closer. Whispering something.
+14. Protagonist shakes, breathes heavily, faints, falls down.
+15. Chapter 1 ends with the silhouettes looking down as his eye closes.
+
+---
+
+Maybe Chapter 2 opens in the same cabin BUT the surroundings have changed!
