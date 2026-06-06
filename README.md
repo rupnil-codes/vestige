@@ -1,5 +1,5 @@
 # vestige
-Investigate a mysterious forest tragedy as reality falls apart.
+Explore a mysterious forest tragedy as reality falls apart.
 
 ### How does versioning works?
 > well idk /s /j
