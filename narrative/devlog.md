@@ -1,23 +1,23 @@
-# (v0.0.3-pre-alpha) Modeling and Writing!
+# (v0.0.3(A)-pre-alpha) Think, Write, Repeat.
 
 ---
 
 ## Changelog:
 
-- **[(v0.0.3-pre-alpha) Test Model: Nightstand](https://github.com/rupnil-codes/vestige/commit/b8be79c)**: OKAY this my first time using blender and I used a tutorial to guide me through. THough it looks, well, "okay" im not satisfied. Ill make a better one. Just trust me on this :pf:
+- **[(v0.0.3(A)-pre-alpha) Story: Chapter 0 & 1](https://github.com/rupnil-codes/vestige/commit/2a7cf8e)**: Yoooo finally wrote the complete chapter 0 (the prologue) and polished chapter1 even more. Its really coming together. Now I will move on to the game design. Like each action and tiny details. After I'm done with Chapter 0 gamedesign ill start making it
 
-- **[(v0.0.2(B)-pre-alpha) Chapter 1: Story](https://github.com/rupnil-codes/vestige/commit/fc8f329)**: Okay! I've polished and completed the chapter1 story line. Ive tweaked the backstory a bit to stay realistic. I really really like the direction im going for while keeping the scope uhh managable. Ive so many places where I can improve upon! ive kept it open ended because i have chapter 2 planned :fire:
+- **[(v0.0.3(B)-pre-alpha) Game Design: Chapter 0](https://github.com/rupnil-codes/vestige/commit/fc8f329)**: Oh my gawd! The prologue sequence is so so so cool! I just love it. Ive laid out a complete map of chapter 0! NOW i can finally start working on the first chaapter without procrastinating more lol.
 
 ---
 
 ## Next Step(s):
 
-1. ~~Complete Storyline for Ch1~~
-2. Create a Script for Chapter 1
+1. ~~Complete Storyline for Ch0 and Ch1~~
+2. ~~Create a Script for Chapter 0~~
 3. Start modeling
 
 ---
 
 ## Notes:
 
-OKayy i really liked modeling, i think im getting a hang of it! AALSOOOO im super proud of the story line im cooking rn
+THis is SOOO time and energy consuming! Storyboarding is NOT easy lmao. Anyways i finished the story for Ch0 and Ch1 and script for Ch0. Now ill start modeling. frfr 
