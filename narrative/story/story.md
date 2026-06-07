@@ -1,4 +1,6 @@
 
+# SOme peak idea: The game is actually an ARG infused. Like everything is not what it seems. Sure the exploration are real but what happened was not an accident. The government used him to do their dirty work. His mind was hijacked...
+
 ## Chapter 0: Prologue
 
 > This is the prologue scene where everything is very out of place. Like a dream.
