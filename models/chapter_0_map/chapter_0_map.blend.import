@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://drrg7ok7crova"
-path="res://.godot/imported/nightstand.blend-dbff89bfd2a127c8bcadbddba9d5539b.scn"
+uid="uid://x3prucx0lg3r"
+path="res://.godot/imported/chapter_0_map.blend-54ca313c86343df2f48668179bf62cb2.scn"
 
 [deps]
 
-source_file="res://models/nightstand_old/nightstand.blend"
-dest_files=["res://.godot/imported/nightstand.blend-dbff89bfd2a127c8bcadbddba9d5539b.scn"]
+source_file="res://models/chapter_0_map/chapter_0_map.blend"
+dest_files=["res://.godot/imported/chapter_0_map.blend-54ca313c86343df2f48668179bf62cb2.scn"]
 
 [params]
 

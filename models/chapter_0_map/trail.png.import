@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt7o6djuat8e5"
-path.s3tc="res://.godot/imported/nightstand_128.png-b17594b592b0939f3ded82c61987787e.s3tc.ctex"
+uid="uid://byyhhqxq1cn68"
+path.s3tc="res://.godot/imported/trail.png-6ea8471076500d3e6513cbf6e23086d8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://models/nightstand_old/nightstand_128.png"
-dest_files=["res://.godot/imported/nightstand_128.png-b17594b592b0939f3ded82c61987787e.s3tc.ctex"]
+source_file="res://models/chapter_0_map/trail.png"
+dest_files=["res://.godot/imported/trail.png-6ea8471076500d3e6513cbf6e23086d8.s3tc.ctex"]
 
 [params]
 

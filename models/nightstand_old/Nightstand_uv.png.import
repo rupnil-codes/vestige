@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbykcypa5yqh5"
-path="res://.godot/imported/Nightstand_uv.png-cf7ba1553e43a3a8583f96c49f017229.ctex"
+path="res://.godot/imported/Nightstand_uv.png-10477fcae9ac4cea5c619acf51657413.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/Nightstand_uv.png"
-dest_files=["res://.godot/imported/Nightstand_uv.png-cf7ba1553e43a3a8583f96c49f017229.ctex"]
+source_file="res://models/nightstand_old/Nightstand_uv.png"
+dest_files=["res://.godot/imported/Nightstand_uv.png-10477fcae9ac4cea5c619acf51657413.ctex"]
 
 [params]
 
