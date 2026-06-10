@@ -1,25 +1,23 @@
-# (v0.0.3(A)-pre-alpha) Think, Write, Repeat.
+(v0.0.5(B)-pre-alpha) Log Cabin
 
 ---
 
 ## Changelog:
 
-- **[(v0.0.4-pre-alpha) Level Design + Bench Model](https://github.com/rupnil-codes/vestige/commit/8d98e09)**: Designed the chapter 0-- like a mind map, now its time for me to start 3d modelling and making the game. And a bench model for chapter 0
+- **[(v0.0.5(B)-pre-alpha) Log Cabin](https://github.com/rupnil-codes/vestige/commit/5b8a58)**: Very very happy with the log cabin model. But it took soooo sooo mucj time omg. I am too tired to write more. Sorry.
 
-- **[Vestige: Chapter 0- Level Design](https://lapse.hackclub.com/timelapse/oy-9vMzaeuN3)**: Just designed the chapter 0-- like a mind map, now its time for me to start 3d modelling and making the game
-
-- **[Vestige: Bench Model](https://lapse.hackclub.com/timelapse/tlaN19G1lS6x)**: This is a bench model for chapter 0. I spent so much time making this. i think i gained experience and the next models will be faster
+- **[Vestige: Log Cabin](https://lapse.hackclub.com/timelapse/sVSEd3SsFhz9)**: holy moly, this is crazy! I LITERALLY SPENT 3 HOURS of my life making a log cabin... Wow. Hey it was kinda worth it! I imported this into godot but uhh its doing quirky things lets see if i can fix!
 
 ---
 
 ## Next Step(s):
 
-1. ~~Start Modeling~~
-2. Make ground
-3. Make a player object and controller.
+1. Add trees
+2. Shaders
+3. ~~Log Cabin Model~~
 
 ---
 
 ## Notes:
 
-OH MY GOD! I MODELED THAT? I really really dont believe it! It looks soooo good.
+The UV on the log cabin was hell. omfg
