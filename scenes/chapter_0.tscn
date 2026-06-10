@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://caf08fvsymgfn" path="res://scripts/Player.gd" id="1_cmkqj"]
 [ext_resource type="ArrayMesh" uid="uid://feeo71ai8b02" path="res://models/chapter_0_map/chapter_0_map.obj" id="2_cmkqj"]
 [ext_resource type="Texture2D" uid="uid://be3gdrbc3cc5g" path="res://models/bench/bench_uv.png" id="3_o2mjm"]
+[ext_resource type="PackedScene" uid="uid://dnjc46u0tmpql" path="res://models/log_cabin/log_cabin.tscn" id="4_5eens"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wkjdf"]
 sky_top_color = Color(0.32620874, 0.43142655, 0.73360515, 1)
@@ -77,11 +78,11 @@ shadow_enabled = true
 environment = SubResource("Environment_o2mjm")
 
 [node name="Player3D" type="CharacterBody3D" parent="." unique_id=1801726057]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.15004, -0.42511034, -52.757095)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.46661, -0.21844542, -52.83082)
 script = ExtResource("1_cmkqj")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player3D" unique_id=1102337274]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2597647, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026943207, 1.2039347, 0.027374268)
 mesh = SubResource("CapsuleMesh_cmkqj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player3D" unique_id=770720229]
@@ -109,3 +110,6 @@ mesh = SubResource("ArrayMesh_5eens")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bench3D/StaticBody3D" unique_id=1862134037]
 shape = SubResource("ConcavePolygonShape3D_jkyip")
+
+[node name="log_cabin" parent="." unique_id=1694507265 instance=ExtResource("4_5eens")]
+transform = Transform3D(0.9077776, 0, -0.4194522, 0, 1.0000001, 0, 0.41945216, 0, 0.9077777, 53.62591, 2.883246, 69.800705)
