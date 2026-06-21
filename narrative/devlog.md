@@ -1,22 +1,22 @@
-# (v0.0.5(D)-pre-alpha) Forest Design && Polishing
+# (v0.0.5(F)-pre-alpha) Forest Design (3)
 
 ---
 
 ## Changelog:
 
-- **[(v0.0.5(E)-pre-alpha) Forest Design (Part-2)](https://github.com/rupnil-codes/vestige/commit/847916e)**: Did a bit more of the forest, slowly increases the forest cover! Since my school has opened im working a bit less :/. No worries ill slowly keep doing stuff.
-  Added some TODOS _[Lapsed](https://lapse.hackclub.com/timelapse/mtteEzlqdfjd)_
-- 
+- **[(v0.0.5(F)-pre-alpha) Forest Design (Part-3)](https://github.com/rupnil-codes/vestige/commit/da4ea79)**: Last and final lapse of the forest! The pine/taiga forest has been completed. Nowww- its time for me to add shaders, make it fog, making it night time, etc., This was extremely tiring :/ but was worth it :D _[Lapsed](https://lapse.hackclub.com/timelapse/d1a_Qq6JjT0-)_
+
 ---
 
 ## Next Step(s):
 
-1. Add trees (in progress)
+1. ~~Add trees~~
 2. More models and stuff
 3. Shaders
+4. Night Time
 
 ---
 
 ## Notes:
 
-School started from today so less work :/
+After so so long time I worked on Vestige again! Looking forward to making more devlogs soon!
