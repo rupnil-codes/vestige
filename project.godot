@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Vestige"
 run/main_scene="res://scenes/chapter_0.tscn"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/show_image=false
 config/icon="res://icon.svg"
 
