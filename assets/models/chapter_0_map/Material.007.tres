@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c4va0857iit6h"]
+
+[ext_resource type="Texture2D" uid="uid://s2c2mdqm5ao2" path="res://assets/models/chapter_0_map/grass.png" id="1_4u7mi"]
+
+[resource]
+resource_name = "Material.007"
+cull_mode = 2
+albedo_texture = ExtResource("1_4u7mi")
+metallic_specular = 0.0
+roughness = 0.5
+texture_filter = 2

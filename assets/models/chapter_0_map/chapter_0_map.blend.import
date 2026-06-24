@@ -16,6 +16,8 @@ dest_files=["res://.godot/imported/chapter_0_map.blend-fc7677f00a0526e1a87a056e5
 nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
@@ -34,17 +36,30 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-materials/extract=0
+materials/extract=2
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"materials": {
+"Material.006": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/models/chapter_0_map/Material.006.tres",
+"use_external/path": "uid://bmtdjvmx1m3pt"
+},
+"Material.007": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/models/chapter_0_map/Material.007.tres",
+"use_external/path": "uid://c4va0857iit6h"
+}
+}
+}
 blender/nodes/visible=0
 blender/nodes/active_collection_only=false
 blender/nodes/punctual_lights=true
 blender/nodes/cameras=true
 blender/nodes/custom_properties=true
 blender/nodes/modifiers=1
-blender/meshes/colors=false
+blender/meshes/vertex_colors=2
 blender/meshes/uvs=true
 blender/meshes/normals=true
 blender/meshes/export_geometry_nodes_instances=false
@@ -58,3 +73,4 @@ blender/animation/limit_playback=true
 blender/animation/always_sample=true
 blender/animation/group_tracks=true
 gltf/naming_version=2
+gltf/texture_map_mode=0
