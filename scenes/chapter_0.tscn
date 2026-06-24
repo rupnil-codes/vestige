@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cja8r23prt8yn" path="res://assets/models/trees/tree_trunk/tree_trunk.tscn" id="8_bxp76"]
 [ext_resource type="PackedScene" uid="uid://usue76cgdeok" path="res://assets/models/trees/cedar_tree/cedar_tree.blend" id="9_ae2qx"]
 [ext_resource type="PackedScene" uid="uid://b2myn6s4vdhla" path="res://assets/models/trees/cedar_tree/cedar_tree.tscn" id="10_irmlt"]
+[ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/shader_chapter_0.gdshader" id="11_8kgk7"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ae2qx"]
 panorama = ExtResource("1_irmlt")
@@ -35,6 +36,30 @@ volumetric_fog_albedo = Color(0, 0, 0, 1)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o2mjm"]
 points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3gngh"]
+shader = ExtResource("11_8kgk7")
+shader_parameter/overlay = false
+shader_parameter/scanlines_opacity = 0.4
+shader_parameter/scanlines_width = 0.25
+shader_parameter/grille_opacity = 0.3
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = true
+shader_parameter/roll = true
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 15.0
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.4
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.03
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 1.0
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.4
+shader_parameter/vignette_opacity = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3yba"]
 resource_name = "Material.008"
@@ -112,6 +137,17 @@ shape = SubResource("ConvexPolygonShape3D_o2mjm")
 transform = Transform3D(-0.15550093, 0, -0.9878359, 0, 1, 0, 0.9878359, 0, -0.15550093, 0, 1.8285122, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player3D/Neck" unique_id=1732156934]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player3D/Neck/Camera3D" unique_id=1222793603]
+
+[node name="ColorRect" type="ColorRect" parent="Player3D/Neck/Camera3D/CanvasLayer" unique_id=1871502195]
+material = SubResource("ShaderMaterial_3gngh")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
 
 [node name="Bench3D" type="MeshInstance3D" parent="." unique_id=455057524]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.269615, 0.09442556, -52.790134)
