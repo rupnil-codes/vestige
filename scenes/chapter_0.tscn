@@ -39,27 +39,20 @@ points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3gngh"]
 shader = ExtResource("11_8kgk7")
-shader_parameter/overlay = false
-shader_parameter/scanlines_opacity = 0.4
-shader_parameter/scanlines_width = 0.25
-shader_parameter/grille_opacity = 0.3
-shader_parameter/resolution = Vector2(640, 480)
-shader_parameter/pixelate = true
-shader_parameter/roll = true
-shader_parameter/roll_speed = 8.0
-shader_parameter/roll_size = 15.0
-shader_parameter/roll_variation = 1.8
-shader_parameter/distort_intensity = 0.05
-shader_parameter/noise_opacity = 0.4
-shader_parameter/noise_speed = 5.0
-shader_parameter/static_noise_intensity = 0.06
-shader_parameter/aberration = 0.03
-shader_parameter/brightness = 1.4
-shader_parameter/discolor = true
-shader_parameter/warp_amount = 1.0
-shader_parameter/clip_warp = false
-shader_parameter/vignette_intensity = 0.4
-shader_parameter/vignette_opacity = 0.5
+shader_parameter/screen_size = Vector2(448, 336)
+shader_parameter/pixel_resolution = 320.0
+shader_parameter/color_steps = 256
+shader_parameter/noise_strength = 0.15
+shader_parameter/enable_dither = true
+shader_parameter/dither_strength = 0.3
+shader_parameter/enable_glow = true
+shader_parameter/glow_strength = 0.4
+shader_parameter/glow_spread = 0.005
+shader_parameter/enable_vintage = true
+shader_parameter/vintage_strength = 0.8
+shader_parameter/vignette_strength = 0.05
+shader_parameter/vignette_radius = 1.0
+shader_parameter/blur_strength = 0.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3yba"]
 resource_name = "Material.008"
@@ -893,10 +886,10 @@ transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30
 transform = Transform3D(0.8762393, 0, 0.4818761, 0, 1, 0, -0.4818761, 0, 0.8762393, -113.66211, -0.36621237, 96.36639)
 
 [node name="cedar_tree101" parent="Forest3D" unique_id=2040142174 instance=ExtResource("10_irmlt")]
-transform = Transform3D(0.69839025, 0, 0.7157172, 0, 1, 0, -0.7157172, 0, 0.69839025, -110.851555, 3.3107724, 92.5057)
+transform = Transform3D(0.69839025, 0, 0.7157172, 0, 1, 0, -0.7157172, 0, 0.69839025, -110.851555, -0.7823558, 92.5057)
 
 [node name="pine_tree58" parent="Forest3D" unique_id=978292554 instance=ExtResource("5_jkyip")]
-transform = Transform3D(0.74692553, -0.025593355, 0.6644151, -0.020138748, 0.99792975, 0.06108004, -0.6646027, -0.05900274, 0.74486387, -117.387566, 2.4346466, 93.3171)
+transform = Transform3D(0.74692553, -0.025593355, 0.6644151, -0.020138748, 0.99792975, 0.06108004, -0.6646027, -0.05900274, 0.74486387, -117.387566, -0.81250334, 93.3171)
 
 [node name="cedar_tree102" parent="Forest3D" unique_id=1553024440 instance=ExtResource("10_irmlt")]
 transform = Transform3D(0.2787962, 0.050070837, -0.9590441, 0.0783725, 0.9941227, 0.074685305, 0.957147, -0.09598467, 0.27323344, -96.27787, -0.15838814, 85.0371)
@@ -3200,7 +3193,7 @@ transform = Transform3D(-0.5044823, 0, 0.86342204, 0, 1, 0, -0.86342204, 0, -0.5
 transform = Transform3D(-0.57473385, 0, -0.8183404, 0, 1, 0, 0.8183404, 0, -0.57473385, 37.582466, 1.0349908, -61.722893)
 
 [node name="tall_fir_tree302" parent="Forest3D" unique_id=338725102 instance=ExtResource("7_pe316")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.091627, 0.3923645, -41.11023)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.664253, -0.03410554, -45.92535)
 
 [node name="cedar_tree454" parent="Forest3D" unique_id=885379456 instance=ExtResource("10_irmlt")]
 transform = Transform3D(0.43150327, 0, -0.90211135, 0, 1, 0, 0.90211135, 0, 0.43150327, 27.816427, -0.56199217, -38.457302)
@@ -3587,7 +3580,7 @@ transform = Transform3D(-0.009232672, 0, -0.9999574, 0, 1, 0, 0.9999574, 0, -0.0
 transform = Transform3D(-0.57473385, 0, -0.8183404, 0, 1, 0, 0.8183404, 0, -0.57473385, 37.582466, 1.0349908, -61.722893)
 
 [node name="tall_fir_tree338" parent="Forest3D" unique_id=295943551 instance=ExtResource("7_pe316")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.091627, 0.3923645, -41.11023)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.091627, 0.3923645, -43.987625)
 
 [node name="cedar_tree511" parent="Forest3D" unique_id=357677664 instance=ExtResource("10_irmlt")]
 transform = Transform3D(0.43150327, 0, -0.90211135, 0, 1, 0, 0.90211135, 0, 0.43150327, 27.816427, -0.56199217, -38.457302)
