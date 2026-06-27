@@ -25,7 +25,7 @@ tonemap_mode = 2
 glow_enabled = true
 fog_enabled = true
 fog_light_color = Color(0.102692865, 0.12295938, 0.13164315, 1)
-fog_light_energy = 2.1
+fog_light_energy = 2.0
 fog_sun_scatter = 0.2
 fog_density = 0.02
 fog_sky_affect = 0.742
@@ -37,22 +37,22 @@ volumetric_fog_albedo = Color(0, 0, 0, 1)
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o2mjm"]
 points = PackedVector3Array(-0.12520654, -0.532801, -0.4805069, 0.022783129, 0.4760704, 0.49888408, 0.16971254, 0.5591441, 0.46417162, 0.23105091, -0.8035912, 0.32045516, 0.40741014, 0.651043, -0.24352328, -0.4827893, 0.59484255, 0.082213186, -0.3628679, -0.68231165, 0.2896967, 0.46904355, -0.65452886, -0.06627126, -0.12744367, 0.8427015, -0.33810276, -0.39343542, -0.6839421, -0.24471663, 0.43825462, 0.62330925, 0.20084947, 0.0841477, 0.977454, 0.11479468, -0.06820232, -0.9764576, -0.12927033, 0.20054972, -0.56312895, -0.4514544, -0.18552664, 0.59545326, -0.4534751, -0.27336287, 0.59226835, 0.40775412, -0.0069364863, -0.47682306, 0.49966025, 0.37582088, -0.5886136, 0.31695515, 0.111579016, 0.5630594, -0.48117727, -0.41725034, 0.5278656, -0.27049688, -0.48454633, -0.59697217, -0.06650971, -0.27974695, 0.90856135, 0.05333608, -0.25019687, -0.8807117, 0.20531891, 0.263647, -0.90277094, -0.1273943, 0.29336792, 0.8715263, -0.15719566, 0.3734115, -0.5263189, -0.32824618, 0.4996626, 0.47664148, -0.0068885577, 0.053105574, 0.8750009, 0.32470253, -0.15454252, -0.5908538, 0.4658794, -0.09727988, -0.7823577, -0.39818847, -0.3876489, -0.49817133, 0.31564978, -0.30067965, -0.58799505, -0.38890144)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_3gngh"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("11_8kgk7")
 shader_parameter/screen_size = Vector2(448, 336)
 shader_parameter/pixel_resolution = 320.0
 shader_parameter/color_steps = 256
-shader_parameter/noise_strength = 0.15
+shader_parameter/noise_strength = 0.08
 shader_parameter/enable_dither = true
-shader_parameter/dither_strength = 0.3
+shader_parameter/dither_strength = 0.15
 shader_parameter/enable_glow = true
-shader_parameter/glow_strength = 0.4
+shader_parameter/glow_strength = 0.0
 shader_parameter/glow_spread = 0.005
 shader_parameter/enable_vintage = true
-shader_parameter/vintage_strength = 0.8
-shader_parameter/vignette_strength = 0.05
+shader_parameter/vintage_strength = 0.3
+shader_parameter/vignette_strength = 0.0
 shader_parameter/vignette_radius = 1.0
-shader_parameter/blur_strength = 0.5
+shader_parameter/blur_strength = 0.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3yba"]
 resource_name = "Material.008"
@@ -130,11 +130,13 @@ shape = SubResource("ConvexPolygonShape3D_o2mjm")
 transform = Transform3D(-0.15550093, 0, -0.9878359, 0, 1, 0, 0.9878359, 0, -0.15550093, 0, 1.8285122, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player3D/Neck" unique_id=1732156934]
+current = true
+fov = 85.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player3D/Neck/Camera3D" unique_id=1222793603]
 
 [node name="ColorRect" type="ColorRect" parent="Player3D/Neck/Camera3D/CanvasLayer" unique_id=1871502195]
-material = SubResource("ShaderMaterial_3gngh")
+material = SubResource("ShaderMaterial_lm1we")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -4123,17 +4125,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.05805, 0.47956896, -93.97
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.768335, 0.33569312, -99.79319)
 
 [node name="TestLight" type="MeshInstance3D" parent="." unique_id=705874571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.801075, 9.210327, 61.023666)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.801075, 9.064844, 61.023666)
 mesh = SubResource("CapsuleMesh_g4v7s")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="TestLight" unique_id=780665159]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TestLight/StaticBody3D" unique_id=37081445]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27980804, 0)
 shape = SubResource("ConcavePolygonShape3D_ae2qx")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="TestLight" unique_id=1289873170]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.9287415, 0)
-light_energy = 16.0
+light_color = Color(0.71135795, 0.53761363, 0.9999971, 1)
+light_energy = 7.869
 light_indirect_energy = 4.943
 light_volumetric_fog_energy = 0.0
-omni_range = 30.837
+omni_range = 34.373
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=96104120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.800669, 2.7047586, -37.276234)
+light_color = Color(0.9999996, 0.8057295, 0.56764424, 1)
+light_energy = 0.912
+light_specular = 0.0
+omni_range = 11.581

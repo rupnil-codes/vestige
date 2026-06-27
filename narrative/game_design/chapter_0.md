@@ -38,7 +38,8 @@
 
 1. **3d Models**:
    - 
-   - Trees (3 types)
+   - ~~Trees (3 types)~~
+   - Wooden torches
    - A ground / snow laden
    - Tall dark silhouettes
    - Mountain ranges
@@ -58,7 +59,7 @@
      11. Door
      12. Stairs.
      13. Picture frame
-   - A bench
+   - ~~A bench~~
    - Rocks
    - Grasses
 

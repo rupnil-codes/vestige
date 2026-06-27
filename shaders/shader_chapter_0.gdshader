@@ -4,21 +4,21 @@ uniform sampler2D screen_texture : hint_screen_texture;
 uniform vec2 screen_size = vec2(448.0, 336.0);
 uniform float pixel_resolution : hint_range(64.0, 512.0) = 320.0;
 uniform int color_steps : hint_range(2, 64) = 256;
-uniform float noise_strength : hint_range(0.0, 1.0) = 0.15;
+uniform float noise_strength : hint_range(0.0, 1.0) = 0.08;
 uniform bool enable_dither = true;
-uniform float dither_strength : hint_range(0.0, 1.0) = 0.3;
+uniform float dither_strength : hint_range(0.0, 1.0) = 0.15;
 
 uniform bool enable_glow = true;
-uniform float glow_strength : hint_range(0.0, 1.0) = 0.4;
+uniform float glow_strength : hint_range(0.0, 1.0) = 0.0;
 uniform float glow_spread : hint_range(0.001, 0.01) = 0.005;
 
 uniform bool enable_vintage = true;  //  Toggle
-uniform float vintage_strength : hint_range(0.0, 1.0) = 0.8;
+uniform float vintage_strength : hint_range(0.0, 1.0) = 0.3;
 
-uniform float vignette_strength : hint_range(0.0, 0.5) = 0.05;
-uniform float vignette_radius = 1.5;
+uniform float vignette_strength : hint_range(0.0, 0.5) = 0.0;
+uniform float vignette_radius = 1.0;
 
-uniform float blur_strength : hint_range(0.0, 10.0) = 0.5;
+uniform float blur_strength : hint_range(0.0, 10.0) = 0.0;
 
 float random(vec2 co) {
     return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);
