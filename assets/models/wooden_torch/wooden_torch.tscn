@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://c5xxexjm4f7q3"]
+
+[ext_resource type="PackedScene" uid="uid://cxa5b40c5p5wb" path="res://assets/models/wooden_torch/wooden_torch.blend" id="1_j77lx"]
+[ext_resource type="Texture2D" uid="uid://bxjc3832krwre" path="res://assets/textures/fire.png" id="2_v3b3k"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_v3b3k"]
+data = PackedVector3Array(-1.6092, -1, 0.68439996, -1.0001, 1, -1, -1.0001, 1, 1, -1.6092, -1, 0.68439996, -1.6092, -1, -0.6845, -1.0001, 1, -1, -1.6092, -1, -0.6845, 1, 1, -1, -1.0001, 1, -1, -1.6092, -1, -0.6845, -0.2403, -1, -0.6845, 1, 1, -1, -0.2403, -1, -0.6845, 1, 1, 1, 1, 1, -1, -0.2403, -1, -0.6845, -0.2403, -1, 0.68439996, 1, 1, 1, -0.2403, -1, 0.68439996, -1.0001, 1, 1, 1, 1, 1, -0.2403, -1, 0.68439996, -1.6092, -1, 0.68439996, -1.0001, 1, 1, -1.6092, -1, -0.6845, -0.2403, -1, 0.68439996, -0.2403, -1, -0.6845, -1.6092, -1, -0.6845, -1.6092, -1, 0.68439996, -0.2403, -1, 0.68439996, -1.0001, 1, -1, 1.1772, 2.4584, 0.51339996, -1.0001, 1, 1, -1.0001, 1, -1, 1.1772, 2.4584, -1.4864999, 1.1772, 2.4584, 0.51339996, -1.0001, 1, 1, 3.1773, 2.4584, 0.51339996, 1, 1, 1, -1.0001, 1, 1, 1.1772, 2.4584, 0.51339996, 3.1773, 2.4584, 0.51339996, 1, 1, -1, 1.1772, 2.4584, -1.4864999, -1.0001, 1, -1, 1, 1, -1, 3.1773, 2.4584, -1.4864999, 1.1772, 2.4584, -1.4864999, 1, 1, 1, 3.1773, 2.4584, -1.4864999, 1, 1, -1, 1, 1, 1, 3.1773, 2.4584, 0.51339996, 3.1773, 2.4584, -1.4864999, 3.1773, 2.4584, -1.4864999, 1.1772, 2.4584, 0.51339996, 1.1772, 2.4584, -1.4864999, 3.1773, 2.4584, -1.4864999, 3.1773, 2.4584, 0.51339996, 1.1772, 2.4584, 0.51339996)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sager"]
+data = PackedVector3Array(-1, -1, 1, 0.2078, 1, -1.2932, 0.2078, 1, 0.7068, -1, -1, 1, -1, -1, -1, 0.2078, 1, -1.2932, -1, -1, -1, 2.2078, 1, -1.2932, 0.2078, 1, -1.2932, -1, -1, -1, 1, -1, -1, 2.2078, 1, -1.2932, 1, -1, -1, 2.2078, 1, 0.7068, 2.2078, 1, -1.2932, 1, -1, -1, 1, -1, 1, 2.2078, 1, 0.7068, 1, -1, 1, 0.2078, 1, 0.7068, 2.2078, 1, 0.7068, 1, -1, 1, -1, -1, 1, 0.2078, 1, 0.7068, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 2.2078, 1, -1.2932, 0.2078, 1, 0.7068, 0.2078, 1, -1.2932, 2.2078, 1, -1.2932, 2.2078, 1, 0.7068, 0.2078, 1, 0.7068)
+
+[sub_resource type="Curve" id="Curve_sager"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_v3b3k"]
+curve = SubResource("Curve_sager")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jygv4"]
+angle_min = 1.0728835e-05
+angle_max = 360.00003
+direction = Vector3(0, 1, 0)
+spread = 5.0
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+angular_velocity_min = -50.000015
+angular_velocity_max = 49.99998
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 0.99999774
+linear_accel_max = 0.99999774
+scale_min = 0.0
+scale_max = 1000.0
+alpha_curve = SubResource("CurveTexture_v3b3k")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57qmd"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_v3b3k")
+texture_filter = 0
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_yf5fn"]
+material = SubResource("StandardMaterial3D_57qmd")
+
+[node name="wooden_torch" unique_id=215623908 instance=ExtResource("1_j77lx")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" parent_id_path=PackedInt32Array(1101405322) index="0" unique_id=427993614]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0" unique_id=1313428118]
+shape = SubResource("ConcavePolygonShape3D_v3b3k")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_001" parent_id_path=PackedInt32Array(119302961) index="0" unique_id=561924369]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_001/StaticBody3D" index="0" unique_id=203441398]
+shape = SubResource("ConcavePolygonShape3D_sager")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="2" unique_id=843721552]
+transform = Transform3D(1, -1.7039328e-28, 3.5762793e-07, 0, 1, 4.7645406e-22, -3.5762793e-07, -4.7645406e-22, 1, 0.44879782, 0.94321716, 0.010398865)
+light_color = Color(0.6807982, 0.5127972, 0.23984355, 1)
+light_energy = 2.639
+light_size = 1.0
+light_specular = 0.631
+shadow_enabled = true
+distance_fade_length = 0.0
+omni_range = 12.627
+omni_attenuation = 1.754
+
+[node name="flames" type="GPUParticles3D" parent="." index="3" unique_id=48707644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12764326, 0.505165, -0.03974913)
+amount = 2
+lifetime = 0.7
+speed_scale = 0.2
+process_material = SubResource("ParticleProcessMaterial_jygv4")
+draw_pass_1 = SubResource("QuadMesh_yf5fn")

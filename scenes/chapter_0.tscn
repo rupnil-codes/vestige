@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://ctx42urrlsqoj"]
 
 [ext_resource type="Script" uid="uid://caf08fvsymgfn" path="res://scripts/Player.gd" id="1_cmkqj"]
-[ext_resource type="Texture2D" uid="uid://cbs6wj6um3ihf" path="res://assets/sky.png" id="1_irmlt"]
+[ext_resource type="Texture2D" uid="uid://xfe1k3gk6h1k" path="res://assets/textures/sky.png" id="1_jygv4"]
 [ext_resource type="Texture2D" uid="uid://be3gdrbc3cc5g" path="res://assets/models/bench/bench_uv.png" id="3_o2mjm"]
 [ext_resource type="PackedScene" uid="uid://cursl7y2tughc" path="res://assets/models/chapter_0_map/chapter_0_map.tscn" id="4_5eens"]
 [ext_resource type="PackedScene" uid="uid://ctl1xmfds16dl" path="res://assets/models/log_cabin/log_cabin.tscn" id="4_bxp76"]
@@ -11,12 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://usue76cgdeok" path="res://assets/models/trees/cedar_tree/cedar_tree.blend" id="9_ae2qx"]
 [ext_resource type="PackedScene" uid="uid://b2myn6s4vdhla" path="res://assets/models/trees/cedar_tree/cedar_tree.tscn" id="10_irmlt"]
 [ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/shader_chapter_0.gdshader" id="11_8kgk7"]
+[ext_resource type="PackedScene" uid="uid://c5xxexjm4f7q3" path="res://assets/models/wooden_torch/wooden_torch.tscn" id="12_jygv4"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_ae2qx"]
-panorama = ExtResource("1_irmlt")
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_d0u6y"]
+panorama = ExtResource("1_jygv4")
 
 [sub_resource type="Sky" id="Sky_8kgk7"]
-sky_material = SubResource("PanoramaSkyMaterial_ae2qx")
+sky_material = SubResource("PanoramaSkyMaterial_d0u6y")
 
 [sub_resource type="Environment" id="Environment_jygv4"]
 background_mode = 2
@@ -131,7 +132,6 @@ transform = Transform3D(-0.15550093, 0, -0.9878359, 0, 1, 0, 0.9878359, 0, -0.15
 
 [node name="Camera3D" type="Camera3D" parent="Player3D/Neck" unique_id=1732156934]
 current = true
-fov = 85.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player3D/Neck/Camera3D" unique_id=1222793603]
 
@@ -216,7 +216,7 @@ transform = Transform3D(0.80148506, -0.07632722, 0.59312385, 0.09480332, 0.99549
 transform = Transform3D(0.9871558, 0.1597606, 0, -0.1597606, 0.9871558, 0, 0, 0, 1, 6.493413, -0.76739216, -24.80118)
 
 [node name="pine_tree15" parent="Forest3D" unique_id=956404591 instance=ExtResource("5_jkyip")]
-transform = Transform3D(0.96837884, -0.24948433, 0, 0.24948433, 0.96837884, 0, 0, 0, 1, -0.19559574, -0.6789299, -24.70902)
+transform = Transform3D(0.96837884, -0.24948433, 0, 0.24948433, 0.96837884, 0, 0, 0, 1, 1.8893852, -0.6789299, -24.70902)
 
 [node name="tall_fir_tree25" parent="Forest3D" unique_id=1876268255 instance=ExtResource("7_pe316")]
 transform = Transform3D(0.84186894, -0.06431201, -0.53583646, 0, 0.9928744, -0.119166486, 0.53968215, 0.10032257, 0.83587015, 14.68907, 0.6639211, -30.515924)
@@ -4142,9 +4142,8 @@ light_indirect_energy = 4.943
 light_volumetric_fog_energy = 0.0
 omni_range = 34.373
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=96104120]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.800669, 2.7047586, -37.276234)
-light_color = Color(0.9999996, 0.8057295, 0.56764424, 1)
-light_energy = 0.912
-light_specular = 0.0
-omni_range = 11.581
+[node name="Torch3D2" parent="." unique_id=215623908 instance=ExtResource("12_jygv4")]
+transform = Transform3D(-0.7324729, -0.066506535, 0.67754, 0.15872672, 0.95110685, 0.26495498, -0.66203433, 0.30161592, -0.6861037, -2.8343668, 3.1687121, -23.750114)
+
+[node name="Torch3D" parent="." unique_id=694599546 instance=ExtResource("12_jygv4")]
+transform = Transform3D(0.94959205, 0.2236899, -0.21963121, -0.15778324, 0.94643074, 0.28173238, 0.2708865, -0.23287673, 0.93401766, -19.906038, 2.359, -44.255)
