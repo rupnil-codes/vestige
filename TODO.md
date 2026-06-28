@@ -11,9 +11,11 @@ Todos:
 - [ ] Polishing the cabin
 - [X] Nighttime (v0.0.6(B)-pre-alpha)
 - [X] Fogs (v0.0.6(B)-pre-alpha)
+- [ ] Volumetric Fog: https://docs.godotengine.org/en/latest/tutorials/3d/volumetric_fog.html
 - [X] Shaders (v0.0.6(C)-pre-alpha v0.0.6(D))
 - [ ] Snow & Thunders
-- [ ] Torches along the path.
+- [X] Torches along the path. (v0.0.6(I)-pre-alpha)
 - [ ] Ambience
 - [ ] Fireflies
 - [ ] Boulders / Rocks
+- [ ] Particle Optimizations

@@ -9,30 +9,8 @@ data = PackedVector3Array(-1.6092, -1, 0.68439996, -1.0001, 1, -1, -1.0001, 1, 1
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sager"]
 data = PackedVector3Array(-1, -1, 1, 0.2078, 1, -1.2932, 0.2078, 1, 0.7068, -1, -1, 1, -1, -1, -1, 0.2078, 1, -1.2932, -1, -1, -1, 2.2078, 1, -1.2932, 0.2078, 1, -1.2932, -1, -1, -1, 1, -1, -1, 2.2078, 1, -1.2932, 1, -1, -1, 2.2078, 1, 0.7068, 2.2078, 1, -1.2932, 1, -1, -1, 1, -1, 1, 2.2078, 1, 0.7068, 1, -1, 1, 0.2078, 1, 0.7068, 2.2078, 1, 0.7068, 1, -1, 1, -1, -1, 1, 0.2078, 1, 0.7068, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 2.2078, 1, -1.2932, 0.2078, 1, 0.7068, 0.2078, 1, -1.2932, 2.2078, 1, -1.2932, 2.2078, 1, 0.7068, 0.2078, 1, 0.7068)
 
-[sub_resource type="Curve" id="Curve_72adc"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="CurveTexture" id="CurveTexture_sager"]
-curve = SubResource("Curve_72adc")
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_v3b3k"]
-angle_min = 1.0728835e-05
-angle_max = 360.00003
-direction = Vector3(0, 1, 0)
-spread = 5.0
-initial_velocity_min = 1.0
-initial_velocity_max = 1.0
-angular_velocity_min = -50.000015
-angular_velocity_max = 49.99998
-gravity = Vector3(0, 0, 0)
-linear_accel_min = 0.99999774
-linear_accel_max = 0.99999774
-scale_min = 0.0
-scale_max = 1000.0
-alpha_curve = SubResource("CurveTexture_sager")
-turbulence_noise_strength = 0.0
-turbulence_noise_speed_random = 0.0
+[sub_resource type="Gradient" id="Gradient_v3b3k"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 
 [node name="wooden_torch" unique_id=215623908 instance=ExtResource("1_j77lx")]
 
@@ -49,22 +27,36 @@ shape = SubResource("ConcavePolygonShape3D_sager")
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="2" unique_id=843721552]
 transform = Transform3D(1, -1.7039328e-28, 3.5762793e-07, 0, 1, 4.7645406e-22, -3.5762793e-07, -4.7645406e-22, 1, 0.44879782, 0.94321716, 0.010398865)
 light_color = Color(0.6807982, 0.5127972, 0.23984355, 1)
-light_energy = 2.639
+light_energy = 1.746
 light_size = 1.0
-light_specular = 0.631
+light_specular = 0.258
 shadow_enabled = true
 distance_fade_length = 0.0
 omni_range = 12.627
 omni_attenuation = 1.754
 
-[node name="flamesCPU" type="GPUParticles3D" parent="." index="3" unique_id=565674684]
+[node name="flamesCPU" type="CPUParticles3D" parent="." index="3" unique_id=565252471]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12764326, 0.505165, -0.03974913)
-amount = 1
-amount_ratio = 0.9168
+amount = 2
 lifetime = 0.59
 preprocess = 1.25
 speed_scale = 0.2
 use_fixed_seed = true
 seed = 3035383239
-process_material = SubResource("ParticleProcessMaterial_v3b3k")
-draw_pass_1 = ExtResource("3_72adc")
+fixed_fps = 30
+visibility_aabb = AABB(-4, -4, -4, 8, 8, 8)
+mesh = ExtResource("3_72adc")
+direction = Vector3(0, 1, 0)
+spread = 5.0
+gravity = Vector3(0, 0, 0)
+initial_velocity_min = 1.0
+initial_velocity_max = 1.0
+angular_velocity_min = -50.000015
+angular_velocity_max = 49.99998
+linear_accel_min = 0.99999774
+linear_accel_max = 0.99999774
+angle_min = 1.0728835e-05
+angle_max = 360.00003
+scale_amount_min = 0.0
+scale_amount_max = 1000.0
+color_ramp = SubResource("Gradient_v3b3k")
