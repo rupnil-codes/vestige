@@ -134,7 +134,6 @@ transform = Transform3D(-0.15550093, 0, -0.9878359, 0, 1, 0, 0.9878359, 0, -0.15
 current = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player3D/Neck/Camera3D" unique_id=1222793603]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="Player3D/Neck/Camera3D/CanvasLayer" unique_id=1871502195]
 material = SubResource("ShaderMaterial_lm1we")
