@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://c4va0857iit6h"]
 
-[ext_resource type="Texture2D" uid="uid://s2c2mdqm5ao2" path="res://assets/models/chapter_0_map/grass.png" id="1_4u7mi"]
+[ext_resource type="Texture2D" uid="uid://dblkawgsnh58v" path="res://assets/models/chapter_0_map/assets_used/grass.png" id="1_4u7mi"]
 
 [resource]
 resource_name = "Material.007"

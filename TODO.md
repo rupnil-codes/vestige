@@ -5,6 +5,8 @@ Todos:
 - [X] Map (v0.0.5(A)-pre-alpha)
 - [X] Player (v0.0.5(A)-pre-alpha)
 - [X] Forest (v0.0.5(D)-pre-alpha ... v0.0.5(F)-pre-alpha)
+- [X] Mountains (v0.0.7(A)-pre-alpha ... v0.0.7(B)-pre-alpha)
+  - [ ] Fix the texture (size)
 - [ ] Butter in the forest (Easter egg)
 - [ ] Models of the silhouettes
 - [ ] Interior of the cabin
