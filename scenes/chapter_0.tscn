@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b2myn6s4vdhla" path="res://assets/models/trees/cedar_tree/cedar_tree.tscn" id="10_irmlt"]
 [ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/shader_chapter_0.gdshader" id="11_8kgk7"]
 [ext_resource type="PackedScene" uid="uid://c5xxexjm4f7q3" path="res://assets/models/wooden_torch/wooden_torch.tscn" id="12_jygv4"]
+[ext_resource type="Texture2D" uid="uid://bpoxd4rkse7da" path="res://assets/smoke_01.png" id="13_7t5j8"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_d0u6y"]
 panorama = ExtResource("1_jygv4")
@@ -104,7 +105,9 @@ emission_shape = 3
 emission_box_extents = Vector3(1, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0u6y"]
+transparency = 1
 shading_mode = 0
+albedo_texture = ExtResource("13_7t5j8")
 billboard_mode = 3
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1
@@ -112,6 +115,7 @@ particles_anim_loop = false
 
 [sub_resource type="QuadMesh" id="QuadMesh_57qmd"]
 material = SubResource("StandardMaterial3D_d0u6y")
+size = Vector2(0.5, 0.5)
 
 [node name="Node3D" type="Node3D" unique_id=1247047748]
 
@@ -3889,9 +3893,11 @@ transform = Transform3D(0.32910505, 0.05310099, -0.9427991, -0.2664786, 0.963060
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=246073047]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 96.00022, 0)
-amount = 1000
-lifetime = 4.5
+amount = 16000
+lifetime = 5.0
 preprocess = 5.0
-speed_scale = 0.2
+speed_scale = 0.1
+randomness = 1.0
+visibility_aabb = AABB(-135, -80, -135, 270, 80, 270)
 process_material = SubResource("ParticleProcessMaterial_yf5fn")
 draw_pass_1 = SubResource("QuadMesh_57qmd")
