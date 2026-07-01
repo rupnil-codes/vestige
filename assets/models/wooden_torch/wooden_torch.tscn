@@ -25,12 +25,13 @@ shape = SubResource("ConcavePolygonShape3D_v3b3k")
 shape = SubResource("ConcavePolygonShape3D_sager")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="2" unique_id=843721552]
-transform = Transform3D(1, -1.7039328e-28, 3.5762793e-07, 0, 1, 4.7645406e-22, -3.5762793e-07, -4.7645406e-22, 1, 0.44879782, 0.94321716, 0.010398865)
+transform = Transform3D(1, -1.7039328e-28, 3.5762793e-07, 0, 1, 4.7645406e-22, -3.5762793e-07, -4.7645406e-22, 1, 0.44879782, 0.94321716, -0.041435063)
 light_color = Color(0.6807982, 0.5127972, 0.23984355, 1)
 light_energy = 1.746
 light_size = 1.0
-light_specular = 0.258
+light_specular = 0.3
 shadow_enabled = true
+shadow_opacity = 0.82
 distance_fade_length = 0.0
 omni_range = 12.627
 omni_attenuation = 1.754

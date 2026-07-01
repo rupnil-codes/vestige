@@ -13,7 +13,7 @@ Todos:
 - [ ] Polishing the cabin
 - [X] Nighttime (v0.0.6(B)-pre-alpha)
 - [X] Fogs (v0.0.6(B)-pre-alpha)
-- [ ] Volumetric Fog: https://docs.godotengine.org/en/latest/tutorials/3d/volumetric_fog.html
+- [X] Volumetric Fog: https://docs.godotengine.org/en/latest/tutorials/3d/volumetric_fog.html (v0.0.7(E)-pre-alpha)
 - [X] Shaders (v0.0.6(C)-pre-alpha v0.0.6(D))
 - [-] Snow & Thunders (v0.0.7(C)-pre-alpha ... v0.0.7(C)-pre-alpha ...)
   - [ ] Thunder SFX left
@@ -22,3 +22,4 @@ Todos:
 - [ ] Fireflies
 - [ ] Boulders / Rocks
 - [ ] Particle Optimizations
+- [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)

@@ -6,5 +6,5 @@
 resource_name = "Material.006"
 cull_mode = 2
 albedo_texture = ExtResource("1_maaql")
-roughness = 0.5
+metallic_specular = 0.0
 texture_filter = 2

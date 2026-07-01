@@ -25,6 +25,7 @@ background_mode = 2
 sky = SubResource("Sky_8kgk7")
 tonemap_mode = 2
 glow_enabled = true
+glow_normalized = true
 fog_enabled = true
 fog_light_color = Color(0.102692865, 0.12295938, 0.13164315, 1)
 fog_light_energy = 2.0
@@ -32,9 +33,14 @@ fog_sun_scatter = 0.2
 fog_density = 0.02
 fog_sky_affect = 0.742
 fog_depth_curve = 0.8122524
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.015
 volumetric_fog_albedo = Color(0.28897998, 0.28897995, 0.28897995, 1)
-volumetric_fog_emission = Color(0.1718787, 0.1718787, 0.1718787, 1)
-adjustment_saturation = 2.0
+volumetric_fog_emission = Color(0.101960786, 0.12156863, 0.13333334, 1)
+volumetric_fog_length = 300.0
+adjustment_enabled = true
+adjustment_contrast = 1.1
+adjustment_saturation = 1.1
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_cmkqj"]
 
@@ -3891,9 +3897,9 @@ transform = Transform3D(0.10109374, 0, 0.99487686, -0.101520866, 0.99477994, 0.0
 [node name="wooden_torch19" parent="Torch3D" unique_id=118699248 instance=ExtResource("12_jygv4")]
 transform = Transform3D(0.32910505, 0.05310099, -0.9427991, -0.2664786, 0.9630604, -0.03877812, 0.90591335, 0.26399785, 0.33109832, -5.7193413, 4.563718, -81.83031)
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=246073047]
+[node name="Snow3D" type="GPUParticles3D" parent="." unique_id=246073047]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 96.00022, 0)
-amount = 16000
+amount = 32000
 lifetime = 5.0
 preprocess = 5.0
 speed_scale = 0.1

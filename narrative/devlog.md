@@ -1,25 +1,26 @@
-# (0.0.7(A)-pre-alpha) High Mountains
+# (0.0.7(D)-pre-alpha) Snowfalllllllllllllll
 
 ---
 
 ## Changelog:
 
-- **[(v0.0.7(A)-pre-alpha) Mountains (1) - Modelling](https://github.com/rupnil-codes/vestige/commit/0e1d73)**: really really like the model i have cooked up here, though the texturing is left the base model is looking really cool. The spiky nature kinda symbolizes danger and overall i just think its perfect _[Lapsed](https://lapse.hackclub.com/timelapse/6fq_ETBCADUX)_
+- **[(v0.0.7(D)-pre-alpha) Snowfall (1.2)](https://github.com/rupnil-codes/vestige/commit/e2a9482)**: Finally managed to fix the issue that was causing the glitched snowfall rendering (again, ty seb) Edited the materials thingy and adjusted the settings in general made it so that it looks good! i really like it _[Lapsed](https://lapse.hackclub.com/timelapse/Eb3qSIVKHdrn)_
 
-- **[(v0.0.6(I)-pre-alpha) Torches (Placement - 3)](https://github.com/rupnil-codes/vestige/commit/947131)**: got a lot of work done- the torches are now placed along the path! I've done something that i think is really cool. here we go! So i added more torches on the main path to subsconsciously provoke the players to follow the path, on the other hand the tributaries have less! _[Lapsed](https://lapse.hackclub.com/timelapse/zJ6aS79jelXj)_
+- **[(v0.0.7(C)-pre-alpha) Snowfall (1.1)](https://github.com/rupnil-codes/vestige/commit/422aa38)**: Added the snowfall particles (GPU) but it is kinda bugged right now. I am pushing premature scene because @seb will help me out on this :3 Lets hope we can troubleshoot and fix this together! _[Lapsed](https://lapse.hackclub.com/timelapse/Eb3qSIVKHdrn)_
+
+- **[v0.0.7(B)-pre-alpha) Mountains (2) - Texture](https://github.com/rupnil-codes/vestige/commit/06166fb)**: I did the UV mapping and the texturing for the mountain model, Had to take a bit of help from my friend @seb for the UV wrapping settings but yeah! did all the stuff by myself! _[Lapsed](https://lapse.hackclub.com/timelapse/ve2Emc9gPVGQ)_
 
 ---
 
 ## Next Step(s):
 
 1. ~~Wooden Torch model~~
-2. ~~Mountains~~ IN PROGRESS!!
+2. ~~Mountains~~
 3. Silhouettes!
 4. Sounds
-5. Blizzard (Storms!)
 
 ---
 
 ## Notes:
 
-Didnt go to school today cuz i was studying at home lol but got some great work done! ill make the textures next :yay:
+Im so chopped rn- Barely keeping my eyes open... Will devlog properly tmrw :hs:
