@@ -1,10 +1,13 @@
 [gd_scene format=4 uid="uid://ctx42urrlsqoj"]
 
+[ext_resource type="Script" uid="uid://dr06c4wvrjsmo" path="res://scripts/chapter_0/chapter_0.gd" id="1_6pad5"]
 [ext_resource type="Script" uid="uid://caf08fvsymgfn" path="res://scripts/Player.gd" id="1_cmkqj"]
 [ext_resource type="Texture2D" uid="uid://xfe1k3gk6h1k" path="res://assets/textures/sky.png" id="1_jygv4"]
 [ext_resource type="Texture2D" uid="uid://be3gdrbc3cc5g" path="res://assets/models/bench/bench_uv.png" id="3_o2mjm"]
 [ext_resource type="PackedScene" uid="uid://cursl7y2tughc" path="res://assets/models/chapter_0_map/chapter_0_map.tscn" id="4_5eens"]
 [ext_resource type="PackedScene" uid="uid://ctl1xmfds16dl" path="res://assets/models/log_cabin/log_cabin.tscn" id="4_bxp76"]
+[ext_resource type="FontFile" uid="uid://78n28mmk5f74" path="res://assets/fonts/Geo-Italic.ttf" id="4_slls3"]
+[ext_resource type="Script" uid="uid://dktrq4577s8b8" path="res://scripts/chapter_0/counter_label.gd" id="5_0or3v"]
 [ext_resource type="PackedScene" uid="uid://becylmfxbg5ks" path="res://assets/models/trees/pine_tree/pine_tree.tscn" id="5_jkyip"]
 [ext_resource type="PackedScene" uid="uid://cb2cwc0la82rj" path="res://assets/models/trees/tall_fir_tree/tall_fir_tree.tscn" id="7_pe316"]
 [ext_resource type="PackedScene" uid="uid://cja8r23prt8yn" path="res://assets/models/trees/tree_trunk/tree_trunk.tscn" id="8_bxp76"]
@@ -125,6 +128,7 @@ material = SubResource("StandardMaterial3D_d0u6y")
 size = Vector2(0.5, 0.5)
 
 [node name="Node3D" type="Node3D" unique_id=1247047748]
+script = ExtResource("1_6pad5")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2014315246]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
@@ -138,12 +142,15 @@ shadow_blur = 1.32
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1269618478]
 environment = SubResource("Environment_jygv4")
 
-[node name="Player3D" type="CharacterBody3D" parent="." unique_id=1801726057]
+[node name="Player3D" type="CharacterBody3D" parent="." unique_id=1801726057 groups=["player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.46661, -0.21844542, -52.83082)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_cmkqj")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player3D" unique_id=1102337274]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026943207, 1.2039347, 0.027374268)
+layers = 3
 mesh = SubResource("CapsuleMesh_cmkqj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player3D" unique_id=770720229]
@@ -166,6 +173,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
+
+[node name="UserInterface" type="Control" parent="Player3D/Neck/Camera3D/CanvasLayer/ColorRect" unique_id=963711010]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="CounterLabel" type="Label" parent="Player3D/Neck/Camera3D/CanvasLayer/ColorRect/UserInterface" unique_id=1227291737]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 10.0
+offset_right = 116.0
+offset_bottom = 36.0
+theme_override_fonts/font = ExtResource("4_slls3")
+theme_override_font_sizes/font_size = 24
+text = "0/10 found"
+script = ExtResource("5_0or3v")
 
 [node name="Bench3D" type="MeshInstance3D" parent="." unique_id=455057524]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.269615, 0.09442556, -52.790134)
@@ -3909,5 +3936,10 @@ visibility_aabb = AABB(-135, -80, -135, 270, 80, 270)
 process_material = SubResource("ParticleProcessMaterial_yf5fn")
 draw_pass_1 = SubResource("QuadMesh_57qmd")
 
-[node name="silhouette2" parent="." unique_id=578111472 instance=ExtResource("14_bjg34")]
-transform = Transform3D(-0.2688685, 0, -0.9631769, 0, 1, 0, 0.9631769, 0, -0.2688685, 7.8910465, 4.084879, -55.516987)
+[node name="Silhouettes" type="Node3D" parent="." unique_id=839482844]
+
+[node name="Silhouette3D(1)" parent="Silhouettes" unique_id=578111472 instance=ExtResource("14_bjg34")]
+transform = Transform3D(-0.2688685, 0, -0.9631769, 0, 1, 0, 0.9631769, 0, -0.2688685, -22.315424, 2.0217829, -53.711826)
+
+[node name="silhouette" parent="Silhouettes" unique_id=1201166214 instance=ExtResource("14_bjg34")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.799898, 2.0972433, -50.29734)

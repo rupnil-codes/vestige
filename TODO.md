@@ -8,7 +8,8 @@ Todos:
 - [X] Mountains (v0.0.7(A)-pre-alpha ... v0.0.7(B)-pre-alpha)
   - [ ] Fix the texture (size)
 - [ ] Butter in the forest (Easter egg)
-- [ ] Models of the silhouettes
+- [X] Models of the silhouettes (v0.0.7(F)-pre-alpha)
+- [-] Silhouettes Functionality and placement (v0.0.7(G)-pre-alpha ...)
 - [ ] Interior of the cabin
 - [ ] Polishing the cabin
 - [X] Nighttime (v0.0.6(B)-pre-alpha)
