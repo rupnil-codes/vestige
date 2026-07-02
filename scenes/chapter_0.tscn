@@ -13,6 +13,7 @@
 [ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/shader_chapter_0.gdshader" id="11_8kgk7"]
 [ext_resource type="PackedScene" uid="uid://c5xxexjm4f7q3" path="res://assets/models/wooden_torch/wooden_torch.tscn" id="12_jygv4"]
 [ext_resource type="Texture2D" uid="uid://bpoxd4rkse7da" path="res://assets/smoke_01.png" id="13_7t5j8"]
+[ext_resource type="PackedScene" uid="uid://j71rndxs6qdt" path="res://assets/models/silhouette/silhouette.tscn" id="14_bjg34"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_d0u6y"]
 panorama = ExtResource("1_jygv4")
@@ -3907,3 +3908,6 @@ randomness = 1.0
 visibility_aabb = AABB(-135, -80, -135, 270, 80, 270)
 process_material = SubResource("ParticleProcessMaterial_yf5fn")
 draw_pass_1 = SubResource("QuadMesh_57qmd")
+
+[node name="silhouette2" parent="." unique_id=578111472 instance=ExtResource("14_bjg34")]
+transform = Transform3D(-0.2688685, 0, -0.9631769, 0, 1, 0, 0.9631769, 0, -0.2688685, 7.8910465, 4.084879, -55.516987)
