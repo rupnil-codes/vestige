@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cx5m27kxvgerc"]
+
+[ext_resource type="PackedScene" uid="uid://b4kqijxxum3x" path="res://assets/models/silhouette/silhouette.blend" id="1_ijmu6"]
+[ext_resource type="Script" uid="uid://di4rkrff50ud3" path="res://scripts/chapter_0/silhouette.gd" id="2_3epm7"]
+
+[sub_resource type="FogMaterial" id="FogMaterial_nosfx"]
+density = 0.3
+albedo = Color(0.91967607, 0.9236672, 0.99358255, 1)
+edge_fade = 3.5506213
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u14ow"]
+size = Vector3(2.5, 5, 2.5)
+
+[node name="silhouette" unique_id=286810011 instance=ExtResource("1_ijmu6")]
+script = ExtResource("2_3epm7")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="4" unique_id=1229905221]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.158898, 1.9587753, 1.2474406)
+light_color = Color(0.6218691, 0.61940473, 0.9697513, 1)
+light_size = 0.728
+light_specular = 6.773
+shadow_enabled = true
+shadow_opacity = 0.67
+omni_range = 51.0
+omni_attenuation = 1.903
+
+[node name="FogVolume" type="FogVolume" parent="." index="5" unique_id=899800248]
+transform = Transform3D(1, 0, 0, 0, 4.5394793, 0, 0, 0, 1, -0.08293247, -1.9859605, 0.26953125)
+size = Vector3(8, 2, 9)
+material = SubResource("FogMaterial_nosfx")
+
+[node name="Area3D" type="Area3D" parent="." index="6" unique_id=1613545564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.082334995, 0, 0.33787507)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=1678256748]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009774923, 0, 0)
+shape = SubResource("BoxShape3D_u14ow")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

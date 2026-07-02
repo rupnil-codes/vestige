@@ -1,7 +1,7 @@
 extends Node3D
 
 var silhouettes_found = 0
-const TOTAL_SILHOUETTES = 10
+const TOTAL_SILHOUETTES = 9
 
 @onready var counter_label = $"Player3D/Neck/Camera3D/CanvasLayer/ColorRect/UserInterface/CounterLabel"
 
