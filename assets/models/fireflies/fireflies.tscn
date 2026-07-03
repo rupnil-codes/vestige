@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://d28toy8ya2u5s"]
 
+[ext_resource type="Script" uid="uid://lbqluh3vaxy8" path="res://scripts/FireflyParticlesOptimization.gd" id="1_21de2"]
+
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_g4v7s"]
 emission_shape = 3
 emission_box_extents = Vector3(0.75, 0.75, 0.75)
@@ -15,7 +17,7 @@ turbulence_influence_max = 0.2
 albedo_color = Color(1, 1, 0, 1)
 emission_enabled = true
 emission = Color(1, 1, 0, 1)
-emission_energy_multiplier = 0.4
+emission_energy_multiplier = 0.3
 billboard_mode = 3
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1
@@ -23,13 +25,14 @@ particles_anim_loop = false
 
 [sub_resource type="QuadMesh" id="QuadMesh_yf5fn"]
 material = SubResource("StandardMaterial3D_57qmd")
-size = Vector2(0.1, 0.1)
+size = Vector2(0.08, 0.065)
 
 [node name="Fireflies" type="Node3D" unique_id=575794453]
+script = ExtResource("1_21de2")
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1821380068]
+[node name="GPUFireflies3D" type="GPUParticles3D" parent="." unique_id=1821380068]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.313439, 0)
-amount = 10
+amount = 15
 lifetime = 10.0
 preprocess = 10.0
 speed_scale = 0.5
