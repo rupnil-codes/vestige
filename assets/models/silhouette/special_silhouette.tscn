@@ -17,11 +17,12 @@ script = ExtResource("2_3epm7")
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="4" unique_id=1229905221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.158898, 1.9587753, 1.2474406)
 light_color = Color(0.6218691, 0.61940473, 0.9697513, 1)
+light_energy = 0.1
 light_size = 0.728
 light_specular = 6.773
 shadow_enabled = true
 shadow_opacity = 0.67
-omni_range = 51.0
+omni_range = 30.0
 omni_attenuation = 1.903
 
 [node name="FogVolume" type="FogVolume" parent="." index="5" unique_id=899800248]

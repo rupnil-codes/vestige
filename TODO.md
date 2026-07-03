@@ -9,8 +9,8 @@ Todos:
   - [ ] Fix the texture (size)
 - [ ] Butter in the forest (Easter egg)
 - [X] Models of the silhouettes (v0.0.7(F)-pre-alpha)
-- [-] Silhouettes Functionality and placement (v0.0.7(G)-pre-alpha ...)
-  - [ ] Special Silhouette
+- [X] Silhouettes Functionality and placement (v0.0.7(G)-pre-alpha ... v0.0.7(I)-pre-alpha)
+  - [X] Special Silhouette (v0.0.7(I)-pre-alpha)
 - [ ] Interior of the cabin
 - [ ] Polishing the cabin
 - [X] Nighttime (v0.0.6(B)-pre-alpha)

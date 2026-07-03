@@ -24,14 +24,14 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		fade_out()
 		
 func fade_out():
-	var meshes = [$Body, $Head, $Eye1, $Eye2]
+	var meshes: Array[Variant] = [$Body, $Head, $Eye1, $Eye2]
 
-	var tween = create_tween()
+	var tween: Tween = create_tween()
 	
 	for mesh in meshes:
 		fade_mesh(mesh, tween)
 	tween.parallel().tween_property($OmniLight3D, "light_energy", 0.0, 2.0)
-	var fog_material = $FogVolume.material.duplicate()
+	var fog_material: Resource = $FogVolume.material.duplicate()
 	$FogVolume.material = fog_material
 
 	tween.parallel().tween_property(

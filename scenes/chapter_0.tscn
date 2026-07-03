@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://c5xxexjm4f7q3" path="res://assets/models/wooden_torch/wooden_torch.tscn" id="12_jygv4"]
 [ext_resource type="Texture2D" uid="uid://bpoxd4rkse7da" path="res://assets/smoke_01.png" id="13_7t5j8"]
 [ext_resource type="PackedScene" uid="uid://j71rndxs6qdt" path="res://assets/models/silhouette/silhouette.tscn" id="14_bjg34"]
+[ext_resource type="PackedScene" uid="uid://cx5m27kxvgerc" path="res://assets/models/silhouette/special_silhouette.tscn" id="18_y6fsx"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_d0u6y"]
 panorama = ExtResource("1_jygv4")
@@ -3960,5 +3961,5 @@ transform = Transform3D(-0.7983973, 0, 0.6021311, 0, 1, 0, -0.6021311, 0, -0.798
 [node name="Silhouette3D(8)" parent="Silhouettes" unique_id=500776610 instance=ExtResource("14_bjg34")]
 transform = Transform3D(-0.69478416, 0, -0.7192193, 0, 1, 0, 0.7192193, 0, -0.69478416, 71.03596, 3.700303, -26.0394)
 
-[node name="Silhouette3D(9)" parent="Silhouettes" unique_id=1346956030 instance=ExtResource("14_bjg34")]
-transform = Transform3D(0.36526856, 0, -0.9309022, 0, 1, 0, 0.9309022, 0, 0.36526856, 59.43644, 5.168121, 67.76081)
+[node name="SpecialSilhouette3D(9)" parent="Silhouettes" unique_id=587199928 instance=ExtResource("18_y6fsx")]
+transform = Transform3D(0.36487675, 0, -0.93105584, 0, 1, 0, 0.93105584, 0, 0.36487675, 59.436, 5.168, 67.761)
