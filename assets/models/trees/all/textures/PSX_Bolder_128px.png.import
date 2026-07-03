@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c058leekeikun"
 path.s3tc="res://.godot/imported/PSX_Bolder_128px.png-ab7337bed55cae8f6459d1420cf0343d.s3tc.ctex"
+path.etc2="res://.godot/imported/PSX_Bolder_128px.png-ab7337bed55cae8f6459d1420cf0343d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/trees/all/textures/PSX_Bolder_128px.png"
-dest_files=["res://.godot/imported/PSX_Bolder_128px.png-ab7337bed55cae8f6459d1420cf0343d.s3tc.ctex"]
+dest_files=["res://.godot/imported/PSX_Bolder_128px.png-ab7337bed55cae8f6459d1420cf0343d.s3tc.ctex", "res://.godot/imported/PSX_Bolder_128px.png-ab7337bed55cae8f6459d1420cf0343d.etc2.ctex"]
 
 [params]
 

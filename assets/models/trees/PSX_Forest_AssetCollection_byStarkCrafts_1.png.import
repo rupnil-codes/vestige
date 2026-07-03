@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt4c7uh65owpy"
 path.s3tc="res://.godot/imported/PSX_Forest_AssetCollection_byStarkCrafts_1.png-9c2289c35c8f5f088b0906e97261a744.s3tc.ctex"
+path.etc2="res://.godot/imported/PSX_Forest_AssetCollection_byStarkCrafts_1.png-9c2289c35c8f5f088b0906e97261a744.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/models/trees/PSX_Forest_AssetCollection_byStarkCrafts_1.png"
-dest_files=["res://.godot/imported/PSX_Forest_AssetCollection_byStarkCrafts_1.png-9c2289c35c8f5f088b0906e97261a744.s3tc.ctex"]
+dest_files=["res://.godot/imported/PSX_Forest_AssetCollection_byStarkCrafts_1.png-9c2289c35c8f5f088b0906e97261a744.s3tc.ctex", "res://.godot/imported/PSX_Forest_AssetCollection_byStarkCrafts_1.png-9c2289c35c8f5f088b0906e97261a744.etc2.ctex"]
 
 [params]
 

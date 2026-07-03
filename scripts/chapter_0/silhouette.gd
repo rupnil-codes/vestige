@@ -24,12 +24,13 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		fade_out()
 		
 func fade_out():
-	var meshes: Array[Variant] = [$Body, $Head, $Eye1, $Eye2]
+	var meshes: Array[Variant] = [$Body, $Head, $Eye1, $Eye2, $GPUPurpleParticles3D]
 
 	var tween: Tween = create_tween()
 	
 	for mesh in meshes:
 		fade_mesh(mesh, tween)
+
 	tween.parallel().tween_property($OmniLight3D, "light_energy", 0.0, 2.0)
 	var fog_material: Resource = $FogVolume.material.duplicate()
 	$FogVolume.material = fog_material
@@ -41,7 +42,11 @@ func fade_out():
 		2.0
 	)
 	
+	if $GPUDeathParticles3D:
+		tween.tween_callback($GPUDeathParticles3D.set_emitting.bind(true))
+		tween.tween_interval($GPUDeathParticles3D.lifetime)
+	
 	await tween.finished
 	queue_free()
-func fade_mesh(mesh: MeshInstance3D, tween: Tween):
+func fade_mesh(mesh, tween: Tween):
 	tween.parallel().tween_property(mesh, "transparency", 1.0, 2.0)

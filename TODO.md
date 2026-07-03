@@ -26,3 +26,6 @@ Todos:
 - [ ] Flowers/Grasses on specific areas
 - [ ] Particle Optimizations
 - [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)
+- [ ] Main menu and pause menu
+- [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
+  - [ ] Sfx left

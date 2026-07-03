@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://lq6ohyirw8lp"
 path.s3tc="res://.godot/imported/trail.png-e990af1e086112460d2baaf75d2ebceb.s3tc.ctex"
+path.etc2="res://.godot/imported/trail.png-e990af1e086112460d2baaf75d2ebceb.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/chapter_0_map/assets_used/trail.png"
-dest_files=["res://.godot/imported/trail.png-e990af1e086112460d2baaf75d2ebceb.s3tc.ctex"]
+dest_files=["res://.godot/imported/trail.png-e990af1e086112460d2baaf75d2ebceb.s3tc.ctex", "res://.godot/imported/trail.png-e990af1e086112460d2baaf75d2ebceb.etc2.ctex"]
 
 [params]
 

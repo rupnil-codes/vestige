@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b47wtq3w4id1e"
 path.s3tc="res://.godot/imported/uv_layout_filled.png-9235d2db0f8fd28667487de54caba664.s3tc.ctex"
+path.etc2="res://.godot/imported/uv_layout_filled.png-9235d2db0f8fd28667487de54caba664.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/wooden_torch/assets_used/uv_layout_filled.png"
-dest_files=["res://.godot/imported/uv_layout_filled.png-9235d2db0f8fd28667487de54caba664.s3tc.ctex"]
+dest_files=["res://.godot/imported/uv_layout_filled.png-9235d2db0f8fd28667487de54caba664.s3tc.ctex", "res://.godot/imported/uv_layout_filled.png-9235d2db0f8fd28667487de54caba664.etc2.ctex"]
 
 [params]
 

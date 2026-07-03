@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://p366wq0vmr1g"
 path.s3tc="res://.godot/imported/PSX_TreeCrown2_128px.png-fdedd74b685727d68805bf58e70afe7e.s3tc.ctex"
+path.etc2="res://.godot/imported/PSX_TreeCrown2_128px.png-fdedd74b685727d68805bf58e70afe7e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/trees/average_tree/textures/PSX_TreeCrown2_128px.png"
-dest_files=["res://.godot/imported/PSX_TreeCrown2_128px.png-fdedd74b685727d68805bf58e70afe7e.s3tc.ctex"]
+dest_files=["res://.godot/imported/PSX_TreeCrown2_128px.png-fdedd74b685727d68805bf58e70afe7e.s3tc.ctex", "res://.godot/imported/PSX_TreeCrown2_128px.png-fdedd74b685727d68805bf58e70afe7e.etc2.ctex"]
 
 [params]
 

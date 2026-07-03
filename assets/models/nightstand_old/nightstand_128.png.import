@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt7o6djuat8e5"
 path.s3tc="res://.godot/imported/nightstand_128.png-012d3dade0cb82e4248c10daf2fb4636.s3tc.ctex"
+path.etc2="res://.godot/imported/nightstand_128.png-012d3dade0cb82e4248c10daf2fb4636.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/nightstand_old/nightstand_128.png"
-dest_files=["res://.godot/imported/nightstand_128.png-012d3dade0cb82e4248c10daf2fb4636.s3tc.ctex"]
+dest_files=["res://.godot/imported/nightstand_128.png-012d3dade0cb82e4248c10daf2fb4636.s3tc.ctex", "res://.godot/imported/nightstand_128.png-012d3dade0cb82e4248c10daf2fb4636.etc2.ctex"]
 
 [params]
 

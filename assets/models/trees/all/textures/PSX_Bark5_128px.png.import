@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c028eyxufjpf"
 path.s3tc="res://.godot/imported/PSX_Bark5_128px.png-6c7a52c86981bc46b09b054ac785f0fa.s3tc.ctex"
+path.etc2="res://.godot/imported/PSX_Bark5_128px.png-6c7a52c86981bc46b09b054ac785f0fa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/trees/all/textures/PSX_Bark5_128px.png"
-dest_files=["res://.godot/imported/PSX_Bark5_128px.png-6c7a52c86981bc46b09b054ac785f0fa.s3tc.ctex"]
+dest_files=["res://.godot/imported/PSX_Bark5_128px.png-6c7a52c86981bc46b09b054ac785f0fa.s3tc.ctex", "res://.godot/imported/PSX_Bark5_128px.png-6c7a52c86981bc46b09b054ac785f0fa.etc2.ctex"]
 
 [params]
 

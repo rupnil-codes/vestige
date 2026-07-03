@@ -1,23 +1,23 @@
-# (v0.0.7(I)-pre-alpha) Spooky Scary Silhouettes
+# (v0.0.8(B)-pre-alpha) Models and Optimization(?)
 
 ---
 
 ## Changelog:
 
-- **[(v0.0.7(I)-pre-alpha) Silhouette (4) - The Special One](https://github.com/rupnil-codes/vestige/commit/62ed40)**: So yesterday I couldnt seem to add the special silhouette in the game but oh well added it in this short session :pf: _[Lapsed](https://lapse.hackclub.com/timelapse/ogRnR_i28lF4)_
+- **[(v0.0.8(B)-pre-alpha) Particle Optimization (1)](https://github.com/rupnil-codes/vestige/commit/8eab2e)**: wild stuff- so i wanted to optimize it but guess what i think i did the complete opposite :wilted-rose: oh well i did reduce the particle count by a ton- we'll see what happens _[Lapsed](https://lapse.hackclub.com/timelapse/xsp-6oTYNHDn)_
 
-- **[(v0.0.7(H)-pre-alpha) Silhouette (3) - Placement](https://github.com/rupnil-codes/vestige/commit/6ed61a)**: Did a lot of minor stuff (like fixing the material of the log cabin) but the major thing done was the silhouettes' placement- there are 9 silhouettes, 8 in the wild and one in the cabin, ill make the one in the cabin "special" tmrw! _[Lapsed](https://lapse.hackclub.com/timelapse/BSALQ--ycH85)_
+- **[(v0.0.8(A)-pre-alpha) Boulder, Grass, Flowers & Fireflies](https://github.com/rupnil-codes/vestige/commit/01decf)**: Pretty productive session! separated the boulder, flower and grass models. but ngl the boulder gave me a hard ass time idk why :skull: Anyways i cooked up the fireflies scene which i am SUPER proud of (since i didnt use any external help- okay u got me just a bit tho) _[Lapsed](https://lapse.hackclub.com/timelapse/_jd1xM85X-cg)_
 
 ---
 
 ## Next Step(s):
 
 1. ~~Models of the silhouettes~~
-2. Boulders / Rocks
-3. Particle Optimizations
+2. Boulders / Rocks (WIP)
+3. Particle Optimizations (WIP)
 
 ---
 
 ## Notes:
 
-Scawy Scawy Silhouettes! Tiny devlog/journal lolz will work more today
+OKay yo- idk what but i did something :skull:

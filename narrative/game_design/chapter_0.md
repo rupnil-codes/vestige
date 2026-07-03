@@ -39,10 +39,10 @@
 1. **3d Models**:
    - 
    - ~~Trees (3 types)~~
-   - Wooden torches
-   - A ground / snow laden
-   - Tall dark silhouettes
-   - Mountain ranges
+   - ~~Wooden torches~~
+   - ~~A ground / snow laden~~
+   - ~~Tall dark silhouettes~~
+   - ~~Mountain ranges~~
    - Polaroid Pictures
    - Notes
    - Log Cabin
@@ -60,8 +60,8 @@
      12. Stairs.
      13. Picture frame
    - ~~A bench~~
-   - Rocks
-   - Grasses
+   - ~~Rocks~~
+   - ~~Grasses~~
 
 2. **Sounds**:
     - Aeolian tones of winds

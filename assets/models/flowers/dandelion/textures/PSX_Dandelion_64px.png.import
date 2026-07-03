@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://da0n6c1735ixv"
 path.s3tc="res://.godot/imported/PSX_Dandelion_64px.png-5334852f334da8c50be1eaadc760a016.s3tc.ctex"
+path.etc2="res://.godot/imported/PSX_Dandelion_64px.png-5334852f334da8c50be1eaadc760a016.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/flowers/dandelion/textures/PSX_Dandelion_64px.png"
-dest_files=["res://.godot/imported/PSX_Dandelion_64px.png-5334852f334da8c50be1eaadc760a016.s3tc.ctex"]
+dest_files=["res://.godot/imported/PSX_Dandelion_64px.png-5334852f334da8c50be1eaadc760a016.s3tc.ctex", "res://.godot/imported/PSX_Dandelion_64px.png-5334852f334da8c50be1eaadc760a016.etc2.ctex"]
 
 [params]
 

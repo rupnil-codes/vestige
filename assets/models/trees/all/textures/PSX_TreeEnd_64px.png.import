@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1eskpmlc7cl0"
 path.s3tc="res://.godot/imported/PSX_TreeEnd_64px.png-a5594a735935fcae148beaf4fcaca2cd.s3tc.ctex"
+path.etc2="res://.godot/imported/PSX_TreeEnd_64px.png-a5594a735935fcae148beaf4fcaca2cd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/trees/all/textures/PSX_TreeEnd_64px.png"
-dest_files=["res://.godot/imported/PSX_TreeEnd_64px.png-a5594a735935fcae148beaf4fcaca2cd.s3tc.ctex"]
+dest_files=["res://.godot/imported/PSX_TreeEnd_64px.png-a5594a735935fcae148beaf4fcaca2cd.s3tc.ctex", "res://.godot/imported/PSX_TreeEnd_64px.png-a5594a735935fcae148beaf4fcaca2cd.etc2.ctex"]
 
 [params]
 

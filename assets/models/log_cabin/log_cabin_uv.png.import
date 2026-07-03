@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://elkvaxbq47ct"
 path.s3tc="res://.godot/imported/log_cabin_uv.png-585e1eb7f0bf99eaab6fb3661a2a8cfa.s3tc.ctex"
+path.etc2="res://.godot/imported/log_cabin_uv.png-585e1eb7f0bf99eaab6fb3661a2a8cfa.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/log_cabin/log_cabin_uv.png"
-dest_files=["res://.godot/imported/log_cabin_uv.png-585e1eb7f0bf99eaab6fb3661a2a8cfa.s3tc.ctex"]
+dest_files=["res://.godot/imported/log_cabin_uv.png-585e1eb7f0bf99eaab6fb3661a2a8cfa.s3tc.ctex", "res://.godot/imported/log_cabin_uv.png-585e1eb7f0bf99eaab6fb3661a2a8cfa.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://curn1ecs0m6xr"
 path.s3tc="res://.godot/imported/mountains_uv.png-b14972f883f39892629e20e1334cff19.s3tc.ctex"
+path.etc2="res://.godot/imported/mountains_uv.png-b14972f883f39892629e20e1334cff19.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/models/chapter_0_map/assets_used/mountains_uv.png"
-dest_files=["res://.godot/imported/mountains_uv.png-b14972f883f39892629e20e1334cff19.s3tc.ctex"]
+dest_files=["res://.godot/imported/mountains_uv.png-b14972f883f39892629e20e1334cff19.s3tc.ctex", "res://.godot/imported/mountains_uv.png-b14972f883f39892629e20e1334cff19.etc2.ctex"]
 
 [params]
 
