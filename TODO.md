@@ -23,5 +23,6 @@ Todos:
 - [ ] Ambience
 - [ ] Fireflies
 - [ ] Boulders / Rocks
+- [ ] Flowers/Grasses on specific areas
 - [ ] Particle Optimizations
 - [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)

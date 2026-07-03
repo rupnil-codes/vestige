@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ccnhj7ygof6o2"]
+
+[ext_resource type="PackedScene" uid="uid://dx5mwfywvv131" path="res://assets/models/flowers/lavender/lavender.blend" id="1_jknd2"]
+
+[node name="lavender" unique_id=170458802 instance=ExtResource("1_jknd2")]
