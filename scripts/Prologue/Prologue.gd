@@ -1,0 +1,28 @@
+extends Node3D
+
+var silhouettes_found: int = 0
+const TOTAL_SILHOUETTES: int = 9
+
+@onready var counter_label: Label = $"CanvasLayer/UserInterface/CounterLabel"
+@onready var fps_counter: Label = $CanvasLayer/UserInterface/FPSCounter
+@onready var subviewport: SubViewport = $SubViewport
+
+func _input(event):
+	subviewport.push_input(event)
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	for silhouette in $"SubViewport/World/Silhouettes".get_children():
+		silhouette.silhouettes_found.connect(_on_silhouette_found)
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	var fps: int = Engine.get_frames_per_second()
+	fps_counter.text = "%d fps" % [fps]
+	
+func _on_silhouette_found():
+	silhouettes_found += 1
+	counter_label.text = "%d/%d found" % [silhouettes_found, TOTAL_SILHOUETTES]
+	
+	

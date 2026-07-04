@@ -24,8 +24,8 @@ Todos:
 - [ ] Fireflies (v0.0.8(A)-pre-alpha ... )
 - [ ] Boulders / Rocks (v0.0.8(A)-pre-alpha ... )
 - [ ] Flowers/Grasses on specific areas (v0.0.8(A)-pre-alpha ...)
-- [ ] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ...)
-  - [ ] SubViewport Scaling (Revert: Rendering > Scaling)
+- [X] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ... (v0.0.8(E)-pre-alpha)  ...)
+  - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
   - [ ] Fix the .show and .hide things to truly make themstop rendering. 
 - [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)
 - [ ] Main menu and pause menu
@@ -35,3 +35,4 @@ Todos:
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
   - [ ] Sfx left
 - [ ] Make it so that when silhouettes are found even if the player stops looking they will complete the animation.
+- [ ] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)

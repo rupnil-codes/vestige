@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://x3prucx0lg3r"
-path="res://.godot/imported/chapter_0_map.blend-fc7677f00a0526e1a87a056e5fb0ebc6.scn"
+path="res://.godot/imported/prologue.blend-c807f6e3d08b4615f217162b67f2dae5.scn"
 
 [deps]
 
-source_file="res://assets/models/chapter_0_map/chapter_0_map.blend"
-dest_files=["res://.godot/imported/chapter_0_map.blend-fc7677f00a0526e1a87a056e5fb0ebc6.scn"]
+source_file="res://assets/models/chapter_0_map/prologue.blend"
+dest_files=["res://.godot/imported/prologue.blend-c807f6e3d08b4615f217162b67f2dae5.scn"]
 
 [params]
 

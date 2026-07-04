@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://j71rndxs6qdt"]
 
 [ext_resource type="PackedScene" uid="uid://b4kqijxxum3x" path="res://assets/models/silhouette/silhouette.blend" id="1_7efcy"]
-[ext_resource type="Script" uid="uid://bbgthketya7fm" path="res://scripts/Chapter0/Silhouette.gd" id="2_fjft4"]
+[ext_resource type="Script" uid="uid://bbgthketya7fm" path="res://scripts/Prologue/Silhouette.gd" id="2_fjft4"]
 
 [sub_resource type="FogMaterial" id="FogMaterial_7efcy"]
 density = 0.3

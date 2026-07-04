@@ -1,8 +1,8 @@
 shader_type canvas_item;
 
 uniform sampler2D screen_texture : hint_screen_texture;
-uniform vec2 screen_size = vec2(448.0, 336.0);
-uniform float pixel_resolution : hint_range(64.0, 512.0) = 320.0;
+uniform vec2 screen_size = vec2(544.0, 306.0);
+// uniform float pixel_resolution : hint_range(64.0, 512.0) = 306.0;
 uniform int color_steps : hint_range(2, 64) = 256;
 uniform float noise_strength : hint_range(0.0, 1.0) = 0.08;
 uniform bool enable_dither = true;
@@ -87,7 +87,7 @@ vec3 apply_black_vintage_edges(vec3 color, vec2 uv) {
 }
 
 void fragment() {
-    vec2 pixel_uv = floor(UV * pixel_resolution) / pixel_resolution;
+    vec2 pixel_uv = UV;
 
     vec3 color;
 

@@ -7,7 +7,7 @@ const JUMP_VELOCITY = 4.5
 @onready var neck := $Neck
 @onready var camera := $Neck/Camera3D
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	elif event.is_action_pressed("ui_cancel"):
