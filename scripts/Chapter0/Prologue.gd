@@ -3,11 +3,11 @@ extends Node3D
 var silhouettes_found = 0
 const TOTAL_SILHOUETTES = 9
 
-@onready var counter_label = $"Player3D/Neck/Camera3D/CanvasLayer/UserInterface/CounterLabel"
+@onready var counter_label = $"CanvasLayer/UserInterface/CounterLabel"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	for silhouette in $Silhouettes.get_children():
+	for silhouette in $"World/Silhouettes".get_children():
 		silhouette.silhouettes_found.connect(_on_silhouette_found)
 
 

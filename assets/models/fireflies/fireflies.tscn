@@ -39,3 +39,10 @@ speed_scale = 0.5
 visibility_aabb = AABB(-0.75, -0.75, -0.75, 1.5, 1.5, 1.5)
 process_material = SubResource("ParticleProcessMaterial_g4v7s")
 draw_pass_1 = SubResource("QuadMesh_yf5fn")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." unique_id=1150727367]
+
+[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." unique_id=976481195]
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]

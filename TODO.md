@@ -21,11 +21,17 @@ Todos:
   - [ ] Thunder SFX left
 - [X] Torches along the path. (v0.0.6(I)-pre-alpha)
 - [ ] Ambience
-- [ ] Fireflies
-- [ ] Boulders / Rocks
-- [ ] Flowers/Grasses on specific areas
-- [ ] Particle Optimizations
+- [ ] Fireflies (v0.0.8(A)-pre-alpha ... )
+- [ ] Boulders / Rocks (v0.0.8(A)-pre-alpha ... )
+- [ ] Flowers/Grasses on specific areas (v0.0.8(A)-pre-alpha ...)
+- [ ] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ...)
+  - [ ] SubViewport Scaling (Revert: Rendering > Scaling)
+  - [ ] Fix the .show and .hide things to truly make themstop rendering. 
 - [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)
 - [ ] Main menu and pause menu
+  - Option for shader (default: on)
+  - Option for VSync (default: off)
+  - Shadows
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
   - [ ] Sfx left
+- [ ] Make it so that when silhouettes are found even if the player stops looking they will complete the animation.

@@ -1,6 +1,6 @@
 extends Node3D
 
-@onready var fireflies: GPUParticles3D = $GPUFireflies3D
+@onready var flames: CPUParticles3D = $flamesCPU
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,8 +12,8 @@ func _process(delta: float) -> void:
 
 func _on_visible_on_screen_notifier_3d_screen_entered() -> void:
 	var tween: Tween = create_tween()
-	tween.tween_callback(fireflies.show)
+	tween.tween_callback(flames.show)
 
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 	var tween: Tween = create_tween()
-	tween.tween_callback(fireflies.hide)
+	tween.tween_callback(flames.hide)
