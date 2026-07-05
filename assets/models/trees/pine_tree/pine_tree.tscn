@@ -1,13 +1,26 @@
 [gd_scene format=3 uid="uid://becylmfxbg5ks"]
 
 [ext_resource type="PackedScene" uid="uid://cji6t7houmrwm" path="res://assets/models/trees/pine_tree/pine_tree.blend" id="1_s0a1h"]
+[ext_resource type="Script" uid="uid://dmypd1cfbtr67" path="res://scripts/optimizations/PineTreeOptimization.gd" id="2_5vewa"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_s0a1h"]
 data = PackedVector3Array(0.2154, 5.8584, 0, 0.0844, 4.8974, 0.1856, 0.0372, 11.030499, -0.0696, 0.25, 0.5686, 0.0117, 0.0844, 4.8974, 0.1856, 0.2154, 5.8584, 0, 0.25, 0.5686, 0.0117, 0, 0.5451, 0.25, 0.0844, 4.8974, 0.1856, 0.276, -0.16939999, -0.2689, 0, 0.5451, 0.25, 0.25, 0.5686, 0.0117, 0.276, -0.16939999, -0.2689, 0.3883, -0.16939999, 0.275, 0, 0.5451, 0.25, 0.0844, 4.8974, 0.1856, -0.100099996, 6.1103, 0, 0.0372, 11.030499, -0.0696, 0, 0.5451, 0.25, -0.100099996, 6.1103, 0, 0.0844, 4.8974, 0.1856, 0, 0.5451, 0.25, -0.25, 0.8616, -0.0117, -0.100099996, 6.1103, 0, 0, 0.5451, 0.25, -0.4261, -0.17279999, 0.4182, -0.25, 0.8616, -0.0117, 0.3883, -0.16939999, 0.275, -0.4261, -0.17279999, 0.4182, 0, 0.5451, 0.25, -0.100099996, 6.1103, 0, 0.0187, 4.5532, -0.1336, 0.0372, 11.030499, -0.0696, -0.25, 0.8616, -0.0117, 0.0187, 4.5532, -0.1336, -0.100099996, 6.1103, 0, -0.25, 0.8616, -0.0117, 0, 0.7678, -0.25, 0.0187, 4.5532, -0.1336, -0.4261, -0.17279999, 0.4182, 0, 0.7678, -0.25, -0.25, 0.8616, -0.0117, -0.4261, -0.17279999, 0.4182, -0.2611, -0.10789999, -0.44709998, 0, 0.7678, -0.25, -0.2611, -0.10789999, -0.44709998, 0.25, 0.5686, 0.0117, 0, 0.7678, -0.25, -0.2611, -0.10789999, -0.44709998, 0.276, -0.16939999, -0.2689, 0.25, 0.5686, 0.0117, 0, 0.7678, -0.25, 0.25, 0.5686, 0.0117, 0.2154, 5.8584, 0, 0, 0.7678, -0.25, 0.2154, 5.8584, 0, 0.0187, 4.5532, -0.1336, 0.0372, 11.030499, -0.0696, 0.0187, 4.5532, -0.1336, 0.2154, 5.8584, 0)
 
 [node name="pine_tree" unique_id=378494581 instance=ExtResource("1_s0a1h")]
+script = ExtResource("2_5vewa")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="trunk" parent_id_path=PackedInt32Array(152435981) index="0" unique_id=747468491]
+[node name="StaticBody3D" type="StaticBody3D" parent="trunk" parent_id_path=PackedInt32Array(1181761358) index="0" unique_id=747468491]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="trunk/StaticBody3D" index="0" unique_id=10387564]
 shape = SubResource("ConcavePolygonShape3D_s0a1h")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="2" unique_id=934593067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29505777, 0)
+aabb = AABB(-2.75, 0, -2.5, 5.5, 14, 5)
+
+[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="3" unique_id=501437023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.27817822, 0)
+aabb = AABB(-2.75, 0, -2.5, 5.5, 13.5, 5.15)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]

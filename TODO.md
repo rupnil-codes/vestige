@@ -20,18 +20,19 @@ Todos:
 - [-] Snow & Thunders (v0.0.7(C)-pre-alpha ... v0.0.7(C)-pre-alpha ...)
   - [ ] Thunder SFX left
 - [X] Torches along the path. (v0.0.6(I)-pre-alpha)
-- [ ] Ambience
-- [ ] Fireflies (v0.0.8(A)-pre-alpha ... )
+- [ ] Ambience Sfx
+- [X] Fireflies (v0.0.8(A)-pre-alpha)
 - [ ] Boulders / Rocks (v0.0.8(A)-pre-alpha ... )
 - [ ] Flowers/Grasses on specific areas (v0.0.8(A)-pre-alpha ...)
-- [X] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ... v0.0.8(E)-pre-alpha  ... v0.0.8(F)-pre-alpha)
+- [X] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ... v0.0.8(E)-pre-alpha  ... v0.0.8(F)-pre-alpha ... v0.0.8(G)-pre-alpha)
   - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
-  - [ ] Fix the .show and .hide things to truly make themstop rendering. 
+  - [X] Fix the .show and .hide things to truly make them stop rendering. (v0.0.8(G)-pre-alpha)
+  - [ ] Grass and Flower optimizations
 - [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)
 - [ ] Main menu and pause menu
-  - Option for shader (default: on)
-  - Option for VSync (default: off)
-  - Shadows
+  - [ ] Option for shader (default: on)
+  - [ ] Option for VSync (default: off)
+  - [ ] Shadows
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
   - [ ] Sfx left
 - [ ] Make it so that when silhouettes are found even if the player stops looking they will complete the animation.

@@ -68,7 +68,7 @@ distance_fade_enabled = true
 distance_fade_begin = 50.0
 distance_fade_shadow = 15.0
 distance_fade_length = 0.0
-omni_range = 15.0
+omni_range = 10.0
 omni_attenuation = 1.903
 
 [node name="Fog" type="FogVolume" parent="." index="5" unique_id=818351965]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d28toy8ya2u5s"]
 
-[ext_resource type="Script" uid="uid://lbqluh3vaxy8" path="res://scripts/FireflyParticlesOptimization.gd" id="1_21de2"]
+[ext_resource type="Script" uid="uid://lbqluh3vaxy8" path="res://scripts/optimizations/FireflyParticlesOptimization.gd" id="1_21de2"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_g4v7s"]
 emission_shape = 3

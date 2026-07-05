@@ -1,10 +1,10 @@
 extends Node3D
 
-var already_found = false
+var already_found: bool = false
 signal silhouettes_found
 
 var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
-@onready var effects: Array[Variant] = [$PurpleLight3D, $Fog, $GPUPurpleParticles3D]
+@onready var effects: Array[Variant] = [$Fog, $GPUPurpleParticles3D]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -55,21 +55,26 @@ func fade_mesh(mesh: MeshInstance3D, tween: Tween):
 
 func _on_visible_on_screen_notifier_3d_screen_entered() -> void:
 	#print("Entered")
-	visibility(effects, true)
+	visibility(effects, meshes, true)
 
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 	#print("Exited")
-	visibility(effects, false)
+	visibility(effects, meshes, false)
 	
 	
-func visibility(nodes: Array[Variant], visible: bool) -> void:
-	var tween: Tween = create_tween()
+func visibility(nodes: Array[Variant], mesh_array: Array[MeshInstance3D], is_showing: bool) -> void:
 	
 	for node in nodes:
-		if visible:
-			tween.tween_callback(node.show)
-		else:
-			tween.tween_callback(node.hide)
-			
-	await tween.finished
-   
+		#print(node.get_class())
+		
+		if node.get_class() == str(GPUParticles3D):
+			if is_showing:
+				node.process_mode = Node.PROCESS_MODE_ALWAYS
+			else:
+				node.process_mode = Node.PROCESS_MODE_DISABLED
+			continue
+		
+		node.visible = is_showing
+		
+	for mesh in mesh_array:
+		mesh.visible = is_showing

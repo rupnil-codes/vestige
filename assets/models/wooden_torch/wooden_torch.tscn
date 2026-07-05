@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c5xxexjm4f7q3"]
 
 [ext_resource type="PackedScene" uid="uid://cxa5b40c5p5wb" path="res://assets/models/wooden_torch/wooden_torch.blend" id="1_j77lx"]
-[ext_resource type="Script" uid="uid://b4xl8bx15xgaw" path="res://scripts/TorchParticlesOptimization.gd" id="2_sager"]
+[ext_resource type="Script" uid="uid://b4xl8bx15xgaw" path="res://scripts/optimizations/TorchOptimization.gd" id="2_sager"]
 [ext_resource type="QuadMesh" uid="uid://do0naggckenhr" path="res://assets/models/wooden_torch/smoke.tres" id="3_72adc"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_v3b3k"]
@@ -35,17 +35,17 @@ color_ramp = SubResource("GradientTexture1D_sager")
 [node name="wooden_torch" unique_id=215623908 instance=ExtResource("1_j77lx")]
 script = ExtResource("2_sager")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Cube" parent_id_path=PackedInt32Array(505396442) index="0" unique_id=427993614]
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" parent_id_path=PackedInt32Array(391655617) index="0" unique_id=427993614]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0" unique_id=1313428118]
 shape = SubResource("ConcavePolygonShape3D_v3b3k")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Cube_001" parent_id_path=PackedInt32Array(1831473847) index="0" unique_id=561924369]
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_001" parent_id_path=PackedInt32Array(1084226777) index="0" unique_id=561924369]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_001/StaticBody3D" index="0" unique_id=203441398]
 shape = SubResource("ConcavePolygonShape3D_sager")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." index="2" unique_id=843721552]
+[node name="Light3D" type="OmniLight3D" parent="." index="2" unique_id=843721552]
 transform = Transform3D(1, -1.7039328e-28, 3.5762793e-07, 0, 1, 4.7645406e-22, -3.5762793e-07, -4.7645406e-22, 1, 0.44879782, 0.94321716, -0.041435063)
 light_color = Color(0.6807982, 0.5127972, 0.23984355, 1)
 light_energy = 1.746
