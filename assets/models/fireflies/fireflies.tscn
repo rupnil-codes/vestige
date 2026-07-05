@@ -14,10 +14,8 @@ turbulence_influence_min = 0.2
 turbulence_influence_max = 0.2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57qmd"]
+shading_mode = 0
 albedo_color = Color(1, 1, 0, 1)
-emission_enabled = true
-emission = Color(1, 1, 0, 1)
-emission_energy_multiplier = 0.3
 billboard_mode = 3
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1

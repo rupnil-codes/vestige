@@ -24,7 +24,7 @@ Todos:
 - [ ] Fireflies (v0.0.8(A)-pre-alpha ... )
 - [ ] Boulders / Rocks (v0.0.8(A)-pre-alpha ... )
 - [ ] Flowers/Grasses on specific areas (v0.0.8(A)-pre-alpha ...)
-- [X] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ... (v0.0.8(E)-pre-alpha)  ...)
+- [X] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ... v0.0.8(E)-pre-alpha  ... v0.0.8(F)-pre-alpha)
   - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
   - [ ] Fix the .show and .hide things to truly make themstop rendering. 
 - [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)

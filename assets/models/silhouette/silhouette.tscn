@@ -15,12 +15,15 @@ size = Vector3(2.5, 5, 2.5)
 emission_shape_scale = Vector3(0.85, 2.5, 1.25)
 emission_shape = 3
 emission_box_extents = Vector3(1.5, 1, 1)
+initial_velocity_min = 0.099999994
+initial_velocity_max = 0.29999998
 gravity = Vector3(0, 0, 0)
+turbulence_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fjft4"]
 transparency = 1
 shading_mode = 0
-albedo_color = Color(0.62352943, 0.61960787, 0.96862745, 1)
+albedo_color = Color(0.5560258, 0.53935766, 0.9577398, 1)
 billboard_mode = 3
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1
@@ -65,7 +68,7 @@ distance_fade_enabled = true
 distance_fade_begin = 50.0
 distance_fade_shadow = 15.0
 distance_fade_length = 0.0
-omni_range = 51.0
+omni_range = 15.0
 omni_attenuation = 1.903
 
 [node name="Fog" type="FogVolume" parent="." index="5" unique_id=818351965]
