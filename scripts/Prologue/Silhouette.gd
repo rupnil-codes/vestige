@@ -12,7 +12,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	pass # Replace with function body.
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if already_found:
@@ -25,6 +25,9 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		fade_out()
 		
 func fade_out():
+	$VisibleOnScreenEnabler3D.queue_free()
+	visibility(effects, meshes, true)
+	
 	var tween: Tween = create_tween()
 	
 	for mesh in meshes:
@@ -55,11 +58,13 @@ func fade_mesh(mesh: MeshInstance3D, tween: Tween):
 
 func _on_visible_on_screen_notifier_3d_screen_entered() -> void:
 	#print("Entered")
-	visibility(effects, meshes, true)
+	if not already_found:
+		visibility(effects, meshes, true)
 
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 	#print("Exited")
-	visibility(effects, meshes, false)
+	if not already_found:
+		visibility(effects, meshes, false)
 	
 	
 func visibility(nodes: Array[Variant], mesh_array: Array[MeshInstance3D], is_showing: bool) -> void:

@@ -28,6 +28,7 @@ Todos:
   - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
   - [X] Fix the .show and .hide things to truly make them stop rendering. (v0.0.8(G)-pre-alpha)
   - [ ] Grass and Flower optimizations
+  - [ ] LightmapGI later?
 - [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)
 - [ ] Main menu and pause menu
   - [ ] Option for shader (default: on)
@@ -35,5 +36,6 @@ Todos:
   - [ ] Shadows
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
   - [ ] Sfx left
-- [ ] Make it so that when silhouettes are found even if the player stops looking they will complete the animation.
-- [ ] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)
+- [X] Make it so that when silhouettes are found even if the player stops looking they will complete the animation.
+- [X] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)
+- [ ] Blinking and waking up animation at the start
