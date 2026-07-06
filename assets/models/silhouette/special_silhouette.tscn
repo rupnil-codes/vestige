@@ -43,13 +43,12 @@ light_color = Color(0.6218691, 0.61940473, 0.9697513, 1)
 light_energy = 0.1
 light_size = 0.728
 light_specular = 6.773
-shadow_enabled = true
 shadow_opacity = 0.67
 distance_fade_enabled = true
 distance_fade_begin = 50.0
-distance_fade_shadow = 15.0
+distance_fade_shadow = 30.0
 distance_fade_length = 0.0
-omni_range = 15.0
+omni_range = 10.0
 omni_attenuation = 1.903
 
 [node name="Fog" type="FogVolume" parent="." index="5" unique_id=899800248]

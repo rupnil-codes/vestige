@@ -60,7 +60,7 @@ fog_density = 0.02
 fog_sky_affect = 0.742
 fog_depth_curve = 0.8122524
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.02
+volumetric_fog_density = 0.03
 volumetric_fog_albedo = Color(0.28897998, 0.28897995, 0.28897995, 1)
 volumetric_fog_emission = Color(0.101960786, 0.12156863, 0.13333334, 1)
 volumetric_fog_length = 300.0
@@ -242,6 +242,94 @@ tracks/8/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("SubViewport/World/Player3D:rotation:x")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.88778704, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("SubViewport/World/Player3D:rotation:y")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/11/type = "bezier"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("SubViewport/World/Player3D:rotation:z")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/12/type = "bezier"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("SubViewport/World/Player3D:position:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-26.46661, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/13/type = "bezier"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("SubViewport/World/Player3D:position:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.8047216, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/14/type = "bezier"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("SubViewport/World/Player3D:position:z")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-52.83082, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/15/type = "bezier"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:x")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/16/type = "bezier"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:y")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
 
 [sub_resource type="Animation" id="Animation_y3k86"]
 resource_name = "silhouette_counter"
@@ -254,7 +342,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0),
 "points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
-"times": PackedFloat32Array(0, 1)
+"times": PackedFloat32Array(0.3, 1)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
@@ -265,7 +353,7 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(0, 0),
 "points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
-"times": PackedFloat32Array(0, 1)
+"times": PackedFloat32Array(0.3, 1)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
@@ -276,7 +364,7 @@ tracks/2/loop_wrap = true
 tracks/2/keys = {
 "handle_modes": PackedInt32Array(0, 0),
 "points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
-"times": PackedFloat32Array(0, 1)
+"times": PackedFloat32Array(0.3, 1)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
@@ -287,12 +375,34 @@ tracks/3/loop_wrap = true
 tracks/3/keys = {
 "handle_modes": PackedInt32Array(0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.083333336, -0.16666667, 0, 0),
-"times": PackedFloat32Array(0, 1)
+"times": PackedFloat32Array(0.3, 1)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0, 13, -0.10333334, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.6666667)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0, 40, -0.10333334, -4.5, 0, 0),
+"times": PackedFloat32Array(0, 0.6666667)
 }
 
 [sub_resource type="Animation" id="Animation_y13jl"]
 resource_name = "wake_up"
-length = 3.0000000000000004
+length = 5.0
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -302,7 +412,7 @@ tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
-"times": PackedFloat32Array(0.30000007, 1.2333331, 1.6333336, 2.1000001, 3)
+"times": PackedFloat32Array(0.30000007, 0.7999999, 1.1333331, 1.6, 1.9333333)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
@@ -313,7 +423,7 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
-"times": PackedFloat32Array(0.30000007, 1.2333333, 1.6333338, 2.1000004, 3.0000002)
+"times": PackedFloat32Array(0.30000007, 0.80000013, 1.1333333, 1.6000003, 1.9333335)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
@@ -324,7 +434,7 @@ tracks/2/loop_wrap = true
 tracks/2/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
-"times": PackedFloat32Array(0.30000007, 1.2333332, 1.6333338, 2.1000004, 3.0000002)
+"times": PackedFloat32Array(0.30000007, 0.8, 1.1333333, 1.6000003, 1.9333335)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
@@ -335,7 +445,7 @@ tracks/3/loop_wrap = true
 tracks/3/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
 "points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.083333336, 0.16666667, 0, 0, 1, -0.08779669, -0.16666667, 0, 0, 1, -0.08779669, -0.16666667, 0, 0, 0, -0.0760062, 0.16666669, 0, 0),
-"times": PackedFloat32Array(0.30000007, 1.2333332, 1.6333338, 2.1000004, 3.0000002)
+"times": PackedFloat32Array(0.30000007, 0.8, 1.1333333, 1.6000003, 1.9333335)
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
@@ -344,9 +454,75 @@ tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D:fov")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"handle_modes": PackedInt32Array(2, 0),
+"handle_modes": PackedInt32Array(0, 0),
 "points": PackedFloat32Array(30, 0, 0, 0.25602856, 7.5000005, 75, -0.39886582, -12.333334, 0, 0),
-"times": PackedFloat32Array(0.29135704, 2.9333334)
+"times": PackedFloat32Array(1.3666667, 3.9666665)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SubViewport/World/Player3D:rotation:x")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0.3637553, -0.25, 0, 0.25, 0, 0, -0.26666668, 0.027714688, 0.31666666, -0.032911193, 0, -0.5833334, 0.060625885, 0, 0),
+"times": PackedFloat32Array(1.3666667, 3.0666666, 4.9)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SubViewport/World/Player3D:rotation:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-1.1959602, -0.25, 0, 0.25, 0, -0.6824237, -0.26666668, -0.09112078, 0.31666666, 0.10820592, 0, -0.5833334, -0.19932671, 0, 0),
+"times": PackedFloat32Array(1.3666667, 3.0666666, 4.9)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SubViewport/World/Player3D:rotation:z")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.26666668, 0, 0.31666666, 0, 0, -0.5833334, 0, 0, 0),
+"times": PackedFloat32Array(1.3666667, 3.0666666, 4.9)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SubViewport/World/Player3D:position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-27.054987, 0, 0, 0.5833334, 0, -27.054987, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1.3666667, 4.9)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("SubViewport/World/Player3D:position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-0.15, 0, 0, 0.5833334, 0, -0.15, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1.3666667, 4.9)
+}
+tracks/10/type = "bezier"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("SubViewport/World/Player3D:position:z")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(-52.831, 0, 0, 0.5833334, 0, -52.831, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1.3666667, 4.9)
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ke06p"]
@@ -385,9 +561,9 @@ metadata/_edit_use_anchors_ = true
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 13.0
-offset_top = 10.0
+offset_top = 13.0
 offset_right = 116.0
-offset_bottom = 36.0
+offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("5_6uvvw")
 theme_override_font_sizes/font_size = 24
 script = ExtResource("7_6uvvw")
@@ -401,9 +577,9 @@ anchor_top = 0.030864198
 anchor_right = -0.011284722
 anchor_bottom = 0.030864198
 offset_left = 26.0
-offset_top = 20.0
-offset_right = 129.0
-offset_bottom = 46.0
+offset_top = -7.0
+offset_right = 129.00003
+offset_bottom = 18.999939
 theme_override_fonts/font = ExtResource("5_6uvvw")
 theme_override_font_sizes/font_size = 20
 text = "30 fps"
@@ -418,11 +594,10 @@ render_target_update_mode = 4
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/World" unique_id=2014315246]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-light_color = Color(0.06252565, 0.06252572, 0.062525675, 1)
+light_color = Color(0.021713268, 0.021713259, 0.021713257, 1)
 light_energy = 1.207
 light_volumetric_fog_energy = 3.873
 light_bake_mode = 1
-shadow_enabled = true
 shadow_opacity = 0.51
 shadow_blur = 1.32
 
@@ -430,7 +605,7 @@ shadow_blur = 1.32
 environment = SubResource("Environment_jygv4")
 
 [node name="Player3D" type="CharacterBody3D" parent="SubViewport/World" unique_id=1801726057 groups=["player"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.46661, -0.21844542, -52.83082)
+transform = Transform3D(1, 0, 0, 0, 0.6311299, 0.7756768, 0, -0.7756767, 0.6311299, -26.46661, -0.8047216, -52.83082)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("3_y3k86")
@@ -464,7 +639,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="GPUSnow3D" type="GPUParticles3D" parent="SubViewport/World/Player3D" unique_id=2061810710]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018831253, 32.93535, 0.06018448)
-amount = 2000
+amount = 4000
 lifetime = 2.0
 preprocess = 2.0
 speed_scale = 0.7

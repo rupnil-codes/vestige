@@ -1,8 +1,8 @@
 Todos:
 
 ## Prologue: (previously, Chapter 0):
-- [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha)
-  - [ ] Make it better
+- [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha ... v0.0.9(C)-alpha)
+  - [ ] Make it authentic/humanlike?
 - [X] Counter animation (v0.0.9(B)-alpha)
 - [ ] Better walking animation
 - [ ] Interior of the cabin
@@ -13,10 +13,12 @@ Todos:
 - [ ] Main menu and pause menu
   - [ ] Option for shader (default: on)
   - [ ] Option for V-Sync (default: off)
-  - [ ] Shadows
+  - [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
 - [ ] Add notes and pictures with nails on the paths
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp
+- [ ] Show that t to turn on torch- when player tries to use it show that its not working.
+- [ ] Spawn the silhouettes a second after the wake up animation finishes
 - [X] Bench (v0.0.4-pre-alpha)
 - [X] Map (v0.0.5(A)-pre-alpha)
 - [X] Player (v0.0.5(A)-pre-alpha)

@@ -4,9 +4,9 @@ uniform sampler2D screen_texture : hint_screen_texture;
 uniform vec2 screen_size = vec2(544.0, 306.0);
 // uniform float pixel_resolution : hint_range(64.0, 512.0) = 306.0;
 uniform int color_steps : hint_range(2, 64) = 256;
-uniform float noise_strength : hint_range(0.0, 1.0) = 0.08;
+uniform float noise_strength : hint_range(0.0, 1.0) = 0.5;
 uniform bool enable_dither = true;
-uniform float dither_strength : hint_range(0.0, 1.0) = 0.15;
+uniform float dither_strength : hint_range(0.0, 1.0) = 0.2;
 
 uniform bool enable_glow = true;
 uniform float glow_strength : hint_range(0.0, 1.0) = 0.0;

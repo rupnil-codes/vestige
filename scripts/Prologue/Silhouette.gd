@@ -21,7 +21,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player"):
 		already_found = true
 		silhouettes_found.emit()
-		$Area3D.monitoring = false
+		$Area3D.set_deferred("monitoring", false)
 		fade_out()
 		
 func fade_out():

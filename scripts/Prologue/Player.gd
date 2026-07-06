@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+const SPEED = 4.0
+const JUMP_VELOCITY = 4.0
 
 @onready var neck := $Neck
 @onready var camera := $Neck/Camera3D
@@ -25,8 +25,8 @@ func _input(event: InputEvent) -> void:
 		
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
-			neck.rotate_y(-event.relative.x * 0.005)
-			camera.rotate_x(-event.relative.y * 0.005)
+			neck.rotate_y(-event.relative.x * 0.0045)
+			camera.rotate_x(-event.relative.y * 0.0045)
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60.0), deg_to_rad(90.0))
 
 func _physics_process(delta: float) -> void:
@@ -35,7 +35,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and not prologue_scene.waking_up:
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
