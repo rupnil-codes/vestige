@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dr06c4wvrjsmo" path="res://scripts/Prologue/Prologue.gd" id="1_ke06p"]
 [ext_resource type="Texture2D" uid="uid://xfe1k3gk6h1k" path="res://assets/textures/sky.png" id="2_ke06p"]
-[ext_resource type="Script" uid="uid://caf08fvsymgfn" path="res://scripts/Player.gd" id="3_y3k86"]
+[ext_resource type="Script" uid="uid://caf08fvsymgfn" path="res://scripts/Prologue/Player.gd" id="3_y3k86"]
 [ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/shader_chapter_0.gdshader" id="4_1aphw"]
 [ext_resource type="FontFile" uid="uid://78n28mmk5f74" path="res://assets/fonts/Geo-Italic.ttf" id="5_6uvvw"]
 [ext_resource type="Script" uid="uid://dktrq4577s8b8" path="res://scripts/Prologue/CounterLabel.gd" id="7_6uvvw"]
@@ -141,6 +141,221 @@ data = PackedVector3Array(0.30789998, 0.5263, 0.9, 0.3126, 0.4725, 0.9, 0.307899
 [sub_resource type="ViewportTexture" id="ViewportTexture_ke06p"]
 viewport_path = NodePath("SubViewport")
 
+[sub_resource type="Animation" id="Animation_ke06p"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D:fov")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.0005, 0, 0.0005, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:r")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:g")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:b")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:a")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_y3k86"]
+resource_name = "silhouette_counter"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.083333336, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+
+[sub_resource type="Animation" id="Animation_y13jl"]
+resource_name = "wake_up"
+length = 3.0000000000000004
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
+"times": PackedFloat32Array(0.30000007, 1.2333331, 1.6333336, 2.1000001, 3)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
+"times": PackedFloat32Array(0.30000007, 1.2333333, 1.6333338, 2.1000004, 3.0000002)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
+"times": PackedFloat32Array(0.30000007, 1.2333332, 1.6333338, 2.1000004, 3.0000002)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.083333336, 0.16666667, 0, 0, 1, -0.08779669, -0.16666667, 0, 0, 1, -0.08779669, -0.16666667, 0, 0, 0, -0.0760062, 0.16666669, 0, 0),
+"times": PackedFloat32Array(0.30000007, 1.2333332, 1.6333338, 2.1000004, 3.0000002)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D:fov")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(2, 0),
+"points": PackedFloat32Array(30, 0, 0, 0.25602856, 7.5000005, 75, -0.39886582, -12.333334, 0, 0),
+"times": PackedFloat32Array(0.29135704, 2.9333334)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ke06p"]
+_data = {
+&"RESET": SubResource("Animation_ke06p"),
+&"silhouette_counter": SubResource("Animation_y3k86"),
+&"wake_up": SubResource("Animation_y13jl")
+}
+
 [node name="PrologueScene" type="Node3D" unique_id=1247047748]
 script = ExtResource("1_ke06p")
 
@@ -167,6 +382,7 @@ mouse_filter = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="CounterLabel" type="Label" parent="CanvasLayer/UserInterface" unique_id=1227291737]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 0
 offset_left = 13.0
 offset_top = 10.0
@@ -174,7 +390,6 @@ offset_right = 116.0
 offset_bottom = 36.0
 theme_override_fonts/font = ExtResource("5_6uvvw")
 theme_override_font_sizes/font_size = 24
-text = "0/9 found"
 script = ExtResource("7_6uvvw")
 metadata/_edit_use_anchors_ = true
 
@@ -195,7 +410,6 @@ text = "30 fps"
 metadata/_edit_use_anchors_ = true
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1180690384]
-scaling_3d_scale = 0.6
 anisotropic_filtering_level = 0
 size = Vector2i(544, 306)
 render_target_update_mode = 4
@@ -235,12 +449,24 @@ transform = Transform3D(-0.15550093, 0, -0.9878359, 0, 1, 0, 0.9878359, 0, -0.15
 
 [node name="Camera3D" type="Camera3D" parent="SubViewport/World/Player3D/Neck" unique_id=1732156934]
 current = true
+fov = 1.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="SubViewport/World/Player3D/Neck/Camera3D" unique_id=597732008]
+
+[node name="ColorRect" type="ColorRect" parent="SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer" unique_id=1477058965]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="GPUSnow3D" type="GPUParticles3D" parent="SubViewport/World/Player3D" unique_id=2061810710]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018831253, 32.93535, 0.06018448)
 amount = 2000
-lifetime = 10.0
-preprocess = 10.0
+lifetime = 2.0
+preprocess = 2.0
 speed_scale = 0.7
 visibility_aabb = AABB(-15, -34, -15, 30, 34, 30)
 process_material = SubResource("ParticleProcessMaterial_57qmd")
@@ -4050,3 +4276,6 @@ grow_vertical = 2
 mouse_filter = 2
 texture = SubResource("ViewportTexture_ke06p")
 expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1139800193]
+libraries/ = SubResource("AnimationLibrary_ke06p")

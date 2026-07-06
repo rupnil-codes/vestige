@@ -1,41 +1,50 @@
 Todos:
 
-## Chapter 0:
+## Prologue: (previously, Chapter 0):
+- [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha)
+  - [ ] Make it better
+- [X] Counter animation (v0.0.9(B)-alpha)
+- [ ] Better walking animation
+- [ ] Interior of the cabin
+- [ ] Polishing the cabin
+- [ ] Ambience Sfx
+  - [ ] Thunder SFX
+  - [ ] sounds of wind and wild animals
+- [ ] Main menu and pause menu
+  - [ ] Option for shader (default: on)
+  - [ ] Option for V-Sync (default: off)
+  - [ ] Shadows
+- [ ] Add notes and pictures with nails on the paths
+- [ ] Butter in the forest (Easter egg)
+- [ ] UI Revamp
 - [X] Bench (v0.0.4-pre-alpha)
 - [X] Map (v0.0.5(A)-pre-alpha)
 - [X] Player (v0.0.5(A)-pre-alpha)
 - [X] Forest (v0.0.5(D)-pre-alpha ... v0.0.5(F)-pre-alpha)
+- [X] Nighttime (v0.0.6(B)-pre-alpha)
+- [X] Fogs (v0.0.6(B)-pre-alpha)
+- [X] Shaders (v0.0.6(C)-pre-alpha ... v0.0.6(D)-pre-alpha)
+- [X] Torches along the path. (v0.0.6(I)-pre-alpha)
 - [X] Mountains (v0.0.7(A)-pre-alpha ... v0.0.7(B)-pre-alpha)
   - [ ] Fix the texture (size)
-- [ ] Butter in the forest (Easter egg)
+- [X] Snow & Thunders (v0.0.7(C)-pre-alpha ... v0.0.7(D)-pre-alpha)
+- [X] Volumetric Fog: https://docs.godotengine.org/en/latest/tutorials/3d/volumetric_fog.html (v0.0.7(E)-pre-alpha)
+- [X] Fix Shiny ground: metallic or specular thing (v0.0.7(E)-pre-alpha)
 - [X] Models of the silhouettes (v0.0.7(F)-pre-alpha)
 - [X] Silhouettes Functionality and placement (v0.0.7(G)-pre-alpha ... v0.0.7(I)-pre-alpha)
   - [X] Special Silhouette (v0.0.7(I)-pre-alpha)
-- [ ] Interior of the cabin
-- [ ] Polishing the cabin
-- [X] Nighttime (v0.0.6(B)-pre-alpha)
-- [X] Fogs (v0.0.6(B)-pre-alpha)
-- [X] Volumetric Fog: https://docs.godotengine.org/en/latest/tutorials/3d/volumetric_fog.html (v0.0.7(E)-pre-alpha)
-- [X] Shaders (v0.0.6(C)-pre-alpha v0.0.6(D))
-- [-] Snow & Thunders (v0.0.7(C)-pre-alpha ... v0.0.7(C)-pre-alpha ...)
-  - [ ] Thunder SFX left
-- [X] Torches along the path. (v0.0.6(I)-pre-alpha)
-- [ ] Ambience Sfx
 - [X] Fireflies (v0.0.8(A)-pre-alpha)
-- [ ] Boulders / Rocks (v0.0.8(A)-pre-alpha ... )
-- [ ] Flowers/Grasses on specific areas (v0.0.8(A)-pre-alpha ...)
-- [X] Particle Optimizations (v0.0.8(B)-pre-alpha ... v0.0.8(D)-pre-alpha ... v0.0.8(E)-pre-alpha  ... v0.0.8(F)-pre-alpha ... v0.0.8(G)-pre-alpha)
+  - [ ] Placements left on specific areas
+- [X] Boulders / Rocks Models (v0.0.8(A)-pre-alpha)
+  - [ ] Placements left on specific areas
+- [X] Flowers/Grasses Models(v0.0.8(A)-pre-alpha)
+  - [ ] Placements left on specific areas
+- [X] Particle Optimizations (v0.0.8(B)-pre-alpha, v0.0.8(D)-pre-alpha ... v0.0.8(G)-pre-alpha)
   - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
   - [X] Fix the .show and .hide things to truly make them stop rendering. (v0.0.8(G)-pre-alpha)
   - [ ] Grass and Flower optimizations
   - [ ] LightmapGI later?
-- [X] Fix Shiny ground: metallic or specter thing (v0.0.7(E)-pre-alpha)
-- [ ] Main menu and pause menu
-  - [ ] Option for shader (default: on)
-  - [ ] Option for VSync (default: off)
-  - [ ] Shadows
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
-  - [ ] Sfx left
-- [X] Make it so that when silhouettes are found even if the player stops looking they will complete the animation.
+    - [ ] Silhouette SFX
 - [X] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)
-- [ ] Blinking and waking up animation at the start
+- [X] Make it so that when silhouettes are found even if the player stops looking they will complete the animation. (v0.0.9(A)-alpha)
