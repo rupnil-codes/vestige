@@ -1,6 +1,7 @@
 Todos:
 
 ## Prologue: (previously, Chapter 0):
+- [ ] Spawn the silhouettes a second after the wake up animation finishes ()
 - [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha ... v0.0.9(C)-alpha)
   - [ ] Make it authentic/humanlike?
 - [X] Counter animation (v0.0.9(B)-alpha)
@@ -18,7 +19,6 @@ Todos:
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp
 - [ ] Show that t to turn on torch- when player tries to use it show that its not working.
-- [ ] Spawn the silhouettes a second after the wake up animation finishes
 - [X] Bench (v0.0.4-pre-alpha)
 - [X] Map (v0.0.5(A)-pre-alpha)
 - [X] Player (v0.0.5(A)-pre-alpha)

@@ -605,7 +605,7 @@ shadow_blur = 1.32
 environment = SubResource("Environment_jygv4")
 
 [node name="Player3D" type="CharacterBody3D" parent="SubViewport/World" unique_id=1801726057 groups=["player"]]
-transform = Transform3D(1, 0, 0, 0, 0.6311299, 0.7756768, 0, -0.7756767, 0.6311299, -26.46661, -0.8047216, -52.83082)
+transform = Transform3D(1, 0, 0, 0, 0.63112986, 0.7756767, 0, -0.77567667, 0.6311299, -26.46661, -0.8047216, -52.83082)
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("3_y3k86")
