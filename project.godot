@@ -55,6 +55,5 @@ textures/vram_compression/import_etc2_astc=true
 scaling_3d/mode=5
 scaling_3d/mode.ios=5
 scaling_3d/mode.macos=5
-scaling_3d/scale=0.6
 occlusion_culling/vsync/vsync_mode=1
 occlusion_culling/disable_vsync=false

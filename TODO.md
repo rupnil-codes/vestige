@@ -1,10 +1,12 @@
 Todos:
 
 ## Prologue: (previously, Chapter 0):
-- [ ] Spawn the silhouettes a second after the wake up animation finishes ()
+- [X] Spawn the silhouettes a second after the wake up animation finishes (v0.0.9(D)-alpha ... (v0.0.9(E)-alpha)
+- [X] Torch flickering (v0.0.9(E)-alpha)
 - [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha ... v0.0.9(C)-alpha)
   - [ ] Make it authentic/humanlike?
 - [X] Counter animation (v0.0.9(B)-alpha)
+- [ ] LightMapGI - enable shadows
 - [ ] Better walking animation
 - [ ] Interior of the cabin
 - [ ] Polishing the cabin
@@ -45,7 +47,6 @@ Todos:
   - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
   - [X] Fix the .show and .hide things to truly make them stop rendering. (v0.0.8(G)-pre-alpha)
   - [ ] Grass and Flower optimizations
-  - [ ] LightmapGI later?
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
     - [ ] Silhouette SFX
 - [X] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)

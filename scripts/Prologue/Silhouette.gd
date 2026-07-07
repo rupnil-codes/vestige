@@ -5,13 +5,10 @@ signal silhouettes_found
 
 var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
 @onready var effects: Array[Variant] = [$Fog, $GPUPurpleParticles3D]
-@onready var silhouette_animation_player: AnimationPlayer = $SilhouetteAnimationPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if silhouette_animation_player:
-		silhouette_animation_player.play("spawn_silhouettes")
-		await silhouette_animation_player.animation_finished
+	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

@@ -32,6 +32,44 @@ scale_min = 0.0
 scale_max = 1000.0
 color_ramp = SubResource("GradientTexture1D_sager")
 
+[sub_resource type="Animation" id="Animation_sager"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Light3D:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.746]
+}
+
+[sub_resource type="Animation" id="Animation_72adc"]
+resource_name = "torch_flicker"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Light3D:light_energy")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.76666665, 1.5333333, 2.2333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.746, 0.446, 0.951, 0.654]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v5kip"]
+_data = {
+&"RESET": SubResource("Animation_sager"),
+&"torch_flicker": SubResource("Animation_72adc")
+}
+
 [node name="wooden_torch" unique_id=215623908 instance=ExtResource("1_j77lx")]
 script = ExtResource("2_sager")
 
@@ -51,6 +89,7 @@ light_color = Color(0.6807982, 0.5127972, 0.23984355, 1)
 light_energy = 1.746
 light_size = 1.0
 light_specular = 0.3
+light_bake_mode = 1
 shadow_opacity = 0.7
 distance_fade_enabled = true
 distance_fade_begin = 50.0
@@ -76,6 +115,10 @@ transform = Transform3D(0.39022025, 0, 0, 0, 0.7166346, 0, 0, 0, 0.33901203, 0, 
 
 [node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="5" unique_id=620570257]
 transform = Transform3D(0.39022025, 0, 0, 0, 0.7166346, 0, 0, 0, 0.33901203, 0, 0, 0)
+
+[node name="TorchAnimationPlayer" type="AnimationPlayer" parent="." index="6" unique_id=1114989723]
+libraries/ = SubResource("AnimationLibrary_v5kip")
+autoplay = &"torch_flicker"
 
 [connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]
