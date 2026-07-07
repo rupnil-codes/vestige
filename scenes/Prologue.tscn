@@ -147,51 +147,51 @@ length = 0.001
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:r")
+tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:r")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
+"handle_modes": PackedInt32Array(2),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:g")
+tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:g")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
+"handle_modes": PackedInt32Array(2),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:b")
+tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:b")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(0),
+"handle_modes": PackedInt32Array(2),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:a")
+tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:a")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D:fov")
+tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:fov")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -331,6 +331,109 @@ tracks/16/keys = {
 "points": PackedFloat32Array(13, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/17/type = "bezier"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:rotation:x")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.0005, 0, 0.0005, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/18/type = "bezier"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:rotation:y")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.0005, 0, 0.0005, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/19/type = "bezier"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:rotation:z")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.0005, 0, 0.0005, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/20/type = "bezier"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("SubViewport/World/Player3D/Neck:rotation:x")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/21/type = "bezier"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("SubViewport/World/Player3D/Neck:rotation:y")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(-1.7453293, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/22/type = "bezier"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("SubViewport/World/Player3D/Neck:rotation:z")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"handle_modes": PackedInt32Array(2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_1aphw"]
+resource_name = "camera_walk"
+loop_mode = 2
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/World/Player3D/Neck:rotation:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(-0.011502897, 0, 0, 0.16666667, 0.009480244, 0.012217305, -0.16666667, -0.003953367, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/World/Player3D/Neck:rotation:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(-1.7449538, 0, 0, 0.16666667, 0.0008100867, -1.7453293, -0.16666667, 6.258488e-05, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/World/Player3D/Neck:rotation:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(2, 2),
+"points": PackedFloat32Array(-0.06528538, 0, 0, 0.16666667, 0.05335058, 0.064577185, -0.16666667, -0.021643762, 0, 0),
+"times": PackedFloat32Array(0, 1)
+}
 
 [sub_resource type="Animation" id="Animation_y3k86"]
 resource_name = "silhouette_counter"
@@ -407,7 +510,7 @@ length = 4.9333334
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:r")
+tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:r")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -418,7 +521,7 @@ tracks/0/keys = {
 tracks/1/type = "bezier"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:g")
+tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:g")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -429,7 +532,7 @@ tracks/1/keys = {
 tracks/2/type = "bezier"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:b")
+tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:b")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -440,7 +543,7 @@ tracks/2/keys = {
 tracks/3/type = "bezier"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer/ColorRect:modulate:a")
+tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:a")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -451,7 +554,7 @@ tracks/3/keys = {
 tracks/4/type = "bezier"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/Camera3D:fov")
+tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:fov")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -529,6 +632,7 @@ tracks/10/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ke06p"]
 _data = {
 &"RESET": SubResource("Animation_ke06p"),
+&"camera_walk": SubResource("Animation_1aphw"),
 &"silhouette_counter": SubResource("Animation_y3k86"),
 &"wake_up": SubResource("Animation_y13jl")
 }
@@ -622,15 +726,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2597647, 0)
 shape = SubResource("ConvexPolygonShape3D_o2mjm")
 
 [node name="Neck" type="Node3D" parent="SubViewport/World/Player3D" unique_id=475412640]
-transform = Transform3D(-0.15550093, 0, -0.9878359, 0, 1, 0, 0.9878359, 0, -0.15550093, 0, 1.8285122, 0)
+transform = Transform3D(-0.17364816, 0, -0.9848076, 0, 0.99999964, 0, 0.98480755, 0, -0.17364818, 0, 1.8285122, 0)
 
-[node name="Camera3D" type="Camera3D" parent="SubViewport/World/Player3D/Neck" unique_id=1732156934]
+[node name="HeadBob" type="Node3D" parent="SubViewport/World/Player3D/Neck" unique_id=924497650]
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport/World/Player3D/Neck/HeadBob" unique_id=1732156934]
+transform = Transform3D(1.0000007, 0, 0, 0, 1.0000008, 0, 0, 0, 1.0000002, 0, 0, 0)
 current = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="SubViewport/World/Player3D/Neck/Camera3D" unique_id=597732008]
+[node name="CanvasLayer" type="CanvasLayer" parent="SubViewport/World/Player3D/Neck/HeadBob/Camera3D" unique_id=597732008]
 
-[node name="ColorRect" type="ColorRect" parent="SubViewport/World/Player3D/Neck/Camera3D/CanvasLayer" unique_id=1477058965]
-modulate = Color(0, 0, 0, 1)
+[node name="ColorRect" type="ColorRect" parent="SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer" unique_id=1477058965]
+modulate = Color(0, 0, 0, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

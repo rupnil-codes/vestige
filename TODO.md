@@ -7,7 +7,8 @@ Todos:
   - [ ] Make it authentic/humanlike?
 - [X] Counter animation (v0.0.9(B)-alpha)
 - [ ] LightMapGI - enable shadows
-- [ ] Better walking animation
+- [X] Better walking animation (v0.0.9(F)-alpha)
+- [ ] Sprint with a stamina or cool down
 - [ ] Interior of the cabin
 - [ ] Polishing the cabin
 - [ ] Ambience Sfx
@@ -17,6 +18,7 @@ Todos:
   - [ ] Option for shader (default: on)
   - [ ] Option for V-Sync (default: off)
   - [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
+  - [ ] Camera Shake Option
 - [ ] Add notes and pictures with nails on the paths
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp

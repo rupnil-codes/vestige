@@ -17,9 +17,12 @@ func _ready() -> void:
 	for silhouette in $"SubViewport/World/Silhouettes".get_children():
 		silhouette.silhouettes_found.connect(_on_silhouette_found)
 	
-	animation_player.play("wake_up")
-	await animation_player.animation_finished
-	waking_up = false
+	if waking_up:
+		animation_player.play("wake_up")
+		await animation_player.animation_finished
+		waking_up = false
+	else:
+		animation_player.play("RESET")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
