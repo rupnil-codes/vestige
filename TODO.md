@@ -8,6 +8,7 @@ Todos:
 - [X] Counter animation (v0.0.9(B)-alpha)
 - [ ] LightMapGI - enable shadows
 - [X] Better walking animation (v0.0.9(F)-alpha)
+- [ ] Make jumping better
 - [ ] Sprint with a stamina or cool down
 - [ ] Interior of the cabin
 - [ ] Polishing the cabin

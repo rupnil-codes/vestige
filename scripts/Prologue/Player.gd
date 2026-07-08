@@ -1,14 +1,14 @@
 extends CharacterBody3D
 
-const SPEED := 4.0
+const SPEED := 3.5
 const JUMP_VELOCITY := 4.0
 
 const MOUSE_SENS := 0.0045
 
-const BOB_SPEED := 8.0
-const BOB_HEIGHT := 0.15
-const BOB_SIDE := 0.005
-const BOB_ROLL := 0.02
+const BOB_SPEED := 4.0
+const BOB_HEIGHT := 0.16
+const BOB_SIDE := 0.01
+const BOB_ROLL := 0.01
 
 @onready var neck: Node3D = $Neck
 @onready var headbob: Node3D = $Neck/HeadBob
