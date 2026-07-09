@@ -34,7 +34,10 @@ data = PackedVector3Array(-0.5625, 62.774597, 0.0625, -0.5, 54.148098, 0, -0.5, 
 
 [node name="chapter_0_map" unique_id=742473182 instance=ExtResource("1_hrrws")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="path" parent_id_path=PackedInt32Array(1462600816) index="0" unique_id=2105054451]
+[node name="path" parent="." index="0" unique_id=1462600816]
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="path" index="0" unique_id=2105054451]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="path/StaticBody3D" index="0" unique_id=397290874]
 shape = SubResource("ConcavePolygonShape3D_hrrws")
