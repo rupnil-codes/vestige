@@ -726,7 +726,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2597647, 0)
 shape = SubResource("ConvexPolygonShape3D_o2mjm")
 
 [node name="Neck" type="Node3D" parent="SubViewport/World/Player3D" unique_id=475412640]
-transform = Transform3D(-0.17364813, 0, -0.98480743, 0, 0.99999964, 0, 0.9848074, 0, -0.17364815, 0, 1.8285122, 0)
+transform = Transform3D(-0.17364812, 0, -0.9848074, 0, 0.99999964, 0, 0.9848073, 0, -0.17364813, 0, 1.8285122, 0)
 
 [node name="HeadBob" type="Node3D" parent="SubViewport/World/Player3D/Neck" unique_id=924497650]
 
@@ -4486,6 +4486,42 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.206095, 0.8288026, -23.188
 [node name="cedar_tree104" parent="SubViewport/World/Forest3D" unique_id=1328863513 instance=ExtResource("11_055tb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.775742, 0.38969088, 84.371956)
 
+[node name="cedar_tree109" parent="SubViewport/World/Forest3D" unique_id=1833526270 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.20592, -0.87452507, 58.86767)
+
+[node name="pine_tree226" parent="SubViewport/World/Forest3D" unique_id=1842695441 instance=ExtResource("10_giphs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.712208, -0.16196871, 66.30962)
+
+[node name="tall_fir_tree107" parent="SubViewport/World/Forest3D" unique_id=1053796311 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.77067, -1.0520077, 61.79161)
+
+[node name="tall_fir_tree108" parent="SubViewport/World/Forest3D" unique_id=341427443 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.82955, -0.1187135, 58.239967)
+
+[node name="pine_tree232" parent="SubViewport/World/Forest3D" unique_id=1842685861 instance=ExtResource("10_giphs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.15501, -0.9964328, 63.98074)
+
+[node name="cedar_tree112" parent="SubViewport/World/Forest3D" unique_id=714000705 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.253395, -1.0947495, 72.65648)
+
+[node name="pine_tree265" parent="SubViewport/World/Forest3D" unique_id=234135785 instance=ExtResource("10_giphs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.55757, -0.69271946, 67.69267)
+
+[node name="cedar_tree124" parent="SubViewport/World/Forest3D" unique_id=1059832573 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9798346, -1.4397182, 67.76643)
+
+[node name="tall_fir_tree113" parent="SubViewport/World/Forest3D" unique_id=209336844 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.85535, -0.5804539, 65.57865)
+
+[node name="cedar_tree125" parent="SubViewport/World/Forest3D" unique_id=216915342 instance=ExtResource("11_055tb")]
+transform = Transform3D(0.7457512, 0, -0.66622454, 0, 1, 0, 0.66622454, 0, 0.7457512, 7.265255, -2.0599544, 70.123146)
+
+[node name="tall_fir_tree121" parent="SubViewport/World/Forest3D" unique_id=785357985 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.660114, 0.30169845, 66.187416)
+
+[node name="cedar_tree126" parent="SubViewport/World/Forest3D" unique_id=66742585 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.901997, 0.3114977, 71.41759)
+
 [node name="tall_fir_tree99" parent="SubViewport/World/Forest3D" unique_id=1275409305 instance=ExtResource("12_khirb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.61265, -1.3800569, 82.2856)
 
@@ -4532,15 +4568,6 @@ transform = Transform3D(-0.22497013, 0.19086364, -0.95548904, -0.10066319, 0.970
 
 [node name="wooden_torch11" parent="SubViewport/World/Torches3D" unique_id=215623908 instance=ExtResource("15_los3j")]
 transform = Transform3D(-0.8480087, -0.16108707, 0.50490844, -0.22919017, 0.9704637, -0.07531287, -0.47786334, -0.17958602, -0.8598811, 22.627657, 3.279036, 6.4008293)
-
-[node name="wooden_torch14" parent="SubViewport/World/Torches3D" unique_id=1110609829 instance=ExtResource("15_los3j")]
-transform = Transform3D(0.23830894, 0.0205232, 0.9709726, -0.09170883, 0.99578494, 0.0014607436, -0.96685, -0.08939487, 0.23918658, -57.776432, 2.598765, 64.77021)
-
-[node name="wooden_torch15" parent="SubViewport/World/Torches3D" unique_id=1321314573 instance=ExtResource("15_los3j")]
-transform = Transform3D(-0.1945947, 0, -0.98088384, -0.12770954, 0.991488, 0.025335925, 0.97253454, 0.13019846, -0.1929383, -36.111843, 4.062757, 54.41704)
-
-[node name="wooden_torch16" parent="SubViewport/World/Torches3D" unique_id=1500549635 instance=ExtResource("15_los3j")]
-transform = Transform3D(-0.8077335, -0.13457969, 0.5739815, -0.19287351, 0.9803429, -0.041562542, -0.5571051, -0.14427724, -0.8178133, -14.905247, 2.2118645, 71.56512)
 
 [node name="wooden_torch18" parent="SubViewport/World/Torches3D" unique_id=612042776 instance=ExtResource("15_los3j")]
 transform = Transform3D(0.10109374, 0, 0.99487686, -0.101520866, 0.99477994, 0.010315974, -0.98968357, -0.10204365, 0.10056602, 26.519411, 4.063333, -78.44986)

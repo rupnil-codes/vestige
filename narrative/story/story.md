@@ -10,7 +10,7 @@
 
 The progression would be like:
 1. Game opens with the protagonist sitting in a bench at the middle of the woods.
-2. Very foggy atmosphere with natural ambience. Maybe snowy.
+2. Very foggy atmosphere with natural ambience. Lightly snowing.
 3. "E" to stand up.
 4. Silhouettes spawn, Each one vanishes when touched they do not move.
 5. Some are standing on the trail, while some near the watchtower.
@@ -25,7 +25,29 @@ The progression would be like:
 14. Disappears the moment it is touched.
 15. "I'll meet you at the bottom" says the silhouette
 16. While making your way to the bottom of the watchtower, it breaks and you fall.
-17. As you are losing consciously you see it watch over you with glowing eyes.
+17. As you are losing consciously you see something watch over you with glowing eyes.
+
+You feel the cold snow falling on your body. You open your eyes - you blink twice before your vision unblurs.
+"Where am I?" you think, sitting in the middle of the forest on a bench. You Stand up still confused - you don't know where you are, why you are and perhaps- Who you are...
+A little further away you can hear the crackle of the burning of wooden torches. You move towards a torch but as you do you notice the growing purplish light.
+Its tall, its dark, its glowing. Some unknown particles dancing around its body makes you feel... something...
+It feels familiar - have u seen it before? "Nonsense!" you think "There is no way i saw this bizarre looking creature before!".
+Yet something inside of you know the actual truth.
+You reach out in a frenzy to touch it but as u do the silhouette flickers and teleports somewhere. The whispers growing.
+As it completely vanishes from your vision you see the next torch - flickering lights of the playful flame.
+
+You make your way to the next torch.
+"Wait-" you think as the same silhouette stands before you! Is it guiding you? Are we playing hide and seek?
+"What's going on?" you mumble. The silhouette does not respond just standing there motionless - looking into oblivion.
+Same thing repeats, but something is off. What is it? You do not know. Neither do we.
+
+This continues till you reach a clearing and that's when you notice the Watch Tower.
+Standing alone in a meaningless forest, watching over-.
+The thought crosses over your mind, "Watching over whom? what? why?" This too seems familiar.
+you notice a room that leads to a bunker, you can't go there! it's locked with a thick lock.
+You start to climb the tower, the old dusty stairs creak under your feet. At the top you find a room filled with stale air.
+
+
 
 ---
 
