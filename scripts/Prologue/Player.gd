@@ -7,8 +7,8 @@ const MOUSE_SENS := 0.0045
 
 const BOB_SPEED := 4.0
 const BOB_HEIGHT := 0.16
-const BOB_SIDE := 0.01
-const BOB_ROLL := 0.01
+const BOB_SIDE := 0.012
+const BOB_ROLL := 0.012
 
 @onready var neck: Node3D = $Neck
 @onready var headbob: Node3D = $Neck/HeadBob

@@ -1,12 +1,12 @@
-# (v0.0.10(A)-alpha) Walk and Map Redesign
+# (v0.0.10(C)-alpha) Story and Map Redesign
 
 ---
 
 ## Changelog:
 
-- **[(v0.0.10(A)-alpha) Map Redesigning (1)](https://github.com/rupnil-codes/vestige/commit/9bad70)**: I think im going to go on a different direction with the prologue scene! i changed the pathways because i think it was too complex and looping- I am also thinking of turning the log cabin into an watch tower for more ominous feel! im working on the story hopefully i can figure it out! _[Lapsed](https://lapse.hackclub.com/timelapse/YptUG4qaydlq)_
+- **[(v0.0.10(C)-alpha) Story + Map Redesigning (2)](https://github.com/rupnil-codes/vestige/commit/a4ec44)**: So as i am changing the narrative i need to update the map accordingly, A very small update because my mouse stopped wrking but oh well i just changed some textures and added trees. Also making a story narrative in 2nd person ig? _[Lapsed](https://lapse.hackclub.com/timelapse/McU_SvX4tRH7)_
 
-- **[(v0.0.9(F)-alpha) Walk Animation (Camera Shake)](https://github.com/rupnil-codes/vestige/commit/678d29)**: Yoooo! holy smokes this look epic spent a good chunk figuring out how to make the walk animation turns out its easier to do it through code- thats why i ended the lapse prematurely and worked on it in Rider IDE! it look so cool rn it has head bobbing in all three dimensions! _[Lapsed](https://lapse.hackclub.com/timelapse/TVWXWRqYQpqY)_
+- **[(v0.0.10(B)-alpha) Story Redesign (1)](https://github.com/rupnil-codes/vestige/commit/51c36d)**: Brainstormed a lot of stuff- and rewrote the prologue storyline- the old one was pretty basic i like the new one more and I mostly changed it because i am thinking of the next chapter too and i want a seamless transition- just hang on with me ill cook something truly epic :3
 
 ---
 
@@ -14,10 +14,10 @@
 
 1. Boulders / Rocks (WIP)
 2. ~~Walking animation~~
-3. Story Redesign
+3. Story Redesign (WIP)
 
 ---
 
 ## Notes:
 
-I had some different ideas about the story and im working on it- redesigned the map a bit! i think ill do more stuff.
+OKay today ill lock tf in my exams just finished!
