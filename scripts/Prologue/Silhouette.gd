@@ -1,9 +1,20 @@
 extends Node3D
 
 var already_found: bool = false
+var visible_on_screen_enabler: bool = true
 
 var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
 @onready var effects: Array[Variant] = [$Fog, $GPUPurpleParticles3D]
+@onready var silhouette_animation_mover: AnimationPlayer = $"../../../SilhouetteAnimationMover"
+@onready var silhouette_animation_player: AnimationPlayer = $SilhouetteAnimationPlayer
+@onready var visible_on_screen_enabler_3d: VisibleOnScreenEnabler3D = $VisibleOnScreenEnabler3D
+
+var movement: Array[String] = [
+	"location_1",
+	"location_2",
+	"location_3"
+]
+var next_location_index: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,8 +25,19 @@ func _process(delta: float) -> void:
 	pass # Replace with function body.
 	
 func _on_area_3d_body_entered(body: Node3D) -> void:
+	if visible_on_screen_enabler:
+		visible_on_screen_enabler_3d.queue_free()
+		visible_on_screen_enabler = false
 	if body.is_in_group("player"):
-		pass
+		if next_location_index < len(movement):
+			silhouette_animation_player.play("transform")
+			await silhouette_animation_player.animation_finished
+			silhouette_animation_mover.play(movement[next_location_index])
+			await silhouette_animation_mover.animation_finished
+			silhouette_animation_player.play_backwards("transform")
+			await silhouette_animation_player.animation_finished
+			next_location_index += 1
+		
 
 
 func fade_out(time: float = 2.0):

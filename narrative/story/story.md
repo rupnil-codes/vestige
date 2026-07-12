@@ -34,7 +34,7 @@ A little further away you can hear the crackle of the burning of wooden torches.
 Its tall, its dark, it's glowing. Some unknown particles dancing around its body makes you feel... something...
 It feels familiar - have u seen it before? "Nonsense!" you think "There is no way I saw this bizarre looking creature before!".
 Yet something inside of you know the actual truth.r
-You reach out in a frenzy to touch it but as u do the silhouette flickers and disappears its purple particles moving in a direction of the torch.
+You reach out in a frenzy to touch it but as u do the silhouette flickers and disappears its purple particles giving away to yellow particles moving in a direction of the torch.
 The whispers growing. You follow the particles.
 As it completely vanishes from your vision you see the next torch - flickering lights of the playful flame.
 
