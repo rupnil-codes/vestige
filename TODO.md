@@ -8,10 +8,11 @@ Todos:
 - [X] Counter animation (v0.0.9(B)-alpha)
 - [ ] LightMapGI - enable shadows
 - [X] Better walking animation (v0.0.9(F)-alpha)
+- [ ] Improved Silhouette Mechanics.
 - [ ] Make jumping better
 - [ ] Sprint with a stamina or cool down
-- [ ] Interior of the cabin
-- [ ] Polishing the cabin
+- [ ] Interior of the Watch Tower
+- [ ] Watch Tower
 - [ ] Ambience Sfx
   - [ ] Thunder SFX
   - [ ] sounds of wind and wild animals
@@ -23,7 +24,6 @@ Todos:
 - [ ] Add notes and pictures with nails on the paths
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp
-- [ ] Show that t to turn on torch- when player tries to use it show that its not working.
 - [X] Bench (v0.0.4-pre-alpha)
 - [X] Map (v0.0.5(A)-pre-alpha)
 - [X] Player (v0.0.5(A)-pre-alpha)

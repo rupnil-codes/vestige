@@ -1,7 +1,6 @@
 extends Node3D
 
 var already_found: bool = false
-signal silhouettes_found
 
 var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
 @onready var effects: Array[Variant] = [$Fog, $GPUPurpleParticles3D]
@@ -15,15 +14,9 @@ func _process(delta: float) -> void:
 	pass # Replace with function body.
 	
 func _on_area_3d_body_entered(body: Node3D) -> void:
-	if already_found:
-		return
-		
 	if body.is_in_group("player"):
-		already_found = true
-		silhouettes_found.emit()
-		$Area3D.set_deferred("monitoring", false)
-		fade_out()
-		
+		pass
+
 
 func fade_out(time: float = 2.0):
 	$VisibleOnScreenEnabler3D.queue_free()

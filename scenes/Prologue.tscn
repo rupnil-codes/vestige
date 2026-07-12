@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://caf08fvsymgfn" path="res://scripts/Prologue/Player.gd" id="3_y3k86"]
 [ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/shader_chapter_0.gdshader" id="4_1aphw"]
 [ext_resource type="FontFile" uid="uid://78n28mmk5f74" path="res://assets/fonts/Geo-Italic.ttf" id="5_6uvvw"]
-[ext_resource type="Script" uid="uid://dktrq4577s8b8" path="res://scripts/Prologue/CounterLabel.gd" id="7_6uvvw"]
 [ext_resource type="Texture2D" uid="uid://be3gdrbc3cc5g" path="res://assets/models/bench/bench_uv.png" id="7_qrlrw"]
 [ext_resource type="PackedScene" uid="uid://cursl7y2tughc" path="res://assets/models/chapter_0_map/prologue.tscn" id="8_y5b7v"]
 [ext_resource type="PackedScene" uid="uid://ctl1xmfds16dl" path="res://assets/models/log_cabin/log_cabin.tscn" id="9_fv78f"]
@@ -15,8 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://cja8r23prt8yn" path="res://assets/models/trees/tree_trunk/tree_trunk.tscn" id="13_y0lns"]
 [ext_resource type="PackedScene" uid="uid://usue76cgdeok" path="res://assets/models/trees/cedar_tree/cedar_tree.blend" id="14_5gq6l"]
 [ext_resource type="PackedScene" uid="uid://c5xxexjm4f7q3" path="res://assets/models/wooden_torch/wooden_torch.tscn" id="15_los3j"]
-[ext_resource type="PackedScene" uid="uid://j71rndxs6qdt" path="res://assets/models/silhouette/silhouette.tscn" id="16_21ife"]
-[ext_resource type="PackedScene" uid="uid://cx5m27kxvgerc" path="res://assets/models/silhouette/special_silhouette.tscn" id="17_utvbf"]
 [ext_resource type="PackedScene" uid="uid://csw8w3qb74yqd" path="res://assets/models/boulder/boulder.tscn" id="18_0v64l"]
 [ext_resource type="PackedScene" uid="uid://b24vs6py64bx3" path="res://assets/models/grass/grass.tscn" id="19_hx8h7"]
 [ext_resource type="PackedScene" uid="uid://bcvbelbc4ydr8" path="res://assets/models/reed/reed.tscn" id="20_jx3m7"]
@@ -142,500 +139,7 @@ data = PackedVector3Array(0.30789998, 0.5263, 0.9, 0.3126, 0.4725, 0.9, 0.307899
 [sub_resource type="ViewportTexture" id="ViewportTexture_ke06p"]
 viewport_path = NodePath("SubViewport")
 
-[sub_resource type="Animation" id="Animation_ke06p"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:r")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:g")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:b")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:a")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:fov")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(75, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/5/type = "bezier"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:r")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/6/type = "bezier"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:g")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/7/type = "bezier"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:b")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/8/type = "bezier"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:a")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/9/type = "bezier"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewport/World/Player3D:rotation:x")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/10/type = "bezier"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World/Player3D:rotation:y")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/11/type = "bezier"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewport/World/Player3D:rotation:z")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/12/type = "bezier"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("SubViewport/World/Player3D:position:x")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-27.055, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/13/type = "bezier"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("SubViewport/World/Player3D:position:y")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-0.15, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/14/type = "bezier"
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/path = NodePath("SubViewport/World/Player3D:position:z")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-52.83082, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/15/type = "bezier"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:x")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/16/type = "bezier"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:y")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/17/type = "bezier"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:rotation:x")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/18/type = "bezier"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:rotation:y")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/19/type = "bezier"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:rotation:z")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/20/type = "bezier"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("SubViewport/World/Player3D/Neck:rotation:x")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/21/type = "bezier"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("SubViewport/World/Player3D/Neck:rotation:y")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(-1.7453293, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/22/type = "bezier"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("SubViewport/World/Player3D/Neck:rotation:z")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
-[sub_resource type="Animation" id="Animation_1aphw"]
-resource_name = "camera_walk"
-loop_mode = 2
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/Player3D/Neck:rotation:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(2, 2),
-"points": PackedFloat32Array(-0.011502897, 0, 0, 0.16666667, 0.009480244, 0.012217305, -0.16666667, -0.003953367, 0, 0),
-"times": PackedFloat32Array(0, 1)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/Player3D/Neck:rotation:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(2, 2),
-"points": PackedFloat32Array(-1.7449538, 0, 0, 0.16666667, 0.0008100867, -1.7453293, -0.16666667, 6.258488e-05, 0, 0),
-"times": PackedFloat32Array(0, 1)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Player3D/Neck:rotation:z")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(2, 2),
-"points": PackedFloat32Array(-0.06528538, 0, 0, 0.16666667, 0.05335058, 0.064577185, -0.16666667, -0.021643762, 0, 0),
-"times": PackedFloat32Array(0, 1)
-}
-
-[sub_resource type="Animation" id="Animation_y3k86"]
-resource_name = "silhouette_counter"
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:r")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
-"times": PackedFloat32Array(0.3, 1)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:g")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
-"times": PackedFloat32Array(0.3, 1)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:b")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.083333336, 0, 0, 0),
-"times": PackedFloat32Array(0.3, 1)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("CanvasLayer/UserInterface/CounterLabel:modulate:a")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.083333336, -0.16666667, 0, 0),
-"times": PackedFloat32Array(0.3, 1)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:x")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0, 13, -0.10333334, 0, 0, 0),
-"times": PackedFloat32Array(0, 0.6666667)
-}
-tracks/5/type = "bezier"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("CanvasLayer/UserInterface/FPSCounter:position:y")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(13, -0.25, 0, 0.25, 0, 40, -0.10333334, -4.5, 0, 0),
-"times": PackedFloat32Array(0, 0.6666667)
-}
-
-[sub_resource type="Animation" id="Animation_y13jl"]
-resource_name = "wake_up"
-length = 4.9333334
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:r")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
-"times": PackedFloat32Array(0.30000007, 0.7999999, 1.1333331, 1.6, 1.9333333)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:g")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
-"times": PackedFloat32Array(0.30000007, 0.80000013, 1.1333333, 1.6000003, 1.9333335)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:b")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.083333336, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.08779669, 0, 0, 0, 0, -0.0760062, 0, 0, 0),
-"times": PackedFloat32Array(0.30000007, 0.8, 1.1333333, 1.6000003, 1.9333335)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D/CanvasLayer/ColorRect:modulate:a")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.083333336, 0.16666667, 0, 0, 1, -0.08779669, -0.16666667, 0, 0, 1, -0.08779669, -0.16666667, 0, 0, 0, -0.0760062, 0.16666669, 0, 0),
-"times": PackedFloat32Array(0.30000007, 0.8, 1.1333333, 1.6000003, 1.9333335)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/Player3D/Neck/HeadBob/Camera3D:fov")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(30, 0, 0, 0.25602856, 7.5000005, 75, -0.39886582, -12.333334, 0, 0),
-"times": PackedFloat32Array(1.7666667, 4.9)
-}
-tracks/5/type = "bezier"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewport/World/Player3D:rotation:x")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(0.3637553, -0.25, 0, 0.25, 0, 0, -0.26666668, 0.027714688, 0.31666666, -0.032911193, 0, -0.5833334, 0.060625885, 0, 0),
-"times": PackedFloat32Array(1.3666667, 3.0666666, 4.9)
-}
-tracks/6/type = "bezier"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewport/World/Player3D:rotation:y")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(-1.1959602, -0.25, 0, 0.25, 0, -0.6824237, -0.26666668, -0.09112078, 0.31666666, 0.10820592, 0, -0.5833334, -0.19932671, 0, 0),
-"times": PackedFloat32Array(1.3666667, 3.0666666, 4.9)
-}
-tracks/7/type = "bezier"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("SubViewport/World/Player3D:rotation:z")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.26666668, 0, 0.31666666, 0, 0, -0.5833334, 0, 0, 0),
-"times": PackedFloat32Array(1.3666667, 3.0666666, 4.9)
-}
-tracks/8/type = "bezier"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("SubViewport/World/Player3D:position:x")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(-27.054987, 0, 0, 0.5833334, 0, -27.054987, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(1.3666667, 4.9)
-}
-tracks/9/type = "bezier"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewport/World/Player3D:position:y")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(-0.15, 0, 0, 0.5833334, 0, -0.15, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(1.3666667, 4.9)
-}
-tracks/10/type = "bezier"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World/Player3D:position:z")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"handle_modes": PackedInt32Array(0, 0),
-"points": PackedFloat32Array(-52.831, 0, 0, 0.5833334, 0, -52.831, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(1.3666667, 4.9)
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ke06p"]
-_data = {
-&"RESET": SubResource("Animation_ke06p"),
-&"camera_walk": SubResource("Animation_1aphw"),
-&"silhouette_counter": SubResource("Animation_y3k86"),
-&"wake_up": SubResource("Animation_y13jl")
-}
 
 [node name="PrologueScene" type="Node3D" unique_id=1247047748]
 script = ExtResource("1_ke06p")
@@ -662,18 +166,6 @@ grow_vertical = 2
 mouse_filter = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="CounterLabel" type="Label" parent="CanvasLayer/UserInterface" unique_id=1227291737]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = 13.0
-offset_top = 13.0
-offset_right = 116.0
-offset_bottom = 39.0
-theme_override_fonts/font = ExtResource("5_6uvvw")
-theme_override_font_sizes/font_size = 24
-script = ExtResource("7_6uvvw")
-metadata/_edit_use_anchors_ = true
-
 [node name="FPSCounter" type="Label" parent="CanvasLayer/UserInterface" unique_id=680248611]
 layout_mode = 1
 anchors_preset = -1
@@ -689,6 +181,12 @@ theme_override_fonts/font = ExtResource("5_6uvvw")
 theme_override_font_sizes/font_size = 20
 text = "30 fps"
 metadata/_edit_use_anchors_ = true
+
+[node name="cedar_tree" parent="CanvasLayer/UserInterface" unique_id=1753933853 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.887253, 0.0727222, -76.50859)
+
+[node name="pine_tree" parent="CanvasLayer/UserInterface" unique_id=378494581 instance=ExtResource("10_giphs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.876144, 0.08213425, -87.1991)
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1180690384]
 scaling_3d_scale = 0.6
@@ -772,10 +270,10 @@ transform = Transform3D(0.9077775, 0, -0.4194521, 0, 1, 0, 0.4194521, 0, 0.90777
 
 [node name="Forest3D" type="Node3D" parent="SubViewport/World" unique_id=1512849187]
 
-[node name="pine_tree96" parent="SubViewport/World/Forest3D" unique_id=378494581 instance=ExtResource("10_giphs")]
+[node name="pine_tree96" parent="SubViewport/World/Forest3D" unique_id=116300073 instance=ExtResource("10_giphs")]
 transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 92.17127, -0.3567369, -16.444262)
 
-[node name="cedar_tree261" parent="SubViewport/World/Forest3D" unique_id=1753933853 instance=ExtResource("11_055tb")]
+[node name="cedar_tree261" parent="SubViewport/World/Forest3D" unique_id=405881607 instance=ExtResource("11_055tb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.39545, 1.6033044, -36.217857)
 
 [node name="cedar_tree263" parent="SubViewport/World/Forest3D" unique_id=1458058499 instance=ExtResource("11_055tb")]
@@ -956,7 +454,7 @@ transform = Transform3D(0.9933768, 0.114902474, 0, -0.114579186, 0.99058187, -0.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.872514, -2.277969, -95.20759)
 
 [node name="pine_tree9" parent="SubViewport/World/Forest3D" unique_id=581765365 instance=ExtResource("10_giphs")]
-transform = Transform3D(1, 0, 0, 0, 0.9966502, 0.08178195, 0, -0.08178195, 0.9966502, 0.8449936, 0.18063223, -89.26287)
+transform = Transform3D(1, 0, 0, 0, 0.9966502, 0.08178195, 0, -0.08178195, 0.9966502, 1.0212507, 0.18063223, -89.92065)
 
 [node name="cedar_tree14" parent="SubViewport/World/Forest3D" unique_id=325409109 instance=ExtResource("11_055tb")]
 transform = Transform3D(-0.9943608, 0.030398538, 0.10160078, 0.020379962, 0.9949552, -0.09822923, -0.10407413, -0.09560466, -0.9899638, 8.266016, -1.5518184, -76.66954)
@@ -965,7 +463,7 @@ transform = Transform3D(-0.9943608, 0.030398538, 0.10160078, 0.020379962, 0.9949
 transform = Transform3D(0.879565, 0.20286812, 0.4303604, -0.1253913, 0.9714009, -0.20163691, -0.45895794, 0.123389214, 0.879848, -11.537066, 0.8015926, -102.66243)
 
 [node name="pine_tree10" parent="SubViewport/World/Forest3D" unique_id=836697153 instance=ExtResource("10_giphs")]
-transform = Transform3D(0.78144425, 0, -0.62397504, 0, 1, 0, 0.62397504, 0, 0.78144425, 4.1904964, 0.37277472, -91.15052)
+transform = Transform3D(0.78144425, 0, -0.62397504, 0, 1, 0, 0.62397504, 0, 0.78144425, 5.488673, 0.37277472, -91.15052)
 
 [node name="pine_tree11" parent="SubViewport/World/Forest3D" unique_id=254153783 instance=ExtResource("10_giphs")]
 transform = Transform3D(0.70235187, 0, -0.71182996, 0, 1, 0, 0.71182996, 0, 0.70235187, -2.5016441, 0.37277567, -97.72698)
@@ -2006,10 +1504,10 @@ transform = Transform3D(-0.009791136, 0, -0.9999521, 0, 1, 0, 0.9999521, 0, -0.0
 transform = Transform3D(0.4076819, -0.0693212, 0.91048896, 0.028329149, 0.9975944, 0.063268386, -0.9126845, 0, 0.408665, 77.018845, -0.36621332, -76.902145)
 
 [node name="pine_tree118" parent="SubViewport/World/Forest3D" unique_id=1455518259 instance=ExtResource("10_giphs")]
-transform = Transform3D(0.408665, 0, 0.9126845, 0, 1, 0, -0.9126845, 0, 0.408665, 81.11689, -0.45137072, -82.427444)
+transform = Transform3D(0.408665, 0, 0.9126845, 0, 1, 0, -0.9126845, 0, 0.408665, 78.414215, -0.50018406, -84.925705)
 
 [node name="tall_fir_tree130" parent="SubViewport/World/Forest3D" unique_id=177216052 instance=ExtResource("12_khirb")]
-transform = Transform3D(0.91320735, 0.15262362, 0.37783355, -0.14102925, 0.9882844, -0.05834993, -0.38231257, 0, 0.9240329, 68.73456, -0.36621237, -81.6738)
+transform = Transform3D(0.91320735, 0.15262362, 0.37783355, -0.14102925, 0.9882844, -0.05834993, -0.38231257, 0, 0.9240329, 68.79493, -0.72267437, -79.869865)
 
 [node name="cedar_tree200" parent="SubViewport/World/Forest3D" unique_id=978715936 instance=ExtResource("11_055tb")]
 transform = Transform3D(0.77305466, 0, 0.63433933, 0, 1, 0, -0.63433933, 0, 0.77305466, 63.398415, -1.5967782, -85.201004)
@@ -2096,13 +1594,13 @@ transform = Transform3D(-0.34300405, 0, 0.9393339, 0, 1, 0, -0.9393339, 0, -0.34
 transform = Transform3D(-0.34300405, 0, 0.9393339, 0, 1, 0, -0.9393339, 0, -0.34300405, 28.581219, -1.0452957, 35.24489)
 
 [node name="pine_tree126" parent="SubViewport/World/Forest3D" unique_id=554594468 instance=ExtResource("10_giphs")]
-transform = Transform3D(-0.885593, 0, 0.4644624, 0, 1, 0, -0.4644624, 0, -0.885593, 17.370007, 0.053492785, 29.155735)
+transform = Transform3D(-0.885593, 0, 0.4644624, 0, 1, 0, -0.4644624, 0, -0.885593, 17.370007, 0.053492785, 30.199627)
 
 [node name="tall_fir_tree141" parent="SubViewport/World/Forest3D" unique_id=1428302272 instance=ExtResource("12_khirb")]
 transform = Transform3D(0.39621854, 0, 0.91815615, 0, 1, 0, -0.91815615, 0, 0.39621854, 9.281497, -1.0219741, 38.07778)
 
 [node name="cedar_tree215" parent="SubViewport/World/Forest3D" unique_id=416301679 instance=ExtResource("11_055tb")]
-transform = Transform3D(0.11230135, 0, 0.99367416, 0, 1, 0, -0.99367416, 0, 0.11230135, 30.932423, -1.021976, 33.30477)
+transform = Transform3D(0.11230135, 0, 0.99367416, 0, 1, 0, -0.99367416, 0, 0.11230135, 30.932423, -1.021976, 29.60373)
 
 [node name="pine_tree127" parent="SubViewport/World/Forest3D" unique_id=677041971 instance=ExtResource("10_giphs")]
 transform = Transform3D(0.67292506, 0.004085404, 0.7396995, -0.010197728, 0.99994105, 0.0037543934, -0.73964053, -0.010069687, 0.6729271, 5.157818, -1.1071315, 37.955933)
@@ -2225,7 +1723,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.11632, -0.8459921, 45.4271
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.913378, 0.19728601, 42.152782)
 
 [node name="tall_fir_tree155" parent="SubViewport/World/Forest3D" unique_id=327888873 instance=ExtResource("12_khirb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.171535, -0.8759904, 28.870647)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.859343, -0.8759904, 29.108511)
 
 [node name="pine_tree139" parent="SubViewport/World/Forest3D" unique_id=1436641508 instance=ExtResource("10_giphs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1254363, -3.1560802, 31.633942)
@@ -3272,7 +2770,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.177246, 0.55256796, -68.27
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.56371, -1.609158, -64.43158)
 
 [node name="cedar_tree409" parent="SubViewport/World/Forest3D" unique_id=248450093 instance=ExtResource("11_055tb")]
-transform = Transform3D(0.47976422, 0, -0.8773975, 0, 1, 0, 0.8773975, 0, 0.47976422, 75.02981, -1.1904895, -67.677734)
+transform = Transform3D(0.47976422, 0, -0.8773975, 0, 1, 0, 0.8773975, 0, 0.47976422, 75.95129, -1.1904895, -67.677734)
 
 [node name="tall_fir_tree269" parent="SubViewport/World/Forest3D" unique_id=1058737928 instance=ExtResource("12_khirb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.745415, -0.8020716, -48.07449)
@@ -3293,7 +2791,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.22971, -1.0283413, -40.617
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.171455, -4.8911557, -46.925293)
 
 [node name="cedar_tree414" parent="SubViewport/World/Forest3D" unique_id=1755123582 instance=ExtResource("11_055tb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.84553, 0.102543354, -72.47998)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.31257, 0.102543354, -72.47998)
 
 [node name="tall_fir_tree271" parent="SubViewport/World/Forest3D" unique_id=1998310553 instance=ExtResource("12_khirb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.022137, 0.3112502, -30.558342)
@@ -3353,7 +2851,7 @@ transform = Transform3D(1, 0, 0, 0, 0.9944358, 0.105344236, 0, -0.105344236, 0.9
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.00897, -1.0954089, -99.70019)
 
 [node name="cedar_tree430" parent="SubViewport/World/Forest3D" unique_id=426535891 instance=ExtResource("11_055tb")]
-transform = Transform3D(0.9934628, 0, -0.11415681, 0, 1, 0, 0.11415681, 0, 0.9934628, 45.938004, -0.36621237, -98.60155)
+transform = Transform3D(0.9934628, 0, -0.11415681, 0, 1, 0, 0.11415681, 0, 0.9934628, 45.938004, -0.36621237, -92.99021)
 
 [node name="pine_tree229" parent="SubViewport/World/Forest3D" unique_id=2029734546 instance=ExtResource("10_giphs")]
 transform = Transform3D(0.9934628, 0, -0.11415681, 0, 1, 0, 0.11415681, 0, 0.9934628, 48.18998, -0.45136976, -104.255585)
@@ -3395,7 +2893,7 @@ transform = Transform3D(-0.56198233, 0, -0.8271492, 0, 1, 0, 0.8271492, 0, -0.56
 transform = Transform3D(0.9969105, 0.07854609, 0, -0.07854609, 0.9969105, 0, 0, 0, 1, 36.596985, 0.74268866, -98.15477)
 
 [node name="cedar_tree435" parent="SubViewport/World/Forest3D" unique_id=1198817464 instance=ExtResource("11_055tb")]
-transform = Transform3D(1, 0, 0, 0, 0.9852231, -0.17127572, 0, 0.17127572, 0.9852231, 32.439697, -0.10964489, -95.20143)
+transform = Transform3D(1, 0, 0, 0, 0.9852231, -0.17127572, 0, 0.17127572, 0.9852231, 30.808304, -0.10964489, -94.200226)
 
 [node name="tall_fir_tree283" parent="SubViewport/World/Forest3D" unique_id=39088662 instance=ExtResource("12_khirb")]
 transform = Transform3D(0.99828404, -0.058557186, 0, 0.058557186, 0.99828404, 0, 0, 0, 1, 26.454647, -1.2654836, -94.85135)
@@ -3407,10 +2905,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.433502, -0.9949384, -87.69
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.894714, -0.54643476, -87.7509)
 
 [node name="cedar_tree437" parent="SubViewport/World/Forest3D" unique_id=613118800 instance=ExtResource("11_055tb")]
-transform = Transform3D(0.692244, 0, 0.7216636, 0, 1, 0, -0.7216636, 0, 0.692244, 39.13825, -0.8017874, -95.41718)
+transform = Transform3D(0.692244, 0, 0.7216636, 0, 1, 0, -0.7216636, 0, 0.692244, 42.13515, -0.8017874, -96.34098)
 
 [node name="cedar_tree438" parent="SubViewport/World/Forest3D" unique_id=1110779197 instance=ExtResource("11_055tb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.494564, 0.7377763, -100.07671)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.494564, 0.43919492, -100.07671)
 
 [node name="tall_fir_tree287" parent="SubViewport/World/Forest3D" unique_id=1066496075 instance=ExtResource("12_khirb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.470245, -2.3346982, -96.07875)
@@ -3425,7 +2923,7 @@ transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30
 transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 49.784336, -1.021975, -58.651817)
 
 [node name="cedar_tree440" parent="SubViewport/World/Forest3D" unique_id=163779551 instance=ExtResource("11_055tb")]
-transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 55.635845, -1.0219741, -48.94046)
+transform = Transform3D(0.68078303, 0.072124064, 0.72892565, -0.027590841, 0.9969595, -0.07287627, -0.73196554, 0.029501256, 0.68070304, 54.573643, -1.0219741, -48.42909)
 
 [node name="pine_tree240" parent="SubViewport/World/Forest3D" unique_id=348529790 instance=ExtResource("10_giphs")]
 transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 51.69714, -1.1071315, -51.90123)
@@ -3449,7 +2947,7 @@ transform = Transform3D(-0.34300405, 0, 0.9393339, 0, 1, 0, -0.9393339, 0, -0.34
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.747135, -0.27194738, -40.784126)
 
 [node name="cedar_tree445" parent="SubViewport/World/Forest3D" unique_id=370995445 instance=ExtResource("11_055tb")]
-transform = Transform3D(0.6736319, 0, -0.739067, 0, 1, 0, 0.739067, 0, 0.6736319, 51.28844, -0.19782972, -45.124557)
+transform = Transform3D(0.6736319, 0, -0.739067, 0, 1, 0, 0.739067, 0, 0.6736319, 51.89169, -0.19782972, -43.74934)
 
 [node name="pine_tree245" parent="SubViewport/World/Forest3D" unique_id=2022473154 instance=ExtResource("10_giphs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.61704, -0.28298712, -46.79899)
@@ -4555,16 +4053,55 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.024658, 0.13751483, -48.3
 [node name="tall_fir_tree126" parent="SubViewport/World/Forest3D" unique_id=1636768124 instance=ExtResource("12_khirb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.047361, 0.23791623, -52.156387)
 
+[node name="tall_fir_tree135" parent="SubViewport/World/Forest3D" unique_id=959334057 instance=ExtResource("12_khirb")]
+transform = Transform3D(0.86540186, 0, -0.5010784, 0, 1, 0, 0.5010784, 0, 0.86540186, -24.361013, -0.5751121, -58.258633)
+
+[node name="cedar_tree133" parent="SubViewport/World/Forest3D" unique_id=1142414722 instance=ExtResource("11_055tb")]
+transform = Transform3D(0.9564488, 0, -0.29190022, 0, 1, 0, 0.29190022, 0, 0.9564488, -15.979738, -0.30455732, -70.29222)
+
+[node name="tall_fir_tree177" parent="SubViewport/World/Forest3D" unique_id=480866063 instance=ExtResource("12_khirb")]
+transform = Transform3D(0.9909741, 0, 0.13405308, 0, 1, 0, -0.13405308, 0, 0.9909741, -22.84839, -0.17824817, -72.817375)
+
+[node name="cedar_tree157" parent="SubViewport/World/Forest3D" unique_id=2097292775 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.725345, 0.24040055, -51.74999)
+
+[node name="tall_fir_tree191" parent="SubViewport/World/Forest3D" unique_id=1673857443 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.854577, 0.27869797, -56.569202)
+
+[node name="pine_tree278" parent="SubViewport/World/Forest3D" unique_id=1862639964 instance=ExtResource("10_giphs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.4243965, 0.11510539, -61.200752)
+
+[node name="cedar_tree158" parent="SubViewport/World/Forest3D" unique_id=1048640872 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.739861, 0.024036169, -66.73445)
+
+[node name="tall_fir_tree263" parent="SubViewport/World/Forest3D" unique_id=347198003 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64758044, 0.017210722, -72.2175)
+
+[node name="tall_fir_tree265" parent="SubViewport/World/Forest3D" unique_id=975640789 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.232878, -0.511426, -83.91707)
+
+[node name="pine_tree281" parent="SubViewport/World/Forest3D" unique_id=1418617010 instance=ExtResource("10_giphs")]
+transform = Transform3D(0.7936567, 0, -0.6083659, 0, 1, 0, 0.6083659, 0, 0.7936567, 38.53533, -0.8630719, -80.90275)
+
+[node name="cedar_tree165" parent="SubViewport/World/Forest3D" unique_id=1682981380 instance=ExtResource("11_055tb")]
+transform = Transform3D(0.9085879, 0, -0.41769373, 0, 1, 0, 0.41769373, 0, 0.9085879, 22.437428, 0.15633118, -91.12326)
+
+[node name="cedar_tree174" parent="SubViewport/World/Forest3D" unique_id=1073140132 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.04699, 0.28105426, -92.824196)
+
+[node name="pine_tree328" parent="SubViewport/World/Forest3D" unique_id=376626851 instance=ExtResource("10_giphs")]
+transform = Transform3D(0.29286206, 0, -0.9561547, 0, 1, 0, 0.9561547, 0, 0.29286206, 66.097374, -0.018663883, -70.877075)
+
 [node name="Torches3D" type="Node3D" parent="SubViewport/World" unique_id=1029817589]
 
 [node name="wooden_torch3" parent="SubViewport/World/Torches3D" unique_id=100611768 instance=ExtResource("15_los3j")]
-transform = Transform3D(-0.8308446, 0, -0.55650455, 0, 1, 0, 0.55650455, 0, -0.8308446, 17.275742, 2.5533118, 29.24215)
+transform = Transform3D(-0.8308446, 0, -0.55650455, 0, 1, 0, 0.55650455, 0, -0.8308446, 17.275742, 2.5533118, 30.286041)
 
 [node name="wooden_torch4" parent="SubViewport/World/Torches3D" unique_id=255886767 instance=ExtResource("15_los3j")]
 transform = Transform3D(0.87715054, 0.06365498, 0.47597796, -0.02168039, 0.9954142, -0.09316843, -0.4797258, 0.071403325, 0.87450814, 16.657347, 3.3097515, 45.15091)
 
 [node name="wooden_torch5" parent="SubViewport/World/Torches3D" unique_id=694599546 instance=ExtResource("15_los3j")]
-transform = Transform3D(0.9868232, 0.1614817, 0.010197654, -0.15778325, 0.94643086, 0.2817324, 0.035843328, -0.27962914, 0.9594389, -24.888641, 2.359, -47.691357)
+transform = Transform3D(0.8670808, -0.003735289, 0.4981538, -0.15778324, 0.94643074, 0.28173238, -0.47252047, -0.32288516, 0.82004255, -25.085884, 2.359, -47.86272)
 
 [node name="wooden_torch8" parent="SubViewport/World/Torches3D" unique_id=717585823 instance=ExtResource("15_los3j")]
 transform = Transform3D(-0.99503607, -0.055517435, -0.08258873, -0.05257214, 0.9979156, -0.037420813, 0.0844941, -0.03289318, -0.99588084, 54.21102, 5.795977, -20.796238)
@@ -4590,26 +4127,6 @@ transform = Transform3D(-0.2592357, 0.0035841353, -0.96580696, -0.22338596, 0.97
 [node name="wooden_torch22" parent="SubViewport/World/Torches3D" unique_id=355948634 instance=ExtResource("15_los3j")]
 transform = Transform3D(0.27652863, 0.24194798, -0.9300499, -0.14676449, 0.9670722, 0.2079416, 0.9497329, 0.07899685, 0.3029313, 7.686678, 3.296795, 14.511406)
 
-[node name="wooden_torch23" parent="SubViewport/World/Torches3D" unique_id=1266008064 instance=ExtResource("15_los3j")]
-transform = Transform3D(-0.7369915, 0.017080322, -0.6756859, -0.14090106, 0.9738372, 0.17830211, 0.6610525, 0.22661252, -0.71530175, 12.490233, 1.9220998, -5.619894)
-
-[node name="Silhouettes" type="Node3D" parent="SubViewport/World" unique_id=839482844]
-
-[node name="Silhouette3D(1)" parent="SubViewport/World/Silhouettes" unique_id=578111472 instance=ExtResource("16_21ife")]
-transform = Transform3D(-0.2688685, 0, -0.9631769, 0, 1, 0, 0.9631769, 0, -0.2688685, 11.338515, 4.884513, -52.792698)
-
-[node name="Silhouette3D(5)" parent="SubViewport/World/Silhouettes" unique_id=569059892 instance=ExtResource("16_21ife")]
-transform = Transform3D(-0.9482027, 0, -0.31766796, 0, 1, 0, 0.31766796, 0, -0.9482027, 29.523602, 3.495543, -108.37333)
-
-[node name="Silhouette3D(6)" parent="SubViewport/World/Silhouettes" unique_id=1798888108 instance=ExtResource("16_21ife")]
-transform = Transform3D(0.929528, -0.06670298, -0.36266983, -0.060154974, -0.99775743, 0.029331889, -0.36381322, -0.005448447, -0.9314565, 45.999733, 3.6888494, 5.9454994)
-
-[node name="Silhouette3D(8)" parent="SubViewport/World/Silhouettes" unique_id=500776610 instance=ExtResource("16_21ife")]
-transform = Transform3D(-0.69478416, 0, -0.7192193, 0, 1, 0, 0.7192193, 0, -0.69478416, 71.03596, 3.700303, -26.0394)
-
-[node name="SpecialSilhouette3D(9)" parent="SubViewport/World/Silhouettes" unique_id=587199928 instance=ExtResource("17_utvbf")]
-transform = Transform3D(0.36487675, 0, -0.93105584, 0, 1, 0, 0.93105584, 0, 0.36487675, 59.436, 5.168, 67.761)
-
 [node name="boulder2" parent="SubViewport/World" unique_id=445973960 instance=ExtResource("18_0v64l")]
 transform = Transform3D(0.83340305, -0.014723426, 0.55246943, -0.0054663587, 0.9993766, 0.0348796, -0.5526384, -0.032088764, 0.83280313, -26.888264, 0.8008301, -46.383804)
 
@@ -4623,7 +4140,7 @@ transform = Transform3D(1, 2.2700988e-09, 0, 1.9790605e-09, 1.0000001, 4.656613e
 transform = Transform3D(0.38240707, 0.029320413, 0.9235288, 0.008013504, 0.9993536, -0.035045892, -0.9239592, 0.02080249, 0.381925, 0.4606495, -0.011961937, -0.2429161)
 
 [node name="grass2" parent="SubViewport/World/Grasses" unique_id=313991842 instance=ExtResource("19_hx8h7")]
-transform = Transform3D(-0.99668837, 0.031147761, -0.075113595, 0.030816644, 0.9995096, 0.0055635604, 0.07525006, 0.0032303843, -0.99715936, 2.012272, -0.014022708, 0.09623718)
+transform = Transform3D(-0.9930897, 0.042498976, 0.10939199, 0.042593583, 0.99909145, -0.0014728308, -0.10935514, 0.0031967424, -0.9939974, 1.8912277, 0.07385063, -1.1963081)
 
 [node name="grass3" parent="SubViewport/World/Grasses" unique_id=1891636704 instance=ExtResource("19_hx8h7")]
 transform = Transform3D(-0.94363433, 0.031147761, 0.32952073, 0.030471731, 0.9995096, -0.007217499, -0.32958388, 0.0032303843, -0.9441207, -1.8024025, -0.015112042, 1.7334213)
@@ -4652,6 +4169,27 @@ transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995
 [node name="Fireflies" parent="SubViewport/World" unique_id=575794453 instance=ExtResource("23_63yjo")]
 transform = Transform3D(0.19739681, 0, 0.9803237, 0, 1, 0, -0.9803237, 0, 0.19739681, -27.999372, 0.040179133, -47.608204)
 
+[node name="tall_fir_tree" parent="SubViewport/World" unique_id=628122649 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.181465, -0.24385977, -71.92706)
+
+[node name="tall_fir_tree2" parent="SubViewport/World" unique_id=1383191642 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.96544, 0.49003077, -61.284206)
+
+[node name="cedar_tree" parent="SubViewport/World" unique_id=1992994954 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.632374, -0.45454025, -50.26687)
+
+[node name="tall_fir_tree3" parent="SubViewport/World" unique_id=1463141777 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.810135, 0.043410778, -53.293472)
+
+[node name="cedar_tree2" parent="SubViewport/World" unique_id=1759020776 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.328575, -0.2629485, -96.122246)
+
+[node name="tall_fir_tree4" parent="SubViewport/World" unique_id=1215282755 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.745445, -0.7335501, -103.44364)
+
+[node name="tall_fir_tree5" parent="SubViewport/World" unique_id=895864385 instance=ExtResource("12_khirb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.892944, -0.17125666, 33.330006)
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1477322359]
 texture_filter = 1
 anchors_preset = 15
@@ -4668,3 +4206,6 @@ libraries/ = SubResource("AnimationLibrary_ke06p")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=730496574]
 light_data = ExtResource("24_ke06p")
+
+[node name="cedar_tree" parent="." unique_id=724500704 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.557758, -0.2112689, -0.8841686)
