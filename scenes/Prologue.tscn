@@ -7,7 +7,6 @@
 [ext_resource type="FontFile" uid="uid://78n28mmk5f74" path="res://assets/fonts/Geo-Italic.ttf" id="5_6uvvw"]
 [ext_resource type="PackedScene" uid="uid://cursl7y2tughc" path="res://assets/models/chapter_0_map/prologue.tscn" id="8_y5b7v"]
 [ext_resource type="PackedScene" uid="uid://vvj7o8vrp3qc" path="res://assets/models/bench/bench.tscn" id="9_b460r"]
-[ext_resource type="PackedScene" uid="uid://ctl1xmfds16dl" path="res://assets/models/log_cabin/log_cabin.tscn" id="9_fv78f"]
 [ext_resource type="PackedScene" uid="uid://becylmfxbg5ks" path="res://assets/models/trees/pine_tree/pine_tree.tscn" id="10_giphs"]
 [ext_resource type="PackedScene" uid="uid://b2myn6s4vdhla" path="res://assets/models/trees/cedar_tree/cedar_tree.tscn" id="11_055tb"]
 [ext_resource type="PackedScene" uid="uid://cb2cwc0la82rj" path="res://assets/models/trees/tall_fir_tree/tall_fir_tree.tscn" id="12_khirb"]
@@ -20,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://bcvbelbc4ydr8" path="res://assets/models/reed/reed.tscn" id="20_jx3m7"]
 [ext_resource type="PackedScene" uid="uid://dcv2ihujew0fi" path="res://assets/models/flowers/dandelion/dandelion.blend" id="21_dygop"]
 [ext_resource type="PackedScene" uid="uid://dx5mwfywvv131" path="res://assets/models/flowers/lavender/lavender.blend" id="22_7pus1"]
+[ext_resource type="PackedScene" uid="uid://darka37qrcnj8" path="res://assets/models/watch_tower/watch_tower.blend" id="22_b460r"]
 [ext_resource type="PackedScene" uid="uid://d28toy8ya2u5s" path="res://assets/models/fireflies/fireflies.tscn" id="23_63yjo"]
 [ext_resource type="LightmapGIData" uid="uid://b7ljky58a306m" path="res://lightmapGI/Prologue.lmbake" id="24_ke06p"]
 
@@ -503,9 +503,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.274, -52.786)
 
 [node name="Map3D" parent="SubViewport/World" unique_id=742473182 instance=ExtResource("8_y5b7v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06663036, 0.094632864, -0.04007864)
-
-[node name="LogCabin3D" parent="SubViewport/World" unique_id=575086565 instance=ExtResource("9_fv78f")]
-transform = Transform3D(0.9077775, 0, -0.4194521, 0, 1, 0, 0.4194521, 0, 0.9077775, 53.626, 3.0230153, 69.801)
 
 [node name="Forest3D" type="Node3D" parent="SubViewport/World" unique_id=1512849187]
 
@@ -4453,3 +4450,13 @@ libraries/ = SubResource("AnimationLibrary_ke06p")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=730496574]
 light_data = ExtResource("24_ke06p")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1776515498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, 43.426353, 60.96434)
+light_energy = 16.0
+light_indirect_energy = 16.0
+omni_range = 32.46
+omni_attenuation = 0.938
+
+[node name="watch_tower" parent="." unique_id=1710030654 instance=ExtResource("22_b460r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, -28.038364, 60.96434)
