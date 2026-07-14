@@ -12,7 +12,7 @@ Todos:
 - [ ] Make jumping better
 - [ ] Sprint with a stamina or cool down
 - [ ] Interior of the Watch Tower
-- [ ] Watch Tower
+- [-] Watch Tower (v0.1.1(B&C)-alpha) ...
 - [ ] Ambience Sfx
   - [ ] Thunder SFX
   - [ ] sounds of wind and wild animals
