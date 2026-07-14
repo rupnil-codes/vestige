@@ -4459,4 +4459,4 @@ omni_range = 32.46
 omni_attenuation = 0.938
 
 [node name="watch_tower" parent="." unique_id=1710030654 instance=ExtResource("22_b460r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, -28.038364, 60.96434)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, -1.4818854, 60.96434)
