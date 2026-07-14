@@ -19,7 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://bcvbelbc4ydr8" path="res://assets/models/reed/reed.tscn" id="20_jx3m7"]
 [ext_resource type="PackedScene" uid="uid://dcv2ihujew0fi" path="res://assets/models/flowers/dandelion/dandelion.blend" id="21_dygop"]
 [ext_resource type="PackedScene" uid="uid://dx5mwfywvv131" path="res://assets/models/flowers/lavender/lavender.blend" id="22_7pus1"]
-[ext_resource type="PackedScene" uid="uid://darka37qrcnj8" path="res://assets/models/watch_tower/watch_tower.blend" id="22_b460r"]
+[ext_resource type="PackedScene" uid="uid://b266b3hla6xgo" path="res://assets/models/watch_tower/watch_tower_backup_1.blend" id="22_b460r"]
 [ext_resource type="PackedScene" uid="uid://d28toy8ya2u5s" path="res://assets/models/fireflies/fireflies.tscn" id="23_63yjo"]
 [ext_resource type="LightmapGIData" uid="uid://b7ljky58a306m" path="res://lightmapGI/Prologue.lmbake" id="24_ke06p"]
 
@@ -4458,5 +4458,5 @@ light_indirect_energy = 16.0
 omni_range = 32.46
 omni_attenuation = 0.938
 
-[node name="watch_tower" parent="." unique_id=1710030654 instance=ExtResource("22_b460r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, 28.802418, 60.96434)
+[node name="watch_tower_backup_1" parent="." unique_id=1676638997 instance=ExtResource("22_b460r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.48915, 1.5955708, 61.000214)

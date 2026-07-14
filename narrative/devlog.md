@@ -1,10 +1,10 @@
-# (v0.1.1(D)-alpha) Watch Tower (40%)!
+# (v0.1.1(E)-alpha) Watch Tower (40%)!
 
 ---
 
 ## Changelog:
 
-- **[(v0.1.1(E)-alpha) Watch Tower Modelling (4)](https://github.com/rupnil-codes/vestige/commit/5c7dec)**: erm so nothing productive just me fixing the HUMONGOUS number of vertices that have been created for god knows what. Lmfao i messed up at the end and i have to go back to the last backup :pf: Oh well i have tuitions now will do more stuff later _[Lapsed](https://lapse.hackclub.com/timelapse/EIYwunkjbwAC)_
+- **[(v0.1.1(E)-alpha) Watch Tower Modelling (4)](https://github.com/rupnil-codes/vestige/commit/092ca8)**: erm so nothing productive just me fixing the HUMONGOUS number of vertices that have been created for god knows what. Lmfao i messed up at the end and i have to go back to the last backup :pf: Oh well i have tuitions now will do more stuff later _[Lapsed](https://lapse.hackclub.com/timelapse/EIYwunkjbwAC)_
 
 - **[(v0.1.1(D)-alpha) Watch Tower Modelling (3)](https://github.com/rupnil-codes/vestige/commit/5c7dec)**: Ah yes, guess why there is no lapse for this update- thats right! Lookout messed up and I cannot recover the lost footage and publish it in lapse. I lwk forgot what i did in this update :skull: You are gonna guess it
 
