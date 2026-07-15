@@ -19,7 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://bcvbelbc4ydr8" path="res://assets/models/reed/reed.tscn" id="20_jx3m7"]
 [ext_resource type="PackedScene" uid="uid://dcv2ihujew0fi" path="res://assets/models/flowers/dandelion/dandelion.blend" id="21_dygop"]
 [ext_resource type="PackedScene" uid="uid://dx5mwfywvv131" path="res://assets/models/flowers/lavender/lavender.blend" id="22_7pus1"]
-[ext_resource type="PackedScene" uid="uid://b266b3hla6xgo" path="res://assets/models/watch_tower/watch_tower_backup_1.blend" id="22_b460r"]
+[ext_resource type="PackedScene" uid="uid://v4md1p36rn0g" path="res://assets/models/watch_tower/watch_tower.tscn" id="22_b460r"]
 [ext_resource type="PackedScene" uid="uid://d28toy8ya2u5s" path="res://assets/models/fireflies/fireflies.tscn" id="23_63yjo"]
 [ext_resource type="LightmapGIData" uid="uid://b7ljky58a306m" path="res://lightmapGI/Prologue.lmbake" id="24_ke06p"]
 
@@ -4452,11 +4452,11 @@ libraries/ = SubResource("AnimationLibrary_ke06p")
 light_data = ExtResource("24_ke06p")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1776515498]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, 43.426353, 60.96434)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, 32.1382, 60.96434)
 light_energy = 16.0
 light_indirect_energy = 16.0
 omni_range = 32.46
 omni_attenuation = 0.938
 
-[node name="watch_tower_backup_1" parent="." unique_id=1676638997 instance=ExtResource("22_b460r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.48915, 1.5955708, 61.000214)
+[node name="watch_tower" parent="." unique_id=1978300811 instance=ExtResource("22_b460r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.25338, 10.4518585, 56.799236)
