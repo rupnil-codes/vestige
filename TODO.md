@@ -10,6 +10,7 @@ Todos:
 - [X] Better walking animation (v0.0.9(F)-alpha)
 - [X] Improved Silhouette Mechanics. (v0.1.1(A)-alpha)
 - [ ] Make jumping better
+- [ ] Reduce fog when the player reaches the top of the watch tower.
 - [ ] Sprint with a stamina or cool down
 - [ ] Interior of the Watch Tower
 - [-] Watch Tower (v0.1.1(B&C)-alpha) ...
