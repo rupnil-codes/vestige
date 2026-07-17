@@ -4452,7 +4452,7 @@ libraries/ = SubResource("AnimationLibrary_ke06p")
 light_data = ExtResource("24_ke06p")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1776515498]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, 32.1382, 60.96434)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.53531, 41.521347, 60.96434)
 light_energy = 16.0
 light_indirect_energy = 16.0
 omni_range = 32.46
