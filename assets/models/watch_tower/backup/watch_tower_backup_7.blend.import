@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://brelwyelqe2vq"
-path="res://.godot/imported/watch_tower_backup_2.blend-591d9ad9f67cddf458c512aa98a183a3.scn"
+uid="uid://dhcdl1ab44k5i"
+path="res://.godot/imported/watch_tower_backup_7.blend-c2b9e5831ea12dbd91565edd5c88c9ae.scn"
 
 [deps]
 
-source_file="res://assets/models/watch_tower/watch_tower_backup_2.blend"
-dest_files=["res://.godot/imported/watch_tower_backup_2.blend-591d9ad9f67cddf458c512aa98a183a3.scn"]
+source_file="res://assets/models/watch_tower/backup/watch_tower_backup_7.blend"
+dest_files=["res://.godot/imported/watch_tower_backup_7.blend-c2b9e5831ea12dbd91565edd5c88c9ae.scn"]
 
 [params]
 

@@ -13,7 +13,9 @@ Todos:
 - [ ] Reduce fog when the player reaches the top of the watch tower.
 - [ ] Sprint with a stamina or cool down
 - [ ] Interior of the Watch Tower
-- [-] Watch Tower (v0.1.1(B&C)-alpha) ...
+- [X] Watch Tower Model (v0.1.1(B&C)-alpha ... v0.1.1(Q)-alpha)
+  - [ ] Window borders
+- [ ] Watch Tower Texturing
 - [ ] Ambience Sfx
   - [ ] Thunder SFX
   - [ ] sounds of wind and wild animals
