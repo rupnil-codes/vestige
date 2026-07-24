@@ -1,14 +1,12 @@
-# (v0.1.2(A)-alpha) Watch Tower Texturing (2%)
+# (v0.1.2(C)-alpha) Watch Tower Texturing (45%)
 
 ---
 
 ## Changelog:
 
-- **[(v0.1.2(A)-alpha) Watch Tower Texturing (1.1)](https://github.com/rupnil-codes/vestige/commit/f48c92)**: Yay so i moved on to the texturing part of the watch toweeeeerr. Just made the door for now but I will accelerate the work from tmrw trust :pf: _[Lapsed](https://lapse.hackclub.com/timelapse/VqI53SzRSJKT)_
+- **[(v0.1.2(A)-alpha) Watch Tower Texturing (1.5)](https://github.com/rupnil-codes/vestige/commit/8625d5)**: Yay so i made the Floor section completely- the floor and the uhh supprts ig lol. THis was fun Ill work more tmrw _[Lapsed](https://lapse.hackclub.com/timelapse/dYdU-bdp09-G)_
 
-- **[(v0.1.1(Q)-alpha) Watch Tower Modelling (11)](https://github.com/rupnil-codes/vestige/commit/8e87a5)**: oh my gosh! im done with the modelling! well i mean i may add the window margins stuff later but yeah! i am now starting the texturing! i made the glass and experimented with some stuff _[Lapsed](https://lapse.hackclub.com/timelapse/N7Tr_JHCu1tn)_
-
-- **[(v0.1.1(P)-alpha) Watch Tower Modelling (10.4)](https://github.com/rupnil-codes/vestige/commit/a0a689)**: ok i am being for REAL right now. and u HAVe to believe me when i say that i am FInALLY COMPLETE with the freaking fencing stuff i am NOT doing that again :skull: ok now the only thing left is the window panes and THEn i can finally move on to the texture- _[Lapsed](https://lapse.hackclub.com/timelapse/dxxad0zpXq8g)_
+- **[(v0.1.2(A)-alpha) Watch Tower Texturing (1.2 + 1.3 + 1.4)](https://github.com/rupnil-codes/vestige/commit/eedbff)**: 1. So nothing much to brag about here- I completed texturing the roof. It was pretty easy ngl - anyways I'll do the UV unwrapping of the walls next ig. 2. So I unwrapped the UV layout of the walls and its Horrible! It will take so much time to manually fix everything lmao. I did like 50% of the unwrapping today NOT THE TEXTURNG BTW! so we will see tmrw! gn. 3. Completed the UV unwrapping of the walls and also the texturing of the walls! the room section of the texturing is done! moving on to the floor and stairs! _[Lapsed](https://lapse.hackclub.com/timelapse/J0cDzqIzVmak)_
 
 ---
 
@@ -21,4 +19,4 @@
 
 ## Notes:
 
-Yooooo so I finally completed the modelling of the watch tower and started texturing it recently. I have some work to do today so idk how long i can code- Ill try my best tho!
+Aww man i couldnt really focus on this project for the last few days i had so much work! had 2 assignments- submitted them today so i think i can focus in more today!!
