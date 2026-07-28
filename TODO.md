@@ -15,7 +15,7 @@ Todos:
 - [ ] Interior of the Watch Tower
 - [X] Watch Tower Model (v0.1.1(B&C)-alpha ... v0.1.1(Q)-alpha)
   - [ ] Window borders
-- [ ] Watch Tower Texturing
+- [X] Watch Tower Texturing (v0.1.2(A)-alpha ... v0.1.2(K)-alpha)
 - [ ] Ambience Sfx
   - [ ] Thunder SFX
   - [ ] sounds of wind and wild animals
@@ -54,6 +54,6 @@ Todos:
   - [X] Fix the .show and .hide things to truly make them stop rendering. (v0.0.8(G)-pre-alpha)
   - [ ] Grass and Flower optimizations
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
-    - [ ] Silhouette SFX
+	- [ ] Silhouette SFX
 - [X] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)
 - [X] Make it so that when silhouettes are found even if the player stops looking they will complete the animation. (v0.0.9(A)-alpha)
