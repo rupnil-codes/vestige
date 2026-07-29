@@ -36,7 +36,7 @@ Todos:
 - [X] Shaders (v0.0.6(C)-pre-alpha ... v0.0.6(D)-pre-alpha)
 - [X] Torches along the path. (v0.0.6(I)-pre-alpha)
 - [X] Mountains (v0.0.7(A)-pre-alpha ... v0.0.7(B)-pre-alpha)
-  - [ ] Fix the texture (size)
+  - [X] Fix the texture (size) (v0.1.3-alpha)
 - [X] Snow & Thunders (v0.0.7(C)-pre-alpha ... v0.0.7(D)-pre-alpha)
 - [X] Volumetric Fog: https://docs.godotengine.org/en/latest/tutorials/3d/volumetric_fog.html (v0.0.7(E)-pre-alpha)
 - [X] Fix Shiny ground: metallic or specular thing (v0.0.7(E)-pre-alpha)

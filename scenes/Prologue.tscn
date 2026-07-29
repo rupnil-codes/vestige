@@ -427,12 +427,6 @@ theme_override_font_sizes/font_size = 20
 text = "30 fps"
 metadata/_edit_use_anchors_ = true
 
-[node name="cedar_tree" parent="CanvasLayer/UserInterface" unique_id=1753933853 instance=ExtResource("11_055tb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.887253, 0.0727222, -76.50859)
-
-[node name="pine_tree" parent="CanvasLayer/UserInterface" unique_id=378494581 instance=ExtResource("10_giphs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.876144, 0.08213425, -87.1991)
-
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1180690384]
 scaling_3d_scale = 0.6
 anisotropic_filtering_level = 0
@@ -4351,6 +4345,12 @@ transform = Transform3D(0.29286206, 0, -0.9561547, 0, 1, 0, 0.9561547, 0, 0.2928
 
 [node name="cedar_tree189" parent="SubViewport/World/Forest3D" unique_id=724500704 instance=ExtResource("11_055tb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.557758, -0.2112689, -0.8841686)
+
+[node name="cedar_tree190" parent="SubViewport/World/Forest3D" unique_id=1753933853 instance=ExtResource("11_055tb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.887253, 0.0727222, -76.50859)
+
+[node name="pine_tree332" parent="SubViewport/World/Forest3D" unique_id=378494581 instance=ExtResource("10_giphs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.876144, 0.08213425, -87.1991)
 
 [node name="Torches3D" type="Node3D" parent="SubViewport/World" unique_id=1029817589]
 
