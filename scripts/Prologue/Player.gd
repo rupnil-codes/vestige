@@ -24,6 +24,12 @@ var was_on_floor := true
 var headbob_origin: Vector3
 var headbob_rot_origin: Vector3
 
+@onready var stairs_checker: Node3D = $StairsChecker
+@onready var step_top_ray: RayCast3D = $StairsChecker/StepTopRay
+@onready var step_clear_ray: RayCast3D = $StairsChecker/StepClearRay
+
+const MAX_STEP_HEIGHT: float = 1.0
+
 func _ready() -> void:
 	headbob_origin = headbob.position
 	headbob_rot_origin = headbob.rotation
@@ -53,9 +59,9 @@ func _input(event: InputEvent) -> void:
 			)
 
 func _physics_process(delta: float) -> void:
-
 	if !is_on_floor():
 		velocity += get_gravity() * delta
+		_handle_plank_stair_climb()
 
 	if Input.is_action_just_pressed("ui_accept") \
 	and is_on_floor() \
@@ -127,8 +133,16 @@ func _physics_process(delta: float) -> void:
 			headbob_rot_origin.z,
 			delta * 10.0
 		)
-
+	
 	move_and_slide()
+
+func _handle_plank_stair_climb():
+	if step_top_ray.is_colliding():
+		# if not step_clear_ray.is_colliding():
+			var collision_point: Vector3 = step_top_ray.get_collision_point()
+			
+			global_position.y = collision_point.y + 0.05
+
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	pass

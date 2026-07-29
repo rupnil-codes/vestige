@@ -16,6 +16,8 @@ Todos:
 - [X] Watch Tower Model (v0.1.1(B&C)-alpha ... v0.1.1(Q)-alpha)
   - [ ] Window borders
 - [X] Watch Tower Texturing (v0.1.2(A)-alpha ... v0.1.2(K)-alpha)
+- [ ] Make auto jump thing on the watch tower stairs.
+- [ ] Fix the UV of the beams and railings (Low)
 - [ ] Ambience Sfx
   - [ ] Thunder SFX
   - [ ] sounds of wind and wild animals
