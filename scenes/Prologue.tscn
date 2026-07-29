@@ -492,18 +492,8 @@ visibility_aabb = AABB(-15, -34, -15, 30, 34, 30)
 process_material = SubResource("ParticleProcessMaterial_57qmd")
 draw_pass_1 = SubResource("QuadMesh_fcnqv")
 
-[node name="StairsChecker" type="Node3D" parent="SubViewport/World/Player3D" unique_id=569252504]
-transform = Transform3D(1, 0, 2.9802322e-08, 0, 0.9999991, 0, -2.9802322e-08, 0, 1, 0.6099262, 0.24611776, 0.039203644)
-
-[node name="StepTopRay" type="RayCast3D" parent="SubViewport/World/Player3D/StairsChecker" unique_id=775850053]
-transform = Transform3D(1.0000002, 0, 0, 0, 0.99999994, 0, 0, 0, 1.0000002, 0.29178238, 1.1634153, 0.005092621)
-target_position = Vector3(0, -1.19, 0)
-
-[node name="StepClearRay" type="RayCast3D" parent="SubViewport/World/Player3D/StairsChecker" unique_id=1578491485]
-transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 1, 0, 2.128157, 0)
-
 [node name="watch_tower" parent="SubViewport/World" unique_id=1978300811 instance=ExtResource("22_b460r")]
-transform = Transform3D(1, 0, 0, 0, 0.9999996, 0, 0, 0, 1, -19.875452, 27.242212, -55.81262)
+transform = Transform3D(1, 0, 0, 0, 0.9999996, 0, 0, 0, 1, -19.875, 27.036, -55.813)
 
 [node name="Bench3D" parent="SubViewport/World" unique_id=2085675750 instance=ExtResource("9_b460r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
@@ -512,7 +502,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06663036, 0.094632864, -0.04007864)
 
 [node name="Forest3D" type="Node3D" parent="SubViewport/World" unique_id=1512849187]
-visible = false
 
 [node name="pine_tree96" parent="SubViewport/World/Forest3D" unique_id=116300073 instance=ExtResource("10_giphs")]
 transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 92.17127, -0.3567369, -16.444262)
@@ -4403,7 +4392,6 @@ transform = Transform3D(0.27652863, 0.24194798, -0.9300499, -0.14676449, 0.96707
 
 [node name="Grasses" type="Node3D" parent="SubViewport/World" unique_id=2000068543]
 transform = Transform3D(0.99497855, -0.030698666, -0.09526467, 0.0369288, 0.9972448, 0.064339384, 0.09302705, -0.067534305, 0.99337065, -27.366238, 0.23949403, -48.18928)
-visible = false
 
 [node name="grass5" parent="SubViewport/World/Grasses" unique_id=1595865191 instance=ExtResource("19_hx8h7")]
 transform = Transform3D(1, 2.2700988e-09, 0, 1.9790605e-09, 1.0000001, 4.656613e-10, -7.450581e-09, -4.656613e-10, 1, 0, 0, 0)

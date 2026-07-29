@@ -1,7 +1,7 @@
 Todos:
 
 ## Prologue: (previously, Chapter 0):
-- [X] Spawn the silhouettes a second after the wake up animation finishes (v0.0.9(D)-alpha ... (v0.0.9(E)-alpha)
+- [X] Spawn the silhouettes a second after the wake-up animation finishes (v0.0.9(D)-alpha ... (v0.0.9(E)-alpha)
 - [X] Torch flickering (v0.0.9(E)-alpha)
 - [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha ... v0.0.9(C)-alpha)
   - [ ] Make it authentic/humanlike?
@@ -16,7 +16,7 @@ Todos:
 - [X] Watch Tower Model (v0.1.1(B&C)-alpha ... v0.1.1(Q)-alpha)
   - [ ] Window borders
 - [X] Watch Tower Texturing (v0.1.2(A)-alpha ... v0.1.2(K)-alpha)
-- [ ] Make auto jump thing on the watch tower stairs.
+- [ ] Make auto jump thing on the watch tower stairs. (v0.1.4(A)-alpha ... v0.1.4(B)-alpha)
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Ambience Sfx
   - [ ] Thunder SFX

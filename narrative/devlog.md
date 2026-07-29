@@ -1,28 +1,32 @@
-# (v0.1.2(H)-alpha) Watch Tower Texturing (90%)
+# (v0.1.2(H)-alpha) Walking on the Watch Tower (Failed)
 
 ---
 
 ## Changelog:
 
-- **[(v0.1.2(H)-alpha) Watch Tower Texturing (4.1)](https://github.com/rupnil-codes/vestige/commit/1507ca)**: Okay so nothing but I joined a hell lot of meshes and objects- i mean the stairs portion. And then unwrapped the UV this took me some time but i finished it! next imma fix the UV and then COMPLETE this FOR ONCE AND ALL! _[Lapsed](https://lapse.hackclub.com/timelapse/lFGMZelMeAAi)_
+- **[(v0.1.4(B)-alpha) Walking on Stairs (2)](https://github.com/rupnil-codes/vestige/commit/1507ca)**: Lwk I just messed around for the whole time :sk: I literally do not know wht to do at this point I will revisit this tommorow (I dmed my fwend Seb lmao). I tried many methods but i couldnt seem to be able to make this work tho _[Lapsed](https://lapse.hackclub.com/timelapse/Y_2XIsXdtHRZ)_
 
-- **[(v0.1.2(G)-alpha) Watch Tower Texturing (3.4)](https://github.com/rupnil-codes/vestige/commit/efbfea)**: Ayy so i completed the Leg section of the watch tower! i agree most of the work is uv unwrapping because of the faces and all yk. But yeah! im making progress only the stairs section left ig!!!! _[Lapsed](https://lapse.hackclub.com/timelapse/bLWT3XNA4SN1)_
+- **[(v0.1.4(A)-alpha) Walking on Stairs (1)](https://github.com/rupnil-codes/vestige/commit/8e9184)**: Yo gang I tried my to do the stairs walking thing but as you would expect I completely failed lmfAaooo. Uh I really dont know how to move next but ill try my best _[Lapsed](https://lapse.hackclub.com/timelapse/uDZLq9sfPM2y)_
 
-- **[(v0.1.2(F)-alpha) Watch Tower Texturing (3.3)](https://github.com/rupnil-codes/vestige/commit/6ff7e0)**: Teeny tiny lapse! just combined and unwrapped the support beams- ill prolly texture it tommorw and then move on to the stairs section :yay: _[Lapsed](https://lapse.hackclub.com/timelapse/Sy420ED3mBpl)_
+- **[(v0.1.3-alpha) Mountains Texture Fix](https://github.com/rupnil-codes/vestige/commit/92d264)**: So erm as i completed the watch tower im moving on to other thigns-- first i saw that this was in my todo for a while so fixed it lol _[Lapsed](https://lapse.hackclub.com/timelapse/uDZLq9sfPM2y)_
 
-- **[(v0.1.2(E)-alpha) Watch Tower Texturing (3.1+3.2)](https://github.com/rupnil-codes/vestige/commit/c9223e)**: Holy smokes! What a productive day! got so so so much done today -- So I completed the Legs, and support beams in this lapse so only the cross supports are left! Also blender crashed like 300 times today-- i really need the macbook gng i got the signs already! _[Lapsed](https://lapse.hackclub.com/timelapse/LC_TowlUGpp8)_
+- **[(v0.1.2(K)-alpha) Watch Tower Texturing (4.4)](https://github.com/rupnil-codes/vestige/commit/ca8026)**: Shalalala sha boinky! I actually finished the (skeleton) of the watch tower model! Omg i dont believe it! I am feeling a large weight off my shoulders lmfao! But hey its not done yet! I have so so so sos os so much more to do- next up ill fix the stair walking and oh a story redesign! _[Lapsed](https://lapse.hackclub.com/timelapse/ue4GQ8NTvd7g)_
 
-- **[(v0.1.2(D)-alpha) Watch Tower Texturing (2)](https://github.com/rupnil-codes/vestige/commit/53e9d8)**: Oh another milestone i suppose! I completed the UV unwrapping of the fence and also textured it! I dont have any more stuff to talk about gng im so tired and busy nowadays :pf: _[Lapsed](https://lapse.hackclub.com/timelapse/N2ti28B4M9rs)_
+- **[(v0.1.2(J)-alpha) Watch Tower Texturing (4.3)](https://github.com/rupnil-codes/vestige/commit/7d3801)**: Finally completed texturing the stairs -- the railings and the beams are still remaining but ill try to do them soon enough 👍 _[Lapsed](https://lapse.hackclub.com/timelapse/B8cO6Cz23XJ0)_
+
+- **[(v0.1.2(I)-alpha) Watch Tower Texturing (4.2)](https://github.com/rupnil-codes/vestige/commit/6b0f2f)**: oh my GOD BRO this is so painful i really hope i could do something else to speed this up but yeah idk- So nothing other than UV unwrap stuff NOT EVEN ONE mesh and i have 2 more to go- I am dying :D _[Lapsed](https://lapse.hackclub.com/timelapse/8nSmqQZLrgh0)_
 
 ---
 
 ## Next Step(s):
 
 1. ~~Watch Tower Model~~
-2. Watch Tower Texture (WIP GNG ALMOST)
+2. ~~Watch Tower Texture~~
+3. Auto Jump on Stairs
+4. Interior Design of the Watch Tower
 
 ---
 
 ## Notes:
 
-OK LISTEN! LISTEN I swore to @Keyboard that I wont devlog until I have completed the whole texturing BUT its getting too ridiculous not to- im alr at 7 hours and yeah
+Gang I tried my best I literally cannot seem to be able to be able to find a way to make the auto jump thing :hs: I need to call the big guns now! (@seb) Anyways, I obv completed the watch tower texturing
