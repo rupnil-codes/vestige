@@ -6,12 +6,22 @@ var captured: bool = true
 @export var look_sensitivity: float = 0.005
 @export var jump_velocity: float = 6.0
 @export var auto_bhop: bool = true
-@export var walk_speed: float = 6.0
-@export var sprint_speed: float = 8.5
 
-const HEADBOB_MOVE_AMOUNT: float = 0.06
-const HEADBOB_FREQUENCY: float = 2.4
-const headbob_time: float = 0.0
+const HEADBOB_MOVE_AMOUNT: float = 0.1
+const HEADBOB_FREQUENCY: float = 2.0
+var headbob_time: float = 0.0
+
+# ground
+@export var walk_speed: float = 4.5
+@export var sprint_speed: float = 8.0
+@export var ground_accel: float = 14.0
+@export var ground_decel: float = 10.0
+@export var ground_friction: float = 4.5
+
+# air
+@export var air_cap: float = 0.85
+@export var air_accel: float = 800.0
+@export var air_move_speed: float = 500.0
 
 var wish_dir := Vector3.ZERO
 
@@ -44,16 +54,71 @@ func _unhandled_input(event: InputEvent) -> void:
 				deg_to_rad(90)
 			)
 	
+func _headbob_effect(delta: float):
+	headbob_time += delta * self.velocity.length()
+	%Camera3D.transform.origin = Vector3(
+		cos(headbob_time * HEADBOB_FREQUENCY * 0.5) * HEADBOB_MOVE_AMOUNT,
+		sin(headbob_time * HEADBOB_FREQUENCY) * HEADBOB_MOVE_AMOUNT,
+		0
+	)
 
 func _process(delta: float) -> void:
 	pass
 
+func clip_velocity(normal: Vector3, overbounce: float, delta: float) -> void:
+	var backoff: float = self.velocity.dot(normal) * overbounce
+	
+	if backoff >= 0: return
+	
+	var change: Vector3 = normal * backoff
+	self.velocity -= change
+	
+	var adjust: float = self.velocity.dot(normal)
+	if adjust < 0.0:
+		self.velocity -= normal * adjust
+
+func is_surface_too_steep(normal: Vector3) -> bool:
+	var max_slope_ang_dot: float = Vector3(0, 1, 0).rotated(Vector3(1.0,0,0), self.floor_max_angle).dot(Vector3(0,1,0))
+	if normal.dot(Vector3(0,1,0)) < max_slope_ang_dot:
+		return true
+	return false
+
 func _handle_air_physics(delta: float) -> void:
 	self.velocity.y -= ProjectSettings.get_setting("physics/3d/default_gravity") * delta
+	
+	var cur_speed_in_wish_dir: float = self.velocity.dot(wish_dir)
+	var capped_speed = min((air_move_speed * wish_dir).length(), air_cap)
+	var add_speed_till_cap = capped_speed - cur_speed_in_wish_dir
+	
+	if add_speed_till_cap > 0:
+		var accel_speed: float = air_accel * air_move_speed * delta
+		accel_speed = min(accel_speed, add_speed_till_cap)
+		self.velocity += accel_speed * wish_dir
+		
+	if is_on_wall():
+		if is_surface_too_steep(get_wall_normal()):
+			self.motion_mode = CharacterBody3D.MOTION_MODE_FLOATING
+		else:
+			self.motion_mode = CharacterBody3D.MOTION_MODE_GROUNDED
+		clip_velocity(get_wall_normal(), 1, delta)
+	
 
 func _handle_ground_physics(delta: float) -> void:
-	self.velocity.x = wish_dir.x * get_move_speed()
-	self.velocity.z = wish_dir.z * get_move_speed()
+	var cur_speed_in_wish_dir: float = self.velocity.dot(wish_dir)
+	var add_speed_till_cap: float = get_move_speed() - cur_speed_in_wish_dir
+	if add_speed_till_cap > 0:
+		var accel_speed: float = ground_accel * get_move_speed() * delta
+		accel_speed = min(accel_speed, add_speed_till_cap)
+		self.velocity += accel_speed * wish_dir
+		
+	var control = max(self.velocity.length(), ground_decel)
+	var drop = control * ground_friction * delta
+	var new_speed = max(self.velocity.length() - drop, 0.0)
+	if self.velocity.length() > 0:
+		new_speed /= self.velocity.length()
+	self.velocity *= new_speed
+	
+	_headbob_effect(delta)
 
 func _physics_process(delta: float) -> void:
 	var input_dir := Input.get_vector("left", "right", "up", "down").normalized()
@@ -61,7 +126,7 @@ func _physics_process(delta: float) -> void:
 	wish_dir = self.global_transform.basis * Vector3(-input_dir.x, 0., -input_dir.y)
 	
 	if is_on_floor():
-		if Input.is_action_just_pressed("jump"):
+		if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
 			self.velocity.y = jump_velocity
 		_handle_ground_physics(delta)
 	else:

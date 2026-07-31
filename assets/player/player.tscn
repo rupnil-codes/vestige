@@ -28,20 +28,19 @@ transform = Transform3D(1.0000001, 0, 2.9802322e-08, 0, 0.99999624, 0, -2.980232
 layers = 3
 mesh = SubResource("CapsuleMesh_cmkqj")
 
-[node name="Neck" type="Node3D" parent="." unique_id=1537270025]
-transform = Transform3D(-0.9999995, 0, -8.742275e-08, 0, 0.99999934, 0, 8.7422734e-08, 0, -0.99999964, 0.030723577, 2.0341148, 0.00053787243)
+[node name="Head" type="Node3D" parent="." unique_id=715627724]
+unique_name_in_owner = true
+transform = Transform3D(-0.9999995, 0, -8.754432e-08, 0, 0.9999988, 0, 8.754432e-08, 0, -0.99999964, -0.004135322, 1.9999995, 0.08833253)
 
-[node name="HeadBob" type="Node3D" parent="Neck" unique_id=715627724]
-
-[node name="Camera3D" type="Camera3D" parent="Neck/HeadBob" unique_id=1338789747]
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=1338789747]
 unique_name_in_owner = true
 transform = Transform3D(1.0000007, 0, 0, 0, 1.0000008, 0, 0, 0, 1.0000002, 0, 0, 0)
 cull_mask = 1048573
 current = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Neck/HeadBob/Camera3D" unique_id=923368139]
+[node name="CanvasLayer" type="CanvasLayer" parent="Head/Camera3D" unique_id=923368139]
 
-[node name="ColorRect" type="ColorRect" parent="Neck/HeadBob/Camera3D/CanvasLayer" unique_id=2064006000]
+[node name="ColorRect" type="ColorRect" parent="Head/Camera3D/CanvasLayer" unique_id=2064006000]
 modulate = Color(0, 0, 0, 0)
 anchors_preset = 15
 anchor_right = 1.0
@@ -53,7 +52,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="StairsAheadRayCast3D" type="RayCast3D" parent="." unique_id=878620557]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.9999997, 0, 0, 0, 1, 0.7547703, 0.74975413, 0.013175964)
+transform = Transform3D(1, 0, 0, 0, 0.9999996, 0, 0, 0, 1, 0, 0.75, 0.75)
 target_position = Vector3(0, -0.55, 0)
 
 [node name="StairsBelowRayCast3D" type="RayCast3D" parent="." unique_id=947288977]

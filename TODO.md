@@ -6,7 +6,9 @@ Todos:
 - [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha ... v0.0.9(C)-alpha)
   - [ ] Make it authentic/humanlike?
 - [X] Counter animation (v0.0.9(B)-alpha)
-- [ ] LightMapGI - enable shadows
+- [ ] LightMapGI - enable 
+- [ ] Rework Walking / Player Controller
+  - [ ] Direction doesnt change when jumping and looking at a different direction.
 - [X] Better walking animation (v0.0.9(F)-alpha)
 - [X] Improved Silhouette Mechanics. (v0.1.1(A)-alpha)
 - [ ] Make jumping better
