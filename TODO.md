@@ -7,7 +7,7 @@ Todos:
   - [ ] Make it authentic/humanlike?
 - [X] Counter animation (v0.0.9(B)-alpha)
 - [ ] LightMapGI - enable 
-- [ ] Rework Walking / Player Controller
+- [ ] Rework Walking / Player Controller (v0.1.4(A)-alpha ... )
   - [ ] Direction doesnt change when jumping and looking at a different direction.
 - [X] Better walking animation (v0.0.9(F)-alpha)
 - [X] Improved Silhouette Mechanics. (v0.1.1(A)-alpha)
