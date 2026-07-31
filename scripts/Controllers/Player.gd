@@ -79,29 +79,6 @@ func _headbob_effect(delta: float):
 func _process(delta: float) -> void:
 	pass
 
-func _snap_up_stairs_check(delta: float) -> bool:
-	if not is_on_floor() and not _snapped_to_stairs_last_frame:
-		return false
-	var expected_move_motion: Vector3 = self.velocity * Vector3(0,1,0) * delta
-	var step_pos_with_clearance: Transform3D = self.global_transform.translated(expected_move_motion + Vector3(0, 2 * MAX_STEP_HEIGHT, 0))
-	
-	var down_check_result: PhysicsTestMotionResult3D = PhysicsTestMotionResult3D.new()
-	if (_run_body_test_motion(step_pos_with_clearance, Vector3(0,-MAX_STEP_HEIGHT*2,0), down_check_result)
-	and (down_check_result.get_collider().is_class("StaticBody3D") or down_check_result.get_collider().is_class("CSGShape3D"))):
-		var step_height: float = ((step_pos_with_clearance.origin + down_check_result.get_travel()) - self.global_position).y
-		
-		if step_height > MAX_STEP_HEIGHT or step_height <= 0.01 or (down_check_result.get_collision_point() - self.global_position).y > MAX_STEP_HEIGHT:
-			return false
-		%StairsAheadRayCast3D.global_position = down_check_result.get_collision_point() + Vector3(0,MAX_STEP_HEIGHT,0) + expected_move_motion.normalized() * 0.1
-		%StairsAheadRayCast3D.force_raycast_update()
-		if %StairsAheadRayCast3D.is_colliding() and not is_surface_too_steep(%StairsAheadRayCast3D.get_collision_normal()):
-			self.global_position = step_pos_with_clearance.origin + down_check_result.get_travel()
-			apply_floor_snap()
-			_snapped_to_stairs_last_frame = true
-			return true
-	
-	return false
-
 func _snap_down_to_stairs_check() -> void:
 	var did_snap: bool = false
 	var floor_below: bool = %StairsBelowRayCast3D.is_colliding() and not is_surface_too_steep(%StairsBelowRayCast3D.get_collision_normal())
@@ -156,7 +133,7 @@ func is_surface_too_steep(normal: Vector3) -> bool:
 func _run_body_test_motion(from: Transform3D, motion: Vector3, result = null) -> bool:
 	if not result:
 		result = PhysicsTestMotionResult3D.new()
-	var params = PhysicsTestMotionParameters3D.new()
+	var params: PhysicsTestMotionParameters3D = PhysicsTestMotionParameters3D.new()
 	params.from = from
 	params.motion = motion
 	return PhysicsServer3D.body_test_motion(self.get_rid(), params, result)
@@ -208,13 +185,12 @@ func _physics_process(delta: float) -> void:
 	cam_aligned_wish_dir = %Camera3D.global_transform.basis * Vector3(input_dir.x, 0., input_dir.y)
 	
 	if not _handle_noclip(delta):
-		if is_on_floor() or _snapped_to_stairs_last_frame:
+		if is_on_floor():
 			if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
 				self.velocity.y = jump_velocity
 			_handle_ground_physics(delta)
 		else:
 			_handle_air_physics(delta)
 	
-		if not _snap_up_stairs_check(delta):
-			move_and_slide()
-			_snap_down_to_stairs_check()
+		move_and_slide()
+		_snap_down_to_stairs_check()

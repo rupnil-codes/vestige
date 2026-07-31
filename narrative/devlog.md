@@ -1,20 +1,18 @@
-# (v0.1.2(H)-alpha) Walking on the Watch Tower (Failed)
+# (v0.1.4(G)-alpha) Moving & Jumping on the Stairs (Passed!)
 
 ---
 
 ## Changelog:
 
-- **[(v0.1.4(B)-alpha) Walking on Stairs (2)](https://github.com/rupnil-codes/vestige/commit/32d26c)**: Lwk I just messed around for the whole time :sk: I literally do not know wht to do at this point I will revisit this tommorow (I dmed my fwend Seb lmao). I tried many methods but i couldnt seem to be able to make this work tho _[Lapsed](https://lapse.hackclub.com/timelapse/Y_2XIsXdtHRZ)_
+- **[(v0.1.4(G)-alpha) Player Movement Rework: Auto-jump (5)](https://github.com/rupnil-codes/vestige/commit/32d26c)**: Ok i kinda cheesed it ngl- I was literally being ragebaited because it was NOT working any how. I am using a not so beautiful method but hey it works and thats what counts -- ill polish it later dw. _[Lapsed](https://lapse.hackclub.com/timelapse/a8s9QdwFo0eo)_
 
-- **[(v0.1.4(A)-alpha) Walking on Stairs (1)](https://github.com/rupnil-codes/vestige/commit/8e9184)**: Yo gang I tried my to do the stairs walking thing but as you would expect I completely failed lmfAaooo. Uh I really dont know how to move next but ill try my best _[Lapsed](https://lapse.hackclub.com/timelapse/uDZLq9sfPM2y)_
+- **[(v0.1.4(F)-alpha) Player Movement Rework: ?? (4)](https://github.com/rupnil-codes/vestige/commit/83f098)**: wtf? what happened? what did i do? this is insane i really dont know.......... soo erm climbing stairs doesnt work and there are some pretty bad bugs like being able to fly- lwk i might revert this session _[Lapsed](https://lapse.hackclub.com/timelapse/npfytK06vUjB)_
 
-- **[(v0.1.3-alpha) Mountains Texture Fix](https://github.com/rupnil-codes/vestige/commit/92d264)**: So erm as i completed the watch tower im moving on to other thigns-- first i saw that this was in my todo for a while so fixed it lol _[Lapsed](https://lapse.hackclub.com/timelapse/uDZLq9sfPM2y)_
+- **[(v0.1.4(E)-alpha) Player Movement Rework: Noclip (3)](https://github.com/rupnil-codes/vestige/commit/b96282)**: added a pretty peak thing. Ok so added a noclip feature -- this is like the spectator mode in minecraft lmfao. Ive been meant to do this for a long time but here i am! finally added this -- this will help me a ton i js know it lol _[Lapsed](https://lapse.hackclub.com/timelapse/ylYz_aZVnoDw)_
 
-- **[(v0.1.2(K)-alpha) Watch Tower Texturing (4.4)](https://github.com/rupnil-codes/vestige/commit/ca8026)**: Shalalala sha boinky! I actually finished the (skeleton) of the watch tower model! Omg i dont believe it! I am feeling a large weight off my shoulders lmfao! But hey its not done yet! I have so so so sos os so much more to do- next up ill fix the stair walking and oh a story redesign! _[Lapsed](https://lapse.hackclub.com/timelapse/ue4GQ8NTvd7g)_
+- **[(v0.1.4(D)-alpha) Player Movement Rework (2)](https://github.com/rupnil-codes/vestige/commit/b78795)**: Yoo so added a bunch of new things such as air friction, acceleration deceleration and more. I am having one tiny bug tho -- that is i cannot turn when jumping but dw ill figure out a way to fix it! Also if u forgot Im doing the player rework just to make the autojump thing _[Lapsed](https://lapse.hackclub.com/timelapse/kMzJuT6qxXqG)_
 
-- **[(v0.1.2(J)-alpha) Watch Tower Texturing (4.3)](https://github.com/rupnil-codes/vestige/commit/7d3801)**: Finally completed texturing the stairs -- the railings and the beams are still remaining but ill try to do them soon enough 👍 _[Lapsed](https://lapse.hackclub.com/timelapse/B8cO6Cz23XJ0)_
-
-- **[(v0.1.2(I)-alpha) Watch Tower Texturing (4.2)](https://github.com/rupnil-codes/vestige/commit/6b0f2f)**: oh my GOD BRO this is so painful i really hope i could do something else to speed this up but yeah idk- So nothing other than UV unwrap stuff NOT EVEN ONE mesh and i have 2 more to go- I am dying :D _[Lapsed](https://lapse.hackclub.com/timelapse/8nSmqQZLrgh0)_
+- **[(v0.1.4(C)-alpha) Player Movement Rework (1)](https://github.com/rupnil-codes/vestige/commit/c8e1b8)**: Okay So i realised it wwill be extremely difficult for me to figure it out on my own, and even the big ones (@seb) had no freaking idea lmao. SO what i am doing bnow is following a player/fps controller tutorial where they add this autojump feature :3 _[Lapsed](https://lapse.hackclub.com/timelapse/zIDRnCCnWPJ2)_
 
 ---
 
@@ -22,11 +20,12 @@
 
 1. ~~Watch Tower Model~~
 2. ~~Watch Tower Texture~~
-3. Auto Jump on Stairs
+3. ~~Auto Jump on Stairs~~ (Done but polishing left)
 4. Interior Design of the Watch Tower
+5. Core Gameplay
 
 ---
 
 ## Notes:
 
-Gang I tried my best I literally cannot seem to be able to be able to find a way to make the auto jump thing :hs: I need to call the big guns now! (@seb) Anyways, I obv completed the watch tower texturing
+These sessions were lwk ragebait -- i will NOT talk about the 4th session cuz i have no freaking idea about it. I found a weird way and workaround to do the auto jump. Although it might not be the most beautiful but it works and thats what counts

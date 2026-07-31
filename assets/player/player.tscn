@@ -9,6 +9,8 @@ points = PackedVector3Array(-0.5, -0.5, 0, -0.49765074, -0.5, -0.049040705, -0.4
 lightmap_size_hint = Vector2i(17, 14)
 add_uv2 = true
 
+[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_g4v7s"]
+
 [node name="Player3D" type="CharacterBody3D" unique_id=1421963457 groups=["player"]]
 transform = Transform3D(0.9998477, 0, 0.017452398, 0, 0.9999996, 0, -0.017452406, 0, 0.9998473, 0, 0, 0)
 collision_layer = 3
@@ -16,12 +18,12 @@ collision_mask = 3
 script = ExtResource("1_d6veg")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1354085546]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026943207, 1.2039347, 0.027374268)
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -0.026943209, 1.0462605, 0.027374268)
 shape = SubResource("ConvexPolygonShape3D_b460r")
 
 [node name="WorldModel" type="Node3D" parent="." unique_id=128245594]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 0, -0.15767413, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="WorldModel" unique_id=1860510255]
 transform = Transform3D(1.0000001, 0, 2.9802322e-08, 0, 0.99999624, 0, -2.9802322e-08, 0, 1.0000001, -0.026945116, 1.2039348, 0.027378084)
@@ -30,7 +32,7 @@ mesh = SubResource("CapsuleMesh_cmkqj")
 
 [node name="Head" type="Node3D" parent="." unique_id=715627724]
 unique_name_in_owner = true
-transform = Transform3D(-0.9999995, 0, -8.754432e-08, 0, 0.9999988, 0, 8.754432e-08, 0, -0.99999964, -0.004135322, 1.9999995, 0.08833253)
+transform = Transform3D(-0.9999995, 0, -8.754432e-08, 0, 0.99999875, 0, 8.754432e-08, 0, -0.99999964, -0.0041353223, 1.8423253, 0.088332534)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=1338789747]
 unique_name_in_owner = true
@@ -50,12 +52,11 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="StairsAheadRayCast3D" type="RayCast3D" parent="." unique_id=878620557]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.9999996, 0, 0, 0, 1, 0, 0.75, 0.75)
-target_position = Vector3(0, -0.55, 0)
-
 [node name="StairsBelowRayCast3D" type="RayCast3D" parent="." unique_id=947288977]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 0, -0.15767413, 0)
 target_position = Vector3(0, -0.75, 0)
+
+[node name="SeparationRay3D" type="CollisionShape3D" parent="." unique_id=764660443]
+transform = Transform3D(0.55, 0, 0, 0, -2.4041263e-08, -0.55, 0, 0.55, -2.4041263e-08, -0.014, 0.55, 0.8)
+shape = SubResource("SeparationRayShape3D_g4v7s")
