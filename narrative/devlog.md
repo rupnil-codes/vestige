@@ -4,7 +4,7 @@
 
 ## Changelog:
 
-- **[(v0.1.4(B)-alpha) Walking on Stairs (2)](https://github.com/rupnil-codes/vestige/commit/1507ca)**: Lwk I just messed around for the whole time :sk: I literally do not know wht to do at this point I will revisit this tommorow (I dmed my fwend Seb lmao). I tried many methods but i couldnt seem to be able to make this work tho _[Lapsed](https://lapse.hackclub.com/timelapse/Y_2XIsXdtHRZ)_
+- **[(v0.1.4(B)-alpha) Walking on Stairs (2)](https://github.com/rupnil-codes/vestige/commit/32d26c)**: Lwk I just messed around for the whole time :sk: I literally do not know wht to do at this point I will revisit this tommorow (I dmed my fwend Seb lmao). I tried many methods but i couldnt seem to be able to make this work tho _[Lapsed](https://lapse.hackclub.com/timelapse/Y_2XIsXdtHRZ)_
 
 - **[(v0.1.4(A)-alpha) Walking on Stairs (1)](https://github.com/rupnil-codes/vestige/commit/8e9184)**: Yo gang I tried my to do the stairs walking thing but as you would expect I completely failed lmfAaooo. Uh I really dont know how to move next but ill try my best _[Lapsed](https://lapse.hackclub.com/timelapse/uDZLq9sfPM2y)_
 

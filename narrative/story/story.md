@@ -17,15 +17,16 @@ The progression would be like:
 6. Following the trail the player reaches the clearing where a large watch tower stands.
 7. There is no definitive trail just a path marked by torches and silhouettes.
 8. A single trail with sparse torches. No loop or confusing stuff.
-9. A flight of stairs goes up to the watch tower - cozy room.
-10. As they start climbing the stairs the lights go out throughout.
-11. Light of the watchtower flickers and turns into the same purplish color.
-12. Deep hum and weeping sounds from upstairs.
-13. A silhouette curled up sits in the corner of the top of the watch tower.
-14. Disappears the moment it is touched.
-15. "I'll meet you at the bottom" says the silhouette
-16. While making your way to the bottom of the watchtower, it breaks and you fall.
-17. As you are losing consciously you see something watch over you with glowing eyes.
+9. Maybe a gate on the perimeter of the watch tower.
+10. A flight of stairs goes up to the watch tower - cozy room.
+11. As they start climbing the stairs the lights go out throughout.
+12. Light of the watchtower flickers and turns into the same purplish color.
+13. Deep hum and weeping sounds from upstairs.
+14. A silhouette curled up sits in the corner of the top of the watch tower.
+15. Disappears the moment it is touched.
+16. "I'll meet you at the bottom" says the silhouette
+17. While making your way to the bottom of the watchtower, it breaks and you fall.
+18. As you are losing consciously you see something watch over you with glowing eyes.
 
 You feel the cold snow falling on your body.
 You open your eyes -- blinking twice before your vision unblurs.
