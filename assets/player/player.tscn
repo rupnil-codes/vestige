@@ -58,5 +58,6 @@ transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 0, -0.15767413, 0)
 target_position = Vector3(0, -0.75, 0)
 
 [node name="SeparationRay3D" type="CollisionShape3D" parent="." unique_id=764660443]
-transform = Transform3D(0.55, 0, 0, 0, -2.4041263e-08, -0.55, 0, 0.55, -2.4041263e-08, -0.014, 0.55, 0.8)
+unique_name_in_owner = true
+transform = Transform3D(0.45, 0, 0, 0, -1.9670125e-08, -0.45, 0, 0.45, -1.9670125e-08, -0.014, 0.6, 0.8)
 shape = SubResource("SeparationRayShape3D_g4v7s")

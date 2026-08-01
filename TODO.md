@@ -10,7 +10,8 @@ Todos:
 - [ ] Rework Walking / Player Controller (v0.1.4(A)-alpha ... )
   - [ ] Direction doesnt change when jumping and looking at a different direction.
   - [ ] Jumping is prone to noclipping
-  - [ ] Make going up/down the stairs smooth.
+  - [X] Make going up/down the stairs smooth.
+  - [ ] Jumping is floaty due to the smoothing.
 - [X] Better walking animation (v0.0.9(F)-alpha)
 - [X] Improved Silhouette Mechanics. (v0.1.1(A)-alpha)
 - [ ] Make jumping better

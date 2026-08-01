@@ -441,7 +441,7 @@ shadow_blur = 1.32
 environment = SubResource("Environment_jygv4")
 
 [node name="Player3D" parent="SubViewport/World" unique_id=1421963457 instance=ExtResource("5_b460r")]
-transform = Transform3D(-0.5646523, 0, 0.82532865, 0, 0.99999964, 0, -0.82532895, 0, -0.5646521, -27.055, -0.056738503, -52.831)
+transform = Transform3D(-0.5646522, 0, 0.8253287, 0, 0.9999995, 0, -0.825329, 0, -0.564652, -26.97766, -0.056738503, -52.831)
 
 [node name="GPUSnow3D" type="GPUParticles3D" parent="SubViewport/World/Player3D" unique_id=1677585479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018831253, 32.93535, 0.06018448)

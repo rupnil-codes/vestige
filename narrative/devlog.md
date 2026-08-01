@@ -4,7 +4,7 @@
 
 ## Changelog:
 
-- **[(v0.1.4(G)-alpha) Player Movement Rework: Auto-jump (5)](https://github.com/rupnil-codes/vestige/commit/32d26c)**: Ok i kinda cheesed it ngl- I was literally being ragebaited because it was NOT working any how. I am using a not so beautiful method but hey it works and thats what counts -- ill polish it later dw. _[Lapsed](https://lapse.hackclub.com/timelapse/a8s9QdwFo0eo)_
+- **[(v0.1.4(G)-alpha) Player Movement Rework: Auto-jump (5)](https://github.com/rupnil-codes/vestige/commit/077639)**: Ok i kinda cheesed it ngl- I was literally being ragebaited because it was NOT working any how. I am using a not so beautiful method but hey it works and thats what counts -- ill polish it later dw. _[Lapsed](https://lapse.hackclub.com/timelapse/a8s9QdwFo0eo)_
 
 - **[(v0.1.4(F)-alpha) Player Movement Rework: ?? (4)](https://github.com/rupnil-codes/vestige/commit/83f098)**: wtf? what happened? what did i do? this is insane i really dont know.......... soo erm climbing stairs doesnt work and there are some pretty bad bugs like being able to fly- lwk i might revert this session _[Lapsed](https://lapse.hackclub.com/timelapse/npfytK06vUjB)_
 

@@ -29,9 +29,15 @@ var cam_aligned_wish_dir := Vector3.ZERO
 var noclip_speed_mult:float = 3.0
 var noclip: bool = false
 
-const MAX_STEP_HEIGHT: float = 0.6
+const MAX_STEP_HEIGHT: float = 0.8
+@onready var separation_ray: CollisionShape3D = %SeparationRay3D
 var _snapped_to_stairs_last_frame: bool = false
+var did_snap: bool = false
 var _last_frame_was_on_floor := -INF
+
+@export var smooth_step_speed: float = 10.0
+var smooth_step_speed_mult: float = 1.0
+var _visual_offset_y: float = 0.0
 
 func get_move_speed() -> float:
 	return sprint_speed if Input.is_action_pressed("sprint") else walk_speed
@@ -77,10 +83,12 @@ func _headbob_effect(delta: float):
 	)
 
 func _process(delta: float) -> void:
-	pass
-
+	_visual_offset_y = lerp(_visual_offset_y, 0.0, smooth_step_speed * delta * smooth_step_speed_mult)
+	%Camera3D.position.y = _visual_offset_y
+	
 func _snap_down_to_stairs_check() -> void:
-	var did_snap: bool = false
+	did_snap = false
+	smooth_step_speed_mult = 1.0
 	var floor_below: bool = %StairsBelowRayCast3D.is_colliding() and not is_surface_too_steep(%StairsBelowRayCast3D.get_collision_normal())
 	var was_on_floor_last_frame := Engine.get_physics_frames() - _last_frame_was_on_floor == 1
 	if not is_on_floor() and velocity.y <= 0 and (was_on_floor_last_frame or _snapped_to_stairs_last_frame) and floor_below:
@@ -90,6 +98,8 @@ func _snap_down_to_stairs_check() -> void:
 			self.position.y += translate_y
 			apply_floor_snap()
 			did_snap = true
+			smooth_step_speed_mult = 0.1
+			
 		
 		_snapped_to_stairs_last_frame = did_snap
 
@@ -178,12 +188,16 @@ func _handle_ground_physics(delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		_last_frame_was_on_floor = Engine.get_physics_frames()
-	
+
+	if wish_dir.length() >= 0.1:
+		var target_angle: float = atan2(-wish_dir.x, -wish_dir.z)
+		separation_ray.rotation.y = target_angle
+
 	var input_dir := Input.get_vector("left", "right", "up", "down").normalized()
-	
+
 	wish_dir = self.global_transform.basis * Vector3(-input_dir.x, 0., -input_dir.y)
 	cam_aligned_wish_dir = %Camera3D.global_transform.basis * Vector3(input_dir.x, 0., input_dir.y)
-	
+
 	if not _handle_noclip(delta):
 		if is_on_floor():
 			if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
@@ -191,6 +205,10 @@ func _physics_process(delta: float) -> void:
 			_handle_ground_physics(delta)
 		else:
 			_handle_air_physics(delta)
-	
+
+		var pos_before_physics: Vector3 = global_position
+
 		move_and_slide()
 		_snap_down_to_stairs_check()
+
+		_visual_offset_y += (pos_before_physics.y - global_position.y)
