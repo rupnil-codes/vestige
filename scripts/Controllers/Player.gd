@@ -1,7 +1,10 @@
 extends CharacterBody3D
 
-var captured: bool = true
 @onready var prologue_scene: Node3D = $"../../.."
+@onready var watch_tower: Node3D = $"../watch_tower"
+var captured: bool = true
+@onready var player_entered_tower: bool = watch_tower._player_entered_tower
+
 
 @export var look_sensitivity: float = 0.005
 @export var jump_velocity: float = 6.0
@@ -43,6 +46,7 @@ func get_move_speed() -> float:
 	return sprint_speed if Input.is_action_pressed("sprint") else walk_speed
 
 func _ready():
+	separation_ray.disabled = true
 	for child in %WorldModel.find_children("*", "VisualInstance3D"):
 		child.set_layer_mask_value(1, false)
 		child.set_layer_mask_value(2, true)
@@ -83,8 +87,14 @@ func _headbob_effect(delta: float):
 	)
 
 func _process(delta: float) -> void:
-	_visual_offset_y = lerp(_visual_offset_y, 0.0, smooth_step_speed * delta * smooth_step_speed_mult)
-	%Camera3D.position.y = _visual_offset_y
+	player_entered_tower = watch_tower._player_entered_tower
+	
+	if player_entered_tower:
+		separation_ray.disabled = false
+		_visual_offset_y = lerp(_visual_offset_y, 0.0, smooth_step_speed * delta * smooth_step_speed_mult)
+		%Camera3D.position.y = _visual_offset_y
+	else:
+		separation_ray.disabled = true
 	
 func _snap_down_to_stairs_check() -> void:
 	did_snap = false
@@ -200,8 +210,9 @@ func _physics_process(delta: float) -> void:
 
 	if not _handle_noclip(delta):
 		if is_on_floor():
-			if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
-				self.velocity.y = jump_velocity
+			if not player_entered_tower:
+				if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
+					self.velocity.y = jump_velocity
 			_handle_ground_physics(delta)
 		else:
 			_handle_air_physics(delta)
