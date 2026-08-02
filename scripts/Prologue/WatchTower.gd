@@ -14,10 +14,10 @@ func _process(delta: float) -> void:
 
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.name != "StaticBody3D":
+	if body.name == "Player3D":
 		_player_entered_tower = true
 
 
 func _on_area_3d_body_exited(body: Node3D) -> void:
-	if body.name != "StaticBody3D":
+	if body.name == "Player3D":
 		_player_entered_tower = false

@@ -12,6 +12,7 @@ Todos:
   - [X] Jumping is prone to noclipping (v0.1.4(I)-alpha)
   - [X] Make going up/down the stairs smooth. (v0.1.4(H)-alpha)
   - [X] Jumping is floaty due to the smoothing. (v0.1.4(I)-alpha)
+  - [ ] Jumping on the stairs is a bit jerky
 - [X] Better walking animation (v0.0.9(F)-alpha)
 - [X] Improved Silhouette Mechanics. (v0.1.1(A)-alpha)
 - [ ] Make jumping better

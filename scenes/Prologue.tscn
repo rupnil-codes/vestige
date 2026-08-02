@@ -441,7 +441,19 @@ shadow_blur = 1.32
 environment = SubResource("Environment_jygv4")
 
 [node name="Player3D" parent="SubViewport/World" unique_id=1421963457 instance=ExtResource("5_b460r")]
-transform = Transform3D(-0.5646522, 0, 0.8253287, 0, 0.9999995, 0, -0.825329, 0, -0.564652, -26.97766, -0.056738503, -52.831)
+transform = Transform3D(0.06510419, 0, 0.99787813, 0, 0.99999964, 0, -0.9978785, 0, 0.06510416, -26.97766, -0.056738503, -52.831)
+look_sensitivity = null
+jump_velocity = null
+auto_bhop = null
+walk_speed = null
+sprint_speed = null
+ground_accel = null
+ground_decel = null
+ground_friction = null
+air_cap = null
+air_accel = null
+air_move_speed = null
+smooth_step_speed = null
 
 [node name="GPUSnow3D" type="GPUParticles3D" parent="SubViewport/World/Player3D" unique_id=1677585479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018831253, 32.93535, 0.06018448)
@@ -454,7 +466,7 @@ process_material = SubResource("ParticleProcessMaterial_b460r")
 draw_pass_1 = SubResource("QuadMesh_y13jl")
 
 [node name="watch_tower" parent="SubViewport/World" unique_id=1978300811 instance=ExtResource("22_b460r")]
-transform = Transform3D(1, 0, 0, 0, 0.9999996, 0, 0, 0, 1, -18.395, 27.036, -55.813)
+transform = Transform3D(1, 0, 0, 0, 0.9999996, 0, 0, 0, 1, -16.972958, 27.036, -55.813)
 
 [node name="Bench3D" parent="SubViewport/World" unique_id=2085675750 instance=ExtResource("9_b460r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
