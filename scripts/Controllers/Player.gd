@@ -76,8 +76,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			%Camera3D.rotate_x(-event.relative.y * look_sensitivity)
 			%Camera3D.rotation.x = clamp(
 				%Camera3D.rotation.x,
-				deg_to_rad(-90),
-				deg_to_rad(90)
+				deg_to_rad(-70),
+				deg_to_rad(70)
 			)
 			
 	if event is InputEventMouseButton and event.is_pressed():
@@ -96,6 +96,7 @@ func _headbob_effect(delta: float):
 
 func _process(delta: float) -> void:
 	player_entered_tower = watch_tower._player_entered_tower
+	print(smooth_step_speed_mult)
 	
 	if player_entered_tower and not is_jumping:
 		separation_ray.disabled = false
@@ -249,4 +250,5 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 		_snap_down_to_stairs_check()
 
-		_visual_offset_y += (pos_before_physics.y - global_position.y)
+		if player_entered_tower:
+			_visual_offset_y += (pos_before_physics.y - global_position.y)

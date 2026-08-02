@@ -61,7 +61,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.76666665, 1.5333333, 2.2333333),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [1.746, 0.446, 0.951, 0.654]
+"values": [2.0, 0.8, 1.4, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v5kip"]
@@ -85,10 +85,10 @@ shape = SubResource("ConcavePolygonShape3D_sager")
 
 [node name="Light3D" type="OmniLight3D" parent="." index="2" unique_id=843721552]
 transform = Transform3D(1, -1.7039328e-28, 3.5762793e-07, 0, 1, 4.7645406e-22, -3.5762793e-07, -4.7645406e-22, 1, 0.44879782, 0.94321716, -0.041435063)
-light_color = Color(0.6807982, 0.5127972, 0.23984355, 1)
+light_color = Color(0.74446636, 0.56479347, 0.27441537, 1)
 light_energy = 1.746
 light_size = 1.0
-light_specular = 0.3
+light_specular = 0.445
 light_bake_mode = 1
 shadow_opacity = 0.7
 distance_fade_enabled = true
@@ -96,7 +96,7 @@ distance_fade_begin = 50.0
 distance_fade_shadow = 30.0
 distance_fade_length = 0.0
 omni_range = 20.0
-omni_attenuation = 1.754
+omni_attenuation = 0.7
 
 [node name="flamesGPU" type="GPUParticles3D" parent="." index="3" unique_id=1410252308]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12764326, 0.505165, -0.03974913)

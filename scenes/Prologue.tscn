@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://ctx42urrlsqoj"]
 
 [ext_resource type="Script" uid="uid://dr06c4wvrjsmo" path="res://scripts/Prologue/Prologue.gd" id="1_ke06p"]
-[ext_resource type="Texture2D" uid="uid://xfe1k3gk6h1k" path="res://assets/textures/sky.png" id="2_ke06p"]
 [ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/shader_chapter_0.gdshader" id="4_1aphw"]
 [ext_resource type="FontFile" uid="uid://78n28mmk5f74" path="res://assets/fonts/Geo-Italic.ttf" id="5_6uvvw"]
 [ext_resource type="PackedScene" uid="uid://bwccebe2qkpnc" path="res://assets/player/player.tscn" id="5_b460r"]
@@ -39,33 +38,31 @@ shader_parameter/vignette_strength = 0.0
 shader_parameter/vignette_radius = 1.0
 shader_parameter/blur_strength = 0.0
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_d0u6y"]
-panorama = ExtResource("2_ke06p")
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y3k86"]
+sky_top_color = Color(0.3025247, 0.36429217, 0.4466083, 1)
 
 [sub_resource type="Sky" id="Sky_8kgk7"]
-sky_material = SubResource("PanoramaSkyMaterial_d0u6y")
+sky_material = SubResource("ProceduralSkyMaterial_y3k86")
 
 [sub_resource type="Environment" id="Environment_jygv4"]
-background_mode = 2
+background_energy_multiplier = 0.0
 sky = SubResource("Sky_8kgk7")
-tonemap_mode = 2
+tonemap_mode = 4
+tonemap_exposure = 0.2
 glow_enabled = true
 glow_normalized = true
 fog_enabled = true
-fog_light_color = Color(0.102692865, 0.12295938, 0.13164315, 1)
+fog_light_color = Color(0.18858561, 0.21850306, 0.23646054, 1)
 fog_light_energy = 2.0
 fog_sun_scatter = 0.2
 fog_density = 0.02
 fog_sky_affect = 0.742
 fog_depth_curve = 0.8122524
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.03
-volumetric_fog_albedo = Color(0.28897998, 0.28897995, 0.28897995, 1)
-volumetric_fog_emission = Color(0.101960786, 0.12156863, 0.13333334, 1)
+volumetric_fog_density = 0.02
+volumetric_fog_albedo = Color(0.7724397, 0.77243954, 0.7724396, 1)
+volumetric_fog_emission = Color(0.75093335, 0.8066675, 0.82810485, 1)
 volumetric_fog_length = 300.0
-adjustment_enabled = true
-adjustment_contrast = 1.1
-adjustment_saturation = 1.1
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_b460r"]
 emission_shape_offset = Vector3(0, -17, 0)
@@ -79,7 +76,6 @@ turbulence_noise_scale = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7numd"]
 shading_mode = 0
-albedo_color = Color(0.402329, 0.40232897, 0.40232894, 1)
 billboard_mode = 3
 particles_anim_h_frames = 1
 particles_anim_v_frames = 1
@@ -430,9 +426,7 @@ render_target_update_mode = 4
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/World" unique_id=2014315246]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-light_color = Color(0.021713268, 0.021713259, 0.021713257, 1)
-light_energy = 1.207
-light_volumetric_fog_energy = 3.873
+light_color = Color(0.18686649, 0.18686646, 0.18686646, 1)
 light_bake_mode = 1
 shadow_opacity = 0.51
 shadow_blur = 1.32
@@ -442,18 +436,6 @@ environment = SubResource("Environment_jygv4")
 
 [node name="Player3D" parent="SubViewport/World" unique_id=1421963457 instance=ExtResource("5_b460r")]
 transform = Transform3D(0.06510419, 0, 0.99787813, 0, 0.99999964, 0, -0.9978785, 0, 0.06510416, -26.97766, -0.056738503, -52.831)
-look_sensitivity = null
-jump_velocity = null
-auto_bhop = null
-walk_speed = null
-sprint_speed = null
-ground_accel = null
-ground_decel = null
-ground_friction = null
-air_cap = null
-air_accel = null
-air_move_speed = null
-smooth_step_speed = null
 
 [node name="GPUSnow3D" type="GPUParticles3D" parent="SubViewport/World/Player3D" unique_id=1677585479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018831253, 32.93535, 0.06018448)
@@ -465,9 +447,6 @@ visibility_aabb = AABB(-15, -34, -15, 30, 34, 30)
 process_material = SubResource("ParticleProcessMaterial_b460r")
 draw_pass_1 = SubResource("QuadMesh_y13jl")
 
-[node name="watch_tower" parent="SubViewport/World" unique_id=1978300811 instance=ExtResource("22_b460r")]
-transform = Transform3D(1, 0, 0, 0, 0.9999996, 0, 0, 0, 1, -16.972958, 27.036, -55.813)
-
 [node name="Bench3D" parent="SubViewport/World" unique_id=2085675750 instance=ExtResource("9_b460r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
 
@@ -475,7 +454,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06663036, 0.094632864, -0.04007864)
 
 [node name="Forest3D" type="Node3D" parent="SubViewport/World" unique_id=1512849187]
-visible = false
 
 [node name="pine_tree96" parent="SubViewport/World/Forest3D" unique_id=116300073 instance=ExtResource("10_giphs")]
 transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 92.17127, -0.3567369, -16.444262)
@@ -4412,6 +4390,9 @@ transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995
 [node name="silhouette" parent="SubViewport/World" unique_id=578111472 instance=ExtResource("16_21ife")]
 transform = Transform3D(-0.9961944, 0, 0.08715562, 0, 1, 0, -0.08715562, 0, -0.9961944, -5.281, 2.005, -63.886)
 
+[node name="watch_tower" parent="SubViewport/World" unique_id=1978300811 instance=ExtResource("22_b460r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.166, 29.336, 62.489)
+
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1477322359]
 texture_filter = 1
 anchors_preset = 15
@@ -4428,9 +4409,6 @@ libraries/ = SubResource("AnimationLibrary_ke06p")
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=730496574]
 light_data = ExtResource("24_ke06p")
-
-[node name="watch_tower" parent="." unique_id=1120759976 instance=ExtResource("22_b460r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.165657, 29.336311, 62.489017)
 
 [node name="wooden_torch" parent="." unique_id=1425089922 instance=ExtResource("15_los3j")]
 transform = Transform3D(0.0729734, 6.398173e-08, -0.99733394, 6.4084304e-08, -1, -5.9463808e-08, -0.99733394, -5.9574173e-08, -0.0729734, 45.88096, 36.06795, 58.00404)
