@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://x3prucx0lg3r"
-path="res://.godot/imported/prologue.blend-c807f6e3d08b4615f217162b67f2dae5.scn"
+path="res://.godot/imported/vestige.blend-cd447f0fde612e291ef194de818f7ef1.scn"
 
 [deps]
 
-source_file="res://assets/models/chapter_0_map/prologue.blend"
-dest_files=["res://.godot/imported/prologue.blend-c807f6e3d08b4615f217162b67f2dae5.scn"]
+source_file="res://assets/models/vestige_map/vestige.blend"
+dest_files=["res://.godot/imported/vestige.blend-cd447f0fde612e291ef194de818f7ef1.scn"]
 
 [params]
 
@@ -41,15 +41,20 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
+"Material": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://assets/models/vestige_map/Material.tres",
+"use_external/path": "uid://ccp2hgh4eqdc1"
+},
 "Material.006": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://assets/models/chapter_0_map/Material.006.tres",
-"use_external/path": "uid://bmtdjvmx1m3pt"
+"use_external/fallback_path": "res://assets/models/vestige_map/Material.006.tres",
+"use_external/path": "uid://ul3u38rsttpe"
 },
 "Material.007": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://assets/models/chapter_0_map/Material.007.tres",
-"use_external/path": "uid://c4va0857iit6h"
+"use_external/fallback_path": "res://assets/models/vestige_map/Material.007.tres",
+"use_external/path": "uid://jgpavseba43l"
 }
 }
 }

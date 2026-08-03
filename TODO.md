@@ -42,7 +42,7 @@ Todos:
 - [X] Particle Optimizations (v0.0.8(B)-pre-alpha, v0.0.8(D)-pre-alpha ... v0.0.8(G)-pre-alpha)
   - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
   - [X] Fix the .show and .hide things to truly make them stop rendering. (v0.0.8(G)-pre-alpha)
-  - [X] Grass and Flower optimizations (v0.1.6-alpha)
+  - [X] Grass and Flower optimizations (v0.1.6.1-alpha)
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
 - [X] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)
 - [X] Make it so that when silhouettes are found even if the player stops looking they will complete the animation. (v0.0.9(A)-alpha)

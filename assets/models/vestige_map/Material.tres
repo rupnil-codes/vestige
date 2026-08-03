@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ccp2hgh4eqdc1"]
+
+[ext_resource type="Texture2D" uid="uid://curn1ecs0m6xr" path="res://assets/models/vestige_map/assets_used/mountains_uv.png" id="1_engmu"]
+
+[resource]
+resource_name = "Material"
+cull_mode = 2
+albedo_texture = ExtResource("1_engmu")
+texture_filter = 2

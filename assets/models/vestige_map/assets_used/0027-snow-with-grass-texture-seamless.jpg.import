@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ut5vs1pc1roy"
-path="res://.godot/imported/0027-snow-with-grass-texture-seamless.jpg-a87948f8b0690c08b48d611312dd9b22.ctex"
+path="res://.godot/imported/0027-snow-with-grass-texture-seamless.jpg-3f0203ea05c3f97f0040e21dc56d46b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/chapter_0_map/assets_used/0027-snow-with-grass-texture-seamless.jpg"
-dest_files=["res://.godot/imported/0027-snow-with-grass-texture-seamless.jpg-a87948f8b0690c08b48d611312dd9b22.ctex"]
+source_file="res://assets/models/vestige_map/assets_used/0027-snow-with-grass-texture-seamless.jpg"
+dest_files=["res://.godot/imported/0027-snow-with-grass-texture-seamless.jpg-3f0203ea05c3f97f0040e21dc56d46b9.ctex"]
 
 [params]
 

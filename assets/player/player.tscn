@@ -15,18 +15,6 @@ transform = Transform3D(0.9998477, 0, 0.017452398, 0, 0.9999996, 0, -0.017452406
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_d6veg")
-look_sensitivity = null
-jump_velocity = null
-auto_bhop = null
-walk_speed = null
-sprint_speed = null
-ground_accel = null
-ground_decel = null
-ground_friction = null
-air_cap = null
-air_accel = null
-air_move_speed = null
-smooth_step_speed = null
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1354085546]
 transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, -0.026943209, 1.0462605, 0.027374268)
@@ -52,18 +40,6 @@ unique_name_in_owner = true
 transform = Transform3D(1.0000006, 0, 1.8626451e-09, 0, 1.0000017, 0, -1.8626451e-09, 0, 1.0000008, 0, 0, 0)
 cull_mask = 1048573
 current = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="HeadOriginalPosition/Head/Camera3D" unique_id=923368139]
-
-[node name="ColorRect" type="ColorRect" parent="HeadOriginalPosition/Head/Camera3D/CanvasLayer" unique_id=2064006000]
-modulate = Color(0, 0, 0, 0)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="StairsBelowRayCast3D" type="RayCast3D" parent="." unique_id=947288977]
 unique_name_in_owner = true

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c474k30tfb1l2"
-path="res://.godot/imported/trail.jpg-ada2840484f272dbc0b278fd4ace533d.ctex"
+uid="uid://dm4bx7l4k5fa8"
+path="res://.godot/imported/0026-snow-with-grass-texture-seamless-hr.jpg-80e4a790d96c7f14fc59702d799f3858.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/chapter_0_map/assets_used/trail.jpg"
-dest_files=["res://.godot/imported/trail.jpg-ada2840484f272dbc0b278fd4ace533d.ctex"]
+source_file="res://assets/models/vestige_map/assets_used/0026-snow-with-grass-texture-seamless-hr.jpg"
+dest_files=["res://.godot/imported/0026-snow-with-grass-texture-seamless-hr.jpg-80e4a790d96c7f14fc59702d799f3858.ctex"]
 
 [params]
 

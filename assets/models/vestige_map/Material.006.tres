@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ul3u38rsttpe"]
+
+[ext_resource type="Texture2D" uid="uid://lq6ohyirw8lp" path="res://assets/models/vestige_map/assets_used/trail.png" id="1_kj5th"]
+
+[resource]
+resource_name = "Material.006"
+cull_mode = 2
+albedo_texture = ExtResource("1_kj5th")
+texture_filter = 2

@@ -15,7 +15,7 @@ var headbob_time: float = 0.0
 
 # ground
 @export var walk_speed: float = 4.25
-@export var sprint_speed: float = 5.0
+@export var sprint_speed: float = 5.25
 @export var ground_accel: float = 14.0
 @export var ground_decel: float = 10.0
 @export var ground_friction: float = 4.5

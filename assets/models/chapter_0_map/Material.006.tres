@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bmtdjvmx1m3pt"]
-
-[ext_resource type="Texture2D" uid="uid://lq6ohyirw8lp" path="res://assets/models/chapter_0_map/assets_used/trail.png" id="1_maaql"]
-
-[resource]
-resource_name = "Material.006"
-cull_mode = 2
-albedo_texture = ExtResource("1_maaql")
-texture_filter = 2

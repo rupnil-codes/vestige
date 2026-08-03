@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnjcg6dskh7dr"
-path="res://.godot/imported/mountains_uv_layout.png-bdd927f47f2c258b781d5f639810ae20.ctex"
+uid="uid://c474k30tfb1l2"
+path="res://.godot/imported/trail.jpg-610c3425cb34645d178ac0d41ec4f188.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/models/chapter_0_map/assets_used/mountains_uv_layout.png"
-dest_files=["res://.godot/imported/mountains_uv_layout.png-bdd927f47f2c258b781d5f639810ae20.ctex"]
+source_file="res://assets/models/vestige_map/assets_used/trail.jpg"
+dest_files=["res://.godot/imported/trail.jpg-610c3425cb34645d178ac0d41ec4f188.ctex"]
 
 [params]
 

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://jgpavseba43l"]
+
+[ext_resource type="Texture2D" uid="uid://dblkawgsnh58v" path="res://assets/models/vestige_map/assets_used/grass.png" id="1_pah8r"]
+
+[resource]
+resource_name = "Material.007"
+cull_mode = 2
+albedo_texture = ExtResource("1_pah8r")
+texture_filter = 2

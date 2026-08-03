@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dblkawgsnh58v"
-path.s3tc="res://.godot/imported/grass.png-aac32293e7fbeedced545c00ef39987e.s3tc.ctex"
-path.etc2="res://.godot/imported/grass.png-aac32293e7fbeedced545c00ef39987e.etc2.ctex"
+uid="uid://lq6ohyirw8lp"
+path.s3tc="res://.godot/imported/trail.png-cb97ef64a22d39a74eb8c7b9018a407d.s3tc.ctex"
+path.etc2="res://.godot/imported/trail.png-cb97ef64a22d39a74eb8c7b9018a407d.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/chapter_0_map/assets_used/grass.png"
-dest_files=["res://.godot/imported/grass.png-aac32293e7fbeedced545c00ef39987e.s3tc.ctex", "res://.godot/imported/grass.png-aac32293e7fbeedced545c00ef39987e.etc2.ctex"]
+source_file="res://assets/models/vestige_map/assets_used/trail.png"
+dest_files=["res://.godot/imported/trail.png-cb97ef64a22d39a74eb8c7b9018a407d.s3tc.ctex", "res://.godot/imported/trail.png-cb97ef64a22d39a74eb8c7b9018a407d.etc2.ctex"]
 
 [params]
 
