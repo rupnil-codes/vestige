@@ -1,5 +1,16 @@
 [gd_scene format=3 uid="uid://ccnhj7ygof6o2"]
 
 [ext_resource type="PackedScene" uid="uid://dx5mwfywvv131" path="res://assets/models/flowers/lavender/lavender.blend" id="1_jknd2"]
+[ext_resource type="Script" uid="uid://fldof511s3f5" path="res://scripts/Optimizations/LavenderOptimization.gd" id="2_tj5ye"]
 
 [node name="lavender" unique_id=170458802 instance=ExtResource("1_jknd2")]
+script = ExtResource("2_tj5ye")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="1" unique_id=1351214291]
+transform = Transform3D(0.17381288, 0, 0, 0, 1.0341064, 0, 0, 0, 0.2001705, 0, 1.0124577, 0)
+
+[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="2" unique_id=880121428]
+transform = Transform3D(0.17381288, 0, 0, 0, 1.0341064, 0, 0, 0, 0.2001705, 0, 1.0124577, 0)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]

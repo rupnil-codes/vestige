@@ -1,27 +1,10 @@
 Todos:
 
 ## Prologue: (previously, Chapter 0):
-- [X] Spawn the silhouettes a second after the wake-up animation finishes (v0.0.9(D)-alpha ... (v0.0.9(E)-alpha)
-- [X] Torch flickering (v0.0.9(E)-alpha)
-- [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha ... v0.0.9(C)-alpha)
-  - [ ] Make it authentic/humanlike?
-- [X] Counter animation (v0.0.9(B)-alpha)
-- [ ] LightMapGI - enable 
-- [ ] Rework Walking / Player Controller (v0.1.4(A)-alpha ... )
-  - [ ] Direction doesnt change when jumping and looking at a different direction.
-  - [X] Jumping is prone to noclipping (v0.1.4(I)-alpha)
-  - [X] Make going up/down the stairs smooth. (v0.1.4(H)-alpha)
-  - [X] Jumping is floaty due to the smoothing. (v0.1.4(I)-alpha)
-  - [ ] Jumping on the stairs is a bit jerky
-- [X] Better walking animation (v0.0.9(F)-alpha)
-- [X] Improved Silhouette Mechanics. (v0.1.1(A)-alpha)
+- [ ] LightMapGI - enable
 - [ ] Make jumping better
 - [ ] Reduce fog when the player reaches the top of the watch tower.
-- [ ] Sprint with a stamina or cool down
 - [ ] Interior of the Watch Tower
-- [X] Watch Tower Model (v0.1.1(B&C)-alpha ... v0.1.1(Q)-alpha)
-  - [ ] Window borders
-- [X] Watch Tower Texturing (v0.1.2(A)-alpha ... v0.1.2(K)-alpha)
 - [ ] Make auto jump thing on the watch tower stairs. (v0.1.4(A)-alpha ... v0.1.4(B)-alpha)
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Ambience Sfx
@@ -44,7 +27,6 @@ Todos:
 - [X] Shaders (v0.0.6(C)-pre-alpha ... v0.0.6(D)-pre-alpha)
 - [X] Torches along the path. (v0.0.6(I)-pre-alpha)
 - [X] Mountains (v0.0.7(A)-pre-alpha ... v0.0.7(B)-pre-alpha)
-  - [X] Fix the texture (size) (v0.1.3-alpha)
 - [X] Snow & Thunders (v0.0.7(C)-pre-alpha ... v0.0.7(D)-pre-alpha)
 - [X] Volumetric Fog: https://docs.godotengine.org/en/latest/tutorials/3d/volumetric_fog.html (v0.0.7(E)-pre-alpha)
 - [X] Fix Shiny ground: metallic or specular thing (v0.0.7(E)-pre-alpha)
@@ -60,8 +42,22 @@ Todos:
 - [X] Particle Optimizations (v0.0.8(B)-pre-alpha, v0.0.8(D)-pre-alpha ... v0.0.8(G)-pre-alpha)
   - [X] SubViewport Scaling (Revert: Rendering > Scaling) (v0.0.8(E)-pre-alpha)
   - [X] Fix the .show and .hide things to truly make them stop rendering. (v0.0.8(G)-pre-alpha)
-  - [ ] Grass and Flower optimizations
+  - [X] Grass and Flower optimizations (v0.1.6-alpha)
 - [X] Particles when silhouettes are "found" (v0.0.8(C)-pre-alpha)
-	- [ ] Silhouette SFX
 - [X] Show FPS (only dev - and option in the pause menu) (v0.0.8(E)-pre-alpha)
 - [X] Make it so that when silhouettes are found even if the player stops looking they will complete the animation. (v0.0.9(A)-alpha)
+- [X] Blinking and waking up animation at the start (v0.0.9(B)-alpha ... v0.0.9(C)-alpha)
+- [X] Spawn the silhouettes a second after the wake-up animation finishes (v0.0.9(D)-alpha ... (v0.0.9(E)-alpha)
+- [X] Better walking animation (v0.0.9(F)-alpha)
+- [X] Torch flickering (v0.0.9(E)-alpha)
+- [X] Improved Silhouette Mechanics. (v0.1.1(A)-alpha)
+- [X] Watch Tower Model (v0.1.1(B&C)-alpha ... v0.1.1(Q)-alpha)
+	- [ ] Window borders
+- [X] Watch Tower Texturing (v0.1.2(A)-alpha ... v0.1.2(K)-alpha)
+- [X] Mountain texture fix (size) (v0.1.3-alpha)
+- [X] Rework Walking / Player Controller (v0.1.4(A)-alpha ... (v0.1.5-alpha))
+	- [ ] Direction doesnt change when jumping and looking at a different direction.
+	- [X] Jumping is prone to noclipping (v0.1.4(I)-alpha)
+	- [X] Make going up/down the stairs smooth. (v0.1.4(H)-alpha)
+	- [X] Jumping is floaty due to the smoothing. (v0.1.4(I)-alpha)
+	- [X] Jumping on the stairs is a bit jerky (v0.1.5-alpha)

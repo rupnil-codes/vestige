@@ -1,5 +1,16 @@
 [gd_scene format=3 uid="uid://bwju2c2k4a7re"]
 
 [ext_resource type="PackedScene" uid="uid://dcv2ihujew0fi" path="res://assets/models/flowers/dandelion/dandelion.blend" id="1_jf1yc"]
+[ext_resource type="Script" uid="uid://dbyn3ojg1vd8e" path="res://scripts/Optimizations/DandelionOptimization.gd" id="2_lin8o"]
 
 [node name="dandelion" unique_id=1149390951 instance=ExtResource("1_jf1yc")]
+script = ExtResource("2_lin8o")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="1" unique_id=555373667]
+transform = Transform3D(0.22973439, 0, 0, 0, 0.37390262, 0, 0, 0, 0.2873888, 0, 0.36915272, 0)
+
+[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="2" unique_id=1772833666]
+transform = Transform3D(0.22973439, 0, 0, 0, 0.37390262, 0, 0, 0, 0.2873888, 0, 0.36915272, 0)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]

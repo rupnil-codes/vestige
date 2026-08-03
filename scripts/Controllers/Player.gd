@@ -14,8 +14,8 @@ const HEADBOB_FREQUENCY: float = 2.0
 var headbob_time: float = 0.0
 
 # ground
-@export var walk_speed: float = 4.5
-@export var sprint_speed: float = 7.0
+@export var walk_speed: float = 4.25
+@export var sprint_speed: float = 5.0
 @export var ground_accel: float = 14.0
 @export var ground_decel: float = 10.0
 @export var ground_friction: float = 4.5
@@ -96,7 +96,6 @@ func _headbob_effect(delta: float):
 
 func _process(delta: float) -> void:
 	player_entered_tower = watch_tower._player_entered_tower
-	print(smooth_step_speed_mult)
 	
 	if player_entered_tower and not is_jumping:
 		separation_ray.disabled = false

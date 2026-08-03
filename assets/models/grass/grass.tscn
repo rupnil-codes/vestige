@@ -1,5 +1,16 @@
 [gd_scene format=3 uid="uid://b24vs6py64bx3"]
 
 [ext_resource type="PackedScene" uid="uid://clvkdmcetpa77" path="res://assets/models/grass/grass.blend" id="1_gmq6k"]
+[ext_resource type="Script" uid="uid://bu37kuifta8v" path="res://scripts/Optimizations/GrassOptimization.gd" id="2_6yp8i"]
 
 [node name="grass" unique_id=1595865191 instance=ExtResource("1_gmq6k")]
+script = ExtResource("2_6yp8i")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="1" unique_id=2066467736]
+transform = Transform3D(1.1598737, 0, 0, 0, 0.30900556, 0, 0, 0, 0.2873888, 0, 0.2249679, 0)
+
+[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="2" unique_id=1466302820]
+transform = Transform3D(1.1598737, 0, 0, 0, 0.30900556, 0, 0, 0, 0.2873888, 0, 0.2249679, 0)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]
