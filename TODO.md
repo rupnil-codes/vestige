@@ -1,23 +1,64 @@
 Todos:
 
-## Prologue: (previously, Chapter 0):
-- [ ] LightMapGI - enable
-- [ ] Make jumping better
-- [ ] Reduce fog when the player reaches the top of the watch tower.
-- [ ] Interior of the Watch Tower
-- [ ] Make auto jump thing on the watch tower stairs. (v0.1.4(A)-alpha ... v0.1.4(B)-alpha)
+## Vestige:
+
+### Priority 1: Gameplay
+
+- [ ] Finalize the Story progression I wish to convey.
+- [ ] Brainstorm all the Vestiges.
+- [ ] Order the Vestiges for pacing.
+- [ ] Prototype the Silhouette to Vestige to Watch tower chain.
+- [ ] Bunker Prototype
+- [ ] Bunker Door Logic
+- [ ] Long Tunnel
+- [ ] Ending Bench Interaction
+- [ ] Ending Camera Animation
+- [ ] Roll Credits
+
+- [ ] Play test the prototype Game.
+
+### Priority 2: World Building
+
+- [ ] Proper Bunker Model
+- [ ] Proper Tunnel Model
+- [ ] Watch Tower Furniture
+- [ ] Better Jumping Logic -- Feels floaty now.
+- [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
-- [ ] Ambience Sfx
-  - [ ] Thunder SFX
-  - [ ] sounds of wind and wild animals
+- [ ] Design/Model each Vestige.
+
+### Priority 3: Atmosphere
+
+- [ ] Ambience SFX
+- [ ] Sounds like Winds, leaves, snow.
+- [ ] Each Vestige SFX
+- [ ] Sound design for each.
+- [ ] Sounds on the Tunnel.
+- [ ] Add notes and pictures on the tunnel
+
+### Priority 4: Final Touches
+
+- [ ] LightMapGI - enable
+- [ ] Easter Eggs
+- [ ] Better Animations like Blinking, Waking up.
 - [ ] Main menu and pause menu
-  - [ ] Option for shader (default: on)
-  - [ ] Option for V-Sync (default: off)
-  - [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
-  - [ ] Camera Shake Option
-- [ ] Add notes and pictures with nails on the paths
+    - [ ] Option for shader (default: on)
+    - [ ] Option for V-Sync (default: off)
+    - [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
+    - [ ] Camera Shake Option
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp
+- [ ] Particle Polish
+
+### Priority 5: Shipping Time!
+
+- [ ] Play Testing
+- [ ] Bug Fixes
+- [ ] Releasing
+- [ ] README
+
+### Done before revamp:
+
 - [X] Bench (v0.0.4-pre-alpha)
 - [X] Map (v0.0.5(A)-pre-alpha)
 - [X] Player (v0.0.5(A)-pre-alpha)
@@ -55,9 +96,10 @@ Todos:
 	- [ ] Window borders
 - [X] Watch Tower Texturing (v0.1.2(A)-alpha ... v0.1.2(K)-alpha)
 - [X] Mountain texture fix (size) (v0.1.3-alpha)
+- [X] Make auto jump thing on the watch tower stairs. (v0.1.4(A)-alpha ... v0.1.4(B)-alpha)
 - [X] Rework Walking / Player Controller (v0.1.4(A)-alpha ... (v0.1.5-alpha))
-	- [ ] Direction doesnt change when jumping and looking at a different direction.
 	- [X] Jumping is prone to noclipping (v0.1.4(I)-alpha)
 	- [X] Make going up/down the stairs smooth. (v0.1.4(H)-alpha)
 	- [X] Jumping is floaty due to the smoothing. (v0.1.4(I)-alpha)
 	- [X] Jumping on the stairs is a bit jerky (v0.1.5-alpha)
+
