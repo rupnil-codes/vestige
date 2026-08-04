@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b54xnh4477rhk"
-path="res://.godot/imported/chapter_0.png-c3ab5e4806256049c4f0b5a7e6072ebe.ctex"
+uid="uid://dlbckvsbpmrti"
+path="res://.godot/imported/vestige_map.png-e68d366523c74d362cca16b82fe8cc8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://narrative/game_design/chapter_0.png"
-dest_files=["res://.godot/imported/chapter_0.png-c3ab5e4806256049c4f0b5a7e6072ebe.ctex"]
+source_file="res://narrative/game_design/vestige_map.png"
+dest_files=["res://.godot/imported/vestige_map.png-e68d366523c74d362cca16b82fe8cc8f.ctex"]
 
 [params]
 

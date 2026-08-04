@@ -4,9 +4,8 @@ Todos:
 
 ### Priority 1: Gameplay
 
-- [ ] Finalize the Story progression I wish to convey.
-- [ ] Brainstorm all the Vestiges.
-- [ ] Order the Vestiges for pacing.
+- [X] Brainstorm all the Vestiges. (v0.2.1-alpha)
+- [X] Order the Vestiges for pacing. (v0.2.1-alpha)
 - [ ] Prototype the Silhouette to Vestige to Watch tower chain.
 - [ ] Bunker Prototype
 - [ ] Bunker Door Logic
@@ -14,6 +13,7 @@ Todos:
 - [ ] Ending Bench Interaction
 - [ ] Ending Camera Animation
 - [ ] Roll Credits
+- [ ] Finalize the Story progression (vestiges), I wish to convey.
 
 - [ ] Play test the prototype Game.
 
@@ -25,6 +25,7 @@ Todos:
 - [ ] Better Jumping Logic -- Feels floaty now.
 - [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
+- [ ] Change the path texture to a trodden grass one.
 - [ ] Design/Model each Vestige.
 
 ### Priority 3: Atmosphere
