@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://x3prucx0lg3r"
-path="res://.godot/imported/vestige.blend-cd447f0fde612e291ef194de818f7ef1.scn"
+path="res://.godot/imported/vestige_map.blend-cd7b35b5b5ca52f9d8274fafd025dc1a.scn"
 
 [deps]
 
-source_file="res://assets/models/vestige_map/vestige.blend"
-dest_files=["res://.godot/imported/vestige.blend-cd447f0fde612e291ef194de818f7ef1.scn"]
+source_file="res://assets/models/vestige_map/vestige_map.blend"
+dest_files=["res://.godot/imported/vestige_map.blend-cd7b35b5b5ca52f9d8274fafd025dc1a.scn"]
 
 [params]
 

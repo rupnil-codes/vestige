@@ -27,6 +27,7 @@ Todos:
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
 - [ ] Design/Model each Vestige.
+- [ ] Rework Torch Animations
 
 ### Priority 3: Atmosphere
 
@@ -55,6 +56,8 @@ Todos:
 
 - [ ] Play Testing
 - [ ] Bug Fixes
+- [ ] Make a banner
+- [ ] Update Descriptions - Github + Stardance + Macondo
 - [ ] Releasing
 - [ ] README
 
@@ -103,4 +106,3 @@ Todos:
 	- [X] Make going up/down the stairs smooth. (v0.1.4(H)-alpha)
 	- [X] Jumping is floaty due to the smoothing. (v0.1.4(I)-alpha)
 	- [X] Jumping on the stairs is a bit jerky (v0.1.5-alpha)
-

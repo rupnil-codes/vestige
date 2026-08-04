@@ -19,7 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://dx5mwfywvv131" path="res://assets/models/flowers/lavender/lavender.blend" id="18_or81c"]
 [ext_resource type="PackedScene" uid="uid://j71rndxs6qdt" path="res://assets/models/silhouette/silhouette.tscn" id="19_wn0by"]
 [ext_resource type="PackedScene" uid="uid://v4md1p36rn0g" path="res://assets/models/watch_tower/watch_tower.tscn" id="20_atygq"]
-[ext_resource type="PackedScene" uid="uid://drhbro3wk8eqd" path="res://assets/models/vestige_map/vestige.tscn" id="20_jrnm1"]
+[ext_resource type="PackedScene" uid="uid://drhbro3wk8eqd" path="res://assets/models/vestige_map/vestige_map.tscn" id="20_jrnm1"]
+[ext_resource type="PackedScene" uid="uid://tokolwg3nr8s" path="res://assets/models/vestiges/prototype_vestige.tscn" id="21_u4jeo"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -48,6 +49,7 @@ background_energy_multiplier = 0.0
 sky = SubResource("Sky_8kgk7")
 tonemap_mode = 4
 tonemap_exposure = 0.2
+tonemap_agx_white = 16.5
 glow_enabled = true
 glow_normalized = true
 fog_enabled = true
@@ -58,10 +60,11 @@ fog_density = 0.02
 fog_sky_affect = 0.742
 fog_depth_curve = 0.8122524
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.02
+volumetric_fog_density = 0.025
 volumetric_fog_albedo = Color(0.7724397, 0.77243954, 0.7724396, 1)
 volumetric_fog_emission = Color(0.75093335, 0.8066675, 0.82810485, 1)
 volumetric_fog_length = 300.0
+adjustment_contrast = 1.15
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_b460r"]
 emission_shape_offset = Vector3(0, -17, 0)
@@ -87,291 +90,254 @@ size = Vector2(0.2, 0.2)
 [sub_resource type="ViewportTexture" id="ViewportTexture_ke06p"]
 viewport_path = NodePath("SubViewport")
 
-[sub_resource type="Animation" id="Animation_b460r"]
+[sub_resource type="Animation" id="Animation_jrnm1"]
 length = 0.001
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/silhouette:position:x")
+tracks/0/path = NodePath("SubViewport/World/Silhouette3D:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(-5.281, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-15.945671, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/silhouette:position:y")
+tracks/1/path = NodePath("SubViewport/World/Silhouette3D:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(2.005, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.9484892, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/silhouette:position:z")
+tracks/2/path = NodePath("SubViewport/World/Silhouette3D:position:z")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(-63.886, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-49.461018, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/silhouette:rotation:x")
+tracks/3/path = NodePath("SubViewport/World/Silhouette3D:rotation:x")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(2),
+"handle_modes": PackedInt32Array(0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/silhouette:rotation:y")
+tracks/4/path = NodePath("SubViewport/World/Silhouette3D:rotation:y")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"handle_modes": PackedInt32Array(2),
-"points": PackedFloat32Array(3.0543263, -0.25, 0, 0.25, 0),
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-2.3556461, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/5/type = "bezier"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewport/World/silhouette:rotation:z")
+tracks/5/path = NodePath("SubViewport/World/Silhouette3D:rotation:z")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"handle_modes": PackedInt32Array(2),
+"handle_modes": PackedInt32Array(0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SubViewport/World/prototype_vestige:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SubViewport/World/prototype_vestige:position:x")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-24.192764, -0.0005, 0, 0.0005, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SubViewport/World/prototype_vestige:position:y")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-2.2262607, -0.0005, 0, 0.0005, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("SubViewport/World/prototype_vestige:position:z")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-77.860855, -0.0005, 0, 0.0005, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("SubViewport/World/prototype_vestige:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("SubViewport/World/prototype_vestige:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-24.192764, -2.2262607, -77.860855)]
+}
 
-[sub_resource type="Animation" id="Animation_y13jl"]
-resource_name = "location_1"
-length = 11.0
+[sub_resource type="Animation" id="Animation_u4jeo"]
+resource_name = "vestige_1"
+length = 3.5
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/silhouette:position:x")
+tracks/0/path = NodePath("SubViewport/World/Silhouette3D:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(-5.280604, 0, 0, 0.75, 0.65550065, -1.3476, -0.8333334, -2.2615013, 0, 0, 15.888118, -0.35697174, -3.5623243, 0.4763616, 4.7537503, 48.548847, -0.8333334, -8.316074, 0, 0),
-"times": PackedFloat32Array(0, 4.5, 7.4333334, 11)
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(-15.945671, -0.25, 0, 0.25, 0, -12.873429, -0.22166668, -0.5120403, 0, 0, -21.355375, -0.06666666, 1.4136577, 0, 0, -21.355375, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 1.8300002, 2.8666666, 3.5)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/silhouette:position:y")
+tracks/1/path = NodePath("SubViewport/World/Silhouette3D:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(2.005247, 0, 0, 0.75, 0, 2.005247, -0.8333334, 0, 0, 0, 2.005247, -0.35697174, 0, 0.4763616, 0, 2.005247, -0.8333334, 0, 0, 0),
-"times": PackedFloat32Array(0, 4.5, 7.4333334, 11)
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(1.9484892, -0.25, 0, 0.25, 0, 1.9484892, -0.22166668, 0, 0, 0, 1.9484892, -0.06666666, 0, 0, 0, 1.9484892, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 1.8300002, 2.8666666, 3.5)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/silhouette:position:z")
+tracks/2/path = NodePath("SubViewport/World/Silhouette3D:position:z")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(-63.8855, 0, 0, 0.75, -2.6573594, -79.82966, -0.8333334, 3.1016955, 0, 0, -91.544586, -0.35697174, 0.08195055, 0.4763616, -0.10935906, -80.977516, -0.8333334, 0.19130962, 0, 0),
-"times": PackedFloat32Array(0, 4.5, 7.4333334, 11)
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(-49.461018, -0.25, 0, 0.25, 0, -68.39399, -0.22166668, 3.1554954, 0, 0, -70.28338, -0.06666666, 0.3148982, 0, 0, -76.20941, -0.09444445, 0.9876722, 0, 0),
+"times": PackedFloat32Array(0, 1.8300002, 2.8666666, 3.5)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/silhouette:rotation:x")
+tracks/3/path = NodePath("SubViewport/World/Silhouette3D:rotation:x")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(0, 0, 0, 0.75, 0, 0, -0.8333334, 0, 0, 0, 0, -0.35697174, 0, 0.4763616, 0, 0, -0.8333334, 0, 0, 0),
-"times": PackedFloat32Array(0, 4.5, 7.4333334, 11)
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.22166668, 0, 0, 0, 0, -0.06666666, 0, 0, 0, 0, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 1.8300002, 2.8666666, 3.5)
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/silhouette:rotation:y")
+tracks/4/path = NodePath("SubViewport/World/Silhouette3D:rotation:y")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(3.0543263, 0, 0, 0.75, -0.08897734, 2.5204623, -0.8333334, 0, 0, 0, 2.4141524, -0.35697174, 0.034786407, 0.4763616, -0.046420787, 2.033219, -0.8333334, 0.0812072, 0, 0),
-"times": PackedFloat32Array(0, 4.5, 7.4333334, 11)
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(-2.3556461, -0.25, 0, 0.25, 0, -2.6796594, -0.22166668, 0.054002207, 0, 0, -2.5721252, -0.06666666, -0.017922362, 0, 0, -2.233732, -0.09444445, -0.056398872, 0, 0),
+"times": PackedFloat32Array(0, 1.8300002, 2.8666666, 3.5)
 }
 tracks/5/type = "bezier"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewport/World/silhouette:rotation:z")
+tracks/5/path = NodePath("SubViewport/World/Silhouette3D:rotation:z")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"handle_modes": PackedInt32Array(2, 0, 0, 0),
-"points": PackedFloat32Array(0, 0, 0, 0.75, 0, 0, -0.8333334, 0, 0, 0, 0, -0.35697174, 0, 0.4763616, 0, 0, -0.8333334, 0, 0, 0),
-"times": PackedFloat32Array(0, 4.5, 7.4333334, 11)
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.22166668, 0, 0, 0, 0, -0.06666666, 0, 0, 0, 0, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 1.8300002, 2.8666666, 3.5)
 }
-
-[sub_resource type="Animation" id="Animation_ke06p"]
-resource_name = "location_2"
-length = 9.3
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/silhouette:rotation:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.21926671, 0, 0, 0, 0, -0.6264763, 0, 0, 0, 0, -0.5638288, 0, 0, 0, 0, -0.25709486, 0, 0, 0),
-"times": PackedFloat32Array(0, 1.2, 4.6666665, 7.8333335, 9.266666)
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SubViewport/World/prototype_vestige:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.8),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/silhouette:rotation:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(2.033219, -0.25, 0, 0.25, 0, 2.033219, -0.21926671, 0, 0, 0, 2.033219, -0.6264763, 0, 0, 0, 2.033219, -0.5638288, 0, 0, 0, 2.033219, -0.25709486, 0, 0, 0),
-"times": PackedFloat32Array(0, 1.2, 4.6666665, 7.8333335, 9.266666)
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SubViewport/World/prototype_vestige:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.83),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
 }
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/silhouette:rotation:z")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.21926671, 0, 0, 0, 0, -0.6264763, 0, 0, 0, 0, -0.5638288, 0, 0, 0, 0, -0.25709486, 0, 0, 0),
-"times": PackedFloat32Array(0, 1.2, 4.6666665, 7.8333335, 9.3)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/silhouette:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(48.548847, -0.25, 0, 0.25, 0, 58.594887, -0.21926671, -1.6743399, 0, 0, 63.385056, -0.6264763, -0.7983614, 0, 0, 48.293663, -0.5638288, 2.5152323, 0, 0, 46.991146, -0.25709486, 0.21708617, 0, 0),
-"times": PackedFloat32Array(0, 1.2, 4.6666665, 7.8333335, 9.266666)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/silhouette:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(2.005247, -0.25, 0, 0.25, 0, 2.005247, -0.21926671, 0, 0, 0, 2.005247, -0.6264763, 0, 0, 0, 2.005247, -0.5638288, 0, 0, 0, 2.005247, -0.25709486, 0, 0, 0),
-"times": PackedFloat32Array(0, 1.2, 4.6666665, 7.8333335, 9.266666)
-}
-tracks/5/type = "bezier"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewport/World/silhouette:position:z")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(-80.977516, -0.25, 0, 0.25, 0, -80.977516, -0.21926671, 0, 0, 0, -51.26876, -0.6264763, -4.9514594, 0, 0, -26.125679, -0.5638288, -4.1905136, 0, 0, -13.585856, -0.25709486, -2.0899704, 0, 0),
-"times": PackedFloat32Array(0, 1.2, 4.6666665, 7.8333335, 9.266666)
-}
-
-[sub_resource type="Animation" id="Animation_y3k86"]
-resource_name = "location_3"
-length = 13.933333
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/silhouette:rotation:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.2916667, 0, 0, 0, 0, -0.47931263, 0, 0, 0, 0, -0.7206874, 0, 0, 0, 0, -0.044444405, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.8, 5.6758757, 10, 13.933333)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/silhouette:rotation:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 2),
-"points": PackedFloat32Array(2.033219, -0.25, 0, 0.25, 0, 1.1642873, -0.2916667, 0.14482197, 0, 0, 1.1642873, -0.47931263, 0, 0, 0, 1.1642873, -0.7206874, 0, 0, 0, 1.1642873, -0.044444405, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.8, 5.6758757, 10, 13.933333)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/silhouette:rotation:z")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 2),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.2916667, 0, 0, 0, 0, -0.47931263, 0, 0, 0, 0, -0.7206874, 0, 0, 0, 0, -0.044444405, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.8, 5.6758757, 10, 13.933333)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/silhouette:position:x")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 2),
-"points": PackedFloat32Array(46.991146, -0.25, 0, 0.25, 0, 31.067368, -0.2916667, 2.6539633, 0, 0, 17.24073, -0.47931263, 2.3044395, 0, 0, 7.837488, -0.7206874, 1.5672071, 0, 0, 24.262177, -0.044444405, 0.7493878, 0, 0),
-"times": PackedFloat32Array(0, 2.8, 5.6758757, 10, 13.933333)
-}
-tracks/4/type = "bezier"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/silhouette:position:y")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 2),
-"points": PackedFloat32Array(2.005247, -0.25, 0, 0.25, 0, 2.005247, -0.2916667, 0, 0, 0, 2.005247, -0.47931263, 0, 0, 0, 2.005247, -0.7206874, 0, 0, 0, 2.3693984, -0.044444405, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.8, 5.6758757, 10, 13.933333)
-}
-tracks/5/type = "bezier"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewport/World/silhouette:position:z")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 2),
-"points": PackedFloat32Array(-13.585856, -0.25, 0, 0.25, 0, -4.6751585, -0.2916667, -1.4851165, 0, 0, 2.8687983, -0.47931263, -1.2573261, 0, 0, 28.577442, -0.7206874, -4.2847743, 0, 0, 44.316547, -0.044444405, 0.5320702, 0, 0),
-"times": PackedFloat32Array(0, 2.8, 5.6758757, 10, 13.933333)
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SubViewport/World/prototype_vestige:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1.83, 3.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-24.192764, -2.2262607, -77.860855), Vector3(-24.193, 0.985, -77.861)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ke06p"]
 _data = {
-&"RESET": SubResource("Animation_b460r"),
-&"location_1": SubResource("Animation_y13jl"),
-&"location_2": SubResource("Animation_ke06p"),
-&"location_3": SubResource("Animation_y3k86")
+&"RESET": SubResource("Animation_jrnm1"),
+&"vestige_1": SubResource("Animation_u4jeo")
 }
 
 [node name="VestigeScene" type="Node3D" unique_id=1247047748]
@@ -4383,13 +4349,17 @@ transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995
 [node name="lavender" parent="SubViewport/World/Foliage/Grasses" unique_id=170458802 instance=ExtResource("18_or81c")]
 transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, -0.9403763, -0.010613203, 0.5574074)
 
-[node name="silhouette" parent="SubViewport/World" unique_id=578111472 instance=ExtResource("19_wn0by")]
-transform = Transform3D(-0.9961944, 0, 0.08715562, 0, 1, 0, -0.08715562, 0, -0.9961944, -5.281, 2.005, -63.886)
+[node name="Silhouette3D" parent="SubViewport/World" unique_id=578111472 instance=ExtResource("19_wn0by")]
+transform = Transform3D(-0.70671886, 0, -0.7074944, 0, 1, 0, 0.7074944, 0, -0.70671886, -15.945671, 1.9484892, -49.461018)
 
 [node name="watch_tower" parent="SubViewport/World" unique_id=1978300811 instance=ExtResource("20_atygq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.166, 27.851, 62.489)
 
 [node name="Map3D" parent="SubViewport/World" unique_id=697729204 instance=ExtResource("20_jrnm1")]
+
+[node name="prototype_vestige" parent="SubViewport/World" unique_id=671886494 instance=ExtResource("21_u4jeo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.192764, -2.2262607, -77.860855)
+visible = false
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1477322359]
 texture_filter = 1
@@ -4404,3 +4374,4 @@ expand_mode = 1
 
 [node name="SilhouetteAnimationMover" type="AnimationPlayer" parent="." unique_id=1139800193]
 libraries/ = SubResource("AnimationLibrary_ke06p")
+autoplay = &"RESET"

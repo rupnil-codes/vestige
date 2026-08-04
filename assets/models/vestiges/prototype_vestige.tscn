@@ -1,0 +1,252 @@
+[gd_scene format=3 uid="uid://tokolwg3nr8s"]
+
+[ext_resource type="PackedScene" uid="uid://da7jqwrcpmflk" path="res://assets/models/vestiges/prototype_vestige.blend" id="1_do14l"]
+[ext_resource type="Script" uid="uid://chvy4auu2sqj7" path="res://scripts/Controllers/prototype_vestige.gd" id="2_cpoa3"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_cpoa3"]
+data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1)
+
+[sub_resource type="Animation" id="Animation_do14l"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cube:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.47869158, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cube:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cube:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Cube:rotation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Cube:rotation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Cube:rotation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Area3D:monitoring")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Area3D:monitorable")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Cube:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Cube:transparency")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_cpoa3"]
+resource_name = "cube_vestige"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cube:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0.47869158, -0.25, 0, 0.25, 0, -1.2048025, -0.045, 0.28058237, 0, 0, -1.2048025, -0.049999997, 0, 0, 0, -0.61814594, -0.040000003, -0.09777609, 0, 0, 0, -0.031666666, -0.103024326, 0, 0, 0.47869158, -0.25, 0, 0.25, 0, -1.2048025, -0.045, 0.28058237, 0, 0, -1.2048025, -0.049999997, 0, 0, 0, -0.61814594, -0.040000003, -0.09777609, 0, 0, 0, -0.031666666, -0.103024326, 0, 0),
+"times": PackedFloat32Array(0, 0.27, 0.57, 0.81, 1, 1.1999999, 1.4699999, 1.6699998, 1.81, 1.9666667)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cube:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0, -0.049999997, 0, 0, 0, 0, -0.040000003, 0, 0, 0, 0, -0.031666666, 0, 0, 0, 0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0, -0.049999997, 0, 0, 0, 0, -0.040000003, 0, 0, 0, 0, -0.031666666, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.27, 0.57, 0.81, 1, 1.1999999, 1.4699999, 1.6699998, 1.81, 1.9666667)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Cube:position:z")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0, -0.049999997, 0, 0, 0, 0, -0.040000003, 0, 0, 0, 0, -0.031666666, 0, 0, 0, 0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0, -0.049999997, 0, 0, 0, 0, -0.040000003, 0, 0, 0, 0, -0.031666666, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.27, 0.57, 0.81, 1, 1.1999999, 1.4699999, 1.6699998, 1.81, 1.9666667)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Cube:rotation:x")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, -0.22186895, -0.049999997, 0.03697816, 0, 0, -0.22186895, -0.040000003, 0, 0, 0, 0, -0.031666666, -0.036978155, 0, 0, 0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, -0.22186895, -0.049999997, 0.03697816, 0, 0, -0.22186895, -0.040000003, 0, 0, 0, 0, -0.031666666, -0.036978155, 0, 0),
+"times": PackedFloat32Array(0, 0.27, 0.57, 0.81, 1, 1.1999999, 1.4699999, 1.6699998, 1.81, 1.9666667)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Cube:rotation:y")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0.99237555, -0.049999997, -0.16539593, 0, 0, 0.9923756, -0.040000003, -9.934108e-09, 0, 0, 0, -0.031666666, 0.16539593, 0, 0, 0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0.99237555, -0.049999997, -0.16539593, 0, 0, 0.9923756, -0.040000003, -9.934108e-09, 0, 0, 0, -0.031666666, 0.16539593, 0, 0),
+"times": PackedFloat32Array(0, 0.27, 0.57, 0.81, 1, 1.1999999, 1.4699999, 1.6699998, 1.81, 1.9666667)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Cube:rotation:z")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0.14269914, -0.049999997, -0.023783188, 0, 0, 0.14269914, -0.040000003, 0, 0, 0, 0, -0.031666666, 0.023783188, 0, 0, 0, -0.25, 0, 0.25, 0, 0, -0.045, 0, 0, 0, 0.14269914, -0.049999997, -0.023783188, 0, 0, 0.14269914, -0.040000003, 0, 0, 0, 0, -0.031666666, 0.023783188, 0, 0),
+"times": PackedFloat32Array(0, 0.27, 0.57, 0.81, 1, 1.1999999, 1.4699999, 1.6666666, 1.8333334, 1.9666667)
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Area3D:monitoring")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Area3D:monitorable")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yngai"]
+_data = {
+&"RESET": SubResource("Animation_do14l"),
+&"cube_vestige": SubResource("Animation_cpoa3")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(6.7468147, 6.8141174, 5.8483315)
+
+[node name="prototype_vestige" unique_id=671886494 instance=ExtResource("1_do14l")]
+script = ExtResource("2_cpoa3")
+
+[node name="Cube" parent="." index="0" unique_id=1511942269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.9999999, 0.47869158, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube" index="0" unique_id=2032914711]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube/StaticBody3D" index="0" unique_id=1319278479]
+shape = SubResource("ConcavePolygonShape3D_cpoa3")
+
+[node name="CubeVestigeAnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=969254765]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_yngai")
+autoplay = &"RESET"
+
+[node name="Area3D" type="Area3D" parent="." index="2" unique_id=1433654322]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=807233722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0010653, 1.9239502, -0.03375101)
+shape = SubResource("BoxShape3D_g4v7s")
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="area_exited" from="Area3D" to="." method="_on_area_3d_area_exited"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

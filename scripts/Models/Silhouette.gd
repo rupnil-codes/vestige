@@ -10,7 +10,7 @@ var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
 @onready var visible_on_screen_enabler_3d: VisibleOnScreenEnabler3D = $VisibleOnScreenEnabler3D
 
 var movement: Array[String] = [
-	"location_1",
+	"vestige_1",
 	"location_2",
 	"location_3"
 ]
