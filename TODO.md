@@ -6,8 +6,7 @@ Todos:
 
 - [X] Brainstorm all the Vestiges. (v0.2.1-alpha)
 - [X] Order the Vestiges for pacing. (v0.2.1-alpha)
-- [ ] Prototype the Silhouette to Vestige to Watch tower chain.
-- [ ] If the player touches the silhouette first make sure the vestige animation completes before.
+- [X] Prototype the Silhouette to Vestige to Watch tower chain. (v0.2.2-alpha ... v0.2.5-alpha)
 - [ ] Bunker Prototype
 - [ ] Bunker Door Logic
 - [ ] Long Tunnel
@@ -15,6 +14,7 @@ Todos:
 - [ ] Ending Camera Animation
 - [ ] Roll Credits
 - [ ] Finalize the Story progression (vestiges), I wish to convey.
+- [ ] Model the Weeping Silhouette
 
 - [ ] Play test the prototype Game.
 
@@ -28,6 +28,7 @@ Todos:
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
 - [ ] Design/Model each Vestige.
+- [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 
 ### Priority 3: Atmosphere
