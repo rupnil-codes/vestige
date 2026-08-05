@@ -7,6 +7,7 @@ Todos:
 - [X] Brainstorm all the Vestiges. (v0.2.1-alpha)
 - [X] Order the Vestiges for pacing. (v0.2.1-alpha)
 - [ ] Prototype the Silhouette to Vestige to Watch tower chain.
+- [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Bunker Prototype
 - [ ] Bunker Door Logic
 - [ ] Long Tunnel

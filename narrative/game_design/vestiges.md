@@ -9,8 +9,8 @@
 2. Childhood - Swing
 3. Teenager/Friendship and curiosity - Campfire, Tent, Bagpacks, Telescope, Lantern
 4. Lover - A wooden bench, two cups, candles, and a scarf
-5. Loss - Empty wheelchair, umbrella, flowers
-6. Ambition - A piano (sound: a beautiful performance with applause)
+5. Ambition - A piano (sound: a beautiful performance with applause)
+6. Loss - Empty wheelchair, umbrella, flowers
 7. Reflection and Acceptance - A weathered rusted mirror -- no reflections, and a rocking chair
 
 8. Watchtower - Weeping silhouette, a stethoscope oh the table with a note "Enjoy life."

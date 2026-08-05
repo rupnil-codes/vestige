@@ -12,7 +12,12 @@ var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
 var movement: Array[String] = [
 	"vestige_1",
 	"vestige_2",
-	"location_3"
+	"vestige_3",
+	"vestige_4",
+	"vestige_5",
+	"vestige_6",
+	"vestige_7",
+	"watch_tower_8"
 ]
 var next_location_index: int = 0
 
