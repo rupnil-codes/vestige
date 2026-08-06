@@ -3,7 +3,7 @@
 
 ## Changelog:
 
-- **[(v0.2.5-alpha) Vestige Chain (4)](https://github.com/rupnil-codes/vestige/commit/226b60)**: Les goo i completed the full chain of vestiges currently they are just cubes but i will def make models for them later! _[Lapsed](https://lapse.hackclub.com/timelapse/JFn_ZOGxoS6O)_
+- **[(v0.2.5-alpha) Vestige Chain (4)](https://github.com/rupnil-codes/vestige/commit/c36898)**: Les goo i completed the full chain of vestiges currently they are just cubes but i will def make models for them later! _[Lapsed](https://lapse.hackclub.com/timelapse/JFn_ZOGxoS6O)_
 
 - **[(v0.2.4-alpha) Placement + Vestige Chain (3)](https://github.com/rupnil-codes/vestige/commit/0afff9)**: Ok i placed all of the vestiges and currently made the animation till the Vestige 4 -- 4 moire to go (counting the watchtower). Idk i think i did some other stuff that i prolly forgot lmfao. _[Lapsed](https://lapse.hackclub.com/timelapse/qEBTzZiYhBGI)_
 
