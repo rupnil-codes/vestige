@@ -378,6 +378,30 @@ tracks/24/keys = {
 "update": 0,
 "values": [Vector3(23.006214, -1.0376003, 32.24622)]
 }
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("SubViewport/World/WeepingSilhouette3D:visible")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("SubViewport/World/Silhouette3D:visible")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_u4jeo"]
 resource_name = "vestige_1"
@@ -873,7 +897,7 @@ tracks/0/path = NodePath("SubViewport/World/Silhouette3D:rotation")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.7, 5, 7, 8.51, 9.51, 10.466666, 11.3, 12.04, 12.53, 13.33, 14.33, 15.0199995, 15.7, 16.78),
+"times": PackedFloat32Array(0, 1.7, 5, 7, 8.51, 9.51, 10.466666, 11.3, 12.04, 12.53, 13.33, 14.33, 15.0199995, 15.7, 16.8),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector3(0, -0.93061256, 0), Vector3(0, 0.93642133, 0), Vector3(0, 1.6261059, 0), Vector3(0, -1.3681464, 0), Vector3(0, -1.3681464, 0), Vector3(0, -1.3681464, 0), Vector3(0, -1.3681464, 0), Vector3(0, -1.3681464, 0), Vector3(0, 0.37639207, 0), Vector3(0, 1.7243543, 0), Vector3(0, -2.9880347, 0), Vector3(0, -2.9880347, 0), Vector3(0, -1.6190912, 0), Vector3(0, 0.3346018, 0), Vector3(0, 0.8586216, 0)]
@@ -885,10 +909,34 @@ tracks/1/path = NodePath("SubViewport/World/Silhouette3D:position")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.7, 5, 7, 8.51, 9.51, 10.466666, 11.3, 12.04, 12.53, 13.33, 14.33, 15.0199995, 15.7, 16.78),
+"times": PackedFloat32Array(0, 1.7, 5, 7, 8.51, 9.51, 10.466666, 11.3, 12.04, 12.53, 13.33, 14.33, 15.0199995, 15.7, 16.8),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector3(25.292427, 1.9484892, 30.591553), Vector3(28.710754, 1.9484892, 46.984215), Vector3(41.85796, 1.9484892, 62.292465), Vector3(53.022007, 9.000977, 60.41797), Vector3(46.52311, 12.477412, 60.41797), Vector3(52.076477, 17.012775, 60.080357), Vector3(46.204746, 20.25541, 60.080357), Vector3(52.466187, 23.85997, 59.29836), Vector3(47.18087, 27.474936, 59.29836), Vector3(47.372746, 27.474936, 63.222553), Vector3(53.90231, 29.728655, 63.060127), Vector3(53.606407, 32.354424, 57.248196), Vector3(53.606407, 32.354424, 53.685486), Vector3(46.730694, 32.354424, 54.07141), Vector3(51.528206, 32.354424, 60.55774)]
+"values": [Vector3(25.292427, 1.9484892, 30.591553), Vector3(28.710754, 1.9484892, 46.984215), Vector3(41.85796, 1.9484892, 62.292465), Vector3(53.022007, 9.000977, 60.41797), Vector3(46.52311, 12.477412, 60.41797), Vector3(52.076477, 17.012775, 60.080357), Vector3(46.204746, 20.25541, 60.080357), Vector3(52.466187, 23.85997, 59.29836), Vector3(47.18087, 27.474936, 59.29836), Vector3(47.372746, 27.474936, 63.222553), Vector3(53.90231, 29.728655, 63.060127), Vector3(53.606407, 32.354424, 57.248196), Vector3(53.606407, 32.354424, 53.685486), Vector3(46.730694, 32.354424, 54.07141), Vector3(47.488, 32.354, 60.558)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/World/WeepingSilhouette3D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 16.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewport/World/Silhouette3D:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 16.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ke06p"]
@@ -4891,6 +4939,10 @@ transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995
 [node name="Silhouette3D" parent="SubViewport/World" unique_id=578111472 instance=ExtResource("19_wn0by")]
 transform = Transform3D(-0.7071067, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, -0.7071067, -15.946, 1.948, -49.461)
 
+[node name="WeepingSilhouette3D" parent="SubViewport/World" unique_id=196015935 instance=ExtResource("22_wi37k")]
+transform = Transform3D(0.6923799, -0.0037521292, -0.72152346, 7.9981e-10, 0.9999864, -0.0052002165, 0.7215332, 0.0036005264, 0.6923704, 47.516758, 31.616627, 60.921906)
+visible = false
+
 [node name="watch_tower" parent="SubViewport/World" unique_id=1978300811 instance=ExtResource("20_atygq")]
 transform = Transform3D(0.995199, 0, 0.09787136, 0, 1, 0, -0.09787136, 0, 0.995199, 49.166, 27.961, 58.567)
 
@@ -4931,6 +4983,3 @@ expand_mode = 1
 [node name="SilhouetteAnimationMover" type="AnimationPlayer" parent="." unique_id=1139800193]
 libraries/ = SubResource("AnimationLibrary_ke06p")
 autoplay = &"RESET"
-
-[node name="weeping_silhouette" parent="." unique_id=196015935 instance=ExtResource("22_wi37k")]
-transform = Transform3D(0.64845407, 0.003958685, 0.7612435, 6.5408273e-10, 0.9999864, -0.005200216, -0.7612538, 0.0033721004, 0.64844525, 51.86651, 31.616627, 60.54244)

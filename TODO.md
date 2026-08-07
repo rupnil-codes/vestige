@@ -14,7 +14,7 @@ Todos:
 - [ ] Ending Camera Animation
 - [ ] Roll Credits
 - [ ] Finalize the Story progression (vestiges), I wish to convey.
-- [ ] Model & Mechanics of Weeping Silhouette (v0.2.7-alpha ... )
+- [X] Model & Mechanics of Weeping Silhouette (v0.2.7-alpha ... v0.2.8-alpha)
 
 - [ ] Play test the prototype Game.
 
@@ -30,6 +30,7 @@ Todos:
 - [ ] Design/Model each Vestige.
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
+- [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."
 
 ### Priority 3: Atmosphere
 

@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://cohxd0tg354d"]
 
 [ext_resource type="PackedScene" uid="uid://cf11ohujclol1" path="res://assets/models/silhouette/weeping_silhouette.blend" id="1_fqixc"]
+[ext_resource type="Script" uid="uid://c8mddrhkjxfhg" path="res://scripts/Models/WeepingSilhouette.gd" id="2_uhiyb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uhiyb"]
-size = Vector3(2.5, 5, 2.5)
+size = Vector3(2.5, 3.6743164, 2.5)
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_74prc"]
 emission_shape_scale = Vector3(0.85, 2.5, 1.25)
@@ -29,15 +30,271 @@ particles_anim_loop = false
 material = SubResource("StandardMaterial3D_toxj5")
 size = Vector2(0.1, 0.1)
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fqixc"]
+emission_shape_scale = Vector3(1, 0.1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+direction = Vector3(0, 5, 0)
+spread = 30.0
+initial_velocity_min = 0.19999999
+initial_velocity_max = 1.0
+gravity = Vector3(0, -4, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0u6y"]
+shading_mode = 2
+disable_ambient_light = true
+disable_specular_occlusion = true
+albedo_color = Color(0.7764706, 0.7764706, 0, 1)
+emission_enabled = true
+emission = Color(0.77472854, 0.77472883, 0, 1)
+emission_energy_multiplier = 16.0
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_uhiyb"]
+material = SubResource("StandardMaterial3D_d0u6y")
+size = Vector2(0.1, 0.1)
+
+[sub_resource type="Animation" id="Animation_74prc"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:transparency")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Eye2:transparency")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Eye1:transparency")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Body:transparency")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PurpleLight3D:light_energy")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [6.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Area3D:monitoring")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Area3D:monitorable")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("GPUPurpleParticles3D:transparency")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GPUDeathParticles3D:emitting")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_k6vhn"]
+resource_name = "vanish"
+length = 1.5
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Head:transparency")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, -0.16666667, 0, 0),
+"times": PackedFloat32Array(0, 1.5)
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Eye2:transparency")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Eye1:transparency")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Body:transparency")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PurpleLight3D:light_energy")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [6.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Area3D:monitoring")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Area3D:monitorable")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("GPUPurpleParticles3D:transparency")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GPUDeathParticles3D:emitting")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v3rmr"]
+_data = {
+&"RESET": SubResource("Animation_74prc"),
+&"vanish": SubResource("Animation_k6vhn")
+}
+
 [node name="weeping_silhouette" unique_id=196015935 instance=ExtResource("1_fqixc")]
+script = ExtResource("2_uhiyb")
 
 [node name="PurpleLight3D" type="OmniLight3D" parent="." index="4" unique_id=1956930406]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.158898, 1.9587753, 1.2474406)
 light_color = Color(0.6823177, 0.75558054, 0.9489761, 1)
-light_energy = 10.0
+light_energy = 6.0
 light_size = 0.728
 light_specular = 1.0
 light_bake_mode = 1
+shadow_enabled = true
 shadow_opacity = 0.7
 distance_fade_enabled = true
 distance_fade_begin = 50.0
@@ -52,7 +309,7 @@ collision_layer = 3
 collision_mask = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=775318703]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009774923, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009774923, 0.692255, 0)
 shape = SubResource("BoxShape3D_uhiyb")
 
 [node name="GPUPurpleParticles3D" type="GPUParticles3D" parent="." index="6" unique_id=437795775]
@@ -62,6 +319,22 @@ process_material = SubResource("ParticleProcessMaterial_74prc")
 draw_pass_1 = SubResource("QuadMesh_k6vhn")
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="7" unique_id=1512016175]
-aabb = AABB(-1.34, -2.5, -0.925, 2.5, 5, 2.5)
+transform = Transform3D(1, 0, 0, 0, 0.5096464, 0, 0, 0, 1, 0, 0.41641617, 0)
+aabb = AABB(-1.34, -3.1364596, -0.925, 2.5, 6.272919, 2.5)
 
-[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="8" unique_id=1419826111]
+[node name="GPUDeathParticles3D" type="GPUParticles3D" parent="." index="8" unique_id=1097778759]
+transform = Transform3D(1, 0, 0, 0, 10.568682, 0, 0, 0, 1, -0.09783006, 0.0046544075, 0.3473885)
+emitting = false
+amount = 50
+lifetime = 3.0
+one_shot = true
+explosiveness = 0.4
+visibility_aabb = AABB(-37.5, -3.75, -37.5, 75, 7.5, 70)
+process_material = SubResource("ParticleProcessMaterial_fqixc")
+draw_pass_1 = SubResource("QuadMesh_uhiyb")
+
+[node name="WeepingSilhouetteAnimationPlayer" type="AnimationPlayer" parent="." index="9" unique_id=937617638]
+libraries/ = SubResource("AnimationLibrary_v3rmr")
+autoplay = &"RESET"
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
