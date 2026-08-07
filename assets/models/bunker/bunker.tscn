@@ -2,4 +2,71 @@
 
 [ext_resource type="PackedScene" uid="uid://ckefpg1pmh8qh" path="res://assets/models/bunker/bunker.blend" id="1_xao48"]
 
-[node name="bunker" unique_id=1472689867 instance=ExtResource("1_xao48")]
+[sub_resource type="Animation" id="Animation_xao48"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door1:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.082145475, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("door2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.0597425, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_76bb7"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("door1:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.082145475, 0), Vector3(-0.20372006, 1.5708665, -1.4194159e-05)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("door2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -0.0597425, 0), Vector3(0, -2.8683195, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yj3m1"]
+_data = {
+&"RESET": SubResource("Animation_xao48"),
+&"open": SubResource("Animation_76bb7")
+}
+
+[node name="bunker" unique_id=708449342 instance=ExtResource("1_xao48")]
+
+[node name="door1" parent="." index="6" unique_id=1663630065]
+transform = Transform3D(0.99662787, 0, 0.08205312, 0, 0.99999994, 0, -0.08205312, 0, 0.99662787, -2.031322, 0.6776264, -3.1762433)
+
+[node name="BunkerAnimationPlayer" type="AnimationPlayer" parent="." index="8" unique_id=186549608]
+libraries/ = SubResource("AnimationLibrary_yj3m1")
+autoplay = &"open"

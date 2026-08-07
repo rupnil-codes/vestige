@@ -39,6 +39,27 @@ shader_parameter/vignette_strength = 0.0
 shader_parameter/vignette_radius = 1.0
 shader_parameter/blur_strength = 0.0
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_b460r"]
+emission_shape_offset = Vector3(0, -17, 0)
+emission_shape = 3
+emission_box_extents = Vector3(50, 20, 50)
+initial_velocity_min = 0.099999994
+initial_velocity_max = 1.0
+gravity = Vector3(0, -2, 0)
+turbulence_enabled = true
+turbulence_noise_scale = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7numd"]
+shading_mode = 0
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_y13jl"]
+material = SubResource("StandardMaterial3D_7numd")
+size = Vector2(0.2, 0.2)
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_y3k86"]
 sky_top_color = Color(0.3025247, 0.36429217, 0.4466083, 1)
 
@@ -66,27 +87,6 @@ volumetric_fog_albedo = Color(0.7724397, 0.77243954, 0.7724396, 1)
 volumetric_fog_emission = Color(0.75093335, 0.8066675, 0.82810485, 1)
 volumetric_fog_length = 300.0
 adjustment_contrast = 1.15
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_b460r"]
-emission_shape_offset = Vector3(0, -17, 0)
-emission_shape = 3
-emission_box_extents = Vector3(50, 20, 50)
-initial_velocity_min = 0.099999994
-initial_velocity_max = 1.0
-gravity = Vector3(0, -2, 0)
-turbulence_enabled = true
-turbulence_noise_scale = 1.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7numd"]
-shading_mode = 0
-billboard_mode = 3
-particles_anim_h_frames = 1
-particles_anim_v_frames = 1
-particles_anim_loop = false
-
-[sub_resource type="QuadMesh" id="QuadMesh_y13jl"]
-material = SubResource("StandardMaterial3D_7numd")
-size = Vector2(0.2, 0.2)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ke06p"]
 viewport_path = NodePath("SubViewport")
@@ -1001,16 +1001,6 @@ render_target_update_mode = 4
 
 [node name="World" type="Node3D" parent="SubViewport" unique_id=352032519]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/World" unique_id=2014315246]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-light_color = Color(0.18686649, 0.18686646, 0.18686646, 1)
-light_bake_mode = 1
-shadow_opacity = 0.51
-shadow_blur = 1.32
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport/World" unique_id=1269618478]
-environment = SubResource("Environment_jygv4")
-
 [node name="Player3D" parent="SubViewport/World" unique_id=1421963457 instance=ExtResource("4_tm726")]
 transform = Transform3D(0.06510419, 0, 0.99787813, 0, 0.99999964, 0, -0.9978785, 0, 0.06510416, -26.97766, -0.056738503, -52.831)
 
@@ -1023,6 +1013,16 @@ speed_scale = 0.7
 visibility_aabb = AABB(-15, -34, -15, 30, 34, 30)
 process_material = SubResource("ParticleProcessMaterial_b460r")
 draw_pass_1 = SubResource("QuadMesh_y13jl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport/World" unique_id=710870276]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 149.96982, -312.89587)
+light_color = Color(0.18686649, 0.18686646, 0.18686646, 1)
+light_bake_mode = 1
+shadow_opacity = 0.51
+shadow_blur = 1.32
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport/World" unique_id=1054877955]
+environment = SubResource("Environment_jygv4")
 
 [node name="Bench3D" parent="SubViewport/World" unique_id=2085675750 instance=ExtResource("5_r1fad")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
@@ -4983,6 +4983,3 @@ expand_mode = 1
 [node name="SilhouetteAnimationMover" type="AnimationPlayer" parent="." unique_id=1139800193]
 libraries/ = SubResource("AnimationLibrary_ke06p")
 autoplay = &"RESET"
-
-[node name="vestige" parent="." unique_id=1578841442 instance=ExtResource("20_jrnm1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1060526, -47.643898, 270.30832)
