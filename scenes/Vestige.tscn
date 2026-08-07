@@ -4983,3 +4983,6 @@ expand_mode = 1
 [node name="SilhouetteAnimationMover" type="AnimationPlayer" parent="." unique_id=1139800193]
 libraries/ = SubResource("AnimationLibrary_ke06p")
 autoplay = &"RESET"
+
+[node name="vestige" parent="." unique_id=1578841442 instance=ExtResource("20_jrnm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1060526, -47.643898, 270.30832)

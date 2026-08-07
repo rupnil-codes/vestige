@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c2bvqiw4e4bw4"]
+
+[ext_resource type="PackedScene" uid="uid://ckefpg1pmh8qh" path="res://assets/models/bunker/bunker.blend" id="1_xao48"]
+
+[node name="bunker" unique_id=1472689867 instance=ExtResource("1_xao48")]
