@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cohxd0tg354d"]
+
+[ext_resource type="PackedScene" uid="uid://cf11ohujclol1" path="res://assets/models/silhouette/weeping_silhouette.blend" id="1_fqixc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uhiyb"]
+size = Vector3(2.5, 5, 2.5)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_74prc"]
+emission_shape_scale = Vector3(0.85, 2.5, 1.25)
+emission_shape = 3
+emission_box_extents = Vector3(1.5, 1, 1)
+initial_velocity_min = 0.099999994
+initial_velocity_max = 0.29999998
+gravity = Vector3(0, 0, 0)
+turbulence_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_toxj5"]
+shading_mode = 2
+albedo_color = Color(0.68235296, 0.75686276, 0.9490196, 1)
+emission_enabled = true
+emission = Color(0.3958499, 0.41835496, 0.83751374, 1)
+emission_energy_multiplier = 16.0
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_k6vhn"]
+material = SubResource("StandardMaterial3D_toxj5")
+size = Vector2(0.1, 0.1)
+
+[node name="weeping_silhouette" unique_id=196015935 instance=ExtResource("1_fqixc")]
+
+[node name="PurpleLight3D" type="OmniLight3D" parent="." index="4" unique_id=1956930406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.158898, 1.9587753, 1.2474406)
+light_color = Color(0.6823177, 0.75558054, 0.9489761, 1)
+light_energy = 10.0
+light_size = 0.728
+light_specular = 1.0
+light_bake_mode = 1
+shadow_opacity = 0.7
+distance_fade_enabled = true
+distance_fade_begin = 50.0
+distance_fade_shadow = 30.0
+distance_fade_length = 0.0
+omni_range = 20.0
+omni_attenuation = 1.903
+
+[node name="Area3D" type="Area3D" parent="." index="5" unique_id=1046864487]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.082334995, 0, 0.33787507)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=775318703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009774923, 0, 0)
+shape = SubResource("BoxShape3D_uhiyb")
+
+[node name="GPUPurpleParticles3D" type="GPUParticles3D" parent="." index="6" unique_id=437795775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09805679, 0, 0.347597)
+amount = 15
+process_material = SubResource("ParticleProcessMaterial_74prc")
+draw_pass_1 = SubResource("QuadMesh_k6vhn")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="7" unique_id=1512016175]
+aabb = AABB(-1.34, -2.5, -0.925, 2.5, 5, 2.5)
+
+[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="8" unique_id=1419826111]

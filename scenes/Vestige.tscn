@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://v4md1p36rn0g" path="res://assets/models/watch_tower/watch_tower.tscn" id="20_atygq"]
 [ext_resource type="PackedScene" uid="uid://drhbro3wk8eqd" path="res://assets/models/vestige_map/vestige_map.tscn" id="20_jrnm1"]
 [ext_resource type="PackedScene" uid="uid://tokolwg3nr8s" path="res://assets/models/vestiges/prototype_vestige.tscn" id="21_u4jeo"]
+[ext_resource type="PackedScene" uid="uid://cohxd0tg354d" path="res://assets/models/silhouette/weeping_silhouette.tscn" id="22_wi37k"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -4930,3 +4931,6 @@ expand_mode = 1
 [node name="SilhouetteAnimationMover" type="AnimationPlayer" parent="." unique_id=1139800193]
 libraries/ = SubResource("AnimationLibrary_ke06p")
 autoplay = &"RESET"
+
+[node name="weeping_silhouette" parent="." unique_id=196015935 instance=ExtResource("22_wi37k")]
+transform = Transform3D(0.64845407, 0.003958685, 0.7612435, 6.5408273e-10, 0.9999864, -0.005200216, -0.7612538, 0.0033721004, 0.64844525, 51.86651, 31.616627, 60.54244)
