@@ -1,8 +1,13 @@
 extends CharacterBody3D
 
-@onready var prologue_scene: Node3D = $"../../.."
-@onready var watch_tower: Node3D = $"../watch_tower"
+@onready var vestige_scene: Node3D = $"../.."
+@onready var watch_tower: Node3D = $"../World/WatchTower3D"
+@onready var bunker: Node3D = $"../World/Bunker3D"
+
 @onready var player_entered_tower: bool = watch_tower._player_entered_tower
+@onready var player_entered_bunker_stairs: bool = bunker._player_entered_bunker_stairs
+@onready var player_on_stairs: bool = player_entered_tower or player_entered_bunker_stairs
+
 var captured: bool = true
 
 @export var look_sensitivity: float = 0.005
@@ -67,7 +72,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		captured = false
-	if prologue_scene.waking_up:
+	if vestige_scene.waking_up:
 		return
 
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
@@ -96,8 +101,11 @@ func _headbob_effect(delta: float):
 
 func _process(delta: float) -> void:
 	player_entered_tower = watch_tower._player_entered_tower
+	player_entered_bunker_stairs = bunker._player_entered_bunker_stairs
+
+	player_on_stairs = player_entered_tower or player_entered_bunker_stairs
 	
-	if player_entered_tower and not is_jumping:
+	if player_on_stairs and not is_jumping:
 		separation_ray.disabled = false
 		_visual_offset_y = lerp(_visual_offset_y, 0.0, smooth_step_speed * delta * smooth_step_speed_mult)
 		%Camera3D.position.y = _visual_offset_y
@@ -109,7 +117,7 @@ func _snap_down_to_stairs_check() -> void:
 	smooth_step_speed_mult = 1.0
 	var floor_below: bool = stairs_below_raycast.is_colliding() and not is_surface_too_steep(%StairsBelowRayCast3D.get_collision_normal())
 	var was_on_floor_last_frame := Engine.get_physics_frames() - _last_frame_was_on_floor == 1
-	if not is_jumping and player_entered_tower and not is_on_floor() and velocity.y <= 0 and (was_on_floor_last_frame or _snapped_to_stairs_last_frame) and floor_below:
+	if not is_jumping and player_on_stairs and not is_on_floor() and velocity.y <= 0 and (was_on_floor_last_frame or _snapped_to_stairs_last_frame) and floor_below:
 		var body_test_result: PhysicsTestMotionResult3D = PhysicsTestMotionResult3D.new()
 		if _run_body_test_motion(self.global_transform, Vector3(0, -MAX_STEP_HEIGHT, 0), body_test_result):
 			var translate_y: float = body_test_result.get_travel().y
@@ -235,7 +243,7 @@ func _physics_process(delta: float) -> void:
 		if is_on_floor():
 			is_jumping = false
 			if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
-				if player_entered_tower:
+				if player_on_stairs:
 					print("Jumping not allowed on the stairs")
 				else:
 					is_jumping = true
@@ -249,5 +257,5 @@ func _physics_process(delta: float) -> void:
 		move_and_slide()
 		_snap_down_to_stairs_check()
 
-		if player_entered_tower:
+		if player_on_stairs:
 			_visual_offset_y += (pos_before_physics.y - global_position.y)

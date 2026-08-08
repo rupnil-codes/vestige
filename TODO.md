@@ -8,7 +8,7 @@ Todos:
 - [X] Order the Vestiges for pacing. (v0.2.1-alpha)
 - [X] Prototype the Silhouette to Vestige to Watch tower chain. (v0.2.2-alpha ... v0.2.5-alpha)
 - [X] Bunker Design Prototype (v0.2.6-alpha & v0.2.9-alpha ...)
-- [ ] Bunker Door Logic
+- [X] Bunker Door Logic (v0.2.10-alpha ... v0.2.11-alpha)
 - [ ] Bunker Logic
 - [ ] Long Tunnel
 - [ ] Ending Bench Interaction
