@@ -7,15 +7,16 @@ Todos:
 - [X] Brainstorm all the Vestiges. (v0.2.1-alpha)
 - [X] Order the Vestiges for pacing. (v0.2.1-alpha)
 - [X] Prototype the Silhouette to Vestige to Watch tower chain. (v0.2.2-alpha ... v0.2.5-alpha)
-- [X] Bunker Design Prototype (v0.2.6-alpha & v0.2.9-alpha ...)
+- [X] Bunker Design Prototype (v0.2.6-alpha & v0.2.9-alpha ... )
+- [X] Model & Mechanics of Weeping Silhouette (v0.2.7-alpha ... v0.2.8-alpha)
 - [X] Bunker Door Logic (v0.2.10-alpha ... v0.2.11-alpha)
-- [ ] Bunker Logic
-- [ ] Long Tunnel
+- [X] Bunker Logic (v0.2.11-alpha ... v0.2.12-alpha)
+- [X] Long Tunnel
+- [ ] Ending tunnel disappearing Logic
 - [ ] Ending Bench Interaction
 - [ ] Ending Camera Animation
 - [ ] Roll Credits
 - [ ] Finalize the Story progression (vestiges), I wish to convey.
-- [X] Model & Mechanics of Weeping Silhouette (v0.2.7-alpha ... v0.2.8-alpha)
 
 - [ ] Play test the prototype Game.
 

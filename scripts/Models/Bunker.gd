@@ -6,9 +6,11 @@ extends Node3D
 @onready var bunker_animation_player: AnimationPlayer = $BunkerAnimationPlayer
 
 @onready var vestige_animation_player: AnimationPlayer = $"../../../VestigeAnimationPlayer"
-@onready var map_3d: Node3D = $"../WeepingSilhouette3D"
+@onready var map_3d_1: Node3D = $"../Map3D"
+@onready var map_3d_2: Node3D = $"../../World2/Map3D2"
 
 var is_closed: bool = true
+var switch: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,7 +21,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	weeping_silhouette_animation_done = weeping_silhouette_3d._weeping_silhouette_animation_done
 	
-	if weeping_silhouette_animation_done and is_closed:
+	if weeping_silhouette_animation_done and is_closed and not switch:
 		bunker_animation_player.play("open")
 		is_closed = false
 
@@ -28,13 +30,21 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.name == "Player3D":
 		_player_entered_bunker_stairs = true
 
-
-func _on_area_3d_body_exited(body: Node3D) -> void:
+func _on_stairs_area_3d_body_exited(body: Node3D) -> void:
 	if body.name == "Player3D":
 		_player_entered_bunker_stairs = false
 
 
 func _on_door_close_area_3d_body_entered(body: Node3D) -> void:
-	if body.name == "Player3D":
-		bunker_animation_player.play_backwards("open")
+	if body.name == "Player3D" and not is_closed:
+		bunker_animation_player.play_backwards("open") # close
 		vestige_animation_player.play("remove_main_map")
+		map_3d_1.hide_main_map_meshes()
+		is_closed = true
+		switch = true
+
+
+func _on_show_secondary_map_area_3d_body_entered(body: Node3D) -> void:
+	if body.name == "Player3D" and is_closed:
+		vestige_animation_player.play("show_secondary_map")
+		map_3d_2.show_secondary_map_meshes()
