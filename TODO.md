@@ -27,6 +27,7 @@ Todos:
 - [ ] Proper Tunnel Model
 - [ ] Watch Tower Furniture
 - [ ] Better Jumping Logic -- Feels floaty now.
+- [ ] A point at the center of the screen.
 - [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.

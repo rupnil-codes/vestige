@@ -9185,10 +9185,10 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 37.6
 visible = false
 
 [node name="wooden_torch" parent="SubViewport/World2" unique_id=1573619476 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(0.07234217, 0, -0.99737984, 0, 1, 0, 0.99737984, 0, 0.07234217, 51.070404, -0.643692, 61.76982)
+transform = Transform3D(-0.4323305, 0, -0.90171516, 0, 1, 0, 0.90171516, 0, -0.4323305, 51.320465, -0.643692, 61.377228)
 
 [node name="bench2" parent="SubViewport/World2" unique_id=1795858535 instance=ExtResource("5_r1fad")]
-transform = Transform3D(-0.5, 0, -0.8660254, 0, 1, 0, 0.8660254, 0, -0.5, 52.79779, -0.039489746, 62.31826)
+transform = Transform3D(-0.86395925, 0, -0.50356174, 0, 1, 0, 0.50356174, 0, -0.86395925, 52.54773, -0.039489746, 62.71084)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=1909744724]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 149.96982, -312.89587)
