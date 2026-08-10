@@ -297,32 +297,32 @@ _data = {
 [node name="bunker" unique_id=708449342 instance=ExtResource("1_xao48")]
 script = ExtResource("2_76bb7")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="bunker_exposed" parent_id_path=PackedInt32Array(2055577296) index="0" unique_id=1285932717]
+[node name="StaticBody3D" type="StaticBody3D" parent="bunker_exposed" parent_id_path=PackedInt32Array(1664918611) index="0" unique_id=1285932717]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bunker_exposed/StaticBody3D" index="0" unique_id=122926016]
 shape = SubResource("ConcavePolygonShape3D_76bb7")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="ceiling" parent_id_path=PackedInt32Array(50977068) index="0" unique_id=1337479897]
+[node name="StaticBody3D" type="StaticBody3D" parent="ceiling" parent_id_path=PackedInt32Array(1443549985) index="0" unique_id=1337479897]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ceiling/StaticBody3D" index="0" unique_id=793761049]
 shape = SubResource("ConcavePolygonShape3D_yj3m1")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="floor" parent_id_path=PackedInt32Array(1525668244) index="0" unique_id=1957866200]
+[node name="StaticBody3D" type="StaticBody3D" parent="floor" parent_id_path=PackedInt32Array(813267283) index="0" unique_id=1957866200]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor/StaticBody3D" index="0" unique_id=430846192]
 shape = SubResource("ConcavePolygonShape3D_j1uei")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="stairs_003" parent_id_path=PackedInt32Array(1368270389) index="0" unique_id=57296988]
+[node name="StaticBody3D" type="StaticBody3D" parent="stairs_003" parent_id_path=PackedInt32Array(461032059) index="0" unique_id=57296988]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="stairs_003/StaticBody3D" index="0" unique_id=673971224]
 shape = SubResource("ConcavePolygonShape3D_2bfe4")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="walls" parent_id_path=PackedInt32Array(228491482) index="0" unique_id=998387312]
+[node name="StaticBody3D" type="StaticBody3D" parent="walls" parent_id_path=PackedInt32Array(439625785) index="0" unique_id=998387312]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="walls/StaticBody3D" index="0" unique_id=1133111060]
 shape = SubResource("ConcavePolygonShape3D_ldfiq")
 
-[node name="door2" parent="." index="5" unique_id=1477010241]
+[node name="door2" parent="." index="5" unique_id=1972543173]
 transform = Transform3D(0.998216, 0, -0.059706967, 0, 1, 0, 0.059706967, 0, 0.998216, 1.9689002, 0.3885641, -3.1627922)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="door2" index="0" unique_id=1835417411]
@@ -330,7 +330,7 @@ transform = Transform3D(0.998216, 0, -0.059706967, 0, 1, 0, 0.059706967, 0, 0.99
 [node name="CollisionShape3D" type="CollisionShape3D" parent="door2/StaticBody3D" index="0" unique_id=85961270]
 shape = SubResource("ConcavePolygonShape3D_u23wu")
 
-[node name="door1" parent="." index="6" unique_id=582983895]
+[node name="door1" parent="." index="6" unique_id=1389554826]
 transform = Transform3D(0.99662787, 0, 0.08205312, 0, 0.99999994, 0, -0.08205312, 0, 0.99662787, -2.0202909, 0.6776264, -3.1762433)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="door1" index="0" unique_id=1261249490]
@@ -338,7 +338,7 @@ transform = Transform3D(0.99662787, 0, 0.08205312, 0, 0.99999994, 0, -0.08205312
 [node name="CollisionShape3D" type="CollisionShape3D" parent="door1/StaticBody3D" index="0" unique_id=370348057]
 shape = SubResource("ConcavePolygonShape3D_igpw2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="floor_below" parent_id_path=PackedInt32Array(1315373527) index="0" unique_id=707957776]
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_below" parent_id_path=PackedInt32Array(1394816208) index="0" unique_id=707957776]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="floor_below/StaticBody3D" index="0" unique_id=1557452366]
 shape = SubResource("ConcavePolygonShape3D_xx107")
@@ -373,5 +373,4 @@ libraries/ = SubResource("AnimationLibrary_yj3m1")
 [connection signal="body_exited" from="StairsArea3D" to="." method="_on_stairs_area_3d_body_exited"]
 [connection signal="body_entered" from="DoorCloseArea3D" to="." method="_on_door_close_area_3d_body_entered"]
 [connection signal="body_entered" from="ShowSecondaryMapArea3D" to="." method="_on_show_secondary_map_area_3d_body_entered"]
-[connection signal="screen_entered" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]

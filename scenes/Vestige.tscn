@@ -1079,22 +1079,10 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World2/Torches3D:visible")
+tracks/10/path = NodePath("SubViewport/World2/Map3D2:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/11/type = "value"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewport/World2/Map3D2:visible")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -1226,22 +1214,10 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World2/Torches3D:visible")
+tracks/10/path = NodePath("SubViewport/World2/Map3D2:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/11/type = "value"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewport/World2/Map3D2:visible")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -1265,22 +1241,10 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World2/Torches3D:visible")
+tracks/1/path = NodePath("SubViewport/World2/Map3D2:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World2/Map3D2:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -5306,7 +5270,7 @@ transform = Transform3D(0.995199, 0, 0.09787136, 0, 1, 0, -0.09787136, 0, 0.9951
 transform = Transform3D(0.99731445, 0, 0.073238194, 0, 1, 0, -0.073238194, 0, 0.99731445, 39.108597, 3.011, 77.20058)
 
 [node name="World2" type="Node3D" parent="SubViewport" unique_id=712196168]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 111.786, -186.74603, 250.514)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 86.77846, -186.74603, 208.57669)
 
 [node name="Forest3D" type="Node3D" parent="SubViewport/World2" unique_id=1145732713]
 visible = false
@@ -7772,7 +7736,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 114.22033, 0.8397759, -30.714
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.903885, -2.5003183, -41.1783)
 
 [node name="tall_fir_tree264" parent="SubViewport/World2/Forest3D" unique_id=1971014848 instance=ExtResource("9_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.41522, -1.420495, -59.82057)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.28485, -1.4205017, -59.82057)
 
 [node name="cedar_tree406" parent="SubViewport/World2/Forest3D" unique_id=1043823438 instance=ExtResource("8_jh5a0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 115.56707, 0.55256224, -62.913685)
@@ -7952,7 +7916,7 @@ transform = Transform3D(0.8762393, 0, 0.4818761, 0, 1, 0, -0.4818761, 0, 0.87623
 transform = Transform3D(0.74692553, -0.025593355, 0.6644151, -0.020138748, 0.99792975, 0.06108004, -0.6646027, -0.05900274, 0.74486387, 49.478657, -1.0959647, -68.529594)
 
 [node name="tall_fir_tree291" parent="SubViewport/World2/Forest3D" unique_id=1436426637 instance=ExtResource("9_kgo5s")]
-transform = Transform3D(0.68987226, 0, -0.7239311, 0, 1, 0, 0.7239311, 0, 0.68987226, 57.983208, -1.0219741, -55.436836)
+transform = Transform3D(0.68987226, 0, -0.7239311, 0, 1, 0, 0.7239311, 0, 0.68987226, 63.417572, -1.0219727, -55.436844)
 
 [node name="cedar_tree442" parent="SubViewport/World2/Forest3D" unique_id=596360905 instance=ExtResource("8_jh5a0")]
 transform = Transform3D(-0.34300405, 0, 0.9393339, 0, 1, 0, -0.9393339, 0, -0.34300405, 43.498013, -1.6836715, -39.544266)
@@ -7961,10 +7925,10 @@ transform = Transform3D(-0.34300405, 0, 0.9393339, 0, 1, 0, -0.9393339, 0, -0.34
 transform = Transform3D(-0.34300405, 0, 0.9393339, 0, 1, 0, -0.9393339, 0, -0.34300405, 69.97687, -1.1071315, -39.184166)
 
 [node name="tall_fir_tree292" parent="SubViewport/World2/Forest3D" unique_id=1731246583 instance=ExtResource("9_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.747135, -0.27194738, -40.784126)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.798737, -1.195221, -40.68399)
 
 [node name="cedar_tree445" parent="SubViewport/World2/Forest3D" unique_id=1836672418 instance=ExtResource("8_jh5a0")]
-transform = Transform3D(0.6736319, 0, -0.739067, 0, 1, 0, 0.739067, 0, 0.6736319, 51.89169, -0.19782972, -43.74934)
+transform = Transform3D(0.6736319, 0, -0.739067, 0, 1, 0, 0.739067, 0, 0.6736319, 53.664246, -0.1978302, -39.049118)
 
 [node name="pine_tree245" parent="SubViewport/World2/Forest3D" unique_id=1158732123 instance=ExtResource("7_gmphc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.61704, -0.28298712, -46.79899)
@@ -8015,7 +7979,7 @@ transform = Transform3D(0.9138859, 0, 0.40597123, 0, 1, 0, -0.40597123, 0, 0.913
 transform = Transform3D(0.52986, 0, -0.84808505, 0, 1, 0, 0.84808505, 0, 0.52986, 37.447933, -0.19784021, -51.304474)
 
 [node name="pine_tree250" parent="SubViewport/World2/Forest3D" unique_id=455071085 instance=ExtResource("7_gmphc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.24467, 0.039234042, -45.345528)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.24466, 0.039230347, -50.765182)
 
 [node name="pine_tree251" parent="SubViewport/World2/Forest3D" unique_id=1753289591 instance=ExtResource("7_gmphc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.738747, -3.1560802, -57.274994)
@@ -9092,7 +9056,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.4243965, 0.11510539, -61.2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.739861, 0.024036169, -66.73445)
 
 [node name="tall_fir_tree263" parent="SubViewport/World2/Forest3D" unique_id=1155153205 instance=ExtResource("9_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64758044, 0.017210722, -72.2175)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64759827, 0.017211914, -71.21744)
 
 [node name="tall_fir_tree265" parent="SubViewport/World2/Forest3D" unique_id=1818099649 instance=ExtResource("9_kgo5s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.232878, -0.511426, -83.91707)
@@ -9124,56 +9088,116 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -23.
 [node name="tall_fir_tree107" parent="SubViewport/World2/Forest3D" unique_id=71664403 instance=ExtResource("9_kgo5s")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.563553, -0.8890381, -54.96077)
 
-[node name="Torches3D" type="Node3D" parent="SubViewport/World2" unique_id=721815999]
-visible = false
+[node name="pine_tree126" parent="SubViewport/World2/Forest3D" unique_id=734909832 instance=ExtResource("7_gmphc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.740906, -2.2045593, -62.82698)
 
-[node name="wooden_torch4" parent="SubViewport/World2/Torches3D" unique_id=530444883 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(0.87715054, 0.06365498, 0.47597796, -0.02168039, 0.9954142, -0.09316843, -0.4797258, 0.071403325, 0.87450814, 16.657347, 3.3097515, 45.15091)
+[node name="cedar_tree82" parent="SubViewport/World2/Forest3D" unique_id=1819884354 instance=ExtResource("8_jh5a0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -111.75037, 0.42260742, 68.98079)
 
-[node name="wooden_torch5" parent="SubViewport/World2/Torches3D" unique_id=1405103302 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(0.8670808, -0.003735289, 0.4981538, -0.15778324, 0.94643074, 0.28173238, -0.47252047, -0.32288516, 0.82004255, -25.085884, 2.359, -47.86272)
+[node name="cedar_tree192" parent="SubViewport/World2/Forest3D" unique_id=1940590567 instance=ExtResource("8_jh5a0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.813782, -3.271103, -68.76842)
 
-[node name="wooden_torch8" parent="SubViewport/World2/Torches3D" unique_id=1850532845 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(-0.99503607, -0.055517435, -0.08258873, -0.05257214, 0.9979156, -0.037420813, 0.0844941, -0.03289318, -0.99588084, 54.21102, 5.795977, -20.796238)
+[node name="tall_fir_tree253" parent="SubViewport/World2/Forest3D" unique_id=1239087309 instance=ExtResource("9_kgo5s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.7183228, -1.4780884, -74.44847)
 
-[node name="wooden_torch9" parent="SubViewport/World2/Torches3D" unique_id=937112911 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(0.9596826, 0.0783541, -0.26994446, -0.08137508, 0.99668354, 0, 0.2690492, 0.021966752, 0.9628759, 58.606068, 4.321146, -55.419323)
+[node name="tall_fir_tree276" parent="SubViewport/World2/Forest3D" unique_id=145291754 instance=ExtResource("9_kgo5s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.709656, -0.6037445, -80.798386)
 
-[node name="wooden_torch10" parent="SubViewport/World2/Torches3D" unique_id=876324963 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(-0.22497013, 0.19086364, -0.95548904, -0.10066319, 0.97082704, 0.21762863, 0.969152, 0.14514254, -0.19919415, 53.908283, 3.7825482, -87.33439)
+[node name="pine_tree205" parent="SubViewport/World2/Forest3D" unique_id=2077468227 instance=ExtResource("7_gmphc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 38.32834, -2.353241, -86.54486)
 
-[node name="wooden_torch11" parent="SubViewport/World2/Torches3D" unique_id=1160262793 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(-0.8480087, -0.16108707, 0.50490844, -0.22919017, 0.9704637, -0.07531287, -0.47786334, -0.17958602, -0.8598811, 22.627657, 3.279036, 6.4008293)
+[node name="tall_fir_tree277" parent="SubViewport/World2/Forest3D" unique_id=590073330 instance=ExtResource("9_kgo5s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 62.615417, -0.3145752, -74.32405)
 
-[node name="wooden_torch18" parent="SubViewport/World2/Torches3D" unique_id=1576693301 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(0.10109374, 0, 0.99487686, -0.101520866, 0.99477994, 0.010315974, -0.98968357, -0.10204365, 0.10056602, 26.519411, 4.063333, -78.44986)
+[node name="cedar_tree193" parent="SubViewport/World2/Forest3D" unique_id=1955885443 instance=ExtResource("8_jh5a0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 63.578094, -0.3142395, -62.737457)
 
-[node name="wooden_torch19" parent="SubViewport/World2/Torches3D" unique_id=742799721 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(0.32910505, 0.05310099, -0.9427991, -0.2664786, 0.9630604, -0.03877812, 0.90591335, 0.26399785, 0.33109832, -5.7193413, 4.563718, -81.83031)
+[node name="cedar_tree195" parent="SubViewport/World2/Forest3D" unique_id=59811306 instance=ExtResource("8_jh5a0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 50.167206, 0.38383484, -30.428146)
 
-[node name="wooden_torch21" parent="SubViewport/World2/Torches3D" unique_id=2065490126 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(-0.2592357, 0.0035841353, -0.96580696, -0.22338596, 0.9726614, 0.06357102, 0.93962556, 0.23222639, -0.25134638, 36.456467, 3.9751978, -13.1601095)
+[node name="pine_tree218" parent="SubViewport/World2/Forest3D" unique_id=20396642 instance=ExtResource("7_gmphc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 45.009583, -0.6454468, -29.943771)
 
-[node name="wooden_torch22" parent="SubViewport/World2/Torches3D" unique_id=2132760976 instance=ExtResource("12_uhaqf")]
-transform = Transform3D(0.27652863, 0.24194798, -0.9300499, -0.14676449, 0.9670722, 0.2079416, 0.9497329, 0.07899685, 0.3029313, 7.686678, 3.296795, 14.511406)
+[node name="boulder" parent="SubViewport/World2/Forest3D" unique_id=326577441 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.36841, 0.6699066, 76.56868)
+
+[node name="boulder2" parent="SubViewport/World2/Forest3D" unique_id=983363503 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.006991512, -0.0072906697, 0.999949, -0.0035062465, 0.9999671, 0.0073153274, -0.9999694, -0.0035572343, 0.006965708, 38.050446, 0.4867859, 76.25206)
+
+[node name="boulder9" parent="SubViewport/World2/Forest3D" unique_id=2014919783 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-0.274495, 0.0060719303, -0.9615693, -0.0035062467, 0.9999671, 0.007315327, 0.9615821, 0.0053795376, -0.27446467, 41.794434, 0.4867859, 80.935356)
+
+[node name="boulder10" parent="SubViewport/World2/Forest3D" unique_id=1154409597 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.22750495, 0, -0.97377706, 0, 1, 0, 0.97377706, 0, 0.22750495, 40.49176, -0.038116455, 81.115265)
+
+[node name="boulder11" parent="SubViewport/World2/Forest3D" unique_id=1843047457 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.50532156, 0, -0.86293113, 0, 1, 0, 0.86293113, 0, 0.50532156, 40.718597, 0.8655243, 76.355835)
+
+[node name="boulder12" parent="SubViewport/World2/Forest3D" unique_id=1818604846 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.49927276, 0.008088893, -0.866407, -0.0035062467, 0.9999671, 0.007315326, 0.8664378, -0.0006144821, 0.49928477, 41.977753, 0.4867859, 76.375244)
+
+[node name="boulder13" parent="SubViewport/World2/Forest3D" unique_id=633466296 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.50532156, 0, -0.86293113, 0, 1, 0, 0.86293113, 0, 0.50532156, 41.65158, -0.038116455, 77.86052)
+
+[node name="boulder14" parent="SubViewport/World2/Forest3D" unique_id=1453073504 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-0.26776695, 0, -0.9634837, 0, 1, 0, 0.9634837, 0, -0.26776695, 40.320953, 0.81204224, 78.08331)
+
+[node name="boulder15" parent="SubViewport/World2/Forest3D" unique_id=694674125 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-0.99916166, 0, 0.040941074, 0, 1, 0, -0.040941074, 0, -0.99916166, 41.990295, 0.61216736, 79.32564)
+
+[node name="boulder3" parent="SubViewport/World2/Forest3D" unique_id=1083566943 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.082428, -0.038116455, 75.13518)
+
+[node name="boulder4" parent="SubViewport/World2/Forest3D" unique_id=1161063237 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-0.71793354, 0, 0.6961116, 0, 1, 0, -0.6961116, 0, -0.71793354, 40.635742, 0.1277771, 79.68457)
+
+[node name="boulder5" parent="SubViewport/World2/Forest3D" unique_id=319370525 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-0.71304464, -0.007628979, 0.70107704, -0.0035062467, 0.9999671, 0.007315327, -0.7011098, 0.002757983, -0.7130479, 39.20639, 0.35617065, 80.13843)
+
+[node name="boulder6" parent="SubViewport/World2/Forest3D" unique_id=1082349695 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-0.71793354, 0, 0.6961116, 0, 1, 0, -0.6961116, 0, -0.71793354, 39.009552, -0.038116455, 78.62007)
+
+[node name="boulder7" parent="SubViewport/World2/Forest3D" unique_id=338555954 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 38.940613, 0.34455872, 81.30961)
+
+[node name="boulder8" parent="SubViewport/World2/Forest3D" unique_id=928545272 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.97363853, 0, 0.2280964, 0, 1, 0, -0.2280964, 0, 0.97363853, 38.986023, 0.80610657, 77.874664)
+
+[node name="boulder16" parent="SubViewport/World2/Forest3D" unique_id=324713496 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 40.55844, -0.22677612, 75.24228)
+
+[node name="boulder17" parent="SubViewport/World2/Forest3D" unique_id=2144251656 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 37.51944, -0.21174622, 78.75778)
+
+[node name="boulder18" parent="SubViewport/World2/Forest3D" unique_id=1545401098 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.49940148, 0, 0.8663707, 0, 1, 0, -0.8663707, 0, 0.49940148, 37.638092, 0.052322388, 77.127945)
+
+[node name="boulder19" parent="SubViewport/World2/Forest3D" unique_id=252011544 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.99999684, 0, -0.00252485, 0, 1, 0, 0.00252485, 0, 0.99999684, 37.63983, -0.2959137, 75.72624)
+
+[node name="boulder20" parent="SubViewport/World2/Forest3D" unique_id=644869433 instance=ExtResource("14_f7phn")]
+transform = Transform3D(0.7553322, 0, 0.65534216, 0, 1, 0, -0.65534216, 0, 0.7553322, 37.8739, -0.14630127, 80.08387)
+
+[node name="boulder21" parent="SubViewport/World2/Forest3D" unique_id=121149966 instance=ExtResource("14_f7phn")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 37.61908, 0.14533997, 81.44402)
 
 [node name="Map3D2" parent="SubViewport/World2" unique_id=731867067 instance=ExtResource("24_tm726")]
 visible = false
 
-[node name="cedar_tree" parent="SubViewport/World2" unique_id=1819884354 instance=ExtResource("8_jh5a0")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -111.75037, 0.42260742, 68.980804)
+[node name="wooden_torch" parent="SubViewport/World2" unique_id=1573619476 instance=ExtResource("12_uhaqf")]
+transform = Transform3D(0.07234217, 0, -0.99737984, 0, 1, 0, 0.99737984, 0, 0.07234217, 51.070404, -0.643692, 61.76982)
 
-[node name="pine_tree" parent="SubViewport/World2" unique_id=734909832 instance=ExtResource("7_gmphc")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.74086, -1.7667847, -62.82698)
+[node name="bench2" parent="SubViewport/World2" unique_id=1795858535 instance=ExtResource("5_r1fad")]
+transform = Transform3D(-0.5, 0, -0.8660254, 0, 1, 0, 0.8660254, 0, -0.5, 52.79779, -0.039489746, 62.31826)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=1525400130]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=1909744724]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 149.96982, -312.89587)
 light_color = Color(0.18686649, 0.18686646, 0.18686646, 1)
 light_bake_mode = 1
 shadow_opacity = 0.51
 shadow_blur = 1.32
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=1776635598]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=1499311444]
 environment = SubResource("Environment_tm726")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1477322359]
