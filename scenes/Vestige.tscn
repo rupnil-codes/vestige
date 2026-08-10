@@ -1067,7 +1067,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewport/World2/Bench3D:visible")
+tracks/9/path = NodePath("SubViewport/World2/Forest3D:visible")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -1079,7 +1079,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World2/Forest3D:visible")
+tracks/10/path = NodePath("SubViewport/World2/Torches3D:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -1091,34 +1091,10 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewport/World2/Torches3D:visible")
+tracks/11/path = NodePath("SubViewport/World2/Map3D2:visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/12/type = "value"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("SubViewport/World2/Foliage:visible")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/13/type = "value"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("SubViewport/World2/Map3D2:visible")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -1238,7 +1214,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewport/World2/Bench3D:visible")
+tracks/9/path = NodePath("SubViewport/World2/Forest3D:visible")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -1250,7 +1226,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World2/Forest3D:visible")
+tracks/10/path = NodePath("SubViewport/World2/Torches3D:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -1262,34 +1238,10 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewport/World2/Torches3D:visible")
+tracks/11/path = NodePath("SubViewport/World2/Map3D2:visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/12/type = "value"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("SubViewport/World2/Foliage:visible")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/13/type = "value"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("SubViewport/World2/Map3D2:visible")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -1301,7 +1253,7 @@ resource_name = "show_secondary_map"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World2/Bench3D:visible")
+tracks/0/path = NodePath("SubViewport/World2/Forest3D:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -1313,7 +1265,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World2/Forest3D:visible")
+tracks/1/path = NodePath("SubViewport/World2/Torches3D:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -1325,34 +1277,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World2/Torches3D:visible")
+tracks/2/path = NodePath("SubViewport/World2/Map3D2:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World2/Foliage:visible")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [false, true]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World2/Map3D2:visible")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
@@ -5378,11 +5306,7 @@ transform = Transform3D(0.995199, 0, 0.09787136, 0, 1, 0, -0.09787136, 0, 0.9951
 transform = Transform3D(0.99731445, 0, 0.073238194, 0, 1, 0, -0.073238194, 0, 0.99731445, 39.108597, 3.011, 77.20058)
 
 [node name="World2" type="Node3D" parent="SubViewport" unique_id=712196168]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 111.786, -46.971, 250.514)
-
-[node name="Bench3D" parent="SubViewport/World2" unique_id=1259910402 instance=ExtResource("5_r1fad")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
-visible = false
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 111.786, -186.74603, 250.514)
 
 [node name="Forest3D" type="Node3D" parent="SubViewport/World2" unique_id=1145732713]
 visible = false
@@ -9194,6 +9118,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.27618, 0.0727222, -75.0099
 [node name="pine_tree332" parent="SubViewport/World2/Forest3D" unique_id=2027927536 instance=ExtResource("7_gmphc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.876144, 0.08213425, -87.1991)
 
+[node name="pine_tree47" parent="SubViewport/World2/Forest3D" unique_id=678117474 instance=ExtResource("7_gmphc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -23.325241, -0.063797, -53.049744)
+
+[node name="tall_fir_tree107" parent="SubViewport/World2/Forest3D" unique_id=71664403 instance=ExtResource("9_kgo5s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.563553, -0.8890381, -54.96077)
+
 [node name="Torches3D" type="Node3D" parent="SubViewport/World2" unique_id=721815999]
 visible = false
 
@@ -9227,62 +9157,23 @@ transform = Transform3D(-0.2592357, 0.0035841353, -0.96580696, -0.22338596, 0.97
 [node name="wooden_torch22" parent="SubViewport/World2/Torches3D" unique_id=2132760976 instance=ExtResource("12_uhaqf")]
 transform = Transform3D(0.27652863, 0.24194798, -0.9300499, -0.14676449, 0.9670722, 0.2079416, 0.9497329, 0.07899685, 0.3029313, 7.686678, 3.296795, 14.511406)
 
-[node name="Foliage" type="Node3D" parent="SubViewport/World2" unique_id=146050531]
-transform = Transform3D(0.19739681, 0, 0.9803237, 0, 1, 0, -0.9803237, 0, 0.19739681, -27.999372, 0.040179133, -47.608204)
-visible = false
-
-[node name="Fireflies" parent="SubViewport/World2/Foliage" unique_id=434303843 instance=ExtResource("13_gkgfg")]
-
-[node name="boulder2" parent="SubViewport/World2/Foliage" unique_id=1774332529 instance=ExtResource("14_f7phn")]
-transform = Transform3D(0.7062756, 0.028551018, -0.7073609, -0.0054663587, 0.9993766, 0.0348796, 0.70791566, -0.020767942, 0.7059915, -0.9809799, 0.760651, 1.3309402)
-
-[node name="Grasses" type="Node3D" parent="SubViewport/World2/Foliage" unique_id=1697629968]
-transform = Transform3D(0.10520897, 0.06014566, -0.9926297, 0.0369288, 0.9972448, 0.064339384, 0.9937643, -0.043425687, 0.102698, 0.69462204, 0.19931489, 0.50597763)
-
-[node name="grass5" parent="SubViewport/World2/Foliage/Grasses" unique_id=2132604887 instance=ExtResource("15_3bx4b")]
-transform = Transform3D(1, 2.2700988e-09, 0, 1.9790605e-09, 1.0000001, 4.656613e-10, -7.450581e-09, -4.656613e-10, 1, 0, 0, 0)
-
-[node name="grass" parent="SubViewport/World2/Foliage/Grasses" unique_id=1508878279 instance=ExtResource("15_3bx4b")]
-transform = Transform3D(0.38240707, 0.029320413, 0.9235288, 0.008013504, 0.9993536, -0.035045892, -0.9239592, 0.02080249, 0.381925, 0.4606495, -0.011961937, -0.2429161)
-
-[node name="grass2" parent="SubViewport/World2/Foliage/Grasses" unique_id=296657503 instance=ExtResource("15_3bx4b")]
-transform = Transform3D(-0.9930897, 0.042498976, 0.10939199, 0.042593583, 0.99909145, -0.0014728308, -0.10935514, 0.0031967424, -0.9939974, 1.8912277, 0.07385063, -1.1963081)
-
-[node name="grass3" parent="SubViewport/World2/Foliage/Grasses" unique_id=816695068 instance=ExtResource("15_3bx4b")]
-transform = Transform3D(-0.94363433, 0.031147761, 0.32952073, 0.030471731, 0.9995096, -0.007217499, -0.32958388, 0.0032303843, -0.9441207, -1.8024025, -0.015112042, 1.7334213)
-
-[node name="grass4" parent="SubViewport/World2/Foliage/Grasses" unique_id=266686141 instance=ExtResource("15_3bx4b")]
-transform = Transform3D(0.7145599, 0.031147761, 0.6988806, -0.020007785, 0.9995096, -0.024089571, -0.6992882, 0.0032303843, 0.7148326, -0.7905197, -0.1197201, -0.2862091)
-
-[node name="reed" parent="SubViewport/World2/Foliage/Grasses" unique_id=770532648 instance=ExtResource("16_0pfra")]
-transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, -1.5645981, 0.028833985, 0.89471436)
-
-[node name="reed2" parent="SubViewport/World2/Foliage/Grasses" unique_id=2019797632 instance=ExtResource("16_0pfra")]
-transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, 1.1723804, -0.066078186, -0.3795929)
-
-[node name="reed3" parent="SubViewport/World2/Foliage/Grasses" unique_id=1124411002 instance=ExtResource("16_0pfra")]
-transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, 0.27043152, -0.07211125, -0.91267014)
-
-[node name="reed4" parent="SubViewport/World2/Foliage/Grasses" unique_id=193432364 instance=ExtResource("16_0pfra")]
-transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, 2.050129, -0.1865099, -0.70121765)
-
-[node name="dandelion" parent="SubViewport/World2/Foliage/Grasses" unique_id=1933854240 instance=ExtResource("17_cwcys")]
-transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, 1.3809357, -0.030876637, -0.9284096)
-
-[node name="lavender" parent="SubViewport/World2/Foliage/Grasses" unique_id=1934212924 instance=ExtResource("18_or81c")]
-transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, -0.9403763, -0.010613203, 0.5574074)
-
 [node name="Map3D2" parent="SubViewport/World2" unique_id=731867067 instance=ExtResource("24_tm726")]
 visible = false
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=818481312]
+[node name="cedar_tree" parent="SubViewport/World2" unique_id=1819884354 instance=ExtResource("8_jh5a0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -111.75037, 0.42260742, 68.980804)
+
+[node name="pine_tree" parent="SubViewport/World2" unique_id=734909832 instance=ExtResource("7_gmphc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13.74086, -1.7667847, -62.82698)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=1525400130]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 149.96982, -312.89587)
 light_color = Color(0.18686649, 0.18686646, 0.18686646, 1)
 light_bake_mode = 1
 shadow_opacity = 0.51
 shadow_blur = 1.32
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=978942162]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=1776635598]
 environment = SubResource("Environment_tm726")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1477322359]

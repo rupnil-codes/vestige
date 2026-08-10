@@ -11,12 +11,13 @@ Todos:
 - [X] Model & Mechanics of Weeping Silhouette (v0.2.7-alpha ... v0.2.8-alpha)
 - [X] Bunker Door Logic (v0.2.10-alpha ... v0.2.11-alpha)
 - [X] Bunker Logic (v0.2.11-alpha ... v0.2.12-alpha)
-- [X] Long Tunnel
-- [ ] Ending tunnel disappearing Logic
+- [X] Long Tunnel (v0.2.9-alpha, v0.2.10-alpha and v0.2.13-alpha)
+- [X] Ending tunnel disappearing Logic (v0.2.13-alpha)
 - [ ] Ending Bench Interaction
 - [ ] Ending Camera Animation
 - [ ] Roll Credits
 - [ ] Finalize the Story progression (vestiges), I wish to convey.
+- [ ] Fix the grassland model (make the crests and troughs lesser), and place trees on secondary maps.
 
 - [ ] Play test the prototype Game.
 
@@ -56,6 +57,7 @@ Todos:
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp
 - [ ] Particle Polish
+- [ ] Sometimes the camera glitches and it weirds out at extreme angles.
 
 ### Priority 5: Shipping Time!
 
