@@ -53,6 +53,10 @@ var _last_frame_was_on_floor := -INF
 var smooth_step_speed_mult: float = 1.0
 var _visual_offset_y: float = 0.0
 
+@onready var interaction_ray_cast: RayCast3D = %InteractionRayCast3D
+@onready var interaction_text: Label = %InteractionText
+var _is_interacting: bool = false
+
 func get_move_speed() -> float:
 	if is_crouched:
 		return walk_speed * 0.8
@@ -111,6 +115,11 @@ func _process(delta: float) -> void:
 		%Camera3D.position.y = _visual_offset_y
 	else:
 		separation_ray.disabled = true
+		
+	if _is_interacting:
+		interaction_text.text = "Press 'E' to interact"
+	else:
+		interaction_text.text = ""
 	
 func _snap_down_to_stairs_check() -> void:
 	did_snap = false
@@ -225,6 +234,18 @@ func _handle_ground_physics(delta: float) -> void:
 	_headbob_effect(delta)
 
 func _physics_process(delta: float) -> void:
+	
+	if interaction_ray_cast.is_colliding():
+		var target: Object = interaction_ray_cast.get_collider()
+		var target_name: String = target.name
+		
+		if target_name == "EndingBenchArea" or target_name == "EndingBenchBody3D":
+			_is_interacting = true
+		else:
+			_is_interacting = false
+	else:
+		_is_interacting = false
+	
 	if is_on_floor():
 		_last_frame_was_on_floor = Engine.get_physics_frames()
 

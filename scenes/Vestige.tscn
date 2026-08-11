@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dr06c4wvrjsmo" path="res://scripts/Vestige.gd" id="1_jrnm1"]
 [ext_resource type="Shader" uid="uid://cdh32lvrnf627" path="res://shaders/vestige.gdshader" id="2_wi37k"]
 [ext_resource type="FontFile" uid="uid://78n28mmk5f74" path="res://assets/fonts/Geo-Italic.ttf" id="3_p21k1"]
+[ext_resource type="FontFile" uid="uid://cwvwwd5f3hmny" path="res://assets/fonts/Geo-Regular.ttf" id="4_afll4"]
 [ext_resource type="PackedScene" uid="uid://bwccebe2qkpnc" path="res://assets/player/player.tscn" id="4_tm726"]
 [ext_resource type="PackedScene" uid="uid://vvj7o8vrp3qc" path="res://assets/models/bench/bench.tscn" id="5_r1fad"]
 [ext_resource type="PackedScene" uid="uid://becylmfxbg5ks" path="res://assets/models/trees/pine_tree/pine_tree.tscn" id="7_gmphc"]
@@ -24,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://cohxd0tg354d" path="res://assets/models/silhouette/weeping_silhouette.tscn" id="22_wi37k"]
 [ext_resource type="PackedScene" uid="uid://c2bvqiw4e4bw4" path="res://assets/models/bunker/bunker.tscn" id="23_p21k1"]
 [ext_resource type="PackedScene" uid="uid://d2xjvjup3b4ce" path="res://assets/models/vestige_map/vestige_map_2.tscn" id="24_tm726"]
+[ext_resource type="PackedScene" uid="uid://fuf5yo5rqixm" path="res://assets/models/bench/ending_bench.tscn" id="25_r1fad"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -1298,6 +1300,17 @@ theme_override_fonts/font = ExtResource("3_p21k1")
 theme_override_font_sizes/font_size = 20
 text = "30 fps"
 metadata/_edit_use_anchors_ = true
+
+[node name="InteractionText" type="Label" parent="CanvasLayer/UserInterface" unique_id=194028036]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 506.0
+offset_top = 516.0
+offset_right = 646.0
+offset_bottom = 542.0
+theme_override_fonts/font = ExtResource("4_afll4")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1180690384]
 scaling_3d_scale = 0.6
@@ -9187,8 +9200,8 @@ visible = false
 [node name="wooden_torch" parent="SubViewport/World2" unique_id=1573619476 instance=ExtResource("12_uhaqf")]
 transform = Transform3D(-0.4323305, 0, -0.90171516, 0, 1, 0, 0.90171516, 0, -0.4323305, 51.320465, -0.643692, 61.377228)
 
-[node name="bench2" parent="SubViewport/World2" unique_id=1795858535 instance=ExtResource("5_r1fad")]
-transform = Transform3D(-0.86395925, 0, -0.50356174, 0, 1, 0, 0.50356174, 0, -0.86395925, 52.54773, -0.039489746, 62.71084)
+[node name="EndingBench3D" parent="SubViewport/World2" unique_id=1406889082 instance=ExtResource("25_r1fad")]
+transform = Transform3D(-0.86427474, 0, -0.50302, 0, 1, 0, 0.50302, 0, -0.86427474, 52.548, -0.039, 62.711)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport" unique_id=1909744724]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 149.96982, -312.89587)

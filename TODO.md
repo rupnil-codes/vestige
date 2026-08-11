@@ -13,7 +13,7 @@ Todos:
 - [X] Bunker Logic (v0.2.11-alpha ... v0.2.12-alpha)
 - [X] Long Tunnel (v0.2.9-alpha, v0.2.10-alpha and v0.2.13-alpha)
 - [X] Ending tunnel disappearing Logic (v0.2.13-alpha)
-- [ ] Ending Bench Interaction
+- [ ] Ending Bench Interaction (v0.3.2 ... )
 - [ ] Ending Camera Animation
 - [ ] Roll Credits
 - [ ] Finalize the Story progression (vestiges), I wish to convey.
