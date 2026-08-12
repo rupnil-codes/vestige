@@ -1,6 +1,6 @@
 extends Node3D
 
-var waking_up: bool = false
+var cutscene: bool = false
 
 @onready var fps_counter: Label = $CanvasLayer/UserInterface/FPSCounter
 @onready var subviewport: SubViewport = $SubViewport

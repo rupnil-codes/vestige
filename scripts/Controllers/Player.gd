@@ -57,6 +57,8 @@ var _visual_offset_y: float = 0.0
 @onready var interaction_text: Label = %InteractionText
 var _is_interacting: bool = false
 
+var is_walking_cutscene: bool = false
+
 func get_move_speed() -> float:
 	if is_crouched:
 		return walk_speed * 0.8
@@ -76,7 +78,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		captured = false
-	if vestige_scene.waking_up:
+	if vestige_scene.cutscene:
 		return
 
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
@@ -88,12 +90,27 @@ func _unhandled_input(event: InputEvent) -> void:
 				deg_to_rad(-70),
 				deg_to_rad(70)
 			)
+
+	if event.is_action_pressed("interact"):
+		%VestigeAnimationPlayer.play("fade_to_black")
+		await %VestigeAnimationPlayer.animation_finished
+		vestige_scene.cutscene = true
+		%VestigeAnimationPlayer.play("ending_camera_move_invisible")
+		await %VestigeAnimationPlayer.animation_finished
+		%VestigeAnimationPlayer.play_backwards("fade_to_black")
+		await %VestigeAnimationPlayer.animation_finished
+		is_walking_cutscene = true
+		%VestigeAnimationPlayer.play("ending_camera_cut_scene")
+		await %VestigeAnimationPlayer.animation_finished
+		is_walking_cutscene = false
+		vestige_scene.cutscene = false
 			
 	if event is InputEventMouseButton and event.is_pressed():
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
 			noclip_speed_mult = min(100.0, noclip_speed_mult * 1.1)
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 			noclip_speed_mult = max(0.1, noclip_speed_mult * 0.9)
+			
 	
 func _headbob_effect(delta: float):
 	headbob_time += delta * self.velocity.length()
@@ -117,9 +134,10 @@ func _process(delta: float) -> void:
 		separation_ray.disabled = true
 		
 	if _is_interacting:
-		interaction_text.text = "Press 'E' to interact"
+		interaction_text.text = "Press  [E]  to interact"
 	else:
 		interaction_text.text = ""
+		
 	
 func _snap_down_to_stairs_check() -> void:
 	did_snap = false
@@ -253,11 +271,14 @@ func _physics_process(delta: float) -> void:
 		var target_angle: float = atan2(-wish_dir.x, -wish_dir.z)
 		separation_ray.rotation.y = target_angle
 
-	var input_dir := Input.get_vector("left", "right", "up", "down").normalized()
-
-	wish_dir = self.global_transform.basis * Vector3(-input_dir.x, 0., -input_dir.y)
-	cam_aligned_wish_dir = %Camera3D.global_transform.basis * Vector3(input_dir.x, 0., input_dir.y)
+	if not vestige_scene.cutscene:
+		var input_dir := Input.get_vector("left", "right", "up", "down").normalized()
 	
+		wish_dir = self.global_transform.basis * Vector3(-input_dir.x, 0., -input_dir.y)
+		cam_aligned_wish_dir = %Camera3D.global_transform.basis * Vector3(input_dir.x, 0., input_dir.y)
+	if is_walking_cutscene:
+		pass
+		
 	_handle_crouch(delta)
 
 	if not _handle_noclip(delta):

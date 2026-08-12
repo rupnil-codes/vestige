@@ -4,7 +4,7 @@
 
 ## Changelog:
 
-- **[(v0.3.3-alpha) Player Interaction (2)](https://github.com/rupnil-codes/vestige/commit/c36898)**: Me add raycast to the face of player, poke poke thing, thing cry, raycat know what it did, raycast say name, i hear, i do something; In a nutshell the raycast detects the collider and if its the bench it enables the e to interact thing _[Lapsed](https://lapse.hackclub.com/timelapse/EF8AyctWskTr)_
+- **[(v0.3.3-alpha) Player Interaction (2)](https://github.com/rupnil-codes/vestige/commit/5961fe)**: Me add raycast to the face of player, poke poke thing, thing cry, raycat know what it did, raycast say name, i hear, i do something; In a nutshell the raycast detects the collider and if its the bench it enables the e to interact thing _[Lapsed](https://lapse.hackclub.com/timelapse/EF8AyctWskTr)_
 
 - **[(v0.3.2-alpha) Player Interaction (1)](https://github.com/rupnil-codes/vestige/commit/1a9366)**: Set up the basic of the player interaction-- ill work on it more tmrw _[Lapsed](https://lapse.hackclub.com/timelapse/N4PkH437W5cT)_
 
