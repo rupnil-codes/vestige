@@ -1182,10 +1182,22 @@ tracks/18/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CanvasLayer/EndPoemCredits:theme_override_colors/font_color")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_f7phn"]
 resource_name = "ending_camera_cut_scene"
-length = 12.6
+length = 14.3
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1295,6 +1307,18 @@ tracks/9/keys = {
 "handle_modes": PackedInt32Array(0, 0, 2, 2, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.06388889, -0.16666669, 0, 0, 1, -0.049999993, 0, 0, 0, 0, -0.083333336, 0.16666667, 0, 0, 0, -0.9, 0, 0, 0, 1, -0.16666667, -0.16666667, 0, 0, 1, -0.031944435, -0.083333336, 0, 0, 0, -0.11666664, 0.16666667, 0, 0, 0, -0.11666664, 0.16666667, 0, 0, 1, -0.028333347, -0.16666667, 0, 0),
 "times": PackedFloat32Array(1, 1.5, 1.8, 2.3, 8.599999, 9.466667, 9.733334, 10.299999, 12.5, 12.6)
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/EndPoemCredits:theme_override_colors/font_color")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(13.2, 14.233334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_uhaqf"]
@@ -1614,6 +1638,23 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+
+[node name="EndPoemCredits" type="Label" parent="CanvasLayer" unique_id=1244517729]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0)
+theme_override_fonts/font = ExtResource("4_afll4")
+theme_override_font_sizes/font_size = 20
+text = "Made with <3 by Rupnil.
+Special thanks to:
+@seb"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1180690384]
 scaling_3d_scale = 0.6
