@@ -55,7 +55,7 @@ var _visual_offset_y: float = 0.0
 
 @onready var interaction_ray_cast: RayCast3D = %InteractionRayCast3D
 @onready var interaction_text: Label = %InteractionText
-var _is_interacting: bool = false
+var _is_ending_bench_interacting: bool = false
 
 var is_walking_cutscene: bool = false
 
@@ -91,7 +91,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				deg_to_rad(70)
 			)
 
-	if event.is_action_pressed("interact"):
+	if event.is_action_pressed("interact") and _is_ending_bench_interacting:
 		%VestigeAnimationPlayer.play("fade_to_black")
 		await %VestigeAnimationPlayer.animation_finished
 		vestige_scene.cutscene = true
@@ -133,7 +133,7 @@ func _process(delta: float) -> void:
 	else:
 		separation_ray.disabled = true
 		
-	if _is_interacting:
+	if _is_ending_bench_interacting and not vestige_scene.cutscene:
 		interaction_text.text = "Press  [E]  to interact"
 	else:
 		interaction_text.text = ""
@@ -253,16 +253,19 @@ func _handle_ground_physics(delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	
+	if vestige_scene.cutscene:
+		return
+	
 	if interaction_ray_cast.is_colliding():
 		var target: Object = interaction_ray_cast.get_collider()
 		var target_name: String = target.name
 		
 		if target_name == "EndingBenchArea" or target_name == "EndingBenchBody3D":
-			_is_interacting = true
+			_is_ending_bench_interacting = true
 		else:
-			_is_interacting = false
+			_is_ending_bench_interacting = false
 	else:
-		_is_interacting = false
+		_is_ending_bench_interacting = false
 	
 	if is_on_floor():
 		_last_frame_was_on_floor = Engine.get_physics_frames()
@@ -271,13 +274,10 @@ func _physics_process(delta: float) -> void:
 		var target_angle: float = atan2(-wish_dir.x, -wish_dir.z)
 		separation_ray.rotation.y = target_angle
 
-	if not vestige_scene.cutscene:
-		var input_dir := Input.get_vector("left", "right", "up", "down").normalized()
+	var input_dir := Input.get_vector("left", "right", "up", "down").normalized()
 	
-		wish_dir = self.global_transform.basis * Vector3(-input_dir.x, 0., -input_dir.y)
-		cam_aligned_wish_dir = %Camera3D.global_transform.basis * Vector3(input_dir.x, 0., input_dir.y)
-	if is_walking_cutscene:
-		pass
+	wish_dir = self.global_transform.basis * Vector3(-input_dir.x, 0., -input_dir.y)
+	cam_aligned_wish_dir = %Camera3D.global_transform.basis * Vector3(input_dir.x, 0., input_dir.y)
 		
 	_handle_crouch(delta)
 
