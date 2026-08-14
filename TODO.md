@@ -17,9 +17,10 @@ Todos:
 - [X] Ending Camera Animation (v0.3.4-alpha ... v0.3.5-alpha)
 - [X] Roll Credits (v0.3.6-alpha ... v0.3.8-alpha)
 - [ ] Finalize the Story progression (vestiges), I wish to convey.
-- [ ] Fix the grassland model (make the crests and troughs lesser), and place trees on secondary maps.
+- [X] ~~Fix the grassland model (make the crests and troughs lesser),~~ place trees on secondary maps. (v0.3.9-alpha)
 
-- [ ] Play test the prototype Game.
+- [X] Play test the prototype Game. (v0.3.9-alpha)
+- [ ] Make an alpha release
 
 ### Priority 2: World Building
 
@@ -35,6 +36,8 @@ Todos:
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 - [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."
+- [ ] Lanterns Model
+- [ ] Lanterns Placement
 
 ### Priority 3: Atmosphere
 
@@ -60,6 +63,9 @@ Todos:
 - [ ] Particle Polish
 - [ ] Sometimes the camera glitches and it weirds out at extreme angles.
 - [ ] Working Press any key to return (credit scene)
+- [ ] Resizing the screen on a release distorts it
+- [ ] Compress the binaries
+- [ ] Proper export for win, linux, and mac with signs n all.
 
 ### Priority 5: Shipping Time!
 
