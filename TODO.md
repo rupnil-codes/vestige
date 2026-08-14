@@ -15,7 +15,7 @@ Todos:
 - [X] Ending tunnel disappearing Logic (v0.2.13-alpha)
 - [X] Ending Bench Interaction (v0.3.2-alpha ... v0.3.3-alpha and v0.3.5-alpha)
 - [X] Ending Camera Animation (v0.3.4-alpha ... v0.3.5-alpha)
-- [X] Roll Credits (v0.3.6-alpha ... v0.3.7-alpha)
+- [X] Roll Credits (v0.3.6-alpha ... v0.3.8-alpha)
 - [ ] Finalize the Story progression (vestiges), I wish to convey.
 - [ ] Fix the grassland model (make the crests and troughs lesser), and place trees on secondary maps.
 
@@ -59,6 +59,7 @@ Todos:
 - [ ] UI Revamp
 - [ ] Particle Polish
 - [ ] Sometimes the camera glitches and it weirds out at extreme angles.
+- [ ] Working Press any key to return (credit scene)
 
 ### Priority 5: Shipping Time!
 

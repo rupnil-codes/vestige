@@ -102,6 +102,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		is_walking_cutscene = true
 		%VestigeAnimationPlayer.play("ending_camera_cut_scene")
 		await %VestigeAnimationPlayer.animation_finished
+		%VestigeAnimationPlayer.play("any_key_continue_animation")
+		await %VestigeAnimationPlayer.animation_finished
 		is_walking_cutscene = false
 		vestige_scene.cutscene = false
 			
