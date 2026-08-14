@@ -1141,40 +1141,41 @@ tracks/14/keys = {
 tracks/15/type = "bezier"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("CanvasLayer/ColorRect:modulate:r")
+tracks/15/path = NodePath("CanvasLayer/ColorRect:modulate:a")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
-tracks/16/type = "bezier"
+tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("CanvasLayer/ColorRect:modulate:g")
+tracks/16/path = NodePath("CanvasLayer/Control/EndMeCredits:theme_override_colors/font_color")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/17/type = "bezier"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("CanvasLayer/ColorRect:modulate:b")
+tracks/17/path = NodePath("CanvasLayer/Control:position:x")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/18/type = "bezier"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("CanvasLayer/ColorRect:modulate:a")
+tracks/18/path = NodePath("CanvasLayer/Control:position:y")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
@@ -1182,22 +1183,10 @@ tracks/18/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("CanvasLayer/EndPoemCredits:theme_override_colors/font_color")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
 
 [sub_resource type="Animation" id="Animation_f7phn"]
 resource_name = "ending_camera_cut_scene"
-length = 14.3
+length = 29.933332
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1267,58 +1256,47 @@ tracks/5/keys = {
 tracks/6/type = "bezier"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("CanvasLayer/ColorRect:modulate:r")
+tracks/6/path = NodePath("CanvasLayer/ColorRect:modulate:a")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "handle_modes": PackedInt32Array(0, 0, 2, 2, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.06388889, 0, 0, 0, 1, -0.049999993, 0, 0, 0, 1, -0.083333336, 0, 0, 0, 1, -0.9, 0, 0, 0, 0, -0.16666667, 0.16666667, 0, 0, 0, -0.031944435, 0, 0, 0, 0, -0.11666664, 0, 0, 0, 0, -0.11666664, 0, 0, 0, 0, -0.028333347, 0, 0, 0),
-"times": PackedFloat32Array(1, 1.5, 1.8, 2.3, 8.599999, 9.466667, 9.733334, 10.299999, 12.5, 12.6)
-}
-tracks/7/type = "bezier"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("CanvasLayer/ColorRect:modulate:g")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.06388889, 0, 0, 0, 1, -0.049999993, 0, 0, 0, 1, -0.083333336, 0, 0, 0, 1, -0.9, 0, 0, 0, 0, -0.16666667, 0.16666667, 0, 0, 0, -0.031944435, 0, 0, 0, 0, -0.11666664, 0, 0, 0, 0, -0.11666664, 0, 0, 0, 0, -0.028333347, 0, 0, 0),
-"times": PackedFloat32Array(1, 1.5, 1.8, 2.3, 8.599999, 9.466667, 9.733334, 10.299999, 12.5, 12.6)
-}
-tracks/8/type = "bezier"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("CanvasLayer/ColorRect:modulate:b")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.06388889, 0, 0, 0, 1, -0.049999993, 0, 0, 0, 1, -0.083333336, 0, 0, 0, 1, -0.9, 0, 0, 0, 0, -0.16666667, 0.16666667, 0, 0, 0, -0.031944435, 0, 0, 0, 0, -0.11666664, 0, 0, 0, 0, -0.11666664, 0, 0, 0, 0, -0.028333347, 0, 0, 0),
-"times": PackedFloat32Array(1, 1.5, 1.8, 2.3, 8.599999, 9.466667, 9.733334, 10.299999, 12.5, 12.6)
-}
-tracks/9/type = "bezier"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("CanvasLayer/ColorRect:modulate:a")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"handle_modes": PackedInt32Array(0, 0, 2, 2, 0, 0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.06388889, -0.16666669, 0, 0, 1, -0.049999993, 0, 0, 0, 0, -0.083333336, 0.16666667, 0, 0, 0, -0.9, 0, 0, 0, 1, -0.16666667, -0.16666667, 0, 0, 1, -0.031944435, -0.083333336, 0, 0, 0, -0.11666664, 0.16666667, 0, 0, 0, -0.11666664, 0.16666667, 0, 0, 1, -0.028333347, -0.16666667, 0, 0),
 "times": PackedFloat32Array(1, 1.5, 1.8, 2.3, 8.599999, 9.466667, 9.733334, 10.299999, 12.5, 12.6)
 }
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("CanvasLayer/EndPoemCredits:theme_override_colors/font_color")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/Control/EndMeCredits:theme_override_colors/font_color")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
 "times": PackedFloat32Array(13.2, 14.233334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "bezier"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/Control:position:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.32833338, 0, 0, 0),
+"times": PackedFloat32Array(14.766666, 29.833334)
+}
+tracks/9/type = "bezier"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/Control:position:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -1320, -0.32833338, 220, 0, 0),
+"times": PackedFloat32Array(14.766666, 29.833334)
 }
 
 [sub_resource type="Animation" id="Animation_uhaqf"]
@@ -1639,20 +1617,65 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="EndPoemCredits" type="Label" parent="CanvasLayer" unique_id=1244517729]
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1160769451]
+layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -3.0
-offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EndMeCredits" type="Label" parent="CanvasLayer/Control" unique_id=1244517729]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 0)
 theme_override_fonts/font = ExtResource("4_afll4")
 theme_override_font_sizes/font_size = 20
-text = "Made with <3 by Rupnil.
-Special thanks to:
-@seb"
+text = "Made with <3 by Rupnil."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EndPoemCredits" type="Label" parent="CanvasLayer/Control" unique_id=141462029]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 655.0
+offset_bottom = 655.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_afll4")
+theme_override_font_sizes/font_size = 20
+text = "Special Thanks to: 
+@seb, @Flux3tor, @Snxhit & @Carlson
+
+Production - Rupnil
+Modelling - Rupnil  &  Star Crafts (trees)
+Sound Design - Rupnil
+
+Notable Mentions:
+Godot, Blender, Jetbrains IDE,  Chrome, 
+Hive65 keyboard, M331 mouse,
+Diet Coke, Pizza,
+
+and finally,
+
+Nathan & Santi  @  Macondo, Hack Club
+
+
+
+
+Your mind is a library
+Store all your memory
+Cherish them
+each one of them
+
+Enjoy. you have only one life!"
 horizontal_alignment = 1
 vertical_alignment = 1
 

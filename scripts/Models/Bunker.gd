@@ -46,7 +46,7 @@ func _on_door_close_area_3d_body_entered(body: Node3D) -> void:
 
 
 func _on_show_secondary_map_area_3d_body_entered(body: Node3D) -> void:
-	if body.name == "Player3D":
+	if body.name == "Player3D" and (switch or OS.is_debug_build()):
 		vestige_animation_player.play("show_secondary_map")
 		map_3d_2.show_secondary_map_meshes()
 		hide_switch = true
