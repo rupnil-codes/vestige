@@ -20,12 +20,13 @@ Todos:
 - [X] ~~Fix the grassland model (make the crests and troughs lesser),~~ place trees on secondary maps. (v0.3.9-alpha)
 
 - [X] Play test the prototype Game. (v0.3.9-alpha)
-- [ ] Make an alpha release
+- [X] Make an alpha release
+- [ ] Write on the alpha release
 
 ### Priority 2: World Building
 
-- [ ] Proper Bunker Model
-- [ ] Proper Tunnel Model
+- [X] Proper Bunker Model (v0.4.1-beta)
+- [X] Proper Tunnel Model (v0.4.1-beta)
 - [ ] Watch Tower Furniture
 - [ ] Better Jumping Logic -- Feels floaty now.
 - [ ] A point at the center of the screen.

@@ -14,3 +14,5 @@
 7. Reflection and Acceptance - A weathered rusted mirror -- no reflections, and a rocking chair
 
 8. Watchtower - Weeping silhouette, a stethoscope oh the table with a note "Enjoy life."
+
+The bunker will the place where we find all the "hidden" memories.
