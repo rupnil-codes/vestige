@@ -1249,6 +1249,18 @@ tracks/24/keys = {
 "points": PackedFloat32Array(503, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CanvasLayer/Pointer:visible")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_3bx4b"]
 resource_name = "any_key_continue_animation"
@@ -1515,6 +1527,18 @@ tracks/5/keys = {
 "handle_modes": PackedInt32Array(0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/Pointer:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.033333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_gkgfg"]
@@ -1835,6 +1859,19 @@ theme_override_font_sizes/font_size = 20
 text = "Press  [ANY KEY]  to return. (WIP)"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Pointer" type="ColorRect" parent="CanvasLayer" unique_id=1459562046]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -2.0
+offset_right = 4.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7812746, 0.78127456, 0.78127456, 1)
 
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1180690384]
 scaling_3d_scale = 0.6
@@ -9772,6 +9809,12 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -29.
 [node name="cedar_tree259" parent="SubViewport/World2/Forest3D" unique_id=1694000729 instance=ExtResource("8_jh5a0")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.839508, -0.1461029, 62.084656)
 
+[node name="cedar_tree283" parent="SubViewport/World2/Forest3D" unique_id=1575731846 instance=ExtResource("8_jh5a0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.87314, -0.08312988, -81.76598)
+
+[node name="tall_fir_tree392" parent="SubViewport/World2/Forest3D" unique_id=1855091153 instance=ExtResource("9_kgo5s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 59.629395, -0.3036499, -80.275246)
+
 [node name="Map3D2" parent="SubViewport/World2" unique_id=731867067 instance=ExtResource("24_tm726")]
 visible = false
 
@@ -9809,9 +9852,3 @@ autoplay = &"RESET"
 [node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1710469678]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
-
-[node name="cedar_tree" parent="." unique_id=1575731846 instance=ExtResource("8_jh5a0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168.54443, -186.82916, 257.44983)
-
-[node name="tall_fir_tree" parent="." unique_id=1855091153 instance=ExtResource("9_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 167.0537, -187.04968, 268.2061)
