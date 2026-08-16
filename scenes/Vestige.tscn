@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://c2bvqiw4e4bw4" path="res://assets/models/bunker/bunker.tscn" id="23_p21k1"]
 [ext_resource type="PackedScene" uid="uid://d2xjvjup3b4ce" path="res://assets/models/vestige_map/vestige_map_2.tscn" id="24_tm726"]
 [ext_resource type="PackedScene" uid="uid://fuf5yo5rqixm" path="res://assets/models/bench/ending_bench.tscn" id="25_r1fad"]
+[ext_resource type="PackedScene" uid="uid://d16g7hxspv18v" path="res://assets/models/lantern/regular/lantern_regular.tscn" id="28_jh5a0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -9852,3 +9853,6 @@ autoplay = &"RESET"
 [node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1710469678]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
+
+[node name="lantern_regular2" parent="." unique_id=565045938 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.9225296, 0, -0.38592637, 0, 1, 0, 0.38592637, 0, 0.9225296, 36.107277, 0.53126836, 73.46112)

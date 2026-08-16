@@ -27,9 +27,11 @@ Todos:
 
 - [X] Proper Bunker Model (v0.4.1-beta)
 - [X] Proper Tunnel Model (v0.4.1-beta)
+- [X] A point at the center of the screen. (v0.4.2-beta)
+- [X] Regular Lantern Model (v0.4.3-beta)
+- [ ] Hanging Lantern Model
 - [ ] Watch Tower Furniture
 - [ ] Better Jumping Logic -- Feels floaty now.
-- [X] A point at the center of the screen. (v0.4.2-beta)
 - [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
@@ -37,7 +39,6 @@ Todos:
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 - [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."
-- [ ] Lanterns Model
 - [ ] Lanterns Placement
 
 ### Priority 3: Atmosphere
@@ -63,6 +64,7 @@ Todos:
 - [ ] UI Revamp
 - [ ] Particle Polish
 - [ ] Sometimes the camera glitches and it weirds out at extreme angles.
+- [ ] The Dither becomes weird sometimes - Debug and fix
 - [ ] Working Press any key to return (credit scene)
 - [ ] Resizing the screen on a release distorts it
 - [ ] Compress the binaries
