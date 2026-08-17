@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://fuf5yo5rqixm" path="res://assets/models/bench/ending_bench.tscn" id="25_r1fad"]
 [ext_resource type="PackedScene" uid="uid://d16g7hxspv18v" path="res://assets/models/lantern/regular/lantern_regular.tscn" id="28_jh5a0"]
 [ext_resource type="PackedScene" uid="uid://dxaiin7n2gsch" path="res://assets/models/lantern/hanging/lantern_hanging.tscn" id="28_kgo5s"]
+[ext_resource type="PackedScene" uid="uid://ci28e21di72cb" path="res://assets/models/vestiges/1_baby/1_baby.blend" id="29_kgo5s"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -5840,16 +5841,40 @@ transform = Transform3D(0.6923799, -0.0037521292, -0.72152346, 7.9981e-10, 0.999
 [node name="WatchTower3D" parent="SubViewport/World" unique_id=1978300811 instance=ExtResource("20_atygq")]
 transform = Transform3D(0.995199, 0, 0.09787136, 0, 1, 0, -0.09787136, 0, 0.995199, 49.166, 27.961, 58.567)
 
+[node name="lantern_regular" parent="SubViewport/World/WatchTower3D" unique_id=565045938 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.59416735, 0.0004956524, -0.28734112, -0.0007935387, 0.65999925, -0.0005024301, 0.28734046, 0.00079778966, 0.59416735, -2.4494934, -2.861292, 5.178112)
+
 [node name="Map3D" parent="SubViewport/World" unique_id=697729204 instance=ExtResource("20_jrnm1")]
 
 [node name="Bunker3D" parent="SubViewport/World" unique_id=708449342 instance=ExtResource("23_p21k1")]
 transform = Transform3D(0.99731445, 0, 0.073238194, 0, 1, 0, -0.073238194, 0, 0.99731445, 39.108597, 3.011, 77.20058)
 
-[node name="cedar_tree" parent="SubViewport/World" unique_id=772564829 instance=ExtResource("8_jh5a0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.60715, -186.52307, 159.42365)
+[node name="lantern_regular2" parent="SubViewport/World/Bunker3D" unique_id=1429694207 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.89178765, 0, -0.4524544, 0, 1, 0, 0.4524544, 0, 0.89178765, -2.7193909, -2.4797316, -3.9492264)
 
-[node name="lantern_regular" parent="SubViewport/World" unique_id=565045938 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.61943716, 0.0005713535, -0.22780962, -0.0007935387, 0.65999925, -0.0005024301, 0.22780897, 0.0007454493, 0.6194373, 47.235058, 25.099709, 63.95999)
+[node name="lantern_hanging" parent="SubViewport/World/Bunker3D" unique_id=127450158 instance=ExtResource("28_kgo5s")]
+transform = Transform3D(0.70023316, 0, -0.71391433, 0, 1, 0, 0.71391433, 0, 0.70023316, -0.010101318, 1.1998813, -1.2295685)
+
+[node name="lantern_regular" parent="SubViewport/World/Bunker3D" unique_id=266304621 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.994847, -0.03384678, -0.09557382, 0.0339117, 0.9994244, -0.0009452164, 0.095550835, -0.0023007262, 0.9954218, -1.6454124, -8.98238, 11.070122)
+
+[node name="lantern_regular3" parent="SubViewport/World/Bunker3D" unique_id=900907967 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, 1.689167, -15.863321, 21.721397)
+
+[node name="lantern_hanging2" parent="SubViewport/World/Bunker3D" unique_id=51408711 instance=ExtResource("28_kgo5s")]
+transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -0.07740402, -22.582453, 34.289658)
+
+[node name="lantern_hanging3" parent="SubViewport/World/Bunker3D" unique_id=1408499029 instance=ExtResource("28_kgo5s")]
+transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -0.009609222, -45.538475, 70.55767)
+
+[node name="lantern_hanging4" parent="SubViewport/World/Bunker3D" unique_id=1247002052 instance=ExtResource("28_kgo5s")]
+transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -0.16539383, -35.003292, 54.881905)
+
+[node name="lantern_regular4" parent="SubViewport/World/Bunker3D" unique_id=172221867 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.68489325, 0, -0.7286436, 0, 1, 0, 0.7286436, 0, 0.68489325, -1.5673962, -48.359123, 85.80666)
+
+[node name="lantern_regular5" parent="SubViewport/World/Bunker3D" unique_id=655746632 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.68489325, 0, -0.7286436, 0, 1, 0, 0.7286436, 0, 0.68489325, 1.388176, -48.359123, 108.09792)
 
 [node name="World2" type="Node3D" parent="SubViewport" unique_id=712196168]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 86.77846, -186.74603, 208.57669)
@@ -9820,6 +9845,9 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48.8
 [node name="tall_fir_tree392" parent="SubViewport/World2/Forest3D" unique_id=1855091153 instance=ExtResource("9_kgo5s")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 59.629395, -0.3036499, -80.275246)
 
+[node name="cedar_tree287" parent="SubViewport/World2/Forest3D" unique_id=772564829 instance=ExtResource("8_jh5a0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.153046, 0.22296143, 64.17131)
+
 [node name="Map3D2" parent="SubViewport/World2" unique_id=731867067 instance=ExtResource("24_tm726")]
 visible = false
 
@@ -9858,29 +9886,5 @@ autoplay = &"RESET"
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
 
-[node name="lantern_regular2" parent="." unique_id=1429694207 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.9225296, 0, -0.38592637, 0, 1, 0, 0.38592637, 0, 0.9225296, 36.107277, 0.53126836, 73.46112)
-
-[node name="lantern_hanging" parent="." unique_id=127450158 instance=ExtResource("28_kgo5s")]
-transform = Transform3D(0.75063837, 0, -0.66071326, 0, 1, 0, 0.66071326, 0, 0.75063837, 39.008476, 4.210881, 75.97505)
-
-[node name="lantern_regular" parent="." unique_id=266304621 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.9991732, -0.033924382, -0.022414252, 0.0339117, 0.9994244, -0.0009452164, 0.02243343, 0.00018432946, 0.9997482, 38.278362, -5.9713798, 88.36148)
-
-[node name="lantern_regular3" parent="." unique_id=900907967 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.384064, -12.852322, 98.73993)
-
-[node name="lantern_hanging2" parent="." unique_id=51408711 instance=ExtResource("28_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.542717, -19.571453, 111.40382)
-
-[node name="lantern_hanging3" parent="." unique_id=1408499029 instance=ExtResource("28_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.26653, -42.527473, 147.56946)
-
-[node name="lantern_hanging4" parent="." unique_id=1247002052 instance=ExtResource("28_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.963104, -31.992292, 131.9472)
-
-[node name="lantern_regular4" parent="." unique_id=172221867 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.7364184, 0, -0.67652637, 0, 1, 0, 0.67652637, 0, 0.7364184, 43.82974, -45.34812, 162.8916)
-
-[node name="lantern_regular5" parent="." unique_id=655746632 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.7364184, 0, -0.67652637, 0, 1, 0, 0.67652637, 0, 0.7364184, 48.409943, -45.34812, 184.90652)
+[node name="1_baby" parent="." unique_id=1575136965 instance=ExtResource("29_kgo5s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.670115, 1.4973204, -56.530033)

@@ -32,11 +32,19 @@ Todos:
 - [X] Hanging Lantern Model (v0.4.4-beta)
 - [X] Lanterns Placement (v0.4.4-beta)
 - [ ] Watch Tower Furniture
+- [ ] Stethoscope model
 - [ ] Better Jumping Logic -- Feels floaty now.
 - [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
 - [ ] Design/Model each Vestige.
+  - [ ] A rocking Crib with a teddy
+  - [ ] Swing
+  - [ ] Campfire, Tent, Bagpacks, Telescope, Lantern
+  - [ ] A wooden bench, two cups, candles, and a scarf
+  - [ ] A piano
+  - [ ] Empty wheelchair, umbrella, flowers
+  - [ ] A weathered rusted mirror (no reflections) and a rocking chair
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 - [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."

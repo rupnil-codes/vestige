@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b1hsbyme6w08o"]
+
+[ext_resource type="PackedScene" uid="uid://ci28e21di72cb" path="res://assets/models/vestiges/1_baby/1_baby.blend" id="1_1h4k3"]
+
+[node name="1_baby" unique_id=365195901 instance=ExtResource("1_1h4k3")]
+
+[node name="leg" parent="." index="3" unique_id=1091290443]
+transform = Transform3D(0.6237596, 0, 0, 0, 0.6229047, 0.03264506, 0, -0.03264506, 0.6229047, 0, -1.4426217, -0.21165057)
