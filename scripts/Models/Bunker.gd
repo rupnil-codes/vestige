@@ -26,6 +26,10 @@ func _process(delta: float) -> void:
 		bunker_animation_player.play("open")
 		is_closed = false
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("open_bunker") and OS.is_debug_build()	:
+		bunker_animation_player.play("open")
+		is_closed = false
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.name == "Player3D":

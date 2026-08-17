@@ -29,7 +29,8 @@ Todos:
 - [X] Proper Tunnel Model (v0.4.1-beta)
 - [X] A point at the center of the screen. (v0.4.2-beta)
 - [X] Regular Lantern Model (v0.4.3-beta)
-- [ ] Hanging Lantern Model
+- [X] Hanging Lantern Model (v0.4.4-beta)
+- [X] Lanterns Placement (v0.4.4-beta)
 - [ ] Watch Tower Furniture
 - [ ] Better Jumping Logic -- Feels floaty now.
 - [ ] Direction doesn't change when jumping and looking at a different direction.
@@ -39,7 +40,6 @@ Todos:
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 - [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."
-- [ ] Lanterns Placement
 
 ### Priority 3: Atmosphere
 
