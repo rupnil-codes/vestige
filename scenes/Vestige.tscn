@@ -28,7 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://fuf5yo5rqixm" path="res://assets/models/bench/ending_bench.tscn" id="25_r1fad"]
 [ext_resource type="PackedScene" uid="uid://d16g7hxspv18v" path="res://assets/models/lantern/regular/lantern_regular.tscn" id="28_jh5a0"]
 [ext_resource type="PackedScene" uid="uid://dxaiin7n2gsch" path="res://assets/models/lantern/hanging/lantern_hanging.tscn" id="28_kgo5s"]
-[ext_resource type="PackedScene" uid="uid://ci28e21di72cb" path="res://assets/models/vestiges/1_baby/1_baby.blend" id="29_kgo5s"]
+[ext_resource type="PackedScene" uid="uid://c3ja87ioxbvoj" path="res://assets/models/vestiges/2_child/2_child.blend" id="29_kgo5s"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -9886,5 +9886,5 @@ autoplay = &"RESET"
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
 
-[node name="1_baby" parent="." unique_id=1575136965 instance=ExtResource("29_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.670115, 1.4973204, -56.530033)
+[node name="2_child" parent="." unique_id=118810137 instance=ExtResource("29_kgo5s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.565392, 0.27710843, -53.391663)

@@ -38,8 +38,8 @@ Todos:
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
 - [ ] Design/Model each Vestige.
-  - [ ] A rocking Crib with a teddy
-  - [ ] Swing
+  - [-] A rocking Crib with a teddy (v0.4.5-beta)
+  - [-] Swing (v0.4.6-beta)
   - [ ] Campfire, Tent, Bagpacks, Telescope, Lantern
   - [ ] A wooden bench, two cups, candles, and a scarf
   - [ ] A piano
