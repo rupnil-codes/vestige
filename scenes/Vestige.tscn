@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cb2cwc0la82rj" path="res://assets/models/trees/tall_fir_tree/tall_fir_tree.tscn" id="9_kgo5s"]
 [ext_resource type="PackedScene" uid="uid://cja8r23prt8yn" path="res://assets/models/trees/tree_trunk/tree_trunk.tscn" id="10_0daru"]
 [ext_resource type="PackedScene" uid="uid://usue76cgdeok" path="res://assets/models/trees/cedar_tree/cedar_tree.blend" id="11_t4lnq"]
+[ext_resource type="PackedScene" uid="uid://chw2hxnj03vxm" path="res://assets/models/vestiges/3_tent/3_tent.blend" id="12_t4lnq"]
 [ext_resource type="PackedScene" uid="uid://c5xxexjm4f7q3" path="res://assets/models/wooden_torch/wooden_torch.tscn" id="12_uhaqf"]
 [ext_resource type="PackedScene" uid="uid://d28toy8ya2u5s" path="res://assets/models/fireflies/fireflies.tscn" id="13_gkgfg"]
 [ext_resource type="PackedScene" uid="uid://csw8w3qb74yqd" path="res://assets/models/boulder/boulder.tscn" id="14_f7phn"]
@@ -28,7 +29,8 @@
 [ext_resource type="PackedScene" uid="uid://fuf5yo5rqixm" path="res://assets/models/bench/ending_bench.tscn" id="25_r1fad"]
 [ext_resource type="PackedScene" uid="uid://d16g7hxspv18v" path="res://assets/models/lantern/regular/lantern_regular.tscn" id="28_jh5a0"]
 [ext_resource type="PackedScene" uid="uid://dxaiin7n2gsch" path="res://assets/models/lantern/hanging/lantern_hanging.tscn" id="28_kgo5s"]
-[ext_resource type="PackedScene" uid="uid://c3ja87ioxbvoj" path="res://assets/models/vestiges/2_child/2_child.blend" id="29_kgo5s"]
+[ext_resource type="PackedScene" uid="uid://b1hsbyme6w08o" path="res://assets/models/vestiges/1_crib/1_crib.tscn" id="29_0daru"]
+[ext_resource type="PackedScene" uid="uid://rh4pa5uiclcc" path="res://assets/models/vestiges/2_swing/2_swing.tscn" id="30_t4lnq"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -9886,5 +9888,11 @@ autoplay = &"RESET"
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
 
-[node name="2_child" parent="." unique_id=118810137 instance=ExtResource("29_kgo5s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.565392, 0.27710843, -53.391663)
+[node name="1_baby" parent="." unique_id=365195901 instance=ExtResource("29_0daru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.79073, 1.5493288, -56.845615)
+
+[node name="2_child" parent="." unique_id=564340958 instance=ExtResource("30_t4lnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.864182, 0.1912328, -66.66182)
+
+[node name="3_tent" parent="." unique_id=1279100595 instance=ExtResource("12_t4lnq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.571012, -9.536743e-07, -51.107735)

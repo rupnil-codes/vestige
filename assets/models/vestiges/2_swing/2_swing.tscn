@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://rh4pa5uiclcc"]
+
+[ext_resource type="PackedScene" uid="uid://c3ja87ioxbvoj" path="res://assets/models/vestiges/2_swing/2_swing.blend" id="1_gniix"]
+
+[node name="2_child" unique_id=564340958 instance=ExtResource("1_gniix")]

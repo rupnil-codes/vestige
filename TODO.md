@@ -40,7 +40,7 @@ Todos:
 - [ ] Design/Model each Vestige.
   - [-] A rocking Crib with a teddy (v0.4.5-beta)
   - [-] Swing (v0.4.6-beta)
-  - [ ] Campfire, Tent, Bagpacks, Telescope, Lantern
+  - [-] ~~Tent~~, ~~Campfire~~, Bagpacks, Lantern (v0.4.7-beta)
   - [ ] A wooden bench, two cups, candles, and a scarf
   - [ ] A piano
   - [ ] Empty wheelchair, umbrella, flowers

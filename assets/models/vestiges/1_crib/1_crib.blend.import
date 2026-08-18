@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ci28e21di72cb"
-path="res://.godot/imported/1_baby.blend-46a26a2d72c2824f04c7384de6332502.scn"
+path="res://.godot/imported/1_crib.blend-16ce7d6e2bcfe63aeeb3e8deb1a0d202.scn"
 
 [deps]
 
-source_file="res://assets/models/vestiges/1_baby/1_baby.blend"
-dest_files=["res://.godot/imported/1_baby.blend-46a26a2d72c2824f04c7384de6332502.scn"]
+source_file="res://assets/models/vestiges/1_crib/1_crib.blend"
+dest_files=["res://.godot/imported/1_crib.blend-16ce7d6e2bcfe63aeeb3e8deb1a0d202.scn"]
 
 [params]
 
