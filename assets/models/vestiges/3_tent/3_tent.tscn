@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cct8ahqnik6d3"]
+
+[ext_resource type="PackedScene" uid="uid://chw2hxnj03vxm" path="res://assets/models/vestiges/3_tent/3_tent.blend" id="1_dg7ww"]
+
+[node name="3_tent" unique_id=1494922793 instance=ExtResource("1_dg7ww")]

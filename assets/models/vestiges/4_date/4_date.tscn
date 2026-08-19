@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bxjf6qi6wjp5c"]
+
+[ext_resource type="PackedScene" uid="uid://ble2cq6fbvwy7" path="res://assets/models/vestiges/4_date/4_date.blend" id="1_lnv0i"]
+
+[node name="4_date" unique_id=82573477 instance=ExtResource("1_lnv0i")]

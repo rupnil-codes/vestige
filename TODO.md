@@ -41,7 +41,7 @@ Todos:
   - [-] A rocking Crib with a teddy (v0.4.5-beta)
   - [-] Swing (v0.4.6-beta)
   - [-] ~~Tent~~, ~~Campfire~~, Bagpacks, Lantern (v0.4.7-beta)
-  - [ ] A wooden bench, two cups, candles, and a scarf
+  - [-] ~~A wooden bench~~, ~~two cups~~, ~~candles~~, and a scarf (v0.4.8-beta)
   - [ ] A piano
   - [ ] Empty wheelchair, umbrella, flowers
   - [ ] A weathered rusted mirror (no reflections) and a rocking chair
