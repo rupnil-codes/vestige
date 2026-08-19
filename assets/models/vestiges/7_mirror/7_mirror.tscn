@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cqjuku216iovt"]
+
+[ext_resource type="PackedScene" uid="uid://cfw2jvywlvuuk" path="res://assets/models/vestiges/7_mirror/7_mirror.blend" id="1_nyswh"]
+
+[node name="7_mirror" unique_id=39213146 instance=ExtResource("1_nyswh")]
