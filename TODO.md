@@ -43,7 +43,7 @@ Todos:
   - [-] ~~Tent~~, ~~Campfire~~, Bagpacks, Lantern (v0.4.7-beta)
   - [-] ~~A wooden bench~~, ~~two cups~~, ~~candles~~, and a scarf (v0.4.8-beta)
   - [-] ~~A piano~~, ~~seat~~ (v0.4.9-beta)
-  - [ ] Empty wheelchair, umbrella, flowers
+  - [ ] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta)
   - [ ] A weathered rusted mirror (no reflections) and a rocking chair
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations

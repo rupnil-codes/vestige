@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://rh4pa5uiclcc" path="res://assets/models/vestiges/2_swing/2_swing.tscn" id="30_t4lnq"]
 [ext_resource type="PackedScene" uid="uid://cct8ahqnik6d3" path="res://assets/models/vestiges/3_tent/3_tent.tscn" id="32_gkgfg"]
 [ext_resource type="PackedScene" uid="uid://oo8cmptwx6xd" path="res://assets/models/vestiges/5_piano/5_piano.blend" id="33_gkgfg"]
+[ext_resource type="PackedScene" uid="uid://c0hsnwxf8g26g" path="res://assets/models/vestiges/6_wheelchair/6_wheelchair.blend" id="34_f7phn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -9908,3 +9909,6 @@ visible = false
 
 [node name="5_piano" parent="." unique_id=960387541 instance=ExtResource("33_gkgfg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.02737, 1.4788206, -66.93215)
+
+[node name="6_wheelchair" parent="." unique_id=386084949 instance=ExtResource("34_f7phn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.280918, 0.9951841, -67.948524)

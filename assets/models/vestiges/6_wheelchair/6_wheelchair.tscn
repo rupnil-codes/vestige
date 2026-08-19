@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cj14uiy2m2i3t"]
+
+[ext_resource type="PackedScene" uid="uid://c0hsnwxf8g26g" path="res://assets/models/vestiges/6_wheelchair/6_wheelchair.blend" id="1_l4s01"]
+
+[node name="6_wheelchair" unique_id=386084949 instance=ExtResource("1_l4s01")]
