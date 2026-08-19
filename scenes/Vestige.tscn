@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://b1hsbyme6w08o" path="res://assets/models/vestiges/1_crib/1_crib.tscn" id="29_0daru"]
 [ext_resource type="PackedScene" uid="uid://rh4pa5uiclcc" path="res://assets/models/vestiges/2_swing/2_swing.tscn" id="30_t4lnq"]
 [ext_resource type="PackedScene" uid="uid://cct8ahqnik6d3" path="res://assets/models/vestiges/3_tent/3_tent.tscn" id="32_gkgfg"]
+[ext_resource type="PackedScene" uid="uid://oo8cmptwx6xd" path="res://assets/models/vestiges/5_piano/5_piano.blend" id="33_gkgfg"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -9891,12 +9892,19 @@ libraries/ = SubResource("AnimationLibrary_t4lnq")
 
 [node name="1_baby" parent="." unique_id=365195901 instance=ExtResource("29_0daru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.79073, 1.5493288, -56.845615)
+visible = false
 
 [node name="2_child" parent="." unique_id=564340958 instance=ExtResource("30_t4lnq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.864182, 0.1912328, -66.66182)
+visible = false
 
 [node name="3_tent" parent="." unique_id=1494922793 instance=ExtResource("32_gkgfg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.384048, -0.019686699, -52.81379)
+visible = false
 
 [node name="4_date" parent="." unique_id=274092112 instance=ExtResource("27_uhaqf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.061522, 0.6033046, -60.71583)
+visible = false
+
+[node name="5_piano" parent="." unique_id=960387541 instance=ExtResource("33_gkgfg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.02737, 1.4788206, -66.93215)
