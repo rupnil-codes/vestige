@@ -31,20 +31,20 @@ Todos:
 - [X] Regular Lantern Model (v0.4.3-beta)
 - [X] Hanging Lantern Model (v0.4.4-beta)
 - [X] Lanterns Placement (v0.4.4-beta)
+- [-] Design/Model each Vestige. (v0.4.5-beta ... )
+    - [X] ~~A rocking Crib with a teddy~~ (v0.4.5-beta, v0.4.12-beta ... v0.4.13-beta)
+    - [X] ~~Swing~~ (v0.4.6-beta & v0.4.12-beta ... v0.4.13-beta)
+    - [X] ~~Tent~~, ~~Campfire~~, Bagpacks, ~~Lantern~~ (v0.4.7-beta & v0.4.12-beta ... v0.4.13-beta)
+    - [-] ~~A wooden bench~~, ~~two cups~~, ~~candles~~, and a scarf (v0.4.8-beta, v0.4.12-beta)
+    - [-] ~~A piano~~, ~~seat~~ (v0.4.9-beta, v0.4.12-beta)
+    - [-] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta, v0.4.12-beta)
+    - [-] ~~A weathered rusted mirror~~ (no reflections) and ~~a rocking chair~~ (v0.4.11-beta, v0.4.12-beta)
 - [ ] Watch Tower Furniture
 - [ ] Stethoscope model
 - [ ] Better Jumping Logic -- Feels floaty now.
 - [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
-- [ ] Design/Model each Vestige. (v0.4.5-beta ... )
-  - [-] ~~A rocking Crib with a teddy~~ (v0.4.5-beta)
-  - [-] ~~Swing~~ (v0.4.6-beta)
-  - [-] ~~Tent~~, ~~Campfire~~, Bagpacks, ~~Lantern~~ (v0.4.7-beta)
-  - [-] ~~A wooden bench~~, ~~two cups~~, ~~candles~~, and a scarf (v0.4.8-beta)
-  - [-] ~~A piano~~, ~~seat~~ (v0.4.9-beta)
-  - [-] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta)
-  - [-] ~~A weathered rusted mirror~~ (no reflections) and ~~a rocking chair~~
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 - [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."
