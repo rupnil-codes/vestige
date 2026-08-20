@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cjsi7fl86pmut"]
+
+[ext_resource type="PackedScene" uid="uid://b1hsbyme6w08o" path="res://assets/models/vestiges/1_crib/1_crib.tscn" id="1_tk0ah"]
+[ext_resource type="PackedScene" uid="uid://rh4pa5uiclcc" path="res://assets/models/vestiges/2_swing/2_swing.tscn" id="2_1ig0o"]
+[ext_resource type="PackedScene" uid="uid://cct8ahqnik6d3" path="res://assets/models/vestiges/3_tent/3_tent.tscn" id="3_geo57"]
+[ext_resource type="PackedScene" uid="uid://bxjf6qi6wjp5c" path="res://assets/models/vestiges/4_date/4_date.tscn" id="4_d1b4l"]
+[ext_resource type="PackedScene" uid="uid://tlp1jmkgh0uq" path="res://assets/models/vestiges/5_piano/5_piano.tscn" id="5_qyehx"]
+[ext_resource type="PackedScene" uid="uid://cj14uiy2m2i3t" path="res://assets/models/vestiges/6_wheelchair/6_wheelchair.tscn" id="6_2o3k8"]
+[ext_resource type="PackedScene" uid="uid://cqjuku216iovt" path="res://assets/models/vestiges/7_mirror/7_mirror.tscn" id="7_wi3rl"]
+
+[node name="VestigesShowcase" type="Node3D" unique_id=79321936]
+
+[node name="1_baby" parent="." unique_id=365195901 instance=ExtResource("1_tk0ah")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03532529, 0, -1.3303237)
+
+[node name="2_child" parent="." unique_id=564340958 instance=ExtResource("2_1ig0o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5485466, -1.1920929e-07, 1.1841257)
+
+[node name="3_tent" parent="." unique_id=1494922793 instance=ExtResource("3_geo57")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4823585, 0, 2.5810404)
+
+[node name="4_date" parent="." unique_id=82573477 instance=ExtResource("4_d1b4l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.034948, 0, 2.6094236)
+
+[node name="5_piano" parent="." unique_id=1130132437 instance=ExtResource("5_qyehx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37092286, 0, 5.7934647)
+
+[node name="6_wheelchair" parent="." unique_id=386084949 instance=ExtResource("6_2o3k8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86544466, 0, -3.2403255)
+
+[node name="7_mirror" parent="." unique_id=39213146 instance=ExtResource("7_wi3rl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3504925, 0, -0.53787875)

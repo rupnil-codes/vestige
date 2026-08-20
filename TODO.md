@@ -37,10 +37,10 @@ Todos:
 - [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
-- [ ] Design/Model each Vestige.
-  - [-] A rocking Crib with a teddy (v0.4.5-beta)
-  - [-] Swing (v0.4.6-beta)
-  - [-] ~~Tent~~, ~~Campfire~~, Bagpacks, Lantern (v0.4.7-beta)
+- [ ] Design/Model each Vestige. (v0.4.5-beta ... )
+  - [-] ~~A rocking Crib with a teddy~~ (v0.4.5-beta)
+  - [-] ~~Swing~~ (v0.4.6-beta)
+  - [-] ~~Tent~~, ~~Campfire~~, Bagpacks, ~~Lantern~~ (v0.4.7-beta)
   - [-] ~~A wooden bench~~, ~~two cups~~, ~~candles~~, and a scarf (v0.4.8-beta)
   - [-] ~~A piano~~, ~~seat~~ (v0.4.9-beta)
   - [-] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta)
