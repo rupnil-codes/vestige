@@ -31,14 +31,15 @@ Todos:
 - [X] Regular Lantern Model (v0.4.3-beta)
 - [X] Hanging Lantern Model (v0.4.4-beta)
 - [X] Lanterns Placement (v0.4.4-beta)
-- [-] Design/Model each Vestige. (v0.4.5-beta ... )
-    - [X] ~~A rocking Crib with a teddy~~ (v0.4.5-beta, v0.4.12-beta ... v0.4.13-beta)
-    - [X] ~~Swing~~ (v0.4.6-beta & v0.4.12-beta ... v0.4.13-beta)
-    - [X] ~~Tent~~, ~~Campfire~~, Bagpacks, ~~Lantern~~ (v0.4.7-beta & v0.4.12-beta ... v0.4.13-beta)
-    - [-] ~~A wooden bench~~, ~~two cups~~, ~~candles~~, and a scarf (v0.4.8-beta, v0.4.12-beta)
-    - [-] ~~A piano~~, ~~seat~~ (v0.4.9-beta, v0.4.12-beta)
-    - [-] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta, v0.4.12-beta)
-    - [-] ~~A weathered rusted mirror~~ (no reflections) and ~~a rocking chair~~ (v0.4.11-beta, v0.4.12-beta)
+- [X] Design/Model each Vestige. (v0.4.5-beta ... v0.4.14-beta)
+	- [X] ~~A rocking Crib with a teddy~~ (v0.4.5-beta, v0.4.12-beta ... v0.4.13-beta)
+	- [X] ~~Swing~~ (v0.4.6-beta & v0.4.12-beta ... v0.4.13-beta)
+	- [X] ~~Tent~~, ~~Campfire~~, Bagpacks, ~~Lantern~~ (v0.4.7-beta & v0.4.12-beta ... v0.4.13-beta)
+	- [X] ~~A wooden bench~~, ~~two cups~~, ~~candles~~, and a scarf (v0.4.8-beta, v0.4.12-beta and v0.4.14-beta)
+	- [X] ~~A piano~~, ~~seat~~ (v0.4.9-beta, v0.4.12-beta and v0.4.14-beta)
+	- [X] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta, v0.4.12-beta and v0.4.14-beta)
+	- [X] ~~A weathered rusted mirror~~ (no reflections) and ~~a rocking chair~~ (v0.4.11-beta, v0.4.12-beta and v0.4.14-beta)
+- [ ] Vestiges Animations and placements
 - [ ] Watch Tower Furniture
 - [ ] Stethoscope model
 - [ ] Better Jumping Logic -- Feels floaty now.

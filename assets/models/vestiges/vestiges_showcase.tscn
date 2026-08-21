@@ -20,7 +20,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5485466, -0.27729332, 1.184
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4823585, 0, 2.5810404)
 
 [node name="4_date" parent="." unique_id=82573477 instance=ExtResource("4_d1b4l")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.034948, 0, 2.6094236)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.694779, 0, 2.6094236)
 
 [node name="5_piano" parent="." unique_id=1130132437 instance=ExtResource("5_qyehx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37092286, 0, 5.7934647)
