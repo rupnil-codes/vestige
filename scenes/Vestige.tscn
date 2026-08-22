@@ -25,12 +25,14 @@
 [ext_resource type="PackedScene" uid="uid://cohxd0tg354d" path="res://assets/models/silhouette/weeping_silhouette.tscn" id="22_wi37k"]
 [ext_resource type="PackedScene" uid="uid://c2bvqiw4e4bw4" path="res://assets/models/bunker/bunker.tscn" id="23_p21k1"]
 [ext_resource type="PackedScene" uid="uid://d2xjvjup3b4ce" path="res://assets/models/vestige_map/vestige_map_2.tscn" id="24_tm726"]
+[ext_resource type="PackedScene" uid="uid://tlp1jmkgh0uq" path="res://assets/models/vestiges/5_piano/5_piano.tscn" id="25_gkgfg"]
 [ext_resource type="PackedScene" uid="uid://fuf5yo5rqixm" path="res://assets/models/bench/ending_bench.tscn" id="25_r1fad"]
 [ext_resource type="PackedScene" uid="uid://d16g7hxspv18v" path="res://assets/models/lantern/regular/lantern_regular.tscn" id="28_jh5a0"]
 [ext_resource type="PackedScene" uid="uid://dxaiin7n2gsch" path="res://assets/models/lantern/hanging/lantern_hanging.tscn" id="28_kgo5s"]
 [ext_resource type="PackedScene" uid="uid://b1hsbyme6w08o" path="res://assets/models/vestiges/1_crib/1_crib.tscn" id="29_0daru"]
 [ext_resource type="PackedScene" uid="uid://g4y21fc64v7u" path="res://assets/models/vestiges/2_swing/2_swing.tscn" id="30_t4lnq"]
 [ext_resource type="PackedScene" uid="uid://cct8ahqnik6d3" path="res://assets/models/vestiges/3_tent/3_tent.tscn" id="32_gkgfg"]
+[ext_resource type="PackedScene" uid="uid://bxjf6qi6wjp5c" path="res://assets/models/vestiges/4_date/4_date.tscn" id="32_uhaqf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -447,6 +449,30 @@ tracks/29/keys = {
 "update": 0,
 "values": [Vector3(48.171787, -3.141073, -72.87603)]
 }
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("SubViewport/World/Vestiges3D/4_date:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(77.22044, -1.3767807, -61.19525)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("SubViewport/World/Vestiges3D/5_piano:position")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(39.394337, -2.2405648, -31.795824)]
+}
 
 [sub_resource type="Animation" id="Animation_u4jeo"]
 resource_name = "vestige_1"
@@ -847,6 +873,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector3(78.62526, -1.0586761, -60.435654), Vector3(78.62526, 1.0779189, -60.435654)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SubViewport/World/Vestiges3D/4_date:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.71, 2.64),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(77.22044, -1.3767807, -61.19525), Vector3(77.22, 0.803, -61.195)]
+}
 
 [sub_resource type="Animation" id="Animation_r1fad"]
 resource_name = "vestige_5"
@@ -886,6 +924,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(38.652706, -1.3877668, -31.803553), Vector3(38.652706, 1.0508919, -31.803553)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewport/World/Vestiges3D/5_piano:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2.34, 3.32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(39.394337, -2.2405648, -31.795824), Vector3(39.394, 1.513, -31.796)]
 }
 
 [sub_resource type="Animation" id="Animation_afll4"]
@@ -1953,6 +2003,7 @@ color = Color(0.7812746, 0.78127456, 0.78127456, 1)
 [node name="SubViewport" type="SubViewport" parent="." unique_id=1180690384]
 scaling_3d_scale = 0.6
 anisotropic_filtering_level = 0
+audio_listener_enable_3d = true
 size = Vector2i(544, 306)
 render_target_update_mode = 4
 
@@ -5878,7 +5929,7 @@ transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995
 transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, -0.9403763, -0.010613203, 0.5574074)
 
 [node name="Silhouette3D" parent="SubViewport/World" unique_id=578111472 instance=ExtResource("19_wn0by")]
-transform = Transform3D(-0.70710665, 0, -0.70710665, 0, 1, 0, 0.70710665, 0, -0.70710665, -15.946, 1.948, -49.461)
+transform = Transform3D(-0.70710653, 0, -0.70710653, 0, 1, 0, 0.70710653, 0, -0.70710653, -15.946, 1.948, -49.461)
 
 [node name="Vestiges3D" type="Node3D" parent="SubViewport/World" unique_id=1016770930]
 
@@ -5890,6 +5941,12 @@ transform = Transform3D(0.029748887, 0, -0.9995574, 0, 1, 0, 0.9995574, 0, 0.029
 
 [node name="3_tent" parent="SubViewport/World/Vestiges3D" unique_id=1494922793 instance=ExtResource("32_gkgfg")]
 transform = Transform3D(0.9985449, 0.05392727, 0, -0.05392727, 0.9985449, 0, 0, 0, 1, 48.171787, -3.141073, -72.87603)
+
+[node name="4_date" parent="SubViewport/World/Vestiges3D" unique_id=82573477 instance=ExtResource("32_uhaqf")]
+transform = Transform3D(0.7043538, 0, 0.70984906, 0, 1, 0, -0.70984906, 0, 0.7043538, 77.22044, -1.3767807, -61.19525)
+
+[node name="5_piano" parent="SubViewport/World/Vestiges3D" unique_id=1130132437 instance=ExtResource("25_gkgfg")]
+transform = Transform3D(0.72806233, 0, 0.68551093, 0, 1, 0, -0.68551093, 0, 0.72806233, 39.394337, -2.2405648, -31.795824)
 
 [node name="vestige1" parent="SubViewport/World/Vestiges3D" unique_id=671886494 instance=ExtResource("21_u4jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.192764, -2.2262607, -77.860855)
@@ -5905,9 +5962,11 @@ visible = false
 
 [node name="vestige4" parent="SubViewport/World/Vestiges3D" unique_id=1594915163 instance=ExtResource("21_u4jeo")]
 transform = Transform3D(0.7785015, 0, -0.6276427, 0, 1, 0, 0.6276427, 0, 0.7785015, 78.62526, -1.0586761, -60.435654)
+visible = false
 
 [node name="vestige5" parent="SubViewport/World/Vestiges3D" unique_id=1801977369 instance=ExtResource("21_u4jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.652706, -1.3877668, -31.236237)
+visible = false
 
 [node name="vestige6" parent="SubViewport/World/Vestiges3D" unique_id=464940424 instance=ExtResource("21_u4jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.319405, -1.0330586, 0.20395088)

@@ -26,10 +26,13 @@ data = PackedVector3Array(0.173, 0, -0.69009995, 0.118099995, -0.118099995, 0.69
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_p6nsv"]
 data = PackedVector3Array(-0.69009995, 0, -0.173, 0.69009995, -0.118099995, -0.118099995, 0.69009995, 0, -0.1671, -0.69009995, 0, -0.173, -0.69009995, -0.12239999, -0.12239999, 0.69009995, -0.118099995, -0.118099995, -0.69009995, -0.12239999, -0.12239999, 0.69009995, -0.1671, 0, 0.69009995, -0.118099995, -0.118099995, -0.69009995, -0.12239999, -0.12239999, -0.69009995, -0.173, 0, 0.69009995, -0.1671, 0, -0.69009995, -0.173, 0, 0.69009995, -0.118099995, 0.118099995, 0.69009995, -0.1671, 0, -0.69009995, -0.173, 0, -0.69009995, -0.12239999, 0.12239999, 0.69009995, -0.118099995, 0.118099995, -0.69009995, -0.12239999, 0.12239999, 0.69009995, 0, 0.1671, 0.69009995, -0.118099995, 0.118099995, -0.69009995, -0.12239999, 0.12239999, -0.69009995, 0, 0.173, 0.69009995, 0, 0.1671, -0.69009995, 0, 0.173, 0.69009995, 0.118099995, 0.118099995, 0.69009995, 0, 0.1671, -0.69009995, 0, 0.173, -0.69009995, 0.12239999, 0.12239999, 0.69009995, 0.118099995, 0.118099995, -0.69009995, 0.12239999, 0.12239999, 0.69009995, 0.1671, 0, 0.69009995, 0.118099995, 0.118099995, -0.69009995, 0.12239999, 0.12239999, -0.69009995, 0.173, 0, 0.69009995, 0.1671, 0, 0.69009995, -0.1671, 0, 0.69009995, 0, -0.1671, 0.69009995, -0.118099995, -0.118099995, 0.69009995, -0.1671, 0, 0.69009995, 0.1671, 0, 0.69009995, 0, -0.1671, 0.69009995, 0, -0.1671, 0.69009995, 0.1671, 0, 0.69009995, 0.118099995, -0.118099995, 0.69009995, 0.1671, 0, 0.69009995, -0.1671, 0, 0.69009995, 0, 0.1671, 0.69009995, 0, 0.1671, 0.69009995, -0.1671, 0, 0.69009995, -0.118099995, 0.118099995, 0.69009995, 0.1671, 0, 0.69009995, 0, 0.1671, 0.69009995, 0.118099995, 0.118099995, -0.69009995, 0.173, 0, 0.69009995, 0.118099995, -0.118099995, 0.69009995, 0.1671, 0, -0.69009995, 0.173, 0, -0.69009995, 0.12239999, -0.12239999, 0.69009995, 0.118099995, -0.118099995, -0.69009995, 0.12239999, -0.12239999, 0.69009995, 0, -0.1671, 0.69009995, 0.118099995, -0.118099995, -0.69009995, 0.12239999, -0.12239999, -0.69009995, 0, -0.173, 0.69009995, 0, -0.1671, -0.69009995, 0.12239999, -0.12239999, -0.69009995, -0.12239999, -0.12239999, -0.69009995, 0, -0.173, -0.69009995, 0.12239999, -0.12239999, -0.69009995, -0.12239999, 0.12239999, -0.69009995, -0.12239999, -0.12239999, -0.69009995, -0.12239999, -0.12239999, -0.69009995, -0.12239999, 0.12239999, -0.69009995, -0.173, 0, -0.69009995, -0.12239999, 0.12239999, -0.69009995, 0.12239999, -0.12239999, -0.69009995, 0.12239999, 0.12239999, -0.69009995, 0.12239999, 0.12239999, -0.69009995, 0.12239999, -0.12239999, -0.69009995, 0.173, 0, -0.69009995, -0.12239999, 0.12239999, -0.69009995, 0.12239999, 0.12239999, -0.69009995, 0, 0.173)
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_57qmd"]
-gravity = Vector3(0, 3, 0)
+[sub_resource type="BoxShape3D" id="BoxShape3D_ccniw"]
+size = Vector3(5.4121094, 5.006775, 10.328247)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf5fn"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_g4v7s"]
+gravity = Vector3(0, 4, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57qmd"]
 transparency = 1
 shading_mode = 2
 albedo_texture = ExtResource("3_j2yxj")
@@ -38,47 +41,81 @@ particles_anim_h_frames = 1
 particles_anim_v_frames = 1
 particles_anim_loop = false
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_g4v7s"]
-material = SubResource("StandardMaterial3D_yf5fn")
-orientation = 2
+[sub_resource type="QuadMesh" id="QuadMesh_yf5fn"]
+material = SubResource("StandardMaterial3D_57qmd")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ccniw"]
-size = Vector3(5.4121094, 5.006775, 10.328247)
-
-[sub_resource type="Animation" id="Animation_d3lse"]
+[sub_resource type="Animation" id="Animation_cwnl0"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("GPUParticles3D:transparency")
+tracks/0/path = NodePath("lantern_regular:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [1.0]
+"values": [Vector3(0, 0, 0)]
 }
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("VestigeAnimationPlayer:active")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
+
+[sub_resource type="Animation" id="Animation_ccniw"]
+resource_name = "vestige_animation"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("lantern_regular:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.49, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-5.5666756e-09, 0.2617994, 0.26179937), Vector3(0, 3.568583e-17, 2.4835275e-08), Vector3(2.172854e-08, -0.2617994, -0.2617994), Vector3(0, 6.2831855, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d3lse"]
+_data = {
+&"RESET": SubResource("Animation_cwnl0"),
+&"vestige_animation": SubResource("Animation_ccniw")
+}
+
+[sub_resource type="Animation" id="Animation_d3lse"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VestigeArea3D:monitoring")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CampfireGPUParticles3D:transparency")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
 
 [sub_resource type="Animation" id="Animation_afd0b"]
-resource_name = "vestige_animation"
+resource_name = "play_once"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("GPUParticles3D:transparency")
-tracks/0/interp = 2
+tracks/0/path = NodePath("CampfireGPUParticles3D:transparency")
+tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
@@ -89,11 +126,11 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("VestigeAnimationPlayer:active")
+tracks/1/path = NodePath("VestigeArea3D:monitoring")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.93333334, 1),
+"times": PackedFloat32Array(0, 0.16666669),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -102,7 +139,7 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_637dq"]
 _data = {
 &"RESET": SubResource("Animation_d3lse"),
-&"vestige_animation": SubResource("Animation_afd0b")
+&"play_once": SubResource("Animation_afd0b")
 }
 
 [node name="3_tent" unique_id=1494922793 instance=ExtResource("1_dg7ww")]
@@ -144,25 +181,27 @@ shape = SubResource("ConcavePolygonShape3D_637dq")
 shape = SubResource("ConcavePolygonShape3D_p6nsv")
 
 [node name="lantern_regular" parent="." index="7" unique_id=565045938 instance=ExtResource("2_wbpwv")]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -1.3691082, 0.3118108, -5.396802)
+transform = Transform3D(0.5999998, 0, 0, 0, 0.5999998, 0, 0, 0, 0.59999967, -1.3691082, 0.3118108, -5.396802)
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="." index="8" unique_id=900260366]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20891428, -4.0287466)
-transparency = 1.0
-amount = 5
-lifetime = 2.0
-preprocess = 1.0
-speed_scale = 0.5
-process_material = SubResource("ParticleProcessMaterial_57qmd")
-draw_pass_1 = SubResource("PlaneMesh_g4v7s")
-
-[node name="VestigeArea3D" type="Area3D" parent="." index="9" unique_id=1913990983]
+[node name="VestigeArea3D" type="Area3D" parent="." index="8" unique_id=1913990983]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VestigeArea3D" index="0" unique_id=1680597891]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011856079, 1.8116102, -1.6131868)
 shape = SubResource("BoxShape3D_ccniw")
 
-[node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." index="10" unique_id=1607434231]
+[node name="CampfireGPUParticles3D" type="GPUParticles3D" parent="." index="9" unique_id=433541884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2620238, -4.0454025)
+transparency = 1.0
+amount = 6
+lifetime = 2.0
+speed_scale = 0.4
+process_material = SubResource("ParticleProcessMaterial_g4v7s")
+draw_pass_1 = SubResource("QuadMesh_yf5fn")
+
+[node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." index="10" unique_id=2117291986]
+libraries/ = SubResource("AnimationLibrary_d3lse")
+
+[node name="VestigeOnceAnimationPlayer" type="AnimationPlayer" parent="." index="11" unique_id=1607434231]
 libraries/ = SubResource("AnimationLibrary_637dq")
 autoplay = &"RESET"
 

@@ -233,6 +233,42 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
 size = Vector3(4.4072266, 3.513794, 4.2753906)
 
+[sub_resource type="Animation" id="Animation_d3lse"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VestigeArea3D:monitoring")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_afd0b"]
+resource_name = "play_once"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VestigeArea3D:monitoring")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rv8rp"]
+_data = {
+&"RESET": SubResource("Animation_d3lse"),
+&"play_once": SubResource("Animation_afd0b")
+}
+
 [node name="1_crib" unique_id=365195901 instance=ExtResource("1_1h4k3")]
 script = ExtResource("2_rv8rp")
 
@@ -313,5 +349,9 @@ libraries/ = SubResource("AnimationLibrary_uubvf")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VestigeArea3D" index="0" unique_id=191432442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10585022, 0.10357666, -0.21995544)
 shape = SubResource("BoxShape3D_g4v7s")
+
+[node name="VestigeOnceAnimationPlayer" type="AnimationPlayer" parent="." index="10" unique_id=1867221597]
+libraries/ = SubResource("AnimationLibrary_rv8rp")
+autoplay = &"RESET"
 
 [connection signal="body_entered" from="VestigeArea3D" to="." method="_on_vestige_area_3d_body_entered"]

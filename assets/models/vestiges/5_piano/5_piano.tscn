@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://tlp1jmkgh0uq"]
 
 [ext_resource type="PackedScene" uid="uid://oo8cmptwx6xd" path="res://assets/models/vestiges/5_piano/5_piano.blend" id="1_b5r5c"]
+[ext_resource type="Script" uid="uid://c1uhdogxt7xqt" path="res://scripts/Controllers/Vestige.gd" id="2_67ljc"]
+[ext_resource type="AudioStream" uid="uid://df7or4h62ig5e" path="res://assets/models/vestiges/5_piano/piano_music.mp3" id="2_vbq1e"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_b5r5c"]
 data = PackedVector3Array(-1.5372, -0.19119999, 1.6841999, -1.5372, 0.1838, -0.26049998, -1.5372, 0.1838, 1.6841999, -1.5372, -0.19119999, 1.6841999, -1.5372, -0.19119999, -0.26049998, -1.5372, 0.1838, -0.26049998, 0.47959998, -0.19119999, -0.26049998, 1.7500999, 0.1838, 0.2985, 0.47959998, 0.1838, -0.26049998, 0.47959998, -0.19119999, -0.26049998, 1.7500999, -0.19119999, 0.2985, 1.7500999, 0.1838, 0.2985, 1.7500999, -0.19119999, 0.2985, 1.7500999, 0.1838, 1.6841999, 1.7500999, 0.1838, 0.2985, 1.7500999, -0.19119999, 0.2985, 1.7500999, -0.19119999, 1.6841999, 1.7500999, 0.1838, 1.6841999, 0.47959998, -0.19119999, 1.6841999, -1.5372, 0.1838, 1.6841999, 0.47959998, 0.1838, 1.6841999, 0.47959998, -0.19119999, 1.6841999, -1.5372, -0.19119999, 1.6841999, -1.5372, 0.1838, 1.6841999, 1.7500999, -0.19119999, 1.6841999, 0.47959998, -0.19119999, 1.6841999, 0.47959998, 0.1838, 1.6841999, 1.7500999, -0.19119999, 1.6841999, 0.47959998, 0.1838, 1.6841999, 1.7500999, 0.1838, 1.6841999, 0.47959998, -0.19119999, -0.26049998, 1.7500999, -0.19119999, 1.6841999, 1.7500999, -0.19119999, 0.2985, 0.47959998, -0.19119999, -0.26049998, 0.47959998, -0.19119999, 1.6841999, 1.7500999, -0.19119999, 1.6841999, 0.47959998, 0.1838, -0.26049998, -1.5372, 0.1838, 1.6841999, -1.5372, 0.1838, -0.26049998, 0.47959998, 0.1838, -0.26049998, 0.47959998, 0.1838, 1.6841999, -1.5372, 0.1838, 1.6841999, 1.7500999, 0.1838, 0.2985, 0.47959998, 0.1838, 1.6841999, 0.47959998, 0.1838, -0.26049998, 1.7500999, 0.1838, 0.2985, 1.7500999, 0.1838, 1.6841999, 0.47959998, 0.1838, 1.6841999, -1.5372, -0.19119999, -0.26049998, 0.47959998, -0.19119999, 1.6841999, 0.47959998, -0.19119999, -0.26049998, -1.5372, -0.19119999, -0.26049998, -1.5372, -0.19119999, 1.6841999, 0.47959998, -0.19119999, 1.6841999, -1.5372, -0.19119999, -0.26049998, -1.5302, 0.1986, -2.415, -1.5372, 0.1838, -0.26049998, -1.5372, -0.19119999, -0.26049998, -1.5302, -0.1765, -2.415, -1.5302, 0.1986, -2.415, -1.5302, -0.1765, -2.415, 0.145, 0.1986, -2.415, -1.5302, 0.1986, -2.415, -1.5302, -0.1765, -2.415, 0.145, -0.1765, -2.415, 0.145, 0.1986, -2.415, 0.47959998, 0.1838, -0.26049998, 0.145, -0.1765, -2.415, 0.47959998, -0.19119999, -0.26049998, 0.47959998, 0.1838, -0.26049998, 0.145, 0.1986, -2.415, 0.145, -0.1765, -2.415, 0.47959998, -0.19119999, -0.26049998, -1.5302, -0.1765, -2.415, -1.5372, -0.19119999, -0.26049998, 0.47959998, -0.19119999, -0.26049998, 0.145, -0.1765, -2.415, -1.5302, -0.1765, -2.415, -1.5372, 0.1838, -0.26049998, 0.145, 0.1986, -2.415, 0.47959998, 0.1838, -0.26049998, -1.5372, 0.1838, -0.26049998, -1.5302, 0.1986, -2.415, 0.145, 0.1986, -2.415, -1.5314, -0.1854, 1.6783999, -1.5301, 0.1768, -0.26049998, -1.5301, -0.1841, -0.26049998, -1.5314, -0.1854, 1.6783999, -1.5314, 0.17809999, 1.6783999, -1.5301, 0.1768, -0.26049998, 0.4752, -0.1829, -0.2571, 1.7435, 0.1778, 0.3029, 1.7435, -0.18519999, 0.3029, 0.4752, -0.1829, -0.2571, 0.4752, 0.17549999, -0.2572, 1.7435, 0.1778, 0.3029, 1.7435, -0.18519999, 0.3029, 1.7443999, 0.17809999, 1.6783999, 1.7443999, -0.1854, 1.6783999, 1.7435, -0.18519999, 0.3029, 1.7435, 0.1778, 0.3029, 1.7443999, 0.17809999, 1.6783999, 0.47959998, -0.1841, 1.6771, -1.5314, 0.17809999, 1.6783999, -1.5314, -0.1854, 1.6783999, 0.47959998, -0.1841, 1.6771, 0.47959998, 0.1768, 1.6771, -1.5314, 0.17809999, 1.6783999, 0.4752, -0.1829, -0.2571, 1.7443999, -0.1854, 1.6783999, 0.47959998, -0.1841, 1.6771, 0.4752, -0.1829, -0.2571, 1.7435, -0.18519999, 0.3029, 1.7443999, -0.1854, 1.6783999, 0.4752, 0.17549999, -0.2572, -1.5314, 0.17809999, 1.6783999, 0.47959998, 0.1768, 1.6771, 0.4752, 0.17549999, -0.2572, -1.5301, 0.1768, -0.26049998, -1.5314, 0.17809999, 1.6783999, 1.7435, 0.1778, 0.3029, 0.47959998, 0.1768, 1.6771, 1.7443999, 0.17809999, 1.6783999, 1.7435, 0.1778, 0.3029, 0.4752, 0.17549999, -0.2572, 0.47959998, 0.1768, 1.6771, -1.5301, -0.1841, -0.26049998, 0.47959998, -0.1841, 1.6771, -1.5314, -0.1854, 1.6783999, -1.5301, -0.1841, -0.26049998, 0.4752, -0.1829, -0.2571, 0.47959998, -0.1841, 1.6771, 1.7443999, -0.1854, 1.6783999, 0.47959998, 0.1768, 1.6771, 0.47959998, -0.1841, 1.6771, 1.7443999, -0.1854, 1.6783999, 1.7443999, 0.17809999, 1.6783999, 0.47959998, 0.1768, 1.6771, -1.5301, -0.1841, -0.26049998, -1.5244, 0.1928, -2.4092999, -1.5244, -0.1707, -2.4092, -1.5301, -0.1841, -0.26049998, -1.5301, 0.1768, -0.26049998, -1.5244, 0.1928, -2.4092999, -1.5244, -0.1707, -2.4092, 0.1398, 0.1927, -2.4089, 0.1398, -0.1706, -2.4088, -1.5244, -0.1707, -2.4092, -1.5244, 0.1928, -2.4092999, 0.1398, 0.1927, -2.4089, 0.4752, 0.17549999, -0.2572, 0.1398, -0.1706, -2.4088, 0.1398, 0.1927, -2.4089, 0.4752, 0.17549999, -0.2572, 0.4752, -0.1829, -0.2571, 0.1398, -0.1706, -2.4088, 0.4752, -0.1829, -0.2571, -1.5244, -0.1707, -2.4092, 0.1398, -0.1706, -2.4088, 0.4752, -0.1829, -0.2571, -1.5301, -0.1841, -0.26049998, -1.5244, -0.1707, -2.4092, -1.5301, 0.1768, -0.26049998, 0.1398, 0.1927, -2.4089, -1.5244, 0.1928, -2.4092999, -1.5301, 0.1768, -0.26049998, 0.4752, 0.17549999, -0.2572, 0.1398, 0.1927, -2.4089)
@@ -44,74 +46,231 @@ data = PackedVector3Array(0, -0.0919, -0.3159, 0.30339998, 0.0919, -0.30339998, 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_khhyn"]
 data = PackedVector3Array(-0.1153, -0.2834, 0.0848, 0.0433, 0.613, -0.0433, 0, 0.613, -0.0613, -0.1153, -0.2834, 0.0848, -0.094299994, -0.2834, 0.093499996, 0.0433, 0.613, -0.0433, -0.094299994, -0.2834, 0.093499996, 0.0613, 0.613, 0, 0.0433, 0.613, -0.0433, -0.094299994, -0.2834, 0.093499996, -0.085599996, -0.2834, 0.11449999, 0.0613, 0.613, 0, -0.085599996, -0.2834, 0.11449999, 0.0433, 0.613, 0.0433, 0.0613, 0.613, 0, -0.085599996, -0.2834, 0.11449999, -0.094299994, -0.2834, 0.1355, 0.0433, 0.613, 0.0433, -0.094299994, -0.2834, 0.1355, 0, 0.613, 0.0613, 0.0433, 0.613, 0.0433, -0.094299994, -0.2834, 0.1355, -0.1153, -0.2834, 0.1442, 0, 0.613, 0.0613, -0.1153, -0.2834, 0.1442, -0.043399997, 0.613, 0.0433, 0, 0.613, 0.0613, -0.1153, -0.2834, 0.1442, -0.1363, -0.2834, 0.1355, -0.043399997, 0.613, 0.0433, -0.1363, -0.2834, 0.1355, -0.0613, 0.613, 0, -0.043399997, 0.613, 0.0433, -0.1363, -0.2834, 0.1355, -0.145, -0.2834, 0.11449999, -0.0613, 0.613, 0, 0.0613, 0.613, 0, 0, 0.613, -0.0613, 0.0433, 0.613, -0.0433, 0.0613, 0.613, 0, -0.0613, 0.613, 0, 0, 0.613, -0.0613, 0, 0.613, -0.0613, -0.0613, 0.613, 0, -0.043399997, 0.613, -0.0433, -0.0613, 0.613, 0, 0.0613, 0.613, 0, 0, 0.613, 0.0613, 0, 0.613, 0.0613, 0.0613, 0.613, 0, 0.0433, 0.613, 0.0433, -0.0613, 0.613, 0, 0, 0.613, 0.0613, -0.043399997, 0.613, 0.0433, -0.145, -0.2834, 0.11449999, -0.043399997, 0.613, -0.0433, -0.0613, 0.613, 0, -0.145, -0.2834, 0.11449999, -0.1363, -0.2834, 0.093499996, -0.043399997, 0.613, -0.0433, -0.1363, -0.2834, 0.093499996, 0, 0.613, -0.0613, -0.043399997, 0.613, -0.0433, -0.1363, -0.2834, 0.093499996, -0.1153, -0.2834, 0.0848, 0, 0.613, -0.0613, -0.1363, -0.2834, 0.093499996, -0.094299994, -0.2834, 0.093499996, -0.1153, -0.2834, 0.0848, -0.1363, -0.2834, 0.093499996, -0.094299994, -0.2834, 0.1355, -0.094299994, -0.2834, 0.093499996, -0.094299994, -0.2834, 0.093499996, -0.094299994, -0.2834, 0.1355, -0.085599996, -0.2834, 0.11449999, -0.094299994, -0.2834, 0.1355, -0.1363, -0.2834, 0.093499996, -0.1363, -0.2834, 0.1355, -0.1363, -0.2834, 0.1355, -0.1363, -0.2834, 0.093499996, -0.145, -0.2834, 0.11449999, -0.094299994, -0.2834, 0.1355, -0.1363, -0.2834, 0.1355, -0.1153, -0.2834, 0.1442, 0.4464, -0.2834, 0.0848, 0.28779998, 0.613, -0.0433, 0.4254, -0.2834, 0.093499996, 0.4464, -0.2834, 0.0848, 0.3311, 0.613, -0.0613, 0.28779998, 0.613, -0.0433, 0.4254, -0.2834, 0.093499996, 0.2698, 0.613, 0, 0.4168, -0.2834, 0.11449999, 0.4254, -0.2834, 0.093499996, 0.28779998, 0.613, -0.0433, 0.2698, 0.613, 0, 0.4168, -0.2834, 0.11449999, 0.28779998, 0.613, 0.0433, 0.4254, -0.2834, 0.1355, 0.4168, -0.2834, 0.11449999, 0.2698, 0.613, 0, 0.28779998, 0.613, 0.0433, 0.4254, -0.2834, 0.1355, 0.3311, 0.613, 0.0613, 0.4464, -0.2834, 0.1442, 0.4254, -0.2834, 0.1355, 0.28779998, 0.613, 0.0433, 0.3311, 0.613, 0.0613, 0.4464, -0.2834, 0.1442, 0.37449998, 0.613, 0.0433, 0.46739998, -0.2834, 0.1355, 0.4464, -0.2834, 0.1442, 0.3311, 0.613, 0.0613, 0.37449998, 0.613, 0.0433, 0.46739998, -0.2834, 0.1355, 0.3924, 0.613, 0, 0.4761, -0.2834, 0.11449999, 0.46739998, -0.2834, 0.1355, 0.37449998, 0.613, 0.0433, 0.3924, 0.613, 0, 0.3311, 0.613, -0.0613, 0.2698, 0.613, 0, 0.28779998, 0.613, -0.0433, 0.3311, 0.613, -0.0613, 0.3311, 0.613, 0.0613, 0.2698, 0.613, 0, 0.2698, 0.613, 0, 0.3311, 0.613, 0.0613, 0.28779998, 0.613, 0.0433, 0.3311, 0.613, 0.0613, 0.3311, 0.613, -0.0613, 0.3924, 0.613, 0, 0.3924, 0.613, 0, 0.3311, 0.613, -0.0613, 0.37449998, 0.613, -0.0433, 0.3311, 0.613, 0.0613, 0.3924, 0.613, 0, 0.37449998, 0.613, 0.0433, 0.4761, -0.2834, 0.11449999, 0.37449998, 0.613, -0.0433, 0.46739998, -0.2834, 0.093499996, 0.4761, -0.2834, 0.11449999, 0.3924, 0.613, 0, 0.37449998, 0.613, -0.0433, 0.46739998, -0.2834, 0.093499996, 0.3311, 0.613, -0.0613, 0.4464, -0.2834, 0.0848, 0.46739998, -0.2834, 0.093499996, 0.37449998, 0.613, -0.0433, 0.3311, 0.613, -0.0613, 0.4254, -0.2834, 0.093499996, 0.46739998, -0.2834, 0.093499996, 0.4464, -0.2834, 0.0848, 0.4254, -0.2834, 0.093499996, 0.46739998, -0.2834, 0.1355, 0.46739998, -0.2834, 0.093499996, 0.46739998, -0.2834, 0.093499996, 0.46739998, -0.2834, 0.1355, 0.4761, -0.2834, 0.11449999, 0.46739998, -0.2834, 0.1355, 0.4254, -0.2834, 0.093499996, 0.4254, -0.2834, 0.1355, 0.4254, -0.2834, 0.1355, 0.4254, -0.2834, 0.093499996, 0.4168, -0.2834, 0.11449999, 0.46739998, -0.2834, 0.1355, 0.4254, -0.2834, 0.1355, 0.4464, -0.2834, 0.1442, -0.1153, -0.2834, -0.42, 0.0433, 0.613, -0.29189998, -0.094299994, -0.2834, -0.4287, -0.1153, -0.2834, -0.42, 0, 0.613, -0.2739, 0.0433, 0.613, -0.29189998, -0.094299994, -0.2834, -0.4287, 0.0613, 0.613, -0.33519998, -0.085599996, -0.2834, -0.4497, -0.094299994, -0.2834, -0.4287, 0.0433, 0.613, -0.29189998, 0.0613, 0.613, -0.33519998, -0.085599996, -0.2834, -0.4497, 0.0433, 0.613, -0.3786, -0.094299994, -0.2834, -0.4707, -0.085599996, -0.2834, -0.4497, 0.0613, 0.613, -0.33519998, 0.0433, 0.613, -0.3786, -0.094299994, -0.2834, -0.4707, 0, 0.613, -0.3965, -0.1153, -0.2834, -0.47939998, -0.094299994, -0.2834, -0.4707, 0.0433, 0.613, -0.3786, 0, 0.613, -0.3965, -0.1153, -0.2834, -0.47939998, -0.043399997, 0.613, -0.3786, -0.1363, -0.2834, -0.4707, -0.1153, -0.2834, -0.47939998, 0, 0.613, -0.3965, -0.043399997, 0.613, -0.3786, -0.1363, -0.2834, -0.4707, -0.0613, 0.613, -0.33519998, -0.145, -0.2834, -0.4497, -0.1363, -0.2834, -0.4707, -0.043399997, 0.613, -0.3786, -0.0613, 0.613, -0.33519998, 0, 0.613, -0.2739, 0.0613, 0.613, -0.33519998, 0.0433, 0.613, -0.29189998, 0, 0.613, -0.2739, 0, 0.613, -0.3965, 0.0613, 0.613, -0.33519998, 0.0613, 0.613, -0.33519998, 0, 0.613, -0.3965, 0.0433, 0.613, -0.3786, 0, 0.613, -0.3965, 0, 0.613, -0.2739, -0.0613, 0.613, -0.33519998, -0.0613, 0.613, -0.33519998, 0, 0.613, -0.2739, -0.043399997, 0.613, -0.29189998, 0, 0.613, -0.3965, -0.0613, 0.613, -0.33519998, -0.043399997, 0.613, -0.3786, -0.145, -0.2834, -0.4497, -0.043399997, 0.613, -0.29189998, -0.1363, -0.2834, -0.4287, -0.145, -0.2834, -0.4497, -0.0613, 0.613, -0.33519998, -0.043399997, 0.613, -0.29189998, -0.1363, -0.2834, -0.4287, 0, 0.613, -0.2739, -0.1153, -0.2834, -0.42, -0.1363, -0.2834, -0.4287, -0.043399997, 0.613, -0.29189998, 0, 0.613, -0.2739, -0.094299994, -0.2834, -0.4287, -0.1363, -0.2834, -0.4287, -0.1153, -0.2834, -0.42, -0.094299994, -0.2834, -0.4287, -0.1363, -0.2834, -0.4707, -0.1363, -0.2834, -0.4287, -0.1363, -0.2834, -0.4287, -0.1363, -0.2834, -0.4707, -0.145, -0.2834, -0.4497, -0.1363, -0.2834, -0.4707, -0.094299994, -0.2834, -0.4287, -0.094299994, -0.2834, -0.4707, -0.094299994, -0.2834, -0.4707, -0.094299994, -0.2834, -0.4287, -0.085599996, -0.2834, -0.4497, -0.1363, -0.2834, -0.4707, -0.094299994, -0.2834, -0.4707, -0.1153, -0.2834, -0.47939998, 0.4464, -0.2834, -0.42, 0.28779998, 0.613, -0.29189998, 0.3311, 0.613, -0.2739, 0.4464, -0.2834, -0.42, 0.4254, -0.2834, -0.4287, 0.28779998, 0.613, -0.29189998, 0.4254, -0.2834, -0.4287, 0.2698, 0.613, -0.33519998, 0.28779998, 0.613, -0.29189998, 0.4254, -0.2834, -0.4287, 0.4168, -0.2834, -0.4497, 0.2698, 0.613, -0.33519998, 0.4168, -0.2834, -0.4497, 0.28779998, 0.613, -0.3786, 0.2698, 0.613, -0.33519998, 0.4168, -0.2834, -0.4497, 0.4254, -0.2834, -0.4707, 0.28779998, 0.613, -0.3786, 0.4254, -0.2834, -0.4707, 0.3311, 0.613, -0.3965, 0.28779998, 0.613, -0.3786, 0.4254, -0.2834, -0.4707, 0.4464, -0.2834, -0.47939998, 0.3311, 0.613, -0.3965, 0.4464, -0.2834, -0.47939998, 0.37449998, 0.613, -0.3786, 0.3311, 0.613, -0.3965, 0.4464, -0.2834, -0.47939998, 0.46739998, -0.2834, -0.4707, 0.37449998, 0.613, -0.3786, 0.46739998, -0.2834, -0.4707, 0.3924, 0.613, -0.33519998, 0.37449998, 0.613, -0.3786, 0.46739998, -0.2834, -0.4707, 0.4761, -0.2834, -0.4497, 0.3924, 0.613, -0.33519998, 0.2698, 0.613, -0.33519998, 0.3311, 0.613, -0.2739, 0.28779998, 0.613, -0.29189998, 0.2698, 0.613, -0.33519998, 0.3924, 0.613, -0.33519998, 0.3311, 0.613, -0.2739, 0.3311, 0.613, -0.2739, 0.3924, 0.613, -0.33519998, 0.37449998, 0.613, -0.29189998, 0.3924, 0.613, -0.33519998, 0.2698, 0.613, -0.33519998, 0.3311, 0.613, -0.3965, 0.3311, 0.613, -0.3965, 0.2698, 0.613, -0.33519998, 0.28779998, 0.613, -0.3786, 0.3924, 0.613, -0.33519998, 0.3311, 0.613, -0.3965, 0.37449998, 0.613, -0.3786, 0.4761, -0.2834, -0.4497, 0.37449998, 0.613, -0.29189998, 0.3924, 0.613, -0.33519998, 0.4761, -0.2834, -0.4497, 0.46739998, -0.2834, -0.4287, 0.37449998, 0.613, -0.29189998, 0.46739998, -0.2834, -0.4287, 0.3311, 0.613, -0.2739, 0.37449998, 0.613, -0.29189998, 0.46739998, -0.2834, -0.4287, 0.4464, -0.2834, -0.42, 0.3311, 0.613, -0.2739, 0.46739998, -0.2834, -0.4287, 0.4254, -0.2834, -0.4287, 0.4464, -0.2834, -0.42, 0.46739998, -0.2834, -0.4287, 0.4254, -0.2834, -0.4707, 0.4254, -0.2834, -0.4287, 0.4254, -0.2834, -0.4287, 0.4254, -0.2834, -0.4707, 0.4168, -0.2834, -0.4497, 0.4254, -0.2834, -0.4707, 0.46739998, -0.2834, -0.4287, 0.46739998, -0.2834, -0.4707, 0.46739998, -0.2834, -0.4707, 0.46739998, -0.2834, -0.4287, 0.4761, -0.2834, -0.4497, 0.4254, -0.2834, -0.4707, 0.46739998, -0.2834, -0.4707, 0.4464, -0.2834, -0.47939998)
 
-[node name="5_piano" unique_id=1130132437 instance=ExtResource("1_b5r5c")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_jlru0"]
+size = Vector3(5.4472656, 5.006775, 9.243927)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="piano_body" parent_id_path=PackedInt32Array(1058611459) index="0" unique_id=1555461789]
+[sub_resource type="Animation" id="Animation_cwnl0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpotLight3D:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ccniw"]
+resource_name = "vestige_animation"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpotLight3D:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 1.58, 1.66, 2.08, 2.44),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [16.0, 16.0, 0.0, 16.0, 16.0, 16.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w6m6q"]
+_data = {
+&"RESET": SubResource("Animation_cwnl0"),
+&"vestige_animation": SubResource("Animation_ccniw")
+}
+
+[sub_resource type="Animation" id="Animation_t87p8"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VestigeArea3D:monitoring")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer3D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpotLight3D:spot_range")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.001]
+}
+
+[sub_resource type="Animation" id="Animation_a4luf"]
+resource_name = "play_once"
+length = 1.0666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VestigeArea3D:monitoring")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666669),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer3D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SpotLight3D:spot_range")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.0666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.001, 6.112]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n2oq5"]
+_data = {
+&"RESET": SubResource("Animation_t87p8"),
+&"play_once": SubResource("Animation_a4luf")
+}
+
+[node name="5_piano" unique_id=1130132437 instance=ExtResource("1_b5r5c")]
+script = ExtResource("2_67ljc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="piano_body" parent_id_path=PackedInt32Array(99339035) index="0" unique_id=1555461789]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piano_body/StaticBody3D" index="0" unique_id=1502658687]
 shape = SubResource("ConcavePolygonShape3D_b5r5c")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="keyboard_base" parent_id_path=PackedInt32Array(1824994152) index="0" unique_id=1550704330]
+[node name="StaticBody3D" type="StaticBody3D" parent="keyboard_base" parent_id_path=PackedInt32Array(141068939) index="0" unique_id=1550704330]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="keyboard_base/StaticBody3D" index="0" unique_id=82616036]
 shape = SubResource("ConcavePolygonShape3D_vbq1e")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="piano_border" parent_id_path=PackedInt32Array(1757600411) index="0" unique_id=371740934]
+[node name="StaticBody3D" type="StaticBody3D" parent="piano_border" parent_id_path=PackedInt32Array(545024370) index="0" unique_id=371740934]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piano_border/StaticBody3D" index="0" unique_id=323526004]
 shape = SubResource("ConcavePolygonShape3D_67ljc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="piano_lid" parent_id_path=PackedInt32Array(2057002611) index="0" unique_id=261532833]
+[node name="StaticBody3D" type="StaticBody3D" parent="piano_lid" parent_id_path=PackedInt32Array(994179737) index="0" unique_id=261532833]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piano_lid/StaticBody3D" index="0" unique_id=1013151539]
 shape = SubResource("ConcavePolygonShape3D_jlru0")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="side_padding" parent_id_path=PackedInt32Array(2024546547) index="0" unique_id=311727842]
+[node name="StaticBody3D" type="StaticBody3D" parent="side_padding" parent_id_path=PackedInt32Array(229868793) index="0" unique_id=311727842]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="side_padding/StaticBody3D" index="0" unique_id=317568596]
 shape = SubResource("ConcavePolygonShape3D_w6m6q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="keyboard" parent_id_path=PackedInt32Array(341646394) index="0" unique_id=1221943819]
+[node name="StaticBody3D" type="StaticBody3D" parent="keyboard" parent_id_path=PackedInt32Array(1207324281) index="0" unique_id=1221943819]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="keyboard/StaticBody3D" index="0" unique_id=1004804259]
 shape = SubResource("ConcavePolygonShape3D_t87p8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="piano_body_border" parent_id_path=PackedInt32Array(1947743061) index="0" unique_id=881407667]
+[node name="StaticBody3D" type="StaticBody3D" parent="piano_body_border" parent_id_path=PackedInt32Array(1633119916) index="0" unique_id=881407667]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piano_body_border/StaticBody3D" index="0" unique_id=2131597797]
 shape = SubResource("ConcavePolygonShape3D_a4luf")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="rod" parent_id_path=PackedInt32Array(1035900450) index="0" unique_id=602173141]
+[node name="StaticBody3D" type="StaticBody3D" parent="rod" parent_id_path=PackedInt32Array(1975439326) index="0" unique_id=602173141]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="rod/StaticBody3D" index="0" unique_id=1856760956]
 shape = SubResource("ConcavePolygonShape3D_n2oq5")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="leg_base_2" parent_id_path=PackedInt32Array(946759380) index="0" unique_id=2062260612]
+[node name="StaticBody3D" type="StaticBody3D" parent="leg_base_2" parent_id_path=PackedInt32Array(1924423896) index="0" unique_id=2062260612]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="leg_base_2/StaticBody3D" index="0" unique_id=313882330]
 shape = SubResource("ConcavePolygonShape3D_hebm6")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="support_leg_2" parent_id_path=PackedInt32Array(139271504) index="0" unique_id=1970637284]
+[node name="StaticBody3D" type="StaticBody3D" parent="support_leg_2" parent_id_path=PackedInt32Array(1390219447) index="0" unique_id=1970637284]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="support_leg_2/StaticBody3D" index="0" unique_id=277385459]
 shape = SubResource("ConcavePolygonShape3D_sv4cg")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="support_leg_1" parent_id_path=PackedInt32Array(1433833165) index="0" unique_id=1739844544]
+[node name="StaticBody3D" type="StaticBody3D" parent="support_leg_1" parent_id_path=PackedInt32Array(590923567) index="0" unique_id=1739844544]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="support_leg_1/StaticBody3D" index="0" unique_id=2065379666]
 shape = SubResource("ConcavePolygonShape3D_8kens")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="leg_base_1" parent_id_path=PackedInt32Array(427679931) index="0" unique_id=2048913584]
+[node name="StaticBody3D" type="StaticBody3D" parent="leg_base_1" parent_id_path=PackedInt32Array(1699260032) index="0" unique_id=2048913584]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="leg_base_1/StaticBody3D" index="0" unique_id=1289215843]
 shape = SubResource("ConcavePolygonShape3D_g3ya1")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="seat" parent_id_path=PackedInt32Array(1939055627) index="0" unique_id=1303263381]
+[node name="StaticBody3D" type="StaticBody3D" parent="seat" parent_id_path=PackedInt32Array(135892335) index="0" unique_id=1303263381]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="seat/StaticBody3D" index="0" unique_id=245386818]
 shape = SubResource("ConcavePolygonShape3D_uupml")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="seat_legs" parent_id_path=PackedInt32Array(2042225035) index="0" unique_id=1617169745]
+[node name="StaticBody3D" type="StaticBody3D" parent="seat_legs" parent_id_path=PackedInt32Array(699859798) index="0" unique_id=1617169745]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="seat_legs/StaticBody3D" index="0" unique_id=1586756421]
 shape = SubResource("ConcavePolygonShape3D_khhyn")
+
+[node name="VestigeArea3D" type="Area3D" parent="." index="14" unique_id=1914474043]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VestigeArea3D" index="0" unique_id=356073667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005722046, 0.6160774, -1.1077089)
+shape = SubResource("BoxShape3D_jlru0")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="15" unique_id=958788500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32830644, 0)
+stream = ExtResource("2_vbq1e")
+attenuation_model = 3
+volume_db = -12.0
+unit_size = 15.0
+max_distance = 50.0
+parameters/looping = true
+
+[node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." index="16" unique_id=1252971699]
+libraries/ = SubResource("AnimationLibrary_w6m6q")
+
+[node name="VestigeOnceAnimationPlayer" type="AnimationPlayer" parent="." index="17" unique_id=401170783]
+libraries/ = SubResource("AnimationLibrary_n2oq5")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="18" unique_id=816755753]
+transform = Transform3D(0.99566007, -0.089894146, 0.024087064, -5.641044e-10, 0.25881907, 0.96592593, -0.09306528, -0.96173394, 0.25769585, -0.003941059, 2.4977322, 2.0508037)
+light_energy = 0.0
+spot_range = 0.001
+spot_angle = 31.953629
+
+[connection signal="body_entered" from="VestigeArea3D" to="." method="_on_vestige_area_3d_body_entered"]
