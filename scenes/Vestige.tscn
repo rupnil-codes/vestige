@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://g4y21fc64v7u" path="res://assets/models/vestiges/2_swing/2_swing.tscn" id="30_t4lnq"]
 [ext_resource type="PackedScene" uid="uid://cct8ahqnik6d3" path="res://assets/models/vestiges/3_tent/3_tent.tscn" id="32_gkgfg"]
 [ext_resource type="PackedScene" uid="uid://bxjf6qi6wjp5c" path="res://assets/models/vestiges/4_date/4_date.tscn" id="32_uhaqf"]
+[ext_resource type="PackedScene" uid="uid://cj14uiy2m2i3t" path="res://assets/models/vestiges/6_wheelchair/6_wheelchair.tscn" id="34_f7phn"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
@@ -170,308 +171,149 @@ tracks/5/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
-tracks/6/type = "bezier"
+tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewport/World/Vestiges3D/vestige1:position:x")
+tracks/6/path = NodePath("SubViewport/World/Silhouette3D:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-24.192764, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-15.946, 1.948, -49.461)]
 }
-tracks/7/type = "bezier"
+tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("SubViewport/World/Vestiges3D/vestige1:position:y")
+tracks/7/path = NodePath("SubViewport/World/Silhouette3D:rotation")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-2.2262607, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -2.3561945, 0)]
 }
-tracks/8/type = "bezier"
+tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("SubViewport/World/Vestiges3D/vestige1:position:z")
+tracks/8/path = NodePath("SubViewport/World/Vestiges3D/vestige7:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-77.860855, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(23.006214, -1.0376003, 32.24622)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewport/World/Vestiges3D/vestige1:rotation")
+tracks/9/path = NodePath("SubViewport/World/WeepingSilhouette3D:visible")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
+"update": 1,
+"values": [false]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World/Vestiges3D/vestige1:position")
+tracks/10/path = NodePath("SubViewport/World/Silhouette3D:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-24.192764, -2.2262607, -77.860855)]
+"update": 1,
+"values": [true]
 }
-tracks/11/type = "bezier"
+tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("SubViewport/World/Vestiges3D/vestige2:position:x")
+tracks/11/path = NodePath("SubViewport/World/Vestiges3D/1_crib:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(5.091037, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-23.909065, -0.97941506, -77.3153)]
 }
-tracks/12/type = "bezier"
+tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("SubViewport/World/Vestiges3D/vestige2:position:y")
+tracks/12/path = NodePath("SubViewport/World/Vestiges3D/2_swing:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-1.2736505, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(5.664269, -4.124885, -95.34659)]
 }
-tracks/13/type = "bezier"
+tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("SubViewport/World/Vestiges3D/vestige2:position:z")
+tracks/13/path = NodePath("SubViewport/World/Vestiges3D/3_tent:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-96.06108, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(48.171787, -3.141073, -72.87603)]
 }
-tracks/14/type = "bezier"
+tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("SubViewport/World/Vestiges3D/vestige3:position:x")
+tracks/14/path = NodePath("SubViewport/World/Vestiges3D/4_date:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(48.22622, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0.0009999999)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(77.22044, -1.3767807, -61.19525)]
 }
-tracks/15/type = "bezier"
+tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("SubViewport/World/Vestiges3D/vestige3:position:y")
+tracks/15/path = NodePath("SubViewport/World/Vestiges3D/5_piano:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-0.82430923, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0.0009999999)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(39.394337, -2.2405648, -31.795824)]
 }
-tracks/16/type = "bezier"
+tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("SubViewport/World/Vestiges3D/vestige3:position:z")
+tracks/16/path = NodePath("SubViewport/World/Vestiges3D/6_wheelchair:rotation")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-74.050644, -0.0005, 0, 0.0005, 0),
-"times": PackedFloat32Array(0.0009999999)
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.06981317, -2.024582, 0.10471976)]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("SubViewport/World/Vestiges3D/vestige3:rotation")
+tracks/17/path = NodePath("SubViewport/World/Vestiges3D/6_wheelchair:position")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("SubViewport/World/Vestiges3D/vestige4:position")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(78.62526, -1.0586761, -60.435654)]
-}
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("SubViewport/World/Vestiges3D/vestige4:rotation")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, -0.6785215, 0)]
-}
-tracks/20/type = "value"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("SubViewport/World/Silhouette3D:position")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-15.946, 1.948, -49.461)]
-}
-tracks/21/type = "value"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("SubViewport/World/Silhouette3D:rotation")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, -2.3561945, 0)]
-}
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("SubViewport/World/Vestiges3D/vestige5:position")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(38.652706, -1.3877668, -31.236237)]
-}
-tracks/23/type = "value"
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/path = NodePath("SubViewport/World/Vestiges3D/vestige6:position")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(46.319405, -1.0330586, 0.20395088)]
-}
-tracks/24/type = "value"
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/path = NodePath("SubViewport/World/Vestiges3D/vestige7:position")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(23.006214, -1.0376003, 32.24622)]
-}
-tracks/25/type = "value"
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/path = NodePath("SubViewport/World/WeepingSilhouette3D:visible")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/26/type = "value"
-tracks/26/imported = false
-tracks/26/enabled = true
-tracks/26/path = NodePath("SubViewport/World/Silhouette3D:visible")
-tracks/26/interp = 1
-tracks/26/loop_wrap = true
-tracks/26/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/27/type = "value"
-tracks/27/imported = false
-tracks/27/enabled = true
-tracks/27/path = NodePath("SubViewport/World/Vestiges3D/1_crib:position")
-tracks/27/interp = 1
-tracks/27/loop_wrap = true
-tracks/27/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-23.909065, -0.97941506, -77.3153)]
-}
-tracks/28/type = "value"
-tracks/28/imported = false
-tracks/28/enabled = true
-tracks/28/path = NodePath("SubViewport/World/Vestiges3D/2_swing:position")
-tracks/28/interp = 1
-tracks/28/loop_wrap = true
-tracks/28/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(5.664269, -4.124885, -95.34659)]
-}
-tracks/29/type = "value"
-tracks/29/imported = false
-tracks/29/enabled = true
-tracks/29/path = NodePath("SubViewport/World/Vestiges3D/3_tent:position")
-tracks/29/interp = 1
-tracks/29/loop_wrap = true
-tracks/29/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(48.171787, -3.141073, -72.87603)]
-}
-tracks/30/type = "value"
-tracks/30/imported = false
-tracks/30/enabled = true
-tracks/30/path = NodePath("SubViewport/World/Vestiges3D/4_date:position")
-tracks/30/interp = 1
-tracks/30/loop_wrap = true
-tracks/30/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(77.22044, -1.3767807, -61.19525)]
-}
-tracks/31/type = "value"
-tracks/31/imported = false
-tracks/31/enabled = true
-tracks/31/path = NodePath("SubViewport/World/Vestiges3D/5_piano:position")
-tracks/31/interp = 1
-tracks/31/loop_wrap = true
-tracks/31/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(39.394337, -2.2405648, -31.795824)]
+"values": [Vector3(45.979, 1.418, 1.857)]
 }
 
 [sub_resource type="Animation" id="Animation_u4jeo"]
@@ -546,34 +388,10 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewport/World/Vestiges3D/vestige1:rotation")
-tracks/6/interp = 1
+tracks/6/path = NodePath("SubViewport/World/Vestiges3D/1_crib:position")
+tracks/6/interp = 2
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(1.83),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("SubViewport/World/Vestiges3D/vestige1:position")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(1.83, 3.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(-24.192764, -2.2262607, -77.860855), Vector3(-24.193, 0.985, -77.861)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("SubViewport/World/Vestiges3D/1_crib:position")
-tracks/8/interp = 2
-tracks/8/loop_wrap = true
-tracks/8/keys = {
 "times": PackedFloat32Array(1.82, 3.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -586,109 +404,76 @@ length = 4.0
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/Vestiges3D/vestige2:position:x")
+tracks/0/path = NodePath("SubViewport/World/Silhouette3D:rotation:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 2),
-"points": PackedFloat32Array(5.091037, -0.25, 0, 0.25, 0, 5.091037, -0.16666667, 0, 0, 0),
-"times": PackedFloat32Array(3, 4)
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.123333335, 0, 0, 0, 0, -0.20445, 0, 0.3333278, 0, 0, -0.17388335, 0, 0.15944445, 0, 0, -0.2377778, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/Vestiges3D/vestige2:position:y")
+tracks/1/path = NodePath("SubViewport/World/Silhouette3D:rotation:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 2),
-"points": PackedFloat32Array(-1.2736505, -0.25, 0, 0.25, 0, 1.0656353, -0.16666667, -0.38988099, 0, 0),
-"times": PackedFloat32Array(3, 4)
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
+"points": PackedFloat32Array(-2.233732, -0.25, 0, 0.25, 0, 2.370294, -0.123333335, -0.7673376, 0, 0, 1.9133016, -0.20445, 0.082659006, 0.3333278, -0.13476422, 1.5175922, -0.17388335, 0.073688366, 0.15944445, -0.06756944, 1.0657548, -0.2377778, 0.21742323, 0, 0),
+"times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Vestiges3D/vestige2:position:z")
+tracks/2/path = NodePath("SubViewport/World/Silhouette3D:rotation:z")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 2),
-"points": PackedFloat32Array(-96.06108, -0.25, 0, 0.25, 0, -96.06108, -0.16666667, 0, 0, 0),
-"times": PackedFloat32Array(3, 4)
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.123333335, 0, 0, 0, 0, -0.20445, 0, 0.3333278, 0, 0, -0.17388335, 0, 0.15944445, 0, 0, -0.2377778, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Silhouette3D:rotation:x")
+tracks/3/path = NodePath("SubViewport/World/Silhouette3D:position:x")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.123333335, 0, 0, 0, 0, -0.20445, 0, 0.3333278, 0, 0, -0.17388335, 0, 0.15944445, 0, 0, -0.2377778, 0, 0, 0),
+"points": PackedFloat32Array(-21.355375, -0.25, 0, 0.25, 0, -11.931016, -0.123333335, -1.5707265, 0, 0, -5.505916, -0.20445, -0.8379229, 0.3333278, 1.3661188, 1.985383, -0.17388335, -0.5911393, 0.15944445, 0.5420524, 1.2932339, -0.2377778, -2.2040417, 0, 0),
 "times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/Silhouette3D:rotation:y")
+tracks/4/path = NodePath("SubViewport/World/Silhouette3D:position:y")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
-"points": PackedFloat32Array(-2.233732, -0.25, 0, 0.25, 0, 2.370294, -0.123333335, -0.7673376, 0, 0, 1.9133016, -0.20445, 0.082659006, 0.3333278, -0.13476422, 1.5175922, -0.17388335, 0.073688366, 0.15944445, -0.06756944, 1.0657548, -0.2377778, 0.21742323, 0, 0),
+"points": PackedFloat32Array(1.9484892, -0.25, 0, 0.25, 0, 1.9484892, -0.123333335, 0, 0, 0, 1.9484893, -0.20445, 0, 0.3333278, 0, 1.9484892, -0.17388335, 1.0364428e-08, 0.15944445, -9.503789e-09, 1.9484892, -0.2377778, 0, 0, 0),
 "times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
 }
 tracks/5/type = "bezier"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewport/World/Silhouette3D:rotation:z")
+tracks/5/path = NodePath("SubViewport/World/Silhouette3D:position:z")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.123333335, 0, 0, 0, 0, -0.20445, 0, 0.3333278, 0, 0, -0.17388335, 0, 0.15944445, 0, 0, -0.2377778, 0, 0, 0),
-"times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
-}
-tracks/6/type = "bezier"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewport/World/Silhouette3D:position:x")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
-"points": PackedFloat32Array(-21.355375, -0.25, 0, 0.25, 0, -11.931016, -0.123333335, -1.5707265, 0, 0, -5.505916, -0.20445, -0.8379229, 0.3333278, 1.3661188, 1.985383, -0.17388335, -0.5911393, 0.15944445, 0.5420524, 1.2932339, -0.2377778, -2.2040417, 0, 0),
-"times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
-}
-tracks/7/type = "bezier"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("SubViewport/World/Silhouette3D:position:y")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
-"points": PackedFloat32Array(1.9484892, -0.25, 0, 0.25, 0, 1.9484892, -0.123333335, 0, 0, 0, 1.9484893, -0.20445, 0, 0.3333278, 0, 1.9484892, -0.17388335, 1.0364428e-08, 0.15944445, -9.503789e-09, 1.9484892, -0.2377778, 0, 0, 0),
-"times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
-}
-tracks/8/type = "bezier"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("SubViewport/World/Silhouette3D:position:z")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"handle_modes": PackedInt32Array(0, 2, 2, 2, 0),
 "points": PackedFloat32Array(-76.20941, -0.25, 0, 0.25, 0, -68.794426, -0.123333335, -1.2358309, 0, 0, -74.24325, -0.20445, 1.7370727, 0.3333278, -2.8320599, -82.98234, -0.17388335, 1.9097903, 0.15944445, -1.7512054, -96.20922, -0.2377778, 4.569133, 0, 0),
 "times": PackedFloat32Array(0, 0.74, 1.9667, 3.01, 3.9666667)
 }
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewport/World/Vestiges3D/2_swing:position")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SubViewport/World/Vestiges3D/2_swing:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
 "times": PackedFloat32Array(3, 4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -701,121 +486,76 @@ length = 5.0
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("SubViewport/World/Vestiges3D/vestige3:position:x")
+tracks/0/path = NodePath("SubViewport/World/Silhouette3D:position:x")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(48.22622, -0.25, 0, 0.25, 0, 48.22622, -0.33333334, 0, 0, 0, 48.22622, -0.16666667, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.4333334, 3.6666667)
+"points": PackedFloat32Array(1.2932339, -0.25, 0, 0.25, 0, 31.594543, -0.33166668, -5.0502186, 0, 0, 45.05003, -0.16833334, -2.2425811, 0, 0),
+"times": PackedFloat32Array(0, 2.8333333, 4.9)
 }
 tracks/1/type = "bezier"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SubViewport/World/Vestiges3D/vestige3:position:y")
+tracks/1/path = NodePath("SubViewport/World/Silhouette3D:position:y")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(-0.82430923, -0.25, 0, 0.25, 0, -0.82430923, -0.33333334, 0, 0, 0, 1.205907, -0.16666667, -0.33836937, 0, 0),
-"times": PackedFloat32Array(0, 2.4333334, 3.6666667)
+"points": PackedFloat32Array(1.9484892, -0.25, 0, 0.25, 0, 1.9484892, -0.33166668, 0, 0, 0, 1.9484892, -0.16833334, 0, 0, 0),
+"times": PackedFloat32Array(0, 2.8333333, 4.9)
 }
 tracks/2/type = "bezier"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Vestiges3D/vestige3:position:z")
+tracks/2/path = NodePath("SubViewport/World/Silhouette3D:position:z")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(-74.050644, -0.25, 0, 0.25, 0, -74.050644, -0.33333334, 0, 0, 0, -74.050644, -0.16666667, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.4333334, 3.6666667)
+"points": PackedFloat32Array(-96.20922, -0.25, 0, 0.25, 0, -86.70896, -0.33166668, -1.5833766, 0, 0, -73.4982, -0.16833334, -2.2017937, 0, 0),
+"times": PackedFloat32Array(0, 2.8333333, 4.9)
 }
 tracks/3/type = "bezier"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Silhouette3D:position:x")
+tracks/3/path = NodePath("SubViewport/World/Silhouette3D:rotation:x")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(1.2932339, -0.25, 0, 0.25, 0, 31.594543, -0.33166668, -5.0502186, 0, 0, 45.05003, -0.16833334, -2.2425811, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.33166668, 0, 0, 0, 0, -0.16833334, 0, 0, 0),
 "times": PackedFloat32Array(0, 2.8333333, 4.9)
 }
 tracks/4/type = "bezier"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/Silhouette3D:position:y")
+tracks/4/path = NodePath("SubViewport/World/Silhouette3D:rotation:y")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(1.9484892, -0.25, 0, 0.25, 0, 1.9484892, -0.33166668, 0, 0, 0, 1.9484892, -0.16833334, 0, 0, 0),
+"points": PackedFloat32Array(1.0657548, -0.25, 0, 0.25, 0, 1.0657548, -0.33166668, 0, 0, 0, 1.4800123, -0.16833334, -0.06904293, 0, 0),
 "times": PackedFloat32Array(0, 2.8333333, 4.9)
 }
 tracks/5/type = "bezier"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewport/World/Silhouette3D:position:z")
+tracks/5/path = NodePath("SubViewport/World/Silhouette3D:rotation:z")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(-96.20922, -0.25, 0, 0.25, 0, -86.70896, -0.33166668, -1.5833766, 0, 0, -73.4982, -0.16833334, -2.2017937, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.33166668, 0, 0, 0, 0, -0.16833334, 0, 0, 0),
 "times": PackedFloat32Array(0, 2.8333333, 4.9)
 }
-tracks/6/type = "bezier"
+tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewport/World/Silhouette3D:rotation:x")
+tracks/6/path = NodePath("SubViewport/World/Vestiges3D/3_tent:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.33166668, 0, 0, 0, 0, -0.16833334, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.8333333, 4.9)
-}
-tracks/7/type = "bezier"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("SubViewport/World/Silhouette3D:rotation:y")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(1.0657548, -0.25, 0, 0.25, 0, 1.0657548, -0.33166668, 0, 0, 0, 1.4800123, -0.16833334, -0.06904293, 0, 0),
-"times": PackedFloat32Array(0, 2.8333333, 4.9)
-}
-tracks/8/type = "bezier"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("SubViewport/World/Silhouette3D:rotation:z")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.33166668, 0, 0, 0, 0, -0.16833334, 0, 0, 0),
-"times": PackedFloat32Array(0, 2.8333333, 4.9)
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("SubViewport/World/Vestiges3D/vestige3:rotation")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(2.4333334, 3.6666667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 0)]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("SubViewport/World/Vestiges3D/3_tent:position")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
 "times": PackedFloat32Array(2.44, 3.66),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -852,34 +592,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Vestiges3D/vestige4:rotation")
+tracks/2/path = NodePath("SubViewport/World/Vestiges3D/4_date:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(1.7333335, 2.6333334),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, -0.6785215, 0), Vector3(0, -0.6785215, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Vestiges3D/vestige4:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(1.7333335, 2.6333334),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(78.62526, -1.0586761, -60.435654), Vector3(78.62526, 1.0779189, -60.435654)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewport/World/Vestiges3D/4_date:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
 "times": PackedFloat32Array(1.71, 2.64),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -916,22 +632,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Vestiges3D/vestige5:position")
-tracks/2/interp = 2
+tracks/2/path = NodePath("SubViewport/World/Vestiges3D/5_piano:position")
+tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(2.3333333, 3.3333333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(38.652706, -1.3877668, -31.803553), Vector3(38.652706, 1.0508919, -31.803553)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("SubViewport/World/Vestiges3D/5_piano:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
 "times": PackedFloat32Array(2.34, 3.32),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -968,14 +672,26 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SubViewport/World/Vestiges3D/vestige6:position")
+tracks/2/path = NodePath("SubViewport/World/Vestiges3D/6_wheelchair:rotation")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(2.37, 3.36),
+"times": PackedFloat32Array(2.1333334, 3.9333334),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(46.319405, -1.0330586, 0.20395088), Vector3(46.319405, 1.173346, 0.20395088)]
+"values": [Vector3(0.06981317, -2.024582, 0.10471975), Vector3(0.06981317, -2.024582, 0.10471975)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewport/World/Vestiges3D/6_wheelchair:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(2.1333334, 3.9333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(45.979, -2.713, 1.857), Vector3(45.979, 1.423, 1.857)]
 }
 
 [sub_resource type="Animation" id="Animation_gmphc"]
@@ -3993,7 +3709,7 @@ transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30
 transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 41.62918, -0.36621332, 11.513123)
 
 [node name="pine_tree182" parent="SubViewport/World/Forest3D" unique_id=13332100 instance=ExtResource("7_gmphc")]
-transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 45.920486, -0.45137072, 5.4777985)
+transform = Transform3D(0.30552906, 0, 0.95218277, 0, 1, 0, -0.95218277, 0, 0.30552906, 45.920486, -0.45137072, 7.0789647)
 
 [node name="cedar_tree321" parent="SubViewport/World/Forest3D" unique_id=2010102530 instance=ExtResource("8_jh5a0")]
 transform = Transform3D(0.69839025, 0, 0.7157172, 0, 1, 0, -0.7157172, 0, 0.69839025, 37.83114, 0.94171715, 3.5847092)
@@ -5929,7 +5645,7 @@ transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995
 transform = Transform3D(0.1031584, 0.031147761, 0.9941771, -9.313226e-10, 0.9995096, -0.03131483, -0.9946649, 0.0032303843, 0.103107795, -0.9403763, -0.010613203, 0.5574074)
 
 [node name="Silhouette3D" parent="SubViewport/World" unique_id=578111472 instance=ExtResource("19_wn0by")]
-transform = Transform3D(-0.70710653, 0, -0.70710653, 0, 1, 0, 0.70710653, 0, -0.70710653, -15.946, 1.948, -49.461)
+transform = Transform3D(-0.7071065, 0, -0.7071065, 0, 1, 0, 0.7071065, 0, -0.7071065, -15.946, 1.948, -49.461)
 
 [node name="Vestiges3D" type="Node3D" parent="SubViewport/World" unique_id=1016770930]
 
@@ -5948,28 +5664,11 @@ transform = Transform3D(0.7043538, 0, 0.70984906, 0, 1, 0, -0.70984906, 0, 0.704
 [node name="5_piano" parent="SubViewport/World/Vestiges3D" unique_id=1130132437 instance=ExtResource("25_gkgfg")]
 transform = Transform3D(0.72806233, 0, 0.68551093, 0, 1, 0, -0.68551093, 0, 0.72806233, 39.394337, -2.2405648, -31.795824)
 
-[node name="vestige1" parent="SubViewport/World/Vestiges3D" unique_id=671886494 instance=ExtResource("21_u4jeo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.192764, -2.2262607, -77.860855)
-visible = false
+[node name="6_wheelchair" type="Node3D" parent="SubViewport/World/Vestiges3D" unique_id=1702715475]
+transform = Transform3D(-0.44252327, -0.016530985, -0.89660466, 0.10427384, 0.9920993, -0.06975647, 0.890674, -0.12436126, -0.43730327, 45.979, 1.418, 1.857)
 
-[node name="vestige2" parent="SubViewport/World/Vestiges3D" unique_id=1715766483 instance=ExtResource("21_u4jeo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.091037, -1.2736505, -96.06108)
-visible = false
-
-[node name="vestige3" parent="SubViewport/World/Vestiges3D" unique_id=1259589605 instance=ExtResource("21_u4jeo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.22622, -0.82430923, -74.050644)
-visible = false
-
-[node name="vestige4" parent="SubViewport/World/Vestiges3D" unique_id=1594915163 instance=ExtResource("21_u4jeo")]
-transform = Transform3D(0.7785015, 0, -0.6276427, 0, 1, 0, 0.6276427, 0, 0.7785015, 78.62526, -1.0586761, -60.435654)
-visible = false
-
-[node name="vestige5" parent="SubViewport/World/Vestiges3D" unique_id=1801977369 instance=ExtResource("21_u4jeo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.652706, -1.3877668, -31.236237)
-visible = false
-
-[node name="vestige6" parent="SubViewport/World/Vestiges3D" unique_id=464940424 instance=ExtResource("21_u4jeo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.319405, -1.0330586, 0.20395088)
+[node name="6_wheelchair_obj" parent="SubViewport/World/Vestiges3D/6_wheelchair" unique_id=386084949 instance=ExtResource("34_f7phn")]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.9999994, 0, 0, 0, 0.99999964, 0, 0, 0)
 
 [node name="vestige7" parent="SubViewport/World/Vestiges3D" unique_id=12221210 instance=ExtResource("21_u4jeo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.006214, -1.0376003, 32.24622)
