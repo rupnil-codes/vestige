@@ -1,4 +1,4 @@
-# (v0.4.11-beta) Lantern, & VESTIGESSS
+# (v0.5.4-beta) VESTIGES ARE ALIVE!
 
 ---
 
@@ -22,7 +22,7 @@
 
 - **[(v0.4.3-beta) Lantern Model](https://github.com/rupnil-codes/vestige/commit/b14f3c)**: In about 2-ish hours i cooked up this absolutely BEAUTIFUL and awesome lantern model. I just have no words-- its just perfect! also added some particle effects and yeah! looks pretty cool _[Lapsed](https://lapse.hackclub.com/timelapse/odoc2OoOXREl)_
 
-- **[(v0.4.2-beta) Vestige: Pointer](https://github.com/rupnil-codes/vestige/commit/4954a0)**: A point at the center of the screen. yes _[Lapsed](https://lapse.hackclub.com/timelapse/QYzeLn9gRNOW)_
+- **[(v0.4.12-beta) Vestige: Pointer](https://github.com/rupnil-codes/vestige/commit/4954a0)**: A point at the center of the screen. yes _[Lapsed](https://lapse.hackclub.com/timelapse/QYzeLn9gRNOW)_
 
 ---
 

@@ -298,9 +298,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011856079, 1.8116102, 0.00
 shape = SubResource("BoxShape3D_v6p0j")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="11" unique_id=1893333861]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.67413616, 2.889502, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35552502, 2.891994, 0)
+light_color = Color(0.78569865, 0.7856986, 0.78569853, 1)
 light_energy = 3.0
-omni_range = 9.08
+omni_range = 6.0
 
 [node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." index="12" unique_id=604358272]
 libraries/ = SubResource("AnimationLibrary_7d753")

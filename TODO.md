@@ -39,7 +39,7 @@ Todos:
 	- [X] ~~A piano~~, ~~seat~~ (v0.4.9-beta, v0.4.12-beta and v0.4.14-beta)
 	- [X] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta, v0.4.12-beta and v0.4.14-beta)
 	- [X] ~~A weathered rusted mirror~~ (no reflections) and ~~a rocking chair~~ (v0.4.11-beta, v0.4.12-beta and v0.4.14-beta)
-- [-] Vestiges Animations and placements (v0.5.1-beta)
+- [X] Vestiges Animations and placements (v0.5.1-beta ... v0.5.4-beta)
 - [ ] Watch Tower Furniture
 - [ ] Stethoscope model
 - [ ] Better Jumping Logic -- Feels floaty now.
