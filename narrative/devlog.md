@@ -4,38 +4,31 @@
 
 ## Changelog:
 
-- **[(v0.4.11-beta) Vestige 7 Model)](https://github.com/rupnil-codes/vestige/commit/f1939e)**: FINALLY FIALTLTJkdas I completed all the vestiges! The final one was the mirror and the chair. Im so tried cya _[Lapsed](https://lapse.hackclub.com/timelapse/tXhipCnG4myi)_
+- **[(v0.5.4-beta) Vestige 7 Animation](https://github.com/rupnil-codes/vestige/commit/6b6441)**: Les goo! another task checked off from the todo list! Completed all the animations of the vestiges that forms the backbone of the game- This was the final one (on the path). Next lwk i think ill do sound design maybe _[Lapsed](https://lapse.hackclub.com/timelapse/3cJ_g7aH78MR)_
 
-- **[(v0.4.10-beta) Vestige 6 Model](https://github.com/rupnil-codes/vestige/commit/7ec0be)**: Made another model-- the wheel chair i am trying to complete this first so ill add the more niche things like umbrellas later _[Lapsed](https://lapse.hackclub.com/timelapse/8jCWC_ySoSR6)_
+- **[(v0.5.3-beta) Vestige 6 Animation](https://github.com/rupnil-codes/vestige/commit/2c5606)**: I got stuck in this session cuz of a simple bug :skul what happened was that the animation player in the wheelchair scene was changing the position of the root and so it messed everything up- Took me a while to solve it lol. Added some movement and wheel rotation. _[Lapsed](https://lapse.hackclub.com/timelapse/b-Np5GDAYH6s)_
 
-- **[(v0.4.9-beta) Vestige 5 Model](https://github.com/rupnil-codes/vestige/commit/8e30e3)**: Okay fifth one down! TWO MOREW  i repeat 2 MORE- i wanna complete them asap but lets see! This was a pretty challenging one dawg- the piano was insane BUT it looks so good now _[Lapsed](https://lapse.hackclub.com/timelapse/9MVJgyfuVXYk-)_
+- **[(v0.5.2-beta) Vestiges 3,4,5 Animation](https://github.com/rupnil-codes/vestige/commit/d34aa5)**: I thought i would complete making the animations today but clearly I failed- Oh well I fixed a LOT of things and FULY completete the third forth and fifth vestiges _[Lapsed](https://lapse.hackclub.com/timelapse/xx14emveP3QZ)_
 
-- **[(v0.4.8-beta) Vestige 4 Model](https://github.com/rupnil-codes/vestige/commit/a022bb)**: Made the fourth model-- the table, chair, cups and the candles! next up is the musical item- idk how i will make the piano but oh well lets see! _[Lapsed](https://lapse.hackclub.com/timelapse/238CLRZ-tmUz)_
+- **[(v0.5.1-beta) Vestiges 1,2,3 Animation](https://github.com/rupnil-codes/vestige/commit/74d3d7)**: Since I completed modelling and texturing the vestiges the only logical next step is to incorporate them into the game, and thats what ive been doing! Integrated the first 3 vestiges and added some simple animations associated w em _[Lapsed](https://lapse.hackclub.com/timelapse/f5YVxSkztvzu)_
 
-- **[(v0.4.7-beta) Vestige 3 Model (1)](https://github.com/rupnil-codes/vestige/commit/d8e954)**: Erm this is the 3rd model that im doing- ik the uv will be fked uop but oh well. Made the tent, wooden logs and the camfire _[Lapsed](https://lapse.hackclub.com/timelapse/X4DOPwuB2Yza)_
+- **[(v0.4.14-beta) Vestige 4,5,6,7 Texturing](https://github.com/rupnil-codes/vestige/commit/c294d4)**: Oh my god- Finished all ALL the texturing- I really wanted thisto be finished faster lol. Anyways in the next session I would make the animations and placements of the vestiges! _[Lapsed](https://lapse.hackclub.com/timelapse/mUYFsIpQlwXD)_
 
-- **[(v0.4.6-beta) Vestige 2 Model](https://github.com/rupnil-codes/vestige/commit/90d9b9)**: Oh god it is so late but yet im pushing it- I did like 30 more minutes im going to eep now- Anyways in this session i made the swing! Only model tho _[Lapsed](https://lapse.hackclub.com/timelapse/a0edfcixNQy3)_
+- **[(v0.4.13-beta) Vestige 1,2,3 Texturing](https://github.com/rupnil-codes/vestige/commit/df5ec7)**: Completed texturing vestiges 1, 2 and 3- i.e. the crib the swing and the tent. Were a lot of fun to see the white models come to life lol. I really like how they are turning out _[Lapsed](https://lapse.hackclub.com/timelapse/VK7nGzgO_4HD)_
 
-- **[(v0.4.5-beta) Vestige 1 Modelling](https://github.com/rupnil-codes/vestige/commit/dc5f66)**: In this session I just modelled the crib and the teddy as fast as i could- I need to ramp up my speed here- I dont got much time _[Lapsed](https://lapse.hackclub.com/timelapse/qbn7pSlpxGf6)_
-
-- **[(v0.4.4-beta) Hanging Lanterns & Placement](https://github.com/rupnil-codes/vestige/commit/b640d5)**: Modelled the hanging lantern and placed it around the map especially the bunker porttions _[Lapsed](https://lapse.hackclub.com/timelapse/uFJXjOo3wf5r)_
-
-- **[(v0.4.3-beta) Lantern Model](https://github.com/rupnil-codes/vestige/commit/b14f3c)**: In about 2-ish hours i cooked up this absolutely BEAUTIFUL and awesome lantern model. I just have no words-- its just perfect! also added some particle effects and yeah! looks pretty cool _[Lapsed](https://lapse.hackclub.com/timelapse/odoc2OoOXREl)_
-
-- **[(v0.4.12-beta) Vestige: Pointer](https://github.com/rupnil-codes/vestige/commit/4954a0)**: A point at the center of the screen. yes _[Lapsed](https://lapse.hackclub.com/timelapse/QYzeLn9gRNOW)_
+- **[(v0.4.12-beta) Models Finalizing](https://github.com/rupnil-codes/vestige/commit/bed55d)**: Last day I completed modelling all the vestiges and now only the texturing is left. In this session I finalized the models and meshes and next ill texture them! _[Lapsed](https://lapse.hackclub.com/timelapse/ffkM0YGZ_W93)_
 
 ---
 
 ## Next Step(s):
 
-1. ~~Ending Bench interaction~~
-2. ~~Bunker and Tunnel Models~~
+1. ~~Vestiges~~
+2. ~~Vestiges animations~~
 3. Watch Tower Furniture
-4. ~~Vestiges~~
-5. Vestiges animations
+4. Sound Effects
 
 ---
 
 ## Notes:
 
-Macondo is NOT getting extended so I need pick up the pace here! Completed all the vestiges here
+Yippie I completed all the vestiges progression and their associated animations! Idk what ill work on next but maybe sound design? idrk tho

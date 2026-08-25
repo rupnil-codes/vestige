@@ -288,7 +288,7 @@ func _physics_process(delta: float) -> void:
 			is_jumping = false
 			if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
 				if player_on_stairs:
-					print("Jumping not allowed on the stairs")
+					%DialogueText.typewriter("Jumping not allowed...")
 				else:
 					is_jumping = true
 					self.velocity.y = jump_velocity

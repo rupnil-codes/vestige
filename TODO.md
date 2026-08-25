@@ -49,6 +49,7 @@ Todos:
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 - [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."
+- [ ] Typewriter sound
 
 ### Priority 3: Atmosphere
 

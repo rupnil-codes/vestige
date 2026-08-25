@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://78n28mmk5f74" path="res://assets/fonts/Geo-Italic.ttf" id="3_p21k1"]
 [ext_resource type="FontFile" uid="uid://cwvwwd5f3hmny" path="res://assets/fonts/Geo-Regular.ttf" id="4_afll4"]
 [ext_resource type="PackedScene" uid="uid://bwccebe2qkpnc" path="res://assets/player/player.tscn" id="4_tm726"]
+[ext_resource type="Script" uid="uid://cd2d7u24djgw1" path="res://scripts/Controllers/DialogueText.gd" id="5_3bx4b"]
 [ext_resource type="PackedScene" uid="uid://vvj7o8vrp3qc" path="res://assets/models/bench/bench.tscn" id="5_r1fad"]
 [ext_resource type="PackedScene" uid="uid://becylmfxbg5ks" path="res://assets/models/trees/pine_tree/pine_tree.tscn" id="7_gmphc"]
 [ext_resource type="PackedScene" uid="uid://b2myn6s4vdhla" path="res://assets/models/trees/cedar_tree/cedar_tree.tscn" id="8_jh5a0"]
@@ -1623,6 +1624,21 @@ offset_bottom = 529.0
 theme_override_fonts/font = ExtResource("4_afll4")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
+
+[node name="DialogueText" type="Label" parent="CanvasLayer/UserInterface" unique_id=2045520695]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(554, 147)
+layout_mode = 0
+offset_left = 299.0
+offset_top = 442.0
+offset_right = 853.0
+offset_bottom = 589.0
+theme_override_fonts/font = ExtResource("4_afll4")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("5_3bx4b")
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1591910663]
 modulate = Color(1, 1, 1, 0)
