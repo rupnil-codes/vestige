@@ -14,16 +14,27 @@ func _process(delta: float) -> void:
 	pass
 
 
-func typewriter(sentence: String) -> void:
+func typewrite(sentence: String) -> void:
 	if not writing:
 		writing = true
 		for character in sentence:
 			dialogue_text.text += character
-			await get_tree().create_timer(0.1).timeout
+			await get_tree().create_timer(0.06).timeout
 		
 		for i in range(timer):
 			await get_tree().create_timer(1).timeout
 	
 		dialogue_text.text = ""
 		writing = false
+	
+func write(sentence: String) -> void:
+	if not writing:
+		writing = true
 		
+		dialogue_text.text = sentence
+
+		for i in range(timer):
+			await get_tree().create_timer(1).timeout
+
+		dialogue_text.text = ""
+		writing = false

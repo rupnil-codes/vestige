@@ -58,6 +58,7 @@ var _visual_offset_y: float = 0.0
 var _is_ending_bench_interacting: bool = false
 
 var is_walking_cutscene: bool = false
+var _cant_jump_switch: bool = false
 
 func get_move_speed() -> float:
 	if is_crouched:
@@ -235,7 +236,6 @@ func _handle_air_physics(delta: float) -> void:
 			self.motion_mode = CharacterBody3D.MOTION_MODE_GROUNDED
 		clip_velocity(get_wall_normal(), 1, delta)
 	
-
 func _handle_ground_physics(delta: float) -> void:
 	var cur_speed_in_wish_dir: float = self.velocity.dot(wish_dir)
 	var add_speed_till_cap: float = get_move_speed() - cur_speed_in_wish_dir
@@ -288,7 +288,11 @@ func _physics_process(delta: float) -> void:
 			is_jumping = false
 			if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
 				if player_on_stairs:
-					%DialogueText.typewriter("Jumping not allowed...")
+					if not _cant_jump_switch:
+						%DialogueText.typewrite("The stair creaks. You do not have the courage to jump.")
+						_cant_jump_switch = true
+					else:
+						%DialogueText.write("You do not dare to jump...")
 				else:
 					is_jumping = true
 					self.velocity.y = jump_velocity
