@@ -1,6 +1,7 @@
 extends Node3D
 
 var cutscene: bool = false
+var intro: bool = true
 
 @onready var fps_counter: Label = $CanvasLayer/UserInterface/FPSCounter
 @onready var subviewport: SubViewport = $SubViewport
@@ -12,10 +13,11 @@ func _input(event):
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if cutscene:
-		await get_tree().create_timer(2).timeout
-		dialogue_text.typewrite("Good ..., explorer!")
+	if intro:
+		await get_tree().create_timer(1).timeout
+		dialogue_text.typewrite("Greetings, wanderer!")
 		cutscene = false
+		intro = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

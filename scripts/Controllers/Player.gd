@@ -288,11 +288,11 @@ func _physics_process(delta: float) -> void:
 			is_jumping = false
 			if Input.is_action_just_pressed("jump") or (auto_bhop and Input.is_action_pressed("jump")):
 				if player_on_stairs:
-					if not _cant_jump_switch:
-						%DialogueText.typewrite("The stair creaks. You do not have the courage to jump.")
+					if not _cant_jump_switch and not %DialogueText.writing:
+						%DialogueText.typewrite("The stair creaks. You do not have the courage to jump.", true)
 						_cant_jump_switch = true
 					else:
-						%DialogueText.write("You do not dare to jump...")
+						%DialogueText.typewrite("You do not dare to jump⛚.⛚.⛚.", true, 0.5)
 				else:
 					is_jumping = true
 					self.velocity.y = jump_velocity

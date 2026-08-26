@@ -55,3 +55,6 @@ target_position = Vector3(0, -0.75, 0)
 unique_name_in_owner = true
 transform = Transform3D(0.45, 0, 0, 0, -1.9670125e-08, -0.45, 0, 0.45, -1.9670125e-08, -0.014, 0.6, 0.8)
 shape = SubResource("SeparationRayShape3D_g4v7s")
+
+[node name="PlayerAudioPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1093614713]
+transform = Transform3D(1, 0, 0, 0, 1.0000004, 0, 0, 0, 1.0000005, 0, 1.7924523, 0)

@@ -48,8 +48,8 @@ Todos:
 - [ ] Change the path texture to a trodden grass one.
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
-- [ ] Show Dialogues like "jumping not allowed", "Go down, you know what to do."
-- [ ] Typewriter sound
+- [-] Show Dialogues like "jumping not allowed", "Go down, you know what to do." (v0.5.5 ... )
+- [-] Typewriter sound
 
 ### Priority 3: Atmosphere
 
