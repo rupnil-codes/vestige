@@ -15,7 +15,7 @@ func _input(event):
 func _ready() -> void:
 	if intro:
 		await get_tree().create_timer(1).timeout
-		dialogue_text.typewrite("Greetings, wanderer!")
+		await dialogue_text.typewrite("Greetings, wanderer!")
 		cutscene = false
 		intro = false
 

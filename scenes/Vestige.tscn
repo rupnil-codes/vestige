@@ -316,6 +316,30 @@ tracks/17/keys = {
 "update": 0,
 "values": [Vector3(22.918228, -1.8871906, 33.43976)]
 }
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("SubViewport/Player3D:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-26.309216, -0.02446144, -52.831)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("SubViewport/World/Bench3D:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-27.397053, 0.1608203, -52.425636)]
+}
 
 [sub_resource type="Animation" id="Animation_u4jeo"]
 resource_name = "vestige_1"
@@ -953,10 +977,10 @@ tracks/12/path = NodePath("SubViewport/Player3D:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.0009999999),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(-26.97766, -0.056738503, -52.831)]
+"values": [Vector3(-26.97766, -0.056738503, -52.831), Vector3(-31.107868, -0.056738503, -52.831)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
@@ -1755,7 +1779,7 @@ draw_pass_1 = SubResource("QuadMesh_y13jl")
 [node name="World" type="Node3D" parent="SubViewport" unique_id=352032519]
 
 [node name="Bench3D" parent="SubViewport/World" unique_id=2085675750 instance=ExtResource("5_r1fad")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.27, 0.1608203, -52.786)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.397053, 0.1608203, -52.425636)
 
 [node name="Forest3D" type="Node3D" parent="SubViewport/World" unique_id=1512849187]
 
@@ -1856,7 +1880,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.288158, 0.48699737, -18.95
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.558685, 0.74033666, -15.922785)
 
 [node name="pine_tree" parent="SubViewport/World/Forest3D" unique_id=975868863 instance=ExtResource("7_gmphc")]
-transform = Transform3D(0.60306877, 0, -0.7976892, 0, 1, 0, 0.7976892, 0, 0.60306877, -27.22808, 0.19487283, -55.312565)
+transform = Transform3D(0.60306877, 0, -0.7976892, 0, 1, 0, 0.7976892, 0, 0.60306877, -27.23193, 0.20052812, -55.304844)
 
 [node name="cedar_tree" parent="SubViewport/World/Forest3D" unique_id=1806889768 instance=ExtResource("8_jh5a0")]
 transform = Transform3D(0.8161779, 0, -0.57780063, 0, 1, 0, 0.57780063, 0, 0.8161779, -25.339075, 0.22089854, -47.528046)
@@ -1994,7 +2018,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.824677, 1.4471443, -58.95
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.993137, 0.6235479, -47.313652)
 
 [node name="tall_fir_tree15" parent="SubViewport/World/Forest3D" unique_id=2097562527 instance=ExtResource("9_kgo5s")]
-transform = Transform3D(0.99997693, 0.0067371232, 0.00086077873, -0.00673783, 0.99997693, 0.00082066184, -0.00085522514, -0.0008264477, 0.9999993, -34.637478, 0.107244015, -52.945637)
+transform = Transform3D(0.99997693, 0.0067371232, 0.00086077873, -0.00673783, 0.99997693, 0.00082066184, -0.00085522514, -0.0008264477, 0.9999993, -34.637478, 0.107244015, -55.80844)
 
 [node name="tall_fir_tree16" parent="SubViewport/World/Forest3D" unique_id=1448898819 instance=ExtResource("9_kgo5s")]
 transform = Transform3D(0.71032053, 0, -0.70387834, 0.038776375, 0.9984814, 0.039131273, 0.70280945, -0.055089597, 0.7092418, -35.16784, 0.47134852, -42.922035)

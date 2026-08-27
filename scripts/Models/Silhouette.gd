@@ -9,6 +9,11 @@ var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
 @onready var silhouette_animation_player: AnimationPlayer = $SilhouetteAnimationPlayer
 @onready var visible_on_screen_enabler_3d: VisibleOnScreenEnabler3D = $VisibleOnScreenEnabler3D
 
+@onready var vestige_scene: Node3D = $"../../../"
+
+var _player_touched: bool = false
+@onready var dialogue_text: Label = %DialogueText
+
 var movement: Array[String] = [
 	"vestige_1",
 	"vestige_2",
@@ -30,19 +35,30 @@ func _process(delta: float) -> void:
 	pass # Replace with function body.
 	
 func _on_area_3d_body_entered(body: Node3D) -> void:
+	
+	while vestige_scene.intro:
+		await get_tree().create_timer(0.1).timeout
+	
 	if visible_on_screen_enabler:
 		visible_on_screen_enabler_3d.queue_free()
 		visible_on_screen_enabler = false
 	if body.is_in_group("player"):
+		
 		if next_location_index < len(movement):
 			silhouette_animation_player.play("transform")
+			
+			if not _player_touched:
+				await get_tree().create_timer(1).timeout
+				dialogue_text.typewrite("Follow me.")
+				_player_touched = true
+				
 			await silhouette_animation_player.animation_finished
 			silhouette_animation_mover.play(movement[next_location_index])
 			await silhouette_animation_mover.animation_finished
 			silhouette_animation_player.play_backwards("transform")
 			await silhouette_animation_player.animation_finished
 			next_location_index += 1
-		
+
 
 
 func fade_out(time: float = 2.0):

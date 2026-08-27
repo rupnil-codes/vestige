@@ -4,8 +4,10 @@ extends Label
 @onready var player_3d: CharacterBody3D = $"../../../SubViewport/Player3D"
 
 var writing: bool = false
-var timer: int = 3
+var timer: float = 3.0
 var fast_mode_mult: float = 0.6
+
+var vestige_count: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,7 +19,7 @@ func _process(delta: float) -> void:
 	pass
 
 
-func typewrite(sentence: String, fast_mode: bool = false, super_multiplier: float = 1.0) -> void:
+func typewrite(sentence: String, fast_mode: bool = false, super_multiplier: float = 1.0, wait_timer: float = timer) -> void:
 	var speed_multiplier: float = 1.0
 	if fast_mode:
 		speed_multiplier = fast_mode_mult * super_multiplier
@@ -37,8 +39,7 @@ func typewrite(sentence: String, fast_mode: bool = false, super_multiplier: floa
 
 		player_3d.player_animation_player.stop()
 		
-		for i in range(timer):
-			await get_tree().create_timer(1).timeout
+		await get_tree().create_timer(wait_timer).timeout
 
 		player_3d.player_animation_player.play("delete", -1, 1/speed_multiplier)
 		
