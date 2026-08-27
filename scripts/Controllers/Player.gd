@@ -293,7 +293,7 @@ func _physics_process(delta: float) -> void:
 						%DialogueText.typewrite("The stair creaks. You do not have the courage to jump.", true)
 						_cant_jump_switch = true
 					else:
-						%DialogueText.typewrite("You do not dare to jump⛚.⛚.⛚.", true, 0.5)
+						%DialogueText.typewrite("You do not dare to jump...", true, 0.5)
 				else:
 					is_jumping = true
 					self.velocity.y = jump_velocity

@@ -8,10 +8,12 @@ extends Node3D
 @onready var vestige_animation_player: AnimationPlayer = $"../../../VestigeAnimationPlayer"
 @onready var map_3d_1: Node3D = $"../Map3D"
 @onready var map_3d_2: Node3D = $"../../World2/Map3D2"
+@onready var dialogue_text: Label = %DialogueText
 
 var is_closed: bool = true
 var switch: bool = false
 var hide_switch: bool = false
+var jump_dialogue: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -54,6 +56,15 @@ func _on_show_secondary_map_area_3d_body_entered(body: Node3D) -> void:
 		vestige_animation_player.play("show_secondary_map")
 		map_3d_2.show_secondary_map_meshes()
 		hide_switch = true
+
+func _on_jump_dialogue_area_3d_body_entered(body: Node3D) -> void:
+	if body.name == "Player3D" and not jump_dialogue:
+		dialogue_text.typewrite(
+				"Let go and fall free." + '\n' +
+				"-A-C-C-E-P-T-A-N-C-E-"
+		)
+		jump_dialogue = true
+
 
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 	if hide_switch:

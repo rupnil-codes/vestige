@@ -348,15 +348,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3841858e-07, -47.407516, 73
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034492493, 0.865448, 0.016357422)
 shape = SubResource("BoxShape3D_57qmd")
 
-[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="12" unique_id=1543503733]
+[node name="JumpDialogueArea3D" type="Area3D" parent="." index="12" unique_id=1945158108]
+transform = Transform3D(2.9802322e-08, 0, -1, 0, 1, 0, 1, 0, 2.9802322e-08, -26.941254, -47.407516, 178.0219)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="JumpDialogueArea3D" index="0" unique_id=875521487]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034492493, 0.865448, 0.016357422)
+shape = SubResource("BoxShape3D_57qmd")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="13" unique_id=1543503733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.06122, -31.175602, 73.831726)
 aabb = AABB(-21.884722, -24.705502, -68.53037, 43.769444, 60.604607, 177.54585)
 
-[node name="BunkerAnimationPlayer" type="AnimationPlayer" parent="." index="13" unique_id=186549608]
+[node name="BunkerAnimationPlayer" type="AnimationPlayer" parent="." index="14" unique_id=186549608]
 libraries/ = SubResource("AnimationLibrary_yj3m1")
 
 [connection signal="body_entered" from="StairsArea3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="StairsArea3D" to="." method="_on_stairs_area_3d_body_exited"]
 [connection signal="body_entered" from="DoorCloseArea3D" to="." method="_on_door_close_area_3d_body_entered"]
 [connection signal="body_entered" from="ShowSecondaryMapArea3D" to="." method="_on_show_secondary_map_area_3d_body_entered"]
+[connection signal="body_entered" from="JumpDialogueArea3D" to="." method="_on_jump_dialogue_area_3d_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]

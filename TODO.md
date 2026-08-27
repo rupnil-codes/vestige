@@ -40,6 +40,8 @@ Todos:
 	- [X] ~~Empty wheelchair~~, umbrella, flowers (v0.4.10-beta, v0.4.12-beta and v0.4.14-beta)
 	- [X] ~~A weathered rusted mirror~~ (no reflections) and ~~a rocking chair~~ (v0.4.11-beta, v0.4.12-beta and v0.4.14-beta)
 - [X] Vestiges Animations and placements (v0.5.1-beta ... v0.5.4-beta)
+- [X] Show Dialogues like "jumping not allowed", "Go down, you know what to do." (v0.5.5-beta ... v0.5.10-beta)
+- [X] Typewriter sound (v0.5.8-beta)
 - [ ] Watch Tower Furniture
 - [ ] Stethoscope model
 - [ ] Better Jumping Logic -- Feels floaty now.
@@ -48,8 +50,6 @@ Todos:
 - [ ] Change the path texture to a trodden grass one.
 - [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
-- [-] Show Dialogues like "jumping not allowed", "Go down, you know what to do." (v0.5.5 ... )
-- [-] Typewriter sound
 
 ### Priority 3: Atmosphere
 
