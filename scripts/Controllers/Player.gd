@@ -3,6 +3,7 @@ extends CharacterBody3D
 @onready var vestige_scene: Node3D = $"../.."
 @onready var watch_tower: Node3D = $"../World/WatchTower3D"
 @onready var bunker: Node3D = $"../World/Bunker3D"
+@onready var player_animation_player: AnimationPlayer = %PlayerAnimationPlayer
 
 @onready var player_entered_tower: bool = watch_tower._player_entered_tower
 @onready var player_entered_bunker_stairs: bool = bunker._player_entered_bunker_stairs
