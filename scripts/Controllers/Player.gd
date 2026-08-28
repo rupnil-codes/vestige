@@ -259,7 +259,7 @@ func _physics_process(delta: float) -> void:
 	if vestige_scene_var.cutscene:
 		return
 
-	if is_on_floor() and not is_jumping and wish_dir.length() > 0.1:
+	if is_on_floor() and not player_on_stairs and not is_jumping and wish_dir.length() > 0.1:
 		is_walking = true
 		%WalkAnimationPlayer.play("walk", -1, get_move_speed()/4.25)
 	else:

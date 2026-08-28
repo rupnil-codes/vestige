@@ -1,7 +1,7 @@
 extends Node3D
 
 @onready var weeping_silhouette_animation_player: AnimationPlayer = $WeepingSilhouetteAnimationPlayer
-@export var _weeping_silhouette_animation_done: bool = false
+@export var weeping_silhouette_animation_done: bool = false
 
 @onready var dialogue_text: Label = %DialogueText
 
@@ -19,9 +19,9 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.name == "Player3D":
 		weeping_silhouette_animation_player.play("vanish")
 
-		await get_tree().create_timer(1).timeout
+		weeping_silhouette_animation_done = true
+
+		await get_tree().create_timer(0.5).timeout
 		await dialogue_text.typewrite("Look around you, something changed.", false, 0.8)
-		await dialogue_text.typewrite("Goodbye closest friend.", false, 0.8)
+		await dialogue_text.typewrite("Goodbye close friend.", false, 0.8)
 		
-		await weeping_silhouette_animation_player.animation_finished
-		_weeping_silhouette_animation_done = true

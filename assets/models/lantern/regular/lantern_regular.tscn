@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d16g7hxspv18v"]
 
 [ext_resource type="PackedScene" uid="uid://clcte31jqiyt7" path="res://assets/models/lantern/regular/lantern_regular.blend" id="1_45nu4"]
+[ext_resource type="AudioStream" uid="uid://d067g5qpu2g6f" path="res://assets/sfx/vestiges/3_campfire/campfire.mp3" id="2_skjbq"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_45nu4"]
 data = PackedVector3Array(-0.25, -0.375, 0.25, -0.25, 0.375, -0.25, -0.25, 0.375, 0.25, -0.25, -0.375, 0.25, -0.25, -0.375, -0.25, -0.25, 0.375, -0.25, -0.25, -0.375, -0.25, 0.25, 0.375, -0.25, -0.25, 0.375, -0.25, -0.25, -0.375, -0.25, 0.25, -0.375, -0.25, 0.25, 0.375, -0.25, 0.25, -0.375, -0.25, 0.25, 0.375, 0.25, 0.25, 0.375, -0.25, 0.25, -0.375, -0.25, 0.25, -0.375, 0.25, 0.25, 0.375, 0.25, 0.25, -0.375, 0.25, -0.25, 0.375, 0.25, 0.25, 0.375, 0.25, 0.25, -0.375, 0.25, -0.25, -0.375, 0.25, -0.25, 0.375, 0.25, -0.25, -0.375, -0.25, 0.25, -0.375, 0.25, 0.25, -0.375, -0.25, -0.25, -0.375, -0.25, -0.25, -0.375, 0.25, 0.25, -0.375, 0.25, 0.25, 0.375, -0.25, -0.25, 0.375, 0.25, -0.25, 0.375, -0.25, 0.25, 0.375, -0.25, 0.25, 0.375, 0.25, -0.25, 0.375, 0.25)
@@ -119,3 +120,10 @@ speed_scale = 0.5
 visibility_aabb = AABB(-0.75, -0.75, -0.75, 1.5, 1.5, 1.5)
 process_material = SubResource("ParticleProcessMaterial_skjbq")
 draw_pass_1 = SubResource("QuadMesh_22fkc")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="8" unique_id=1892408718]
+stream = ExtResource("2_skjbq")
+max_db = -4.0
+autoplay = true
+stream_paused = true
+parameters/looping = true

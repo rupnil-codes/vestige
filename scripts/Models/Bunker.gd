@@ -2,8 +2,7 @@ extends Node3D
 
 @export var _player_entered_bunker_stairs: bool = false
 @onready var weeping_silhouette_3d: Node3D = $"../WeepingSilhouette3D"
-@onready var weeping_silhouette_animation_done: bool = weeping_silhouette_3d._weeping_silhouette_animation_done
-@onready var bunker_animation_player: AnimationPlayer = $BunkerAnimationPlayer
+@onready var bunker_animation_player: AnimationPlayer = %BunkerAnimationPlayer
 
 @onready var vestige_animation_player: AnimationPlayer = $"../../../VestigeAnimationPlayer"
 @onready var map_3d_1: Node3D = $"../Map3D"
@@ -17,14 +16,12 @@ var jump_dialogue: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	weeping_silhouette_animation_done = weeping_silhouette_3d._weeping_silhouette_animation_done
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	weeping_silhouette_animation_done = weeping_silhouette_3d._weeping_silhouette_animation_done
-	
-	if weeping_silhouette_animation_done and is_closed and not switch:
+	if weeping_silhouette_3d.weeping_silhouette_animation_done and is_closed and not switch:
 		bunker_animation_player.play("open")
 		is_closed = false
 

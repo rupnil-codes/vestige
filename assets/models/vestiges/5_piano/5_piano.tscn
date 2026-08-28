@@ -2,7 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://oo8cmptwx6xd" path="res://assets/models/vestiges/5_piano/5_piano.blend" id="1_b5r5c"]
 [ext_resource type="Script" uid="uid://c1uhdogxt7xqt" path="res://scripts/Controllers/Vestige.gd" id="2_67ljc"]
-[ext_resource type="AudioStream" uid="uid://df7or4h62ig5e" path="res://assets/models/vestiges/5_piano/piano_music.mp3" id="2_vbq1e"]
+[ext_resource type="AudioStream" uid="uid://df7or4h62ig5e" path="res://assets/sfx/vestiges/5_piano/piano_music.mp3" id="2_vbq1e"]
+[ext_resource type="AudioStream" uid="uid://cnuqybg277lnm" path="res://assets/sfx/vestiges/5_piano/applause.mp3" id="4_jlru0"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_b5r5c"]
 data = PackedVector3Array(-1.5372, -0.19119999, 1.6841999, -1.5372, 0.1838, -0.26049998, -1.5372, 0.1838, 1.6841999, -1.5372, -0.19119999, 1.6841999, -1.5372, -0.19119999, -0.26049998, -1.5372, 0.1838, -0.26049998, 0.47959998, -0.19119999, -0.26049998, 1.7500999, 0.1838, 0.2985, 0.47959998, 0.1838, -0.26049998, 0.47959998, -0.19119999, -0.26049998, 1.7500999, -0.19119999, 0.2985, 1.7500999, 0.1838, 0.2985, 1.7500999, -0.19119999, 0.2985, 1.7500999, 0.1838, 1.6841999, 1.7500999, 0.1838, 0.2985, 1.7500999, -0.19119999, 0.2985, 1.7500999, -0.19119999, 1.6841999, 1.7500999, 0.1838, 1.6841999, 0.47959998, -0.19119999, 1.6841999, -1.5372, 0.1838, 1.6841999, 0.47959998, 0.1838, 1.6841999, 0.47959998, -0.19119999, 1.6841999, -1.5372, -0.19119999, 1.6841999, -1.5372, 0.1838, 1.6841999, 1.7500999, -0.19119999, 1.6841999, 0.47959998, -0.19119999, 1.6841999, 0.47959998, 0.1838, 1.6841999, 1.7500999, -0.19119999, 1.6841999, 0.47959998, 0.1838, 1.6841999, 1.7500999, 0.1838, 1.6841999, 0.47959998, -0.19119999, -0.26049998, 1.7500999, -0.19119999, 1.6841999, 1.7500999, -0.19119999, 0.2985, 0.47959998, -0.19119999, -0.26049998, 0.47959998, -0.19119999, 1.6841999, 1.7500999, -0.19119999, 1.6841999, 0.47959998, 0.1838, -0.26049998, -1.5372, 0.1838, 1.6841999, -1.5372, 0.1838, -0.26049998, 0.47959998, 0.1838, -0.26049998, 0.47959998, 0.1838, 1.6841999, -1.5372, 0.1838, 1.6841999, 1.7500999, 0.1838, 0.2985, 0.47959998, 0.1838, 1.6841999, 0.47959998, 0.1838, -0.26049998, 1.7500999, 0.1838, 0.2985, 1.7500999, 0.1838, 1.6841999, 0.47959998, 0.1838, 1.6841999, -1.5372, -0.19119999, -0.26049998, 0.47959998, -0.19119999, 1.6841999, 0.47959998, -0.19119999, -0.26049998, -1.5372, -0.19119999, -0.26049998, -1.5372, -0.19119999, 1.6841999, 0.47959998, -0.19119999, 1.6841999, -1.5372, -0.19119999, -0.26049998, -1.5302, 0.1986, -2.415, -1.5372, 0.1838, -0.26049998, -1.5372, -0.19119999, -0.26049998, -1.5302, -0.1765, -2.415, -1.5302, 0.1986, -2.415, -1.5302, -0.1765, -2.415, 0.145, 0.1986, -2.415, -1.5302, 0.1986, -2.415, -1.5302, -0.1765, -2.415, 0.145, -0.1765, -2.415, 0.145, 0.1986, -2.415, 0.47959998, 0.1838, -0.26049998, 0.145, -0.1765, -2.415, 0.47959998, -0.19119999, -0.26049998, 0.47959998, 0.1838, -0.26049998, 0.145, 0.1986, -2.415, 0.145, -0.1765, -2.415, 0.47959998, -0.19119999, -0.26049998, -1.5302, -0.1765, -2.415, -1.5372, -0.19119999, -0.26049998, 0.47959998, -0.19119999, -0.26049998, 0.145, -0.1765, -2.415, -1.5302, -0.1765, -2.415, -1.5372, 0.1838, -0.26049998, 0.145, 0.1986, -2.415, 0.47959998, 0.1838, -0.26049998, -1.5372, 0.1838, -0.26049998, -1.5302, 0.1986, -2.415, 0.145, 0.1986, -2.415, -1.5314, -0.1854, 1.6783999, -1.5301, 0.1768, -0.26049998, -1.5301, -0.1841, -0.26049998, -1.5314, -0.1854, 1.6783999, -1.5314, 0.17809999, 1.6783999, -1.5301, 0.1768, -0.26049998, 0.4752, -0.1829, -0.2571, 1.7435, 0.1778, 0.3029, 1.7435, -0.18519999, 0.3029, 0.4752, -0.1829, -0.2571, 0.4752, 0.17549999, -0.2572, 1.7435, 0.1778, 0.3029, 1.7435, -0.18519999, 0.3029, 1.7443999, 0.17809999, 1.6783999, 1.7443999, -0.1854, 1.6783999, 1.7435, -0.18519999, 0.3029, 1.7435, 0.1778, 0.3029, 1.7443999, 0.17809999, 1.6783999, 0.47959998, -0.1841, 1.6771, -1.5314, 0.17809999, 1.6783999, -1.5314, -0.1854, 1.6783999, 0.47959998, -0.1841, 1.6771, 0.47959998, 0.1768, 1.6771, -1.5314, 0.17809999, 1.6783999, 0.4752, -0.1829, -0.2571, 1.7443999, -0.1854, 1.6783999, 0.47959998, -0.1841, 1.6771, 0.4752, -0.1829, -0.2571, 1.7435, -0.18519999, 0.3029, 1.7443999, -0.1854, 1.6783999, 0.4752, 0.17549999, -0.2572, -1.5314, 0.17809999, 1.6783999, 0.47959998, 0.1768, 1.6771, 0.4752, 0.17549999, -0.2572, -1.5301, 0.1768, -0.26049998, -1.5314, 0.17809999, 1.6783999, 1.7435, 0.1778, 0.3029, 0.47959998, 0.1768, 1.6771, 1.7443999, 0.17809999, 1.6783999, 1.7435, 0.1778, 0.3029, 0.4752, 0.17549999, -0.2572, 0.47959998, 0.1768, 1.6771, -1.5301, -0.1841, -0.26049998, 0.47959998, -0.1841, 1.6771, -1.5314, -0.1854, 1.6783999, -1.5301, -0.1841, -0.26049998, 0.4752, -0.1829, -0.2571, 0.47959998, -0.1841, 1.6771, 1.7443999, -0.1854, 1.6783999, 0.47959998, 0.1768, 1.6771, 0.47959998, -0.1841, 1.6771, 1.7443999, -0.1854, 1.6783999, 1.7443999, 0.17809999, 1.6783999, 0.47959998, 0.1768, 1.6771, -1.5301, -0.1841, -0.26049998, -1.5244, 0.1928, -2.4092999, -1.5244, -0.1707, -2.4092, -1.5301, -0.1841, -0.26049998, -1.5301, 0.1768, -0.26049998, -1.5244, 0.1928, -2.4092999, -1.5244, -0.1707, -2.4092, 0.1398, 0.1927, -2.4089, 0.1398, -0.1706, -2.4088, -1.5244, -0.1707, -2.4092, -1.5244, 0.1928, -2.4092999, 0.1398, 0.1927, -2.4089, 0.4752, 0.17549999, -0.2572, 0.1398, -0.1706, -2.4088, 0.1398, 0.1927, -2.4089, 0.4752, 0.17549999, -0.2572, 0.4752, -0.1829, -0.2571, 0.1398, -0.1706, -2.4088, 0.4752, -0.1829, -0.2571, -1.5244, -0.1707, -2.4092, 0.1398, -0.1706, -2.4088, 0.4752, -0.1829, -0.2571, -1.5301, -0.1841, -0.26049998, -1.5244, -0.1707, -2.4092, -1.5301, 0.1768, -0.26049998, 0.1398, 0.1927, -2.4089, -1.5244, 0.1928, -2.4092999, -1.5301, 0.1768, -0.26049998, 0.4752, 0.17549999, -0.2572, 0.1398, 0.1927, -2.4089)
@@ -105,7 +106,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AudioStreamPlayer3D:playing")
+tracks/1/path = NodePath("PianoStreamPlayer3D:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -126,10 +127,34 @@ tracks/2/keys = {
 "update": 0,
 "values": [0.001]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ApplauseAudioPlayer3D:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ApplauseAudioPlayer3D:max_db")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-8.0]
+}
 
 [sub_resource type="Animation" id="Animation_a4luf"]
 resource_name = "play_once"
-length = 1.0666667
+length = 6.0666666
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -145,7 +170,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AudioStreamPlayer3D:playing")
+tracks/1/path = NodePath("PianoStreamPlayer3D:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -165,6 +190,30 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.001, 6.112]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ApplauseAudioPlayer3D:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.3666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ApplauseAudioPlayer3D:max_db")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5.0066667, 6.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-8.0, -24.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n2oq5"]
@@ -252,7 +301,7 @@ shape = SubResource("ConcavePolygonShape3D_khhyn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8411102, 0.6160774, -1.1077089)
 shape = SubResource("BoxShape3D_jlru0")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="15" unique_id=958788500]
+[node name="PianoStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="15" unique_id=958788500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32830644, 0)
 stream = ExtResource("2_vbq1e")
 attenuation_model = 3
@@ -272,5 +321,15 @@ transform = Transform3D(0.99566007, -0.089894146, 0.024087064, -5.641044e-10, 0.
 light_energy = 0.0
 spot_range = 0.001
 spot_angle = 31.953629
+
+[node name="ApplauseAudioPlayer3D" type="AudioStreamPlayer3D" parent="." index="19" unique_id=2133953238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9360232, 0.32830644, -6.3338494)
+stream = ExtResource("4_jlru0")
+attenuation_model = 3
+volume_db = -6.0
+unit_size = 15.0
+max_db = -8.0
+max_distance = 50.0
+parameters/looping = true
 
 [connection signal="body_entered" from="VestigeArea3D" to="." method="_on_vestige_area_3d_body_entered"]

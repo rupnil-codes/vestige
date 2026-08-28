@@ -57,9 +57,16 @@ Todos:
 
 - [X] Background Track (v0.6.2-beta)
 - [X] Walking SFX (v0.6.2-beta)
-- [-] Sounds like ~~Winds~~, leaves, snow. (v0.6.2-beta ... )
-- [ ] Ambience SFX
-- [ ] Each Vestige SFX
+- [X] Sounds like ~~Winds~~, ~~lantern~~, leaves, snow. (v0.6.2-beta ... v0.6.4-beta)
+- [X] Each Vestige SFX (v0.6.3-beta ... v0.6.4-beta)
+  - [X] Crib (v0.6.3-beta)
+  - [X] Swing (v0.6.4-beta)
+  - [X] Tent (v0.6.4-beta)
+  - [X] Date (v0.6.4-beta)
+  - [X] Piano (v0.6.4-beta)
+  - [X] Wheelchair (v0.6.4-beta)
+  - [X] Mirror (v0.6.4-beta)
+- [ ] Ambience SFX 
 - [ ] Sound design for each.
 - [ ] Sounds on the Tunnel.
 - [ ] Add notes and pictures on the tunnel

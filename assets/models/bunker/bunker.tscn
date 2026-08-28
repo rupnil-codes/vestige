@@ -349,7 +349,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034492493, 0.865448, 0.016
 shape = SubResource("BoxShape3D_57qmd")
 
 [node name="JumpDialogueArea3D" type="Area3D" parent="." index="12" unique_id=1945158108]
-transform = Transform3D(2.9802322e-08, 0, -1, 0, 1, 0, 1, 0, 2.9802322e-08, -26.941254, -47.407516, 178.0219)
+transform = Transform3D(2.9802322e-08, 0, -1, 0, 1, 0, 1, 0, 2.9802322e-08, -24.408905, -47.407516, 178.0219)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="JumpDialogueArea3D" index="0" unique_id=875521487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034492493, 0.865448, 0.016357422)
@@ -360,6 +360,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.06122, -31.175602, 73.831
 aabb = AABB(-21.884722, -24.705502, -68.53037, 43.769444, 60.604607, 177.54585)
 
 [node name="BunkerAnimationPlayer" type="AnimationPlayer" parent="." index="14" unique_id=186549608]
+unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_yj3m1")
 
 [connection signal="body_entered" from="StairsArea3D" to="." method="_on_area_3d_body_entered"]

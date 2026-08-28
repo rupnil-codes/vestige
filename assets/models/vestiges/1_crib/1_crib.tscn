@@ -432,9 +432,11 @@ autoplay = &"RESET"
 [node name="CreakingStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="11" unique_id=368859023]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.484809, -0.068353176)
 stream = ExtResource("3_sl4u0")
+max_db = -5.0
 
 [node name="LullabyStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="12" unique_id=2080782302]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11277068, -0.22720891)
 stream = ExtResource("4_uubvf")
+max_db = -3.0
 
 [connection signal="body_entered" from="VestigeArea3D" to="." method="_on_vestige_area_3d_body_entered"]

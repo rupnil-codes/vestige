@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c3ja87ioxbvoj" path="res://assets/models/vestiges/2_swing/2_swing.blend" id="1_gniix"]
 [ext_resource type="Script" uid="uid://c1uhdogxt7xqt" path="res://scripts/Controllers/Vestige.gd" id="2_7my8b"]
+[ext_resource type="AudioStream" uid="uid://c0ltblp5dv13" path="res://assets/sfx/vestiges/2_swing/swing_squeak.mp3" id="3_ewjfd"]
+[ext_resource type="AudioStream" uid="uid://gl52850vvid6" path="res://assets/sfx/vestiges/2_swing/children_giggling.mp3" id="4_dt7pf"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gfdfi"]
 data = PackedVector3Array(0, 0.0906, -2.8702, 0.0641, 0.0641, 2.8702, 0, 0.0906, 2.8702, 0, 0.0906, -2.8702, 0.0641, 0.0641, -2.8702, 0.0641, 0.0641, 2.8702, 0.0641, 0.0641, -2.8702, 0.0906, 0, 2.8702, 0.0641, 0.0641, 2.8702, 0.0641, 0.0641, -2.8702, 0.0906, 0, -2.8702, 0.0906, 0, 2.8702, 0.0906, 0, -2.8702, 0.0641, -0.0641, 2.8702, 0.0906, 0, 2.8702, 0.0906, 0, -2.8702, 0.0641, -0.0641, -2.8702, 0.0641, -0.0641, 2.8702, 0.0641, -0.0641, -2.8702, 0, -0.0906, 2.8702, 0.0641, -0.0641, 2.8702, 0.0641, -0.0641, -2.8702, 0, -0.0906, -2.8702, 0, -0.0906, 2.8702, 0, -0.0906, -2.8702, -0.0641, -0.0641, 2.8702, 0, -0.0906, 2.8702, 0, -0.0906, -2.8702, -0.0641, -0.0641, -2.8702, -0.0641, -0.0641, 2.8702, -0.0641, -0.0641, -2.8702, -0.0906, 0, 2.8702, -0.0641, -0.0641, 2.8702, -0.0641, -0.0641, -2.8702, -0.0906, 0, -2.8702, -0.0906, 0, 2.8702, 0.0906, 0, 2.8702, 0, 0.0906, 2.8702, 0.0641, 0.0641, 2.8702, 0.0906, 0, 2.8702, -0.0906, 0, 2.8702, 0, 0.0906, 2.8702, 0, 0.0906, 2.8702, -0.0906, 0, 2.8702, -0.0641, 0.0641, 2.8702, -0.0906, 0, 2.8702, 0.0906, 0, 2.8702, 0, -0.0906, 2.8702, 0, -0.0906, 2.8702, 0.0906, 0, 2.8702, 0.0641, -0.0641, 2.8702, -0.0906, 0, 2.8702, 0, -0.0906, 2.8702, -0.0641, -0.0641, 2.8702, -0.0906, 0, -2.8702, -0.0641, 0.0641, 2.8702, -0.0906, 0, 2.8702, -0.0906, 0, -2.8702, -0.0641, 0.0641, -2.8702, -0.0641, 0.0641, 2.8702, -0.0641, 0.0641, -2.8702, 0, 0.0906, 2.8702, -0.0641, 0.0641, 2.8702, -0.0641, 0.0641, -2.8702, 0, 0.0906, -2.8702, 0, 0.0906, 2.8702, -0.0641, 0.0641, -2.8702, 0.0641, 0.0641, -2.8702, 0, 0.0906, -2.8702, -0.0641, 0.0641, -2.8702, 0.0641, -0.0641, -2.8702, 0.0641, 0.0641, -2.8702, 0.0641, 0.0641, -2.8702, 0.0641, -0.0641, -2.8702, 0.0906, 0, -2.8702, 0.0641, -0.0641, -2.8702, -0.0641, 0.0641, -2.8702, -0.0641, -0.0641, -2.8702, -0.0641, -0.0641, -2.8702, -0.0641, 0.0641, -2.8702, -0.0906, 0, -2.8702, 0.0641, -0.0641, -2.8702, -0.0641, -0.0641, -2.8702, 0, -0.0906, -2.8702)
@@ -125,6 +127,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0)]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SqueakAudioStreamPlayer3D:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_sl4u0"]
 resource_name = "vestige_animation"
@@ -226,6 +240,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0)]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SqueakAudioStreamPlayer3D:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(-0.6666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2l5t4"]
 _data = {
@@ -247,6 +273,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GiggleAudioPlayer3D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SqueakAudioStreamPlayer3D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_afd0b"]
 resource_name = "play_once"
@@ -261,6 +311,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("GiggleAudioPlayer3D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SqueakAudioStreamPlayer3D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.21),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7my8b"]
@@ -336,5 +410,15 @@ libraries/ = SubResource("AnimationLibrary_2l5t4")
 [node name="VestigeOnceAnimationPlayer" type="AnimationPlayer" parent="." index="10" unique_id=883415065]
 libraries/ = SubResource("AnimationLibrary_7my8b")
 autoplay = &"RESET"
+
+[node name="SqueakAudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="11" unique_id=1713104596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7441823, 0)
+stream = ExtResource("3_ewjfd")
+max_db = -6.0
+
+[node name="GiggleAudioPlayer3D" type="AudioStreamPlayer3D" parent="." index="12" unique_id=896740515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7281098, 0)
+stream = ExtResource("4_dt7pf")
+max_db = -3.0
 
 [connection signal="body_entered" from="VestigeArea3D" to="." method="_on_vestige_area_3d_body_entered"]
