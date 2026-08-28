@@ -16,7 +16,7 @@ Todos:
 - [X] Ending Bench Interaction (v0.3.2-alpha ... v0.3.3-alpha and v0.3.5-alpha)
 - [X] Ending Camera Animation (v0.3.4-alpha ... v0.3.5-alpha)
 - [X] Roll Credits (v0.3.6-alpha ... v0.3.8-alpha)
-- [ ] Finalize the Story progression (vestiges), I wish to convey.
+- [X] Finalize the Story progression (vestiges), I wish to convey.
 - [X] ~~Fix the grassland model (make the crests and troughs lesser),~~ place trees on secondary maps. (v0.3.9-alpha)
 
 - [X] Play test the prototype Game. (v0.3.9-alpha)
@@ -42,13 +42,13 @@ Todos:
 - [X] Vestiges Animations and placements (v0.5.1-beta ... v0.5.4-beta)
 - [X] Show Dialogues like "jumping not allowed", "Go down, you know what to do." (v0.5.5-beta ... v0.5.10-beta)
 - [X] Typewriter sound (v0.5.8-beta)
+- [X] If the player touches the silhouette first make sure the vestige animation starts. (v0.6.1-beta)
 - [ ] Watch Tower Furniture
 - [ ] Stethoscope model
 - [ ] Better Jumping Logic -- Feels floaty now.
 - [ ] Direction doesn't change when jumping and looking at a different direction.
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
-- [ ] If the player touches the silhouette first make sure the vestige animation completes before.
 - [ ] Rework Torch Animations
 
 ### Priority 3: Atmosphere

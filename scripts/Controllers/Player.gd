@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@onready var vestige_scene: Node3D = $"../.."
+@onready var vestige_scene_var: Node3D = %VestigeSceneVar
 @onready var watch_tower: Node3D = $"../World/WatchTower3D"
 @onready var bunker: Node3D = $"../World/Bunker3D"
 @onready var player_animation_player: AnimationPlayer = %PlayerAnimationPlayer
@@ -80,7 +80,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		captured = false
-	if vestige_scene.cutscene:
+	if vestige_scene_var.cutscene:
 		return
 
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
@@ -96,7 +96,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact") and _is_ending_bench_interacting:
 		%VestigeAnimationPlayer.play("fade_to_black")
 		await %VestigeAnimationPlayer.animation_finished
-		vestige_scene.cutscene = true
+		vestige_scene_var.cutscene = true
 		%VestigeAnimationPlayer.play("ending_camera_move_invisible")
 		await %VestigeAnimationPlayer.animation_finished
 		%VestigeAnimationPlayer.play_backwards("fade_to_black")
@@ -107,7 +107,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		%VestigeAnimationPlayer.play("any_key_continue_animation")
 		await %VestigeAnimationPlayer.animation_finished
 		is_walking_cutscene = false
-		vestige_scene.cutscene = false
+		vestige_scene_var.cutscene = false
 			
 	if event is InputEventMouseButton and event.is_pressed():
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
@@ -137,7 +137,7 @@ func _process(delta: float) -> void:
 	else:
 		separation_ray.disabled = true
 		
-	if _is_ending_bench_interacting and not vestige_scene.cutscene:
+	if _is_ending_bench_interacting and not vestige_scene_var.cutscene:
 		interaction_text.text = "Press  [E]  to interact"
 	else:
 		interaction_text.text = ""
@@ -256,7 +256,7 @@ func _handle_ground_physics(delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	
-	if vestige_scene.cutscene:
+	if vestige_scene_var.cutscene:
 		return
 	
 	if interaction_ray_cast.is_colliding():

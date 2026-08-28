@@ -7,8 +7,6 @@ var writing: bool = false
 var timer: float = 3.0
 var fast_mode_mult: float = 0.6
 
-var vestige_count: int = 0
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass
