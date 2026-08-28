@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://caf08fvsymgfn" path="res://scripts/Controllers/Player.gd" id="1_d6veg"]
 [ext_resource type="AudioStream" uid="uid://j7o5jm2o2vgw" path="res://assets/sfx/delete.mp3" id="2_h6syq"]
+[ext_resource type="AudioStream" uid="uid://dusa3364l7lua" path="res://assets/tracks/background.mp3" id="2_ouxva"]
+[ext_resource type="AudioStream" uid="uid://dr3agn65imrh0" path="res://assets/sfx/walking.mp3" id="3_d5dr7"]
 [ext_resource type="AudioStream" uid="uid://3fq23oeknu8j" path="res://assets/sfx/type.mp3" id="3_v2miy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d6veg"]
@@ -17,7 +19,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DialogueTextAudioPlayer3D:stream")
+tracks/0/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:stream")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -29,7 +31,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("DialogueTextAudioPlayer3D:playing")
+tracks/1/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -41,7 +43,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("DialogueTextAudioPlayer3D:max_db")
+tracks/2/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:max_db")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -49,6 +51,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [3.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AudioStreamNode3D/WalkingAudioStreamPlayer3D:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_d5dr7"]
@@ -58,7 +72,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DialogueTextAudioPlayer3D:stream")
+tracks/0/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:stream")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -70,7 +84,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("DialogueTextAudioPlayer3D:playing")
+tracks/1/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -82,7 +96,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("DialogueTextAudioPlayer3D:max_db")
+tracks/2/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:max_db")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -99,7 +113,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("DialogueTextAudioPlayer3D:stream")
+tracks/0/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:stream")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -111,7 +125,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("DialogueTextAudioPlayer3D:playing")
+tracks/1/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -123,7 +137,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("DialogueTextAudioPlayer3D:max_db")
+tracks/2/path = NodePath("AudioStreamNode3D/DialogueTextAudioPlayer3D:max_db")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -133,11 +147,29 @@ tracks/2/keys = {
 "values": [-5.0]
 }
 
+[sub_resource type="Animation" id="Animation_toylo"]
+resource_name = "walk"
+length = 0.96666664
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamNode3D/WalkingAudioStreamPlayer3D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d5dr7"]
 _data = {
 &"RESET": SubResource("Animation_v2miy"),
 &"delete": SubResource("Animation_d5dr7"),
-&"type": SubResource("Animation_ouxva")
+&"type": SubResource("Animation_ouxva"),
+&"walk": SubResource("Animation_toylo")
 }
 
 [node name="Player3D" type="CharacterBody3D" unique_id=1421963457 groups=["player"]]
@@ -186,9 +218,29 @@ unique_name_in_owner = true
 transform = Transform3D(0.45, 0, 0, 0, -1.9670125e-08, -0.45, 0, 0.45, -1.9670125e-08, -0.014, 0.6, 0.8)
 shape = SubResource("SeparationRayShape3D_g4v7s")
 
-[node name="DialogueTextAudioPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1093614713]
-transform = Transform3D(1, 0, 0, 0, 1.0000004, 0, 0, 0, 1.0000005, 0, 1.7924523, 0)
+[node name="AudioStreamNode3D" type="Node3D" parent="." unique_id=1914201355]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="DialogueTextAudioPlayer3D" type="AudioStreamPlayer3D" parent="AudioStreamNode3D" unique_id=1093614713]
+transform = Transform3D(1, 0, 0, 0, 1.0000004, 0, 0, 0, 1.0000005, 0, 1.7924522, 0)
+
+[node name="BackgroundAudioPlayer3D" type="AudioStreamPlayer3D" parent="AudioStreamNode3D" unique_id=883406007]
+transform = Transform3D(1, 0, 0, 0, 1.0000004, 0, 0, 0, 1.0000005, 0, 1.7924521, 0)
+stream = ExtResource("2_ouxva")
+max_db = -2.5
+pitch_scale = 0.7
+autoplay = true
+parameters/looping = true
+
+[node name="WalkingAudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="AudioStreamNode3D" unique_id=1382611945]
+stream = ExtResource("3_d5dr7")
+max_db = -2.0
+parameters/looping = true
 
 [node name="PlayerAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1485871315]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_d5dr7")
+
+[node name="WalkAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1501054264]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_d5dr7")

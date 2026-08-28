@@ -38,31 +38,27 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	
 	while vestige_scene_var.intro:
 		await get_tree().create_timer(0.1).timeout
+		if not vestige_scene_var.intro:
+			break
 		
 	if visible_on_screen_enabler:
 		visible_on_screen_enabler_3d.queue_free()
 		visible_on_screen_enabler = false
 	if body.is_in_group("player"):
-		# vestige_scene_var.entered_vestige_before_animation = true
-		
 		if next_location_index < len(movement):
 			silhouette_animation_player.play("transform")
+			await silhouette_animation_player.animation_finished
 			
 			if not _player_touched:
-				await get_tree().create_timer(1).timeout
 				dialogue_text.typewrite("Follow me.")
 				_player_touched = true
-
-			await silhouette_animation_player.animation_finished
+				
 			silhouette_animation_mover.play(movement[next_location_index])
 			await silhouette_animation_mover.animation_finished
 			silhouette_animation_player.play_backwards("transform")
 			await silhouette_animation_player.animation_finished
 			next_location_index += 1
-
-			# vestige_scene_var.entered_vestige_before_animation = false
 			
-
 
 
 func fade_out(time: float = 2.0):

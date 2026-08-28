@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bwccebe2qkpnc" path="res://assets/player/player.tscn" id="4_tm726"]
 [ext_resource type="Script" uid="uid://cd2d7u24djgw1" path="res://scripts/Controllers/DialogueText.gd" id="5_3bx4b"]
 [ext_resource type="PackedScene" uid="uid://vvj7o8vrp3qc" path="res://assets/models/bench/bench.tscn" id="5_r1fad"]
+[ext_resource type="AudioStream" uid="uid://brrdagj4syxjp" path="res://assets/sfx/winter_wind.mp3" id="7_cwcys"]
 [ext_resource type="PackedScene" uid="uid://becylmfxbg5ks" path="res://assets/models/trees/pine_tree/pine_tree.tscn" id="7_gmphc"]
 [ext_resource type="PackedScene" uid="uid://b2myn6s4vdhla" path="res://assets/models/trees/cedar_tree/cedar_tree.tscn" id="8_jh5a0"]
 [ext_resource type="PackedScene" uid="uid://cb2cwc0la82rj" path="res://assets/models/trees/tall_fir_tree/tall_fir_tree.tscn" id="9_kgo5s"]
@@ -1777,6 +1778,13 @@ speed_scale = 0.7
 visibility_aabb = AABB(-15, -34, -15, 30, 34, 30)
 process_material = SubResource("ParticleProcessMaterial_b460r")
 draw_pass_1 = SubResource("QuadMesh_y13jl")
+
+[node name="WindAudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="SubViewport/Player3D" unique_id=932579589]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000004, 0, 0, 0, 1.0000004, 0, 2.3390517, 0)
+stream = ExtResource("7_cwcys")
+max_db = -17.0
+autoplay = true
+parameters/looping = true
 
 [node name="World" type="Node3D" parent="SubViewport" unique_id=352032519]
 

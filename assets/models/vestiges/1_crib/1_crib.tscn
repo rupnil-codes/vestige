@@ -231,7 +231,7 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
-size = Vector3(5.0546875, 3.513794, 4.526245)
+size = Vector3(5.0546875, 3.513794, 5.401367)
 
 [sub_resource type="Animation" id="Animation_d3lse"]
 length = 0.001

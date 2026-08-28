@@ -25,6 +25,7 @@ var headbob_time: float = 0.0
 @export var ground_accel: float = 14.0
 @export var ground_decel: float = 10.0
 @export var ground_friction: float = 4.5
+var is_walking: bool = false
 
 # air
 var is_jumping: bool = false
@@ -71,7 +72,7 @@ func _ready():
 	for child in %WorldModel.find_children("*", "VisualInstance3D"):
 		child.set_layer_mask_value(1, false)
 		child.set_layer_mask_value(2, true)
-		
+
 func _unhandled_input(event: InputEvent) -> void:
 	if captured:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -88,9 +89,9 @@ func _unhandled_input(event: InputEvent) -> void:
 			rotate_y(-event.relative.x * look_sensitivity)
 			%Camera3D.rotate_x(-event.relative.y * look_sensitivity)
 			%Camera3D.rotation.x = clamp(
-				%Camera3D.rotation.x,
-				deg_to_rad(-70),
-				deg_to_rad(70)
+					%Camera3D.rotation.x,
+					deg_to_rad(-70),
+					deg_to_rad(70)
 			)
 
 	if event.is_action_pressed("interact") and _is_ending_bench_interacting:
@@ -108,20 +109,20 @@ func _unhandled_input(event: InputEvent) -> void:
 		await %VestigeAnimationPlayer.animation_finished
 		is_walking_cutscene = false
 		vestige_scene_var.cutscene = false
-			
+
 	if event is InputEventMouseButton and event.is_pressed():
 		if event.button_index == MOUSE_BUTTON_WHEEL_UP:
 			noclip_speed_mult = min(100.0, noclip_speed_mult * 1.1)
 		if event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 			noclip_speed_mult = max(0.1, noclip_speed_mult * 0.9)
-			
-	
+
+
 func _headbob_effect(delta: float):
 	headbob_time += delta * self.velocity.length()
 	%Camera3D.transform.origin = Vector3(
-		cos(headbob_time * HEADBOB_FREQUENCY * 0.5) * HEADBOB_MOVE_AMOUNT,
-		sin(headbob_time * HEADBOB_FREQUENCY) * HEADBOB_MOVE_AMOUNT,
-		0
+			cos(headbob_time * HEADBOB_FREQUENCY * 0.5) * HEADBOB_MOVE_AMOUNT,
+			sin(headbob_time * HEADBOB_FREQUENCY) * HEADBOB_MOVE_AMOUNT,
+			0
 	)
 
 func _process(delta: float) -> void:
@@ -129,20 +130,20 @@ func _process(delta: float) -> void:
 	player_entered_bunker_stairs = bunker._player_entered_bunker_stairs
 
 	player_on_stairs = player_entered_tower or player_entered_bunker_stairs
-	
+
 	if player_on_stairs and not is_jumping:
 		separation_ray.disabled = false
 		_visual_offset_y = lerp(_visual_offset_y, 0.0, smooth_step_speed * delta * smooth_step_speed_mult)
 		%Camera3D.position.y = _visual_offset_y
 	else:
 		separation_ray.disabled = true
-		
+
 	if _is_ending_bench_interacting and not vestige_scene_var.cutscene:
 		interaction_text.text = "Press  [E]  to interact"
 	else:
 		interaction_text.text = ""
-		
-	
+
+
 func _snap_down_to_stairs_check() -> void:
 	did_snap = false
 	smooth_step_speed_mult = 1.0
@@ -156,8 +157,8 @@ func _snap_down_to_stairs_check() -> void:
 			apply_floor_snap()
 			did_snap = true
 			smooth_step_speed_mult = 0.3
-			
-		
+
+
 		_snapped_to_stairs_last_frame = did_snap
 
 @onready var _original_capsule_height: float = $CollisionShape3D.shape.height
@@ -166,12 +167,11 @@ func _handle_crouch(delta: float) -> void:
 		is_crouched = true
 	elif is_crouched and not self.test_move(self.transform, Vector3(0,CROUCH_TRANSLATE,0)):
 		is_crouched = false
-	
+
 	# %Head.position = Vector3(0, (-CROUCH_TRANSLATE if is_crouched else 0),0)
 	%Head.position.y = move_toward(%Head.position.y, -CROUCH_TRANSLATE if is_crouched else 0, 5.0 * delta)
 	$CollisionShape3D.shape.height = _original_capsule_height - CROUCH_TRANSLATE if is_crouched else _original_capsule_height
 	$CollisionShape3D.position.y = $CollisionShape3D.shape.height / 2
-	
 
 func _handle_noclip(delta: float) -> bool:
 	if Input.is_action_just_pressed("_noclip") and OS.has_feature("debug"):
@@ -180,29 +180,29 @@ func _handle_noclip(delta: float) -> bool:
 		else:
 			noclip = true
 		noclip_speed_mult = 3.0
-		
+
 	$CollisionShape3D.disabled = noclip
-	
+
 	if not noclip:
 		return false
-	
+
 	var speed: float = get_move_speed() * noclip_speed_mult
 	if Input.is_action_pressed("sprint"):
 		speed *= 3.0
-		
+
 	self.velocity = cam_aligned_wish_dir * speed
 	global_position += self.velocity * delta
-	
+
 	return true
 
 func clip_velocity(normal: Vector3, overbounce: float, delta: float) -> void:
 	var backoff: float = self.velocity.dot(normal) * overbounce
-	
+
 	if backoff >= 0: return
-	
+
 	var change: Vector3 = normal * backoff
 	self.velocity -= change
-	
+
 	var adjust: float = self.velocity.dot(normal)
 	if adjust < 0.0:
 		self.velocity -= normal * adjust
@@ -220,23 +220,23 @@ func _run_body_test_motion(from: Transform3D, motion: Vector3, result = null) ->
 
 func _handle_air_physics(delta: float) -> void:
 	self.velocity.y -= ProjectSettings.get_setting("physics/3d/default_gravity") * delta
-	
+
 	var cur_speed_in_wish_dir: float = self.velocity.dot(wish_dir)
 	var capped_speed = min((air_move_speed * wish_dir).length(), air_cap)
 	var add_speed_till_cap = capped_speed - cur_speed_in_wish_dir
-	
+
 	if add_speed_till_cap > 0:
 		var accel_speed: float = air_accel * air_move_speed * delta
 		accel_speed = min(accel_speed, add_speed_till_cap)
 		self.velocity += accel_speed * wish_dir
-		
+
 	if is_on_wall():
 		if is_surface_too_steep(get_wall_normal()):
 			self.motion_mode = CharacterBody3D.MOTION_MODE_FLOATING
 		else:
 			self.motion_mode = CharacterBody3D.MOTION_MODE_GROUNDED
 		clip_velocity(get_wall_normal(), 1, delta)
-	
+
 func _handle_ground_physics(delta: float) -> void:
 	var cur_speed_in_wish_dir: float = self.velocity.dot(wish_dir)
 	var add_speed_till_cap: float = get_move_speed() - cur_speed_in_wish_dir
@@ -244,32 +244,39 @@ func _handle_ground_physics(delta: float) -> void:
 		var accel_speed: float = ground_accel * get_move_speed() * delta
 		accel_speed = min(accel_speed, add_speed_till_cap)
 		self.velocity += accel_speed * wish_dir
-		
+
 	var control = max(self.velocity.length(), ground_decel)
 	var drop = control * ground_friction * delta
 	var new_speed = max(self.velocity.length() - drop, 0.0)
 	if self.velocity.length() > 0:
 		new_speed /= self.velocity.length()
 	self.velocity *= new_speed
-	
+
 	_headbob_effect(delta)
 
 func _physics_process(delta: float) -> void:
-	
+
 	if vestige_scene_var.cutscene:
 		return
-	
+
+	if is_on_floor() and not is_jumping and wish_dir.length() > 0.1:
+		is_walking = true
+		%WalkAnimationPlayer.play("walk")
+	else:
+		is_walking = false
+		%WalkAnimationPlayer.stop()
+
 	if interaction_ray_cast.is_colliding():
 		var target: Object = interaction_ray_cast.get_collider()
 		var target_name: String = target.name
-		
+
 		if target_name == "EndingBenchArea" or target_name == "EndingBenchBody3D":
 			_is_ending_bench_interacting = true
 		else:
 			_is_ending_bench_interacting = false
 	else:
 		_is_ending_bench_interacting = false
-	
+
 	if is_on_floor():
 		_last_frame_was_on_floor = Engine.get_physics_frames()
 
@@ -278,10 +285,10 @@ func _physics_process(delta: float) -> void:
 		separation_ray.rotation.y = target_angle
 
 	var input_dir := Input.get_vector("left", "right", "up", "down").normalized()
-	
+
 	wish_dir = self.global_transform.basis * Vector3(-input_dir.x, 0., -input_dir.y)
 	cam_aligned_wish_dir = %Camera3D.global_transform.basis * Vector3(input_dir.x, 0., input_dir.y)
-		
+
 	_handle_crouch(delta)
 
 	if not _handle_noclip(delta):

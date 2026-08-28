@@ -50,11 +50,14 @@ Todos:
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
 - [ ] Rework Torch Animations
+- [ ] Silhouette Doesnt move after a period of inactivity.
 
 ### Priority 3: Atmosphere
 
+- [X] Background Track (v0.6.2-beta)
+- [X] Walking SFX (v0.6.2-beta)
+- [-] Sounds like ~~Winds~~, leaves, snow. (v0.6.2-beta ... )
 - [ ] Ambience SFX
-- [ ] Sounds like Winds, leaves, snow.
 - [ ] Each Vestige SFX
 - [ ] Sound design for each.
 - [ ] Sounds on the Tunnel.
