@@ -24,9 +24,10 @@ func _on_vestige_area_3d_body_entered(body: Node3D) -> void:
 func vestige_animation() -> void:
 	vestige_scene_var.vestige_count += 1
 	var count: int = vestige_scene_var.vestige_count
+	
 
 	vestige_animation_player.play("vestige_animation")
-	vestige_once_animation_player.play("play_once")
+	play_once_animation()
 	
 	if count == 1:
 		await dialogue_text.typewrite("Little and Innocent.", false, 1.0, 4.2)
@@ -44,3 +45,8 @@ func vestige_animation() -> void:
 		await dialogue_text.typewrite("R E F L E C T I O N . . .", false, 1.0, 4.2)
 	
 	await vestige_once_animation_player.animation_finished
+
+func play_once_animation() -> void:
+	vestige_once_animation_player.play("play_once")
+	await vestige_once_animation_player.animation_finished
+	vestige_scene_var.entered_vestige_before_animation = true

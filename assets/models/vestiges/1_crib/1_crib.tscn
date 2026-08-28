@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://ci28e21di72cb" path="res://assets/models/vestiges/1_crib/1_crib.blend" id="1_1h4k3"]
 [ext_resource type="Script" uid="uid://c1uhdogxt7xqt" path="res://scripts/Controllers/Vestige.gd" id="2_rv8rp"]
+[ext_resource type="AudioStream" uid="uid://cy18vyfuue7df" path="res://assets/sfx/vestiges/1_crib/crib_creak.mp3" id="3_sl4u0"]
+[ext_resource type="AudioStream" uid="uid://dsq5v0tksa700" path="res://assets/sfx/vestiges/1_crib/lullaby.mp3" id="4_uubvf"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vhifa"]
 data = PackedVector3Array(-1.5992999, 0.6142, 0.38889998, -1.5992999, 1.1486, -0.4107, -1.5992999, 1.1486, 0.38889998, -1.5992999, 0.6142, 0.38889998, -1.5992999, 0.6142, -0.4107, -1.5992999, 1.1486, -0.4107, -1.5992999, 0.6142, -0.4107, -0.08, 1.1486, -0.4107, -1.5992999, 1.1486, -0.4107, -1.5992999, 0.6142, -0.4107, -0.08, 0.6142, -0.4107, -0.08, 1.1486, -0.4107, -0.08, 0.6142, -0.4107, -0.08, 1.1486, 0.38889998, -0.08, 1.1486, -0.4107, -0.08, 0.6142, -0.4107, -0.08, 0.6142, 0.38889998, -0.08, 1.1486, 0.38889998, -0.08, 0.6142, 0.38889998, -1.5992999, 1.1486, 0.38889998, -0.08, 1.1486, 0.38889998, -0.08, 0.6142, 0.38889998, -1.5992999, 0.6142, 0.38889998, -1.5992999, 1.1486, 0.38889998, -1.5992999, 0.6142, -0.4107, -0.08, 0.6142, 0.38889998, -0.08, 0.6142, -0.4107, -1.5992999, 0.6142, -0.4107, -1.5992999, 0.6142, 0.38889998, -0.08, 0.6142, 0.38889998, -1.5127, 0.7008, 0.3023, -1.4932, 1.1486, -0.3047, -1.5127, 0.7008, -0.3241, -1.5127, 0.7008, 0.3023, -1.4932, 1.1486, 0.2829, -1.4932, 1.1486, -0.3047, -1.5127, 0.7008, -0.3241, -0.18609999, 1.1486, -0.3047, -0.16659999, 0.7008, -0.3241, -1.5127, 0.7008, -0.3241, -1.4932, 1.1486, -0.3047, -0.18609999, 1.1486, -0.3047, -0.16659999, 0.7008, -0.3241, -0.18609999, 1.1486, 0.2829, -0.16659999, 0.7008, 0.3023, -0.16659999, 0.7008, -0.3241, -0.18609999, 1.1486, -0.3047, -0.18609999, 1.1486, 0.2829, -0.16659999, 0.7008, 0.3023, -1.4932, 1.1486, 0.2829, -1.5127, 0.7008, 0.3023, -0.16659999, 0.7008, 0.3023, -0.18609999, 1.1486, 0.2829, -1.4932, 1.1486, 0.2829, -1.5127, 0.7008, -0.3241, -0.16659999, 0.7008, 0.3023, -1.5127, 0.7008, 0.3023, -1.5127, 0.7008, -0.3241, -0.16659999, 0.7008, -0.3241, -0.16659999, 0.7008, 0.3023, -1.5992999, 1.1486, -0.4107, -1.4932, 1.1486, 0.2829, -1.5992999, 1.1486, 0.38889998, -1.5992999, 1.1486, -0.4107, -1.4932, 1.1486, -0.3047, -1.4932, 1.1486, 0.2829, -0.08, 1.1486, -0.4107, -1.4932, 1.1486, -0.3047, -1.5992999, 1.1486, -0.4107, -0.08, 1.1486, -0.4107, -0.18609999, 1.1486, -0.3047, -1.4932, 1.1486, -0.3047, -0.08, 1.1486, 0.38889998, -0.18609999, 1.1486, -0.3047, -0.08, 1.1486, -0.4107, -0.08, 1.1486, 0.38889998, -0.18609999, 1.1486, 0.2829, -0.18609999, 1.1486, -0.3047, -1.5992999, 1.1486, 0.38889998, -0.18609999, 1.1486, 0.2829, -0.08, 1.1486, 0.38889998, -1.5992999, 1.1486, 0.38889998, -1.4932, 1.1486, 0.2829, -0.18609999, 1.1486, 0.2829)
@@ -122,6 +124,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0)]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CreakingStreamPlayer3D:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_sl4u0"]
 resource_name = "vestige_animation"
@@ -223,6 +237,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(-0.14817984, 0, 0), Vector3(0.00032880506, 0, 0), Vector3(0.15048179, 0, 0), Vector3(0.00084052276, 0, 0)]
 }
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CreakingStreamPlayer3D:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(-1.1666666),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_uubvf"]
 _data = {
@@ -247,6 +273,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CreakingStreamPlayer3D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LullabyStreamPlayer3D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_afd0b"]
 resource_name = "play_once"
@@ -261,6 +311,30 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CreakingStreamPlayer3D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LullabyStreamPlayer3D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rv8rp"]
@@ -343,6 +417,7 @@ transform = Transform3D(1.1644753, 0, 0, 0, 1.1644752, 0, 0, 0, 1.1644752, 0.856
 
 [node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." index="8" unique_id=1270803403]
 libraries/ = SubResource("AnimationLibrary_uubvf")
+autoplay = &"RESET"
 
 [node name="VestigeArea3D" type="Area3D" parent="." index="9" unique_id=278040025]
 
@@ -353,5 +428,13 @@ shape = SubResource("BoxShape3D_g4v7s")
 [node name="VestigeOnceAnimationPlayer" type="AnimationPlayer" parent="." index="10" unique_id=1867221597]
 libraries/ = SubResource("AnimationLibrary_rv8rp")
 autoplay = &"RESET"
+
+[node name="CreakingStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="11" unique_id=368859023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.484809, -0.068353176)
+stream = ExtResource("3_sl4u0")
+
+[node name="LullabyStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="12" unique_id=2080782302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11277068, -0.22720891)
+stream = ExtResource("4_uubvf")
 
 [connection signal="body_entered" from="VestigeArea3D" to="." method="_on_vestige_area_3d_body_entered"]

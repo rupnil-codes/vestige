@@ -43,6 +43,8 @@ Todos:
 - [X] Show Dialogues like "jumping not allowed", "Go down, you know what to do." (v0.5.5-beta ... v0.5.10-beta)
 - [X] Typewriter sound (v0.5.8-beta)
 - [X] If the player touches the silhouette first make sure the vestige animation starts. (v0.6.1-beta)
+- [X] Silhouette doesn't move if you pass it twice before it is done. (v0.6.3-beta)
+- [X] make it so that wen the vestige animation plays before and then the silhouette is touched it doesnt wait 3s. (v0.6.3-beta)
 - [ ] Watch Tower Furniture
 - [ ] Stethoscope model
 - [ ] Better Jumping Logic -- Feels floaty now.
@@ -50,7 +52,6 @@ Todos:
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
 - [ ] Rework Torch Animations
-- [ ] Silhouette Doesnt move after a period of inactivity.
 
 ### Priority 3: Atmosphere
 
@@ -69,10 +70,10 @@ Todos:
 - [ ] Easter Eggs
 - [ ] Better Animations like Blinking, Waking up.
 - [ ] Main menu and pause menu
-    - [ ] Option for shader (default: on)
-    - [ ] Option for V-Sync (default: off)
-    - [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
-    - [ ] Camera Shake Option
+	- [ ] Option for shader (default: on)
+	- [ ] Option for V-Sync (default: off)
+	- [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
+	- [ ] Camera Shake Option
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp
 - [ ] Particle Polish

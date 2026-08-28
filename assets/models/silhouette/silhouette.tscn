@@ -411,9 +411,7 @@ draw_pass_1 = SubResource("QuadMesh_57qmd")
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="9" unique_id=258191392]
 aabb = AABB(-1.34, -2.5, -0.925, 2.5, 5, 2.5)
 
-[node name="VisibleOnScreenEnabler3D" type="VisibleOnScreenEnabler3D" parent="." index="10" unique_id=1812001815]
-
-[node name="SilhouetteAnimationPlayer" type="AnimationPlayer" parent="." index="11" unique_id=2107300397]
+[node name="SilhouetteAnimationPlayer" type="AnimationPlayer" parent="." index="10" unique_id=2107300397]
 libraries/ = SubResource("AnimationLibrary_jmcso")
 autoplay = &"RESET"
 

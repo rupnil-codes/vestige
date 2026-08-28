@@ -4,7 +4,7 @@ var cutscene: bool = false
 var intro: bool = true
 
 var vestige_count: int = 0
-# var entered_vestige_before_animation: bool = false
+var entered_vestige_before_animation: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

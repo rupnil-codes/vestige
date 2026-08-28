@@ -1,17 +1,16 @@
 extends Node3D
 
 var already_found: bool = false
-var visible_on_screen_enabler: bool = true
 
 var meshes: Array[MeshInstance3D] = [$Body, $Head, $Eye1, $Eye2]
 @onready var effects: Array[Variant] = [$Fog, $GPUPurpleParticles3D]
 @onready var silhouette_animation_mover: AnimationPlayer = $"../../../SilhouetteAnimationMover"
 @onready var silhouette_animation_player: AnimationPlayer = $SilhouetteAnimationPlayer
-@onready var visible_on_screen_enabler_3d: VisibleOnScreenEnabler3D = $VisibleOnScreenEnabler3D
 
 @onready var vestige_scene_var: Node3D = %VestigeSceneVar
 
 var _player_touched: bool = false
+var _loop_alr_running: bool = false
 @onready var dialogue_text: Label = %DialogueText
 
 var movement: Array[String] = [
@@ -35,29 +34,38 @@ func _process(delta: float) -> void:
 	pass # Replace with function body.
 	
 func _on_area_3d_body_entered(body: Node3D) -> void:
+
+	if not body.name == "Player3D":
+		return
+
+	if _loop_alr_running:
+		return
+	
+	_loop_alr_running = true
 	
 	while vestige_scene_var.intro:
 		await get_tree().create_timer(0.1).timeout
-		if not vestige_scene_var.intro:
-			break
+	
+	if next_location_index < len(movement):
+		if _player_touched and not vestige_scene_var.entered_vestige_before_animation:
+			await get_tree().create_timer(3).timeout
 		
-	if visible_on_screen_enabler:
-		visible_on_screen_enabler_3d.queue_free()
-		visible_on_screen_enabler = false
-	if body.is_in_group("player"):
-		if next_location_index < len(movement):
-			silhouette_animation_player.play("transform")
-			await silhouette_animation_player.animation_finished
+		silhouette_animation_player.play("transform")
 			
-			if not _player_touched:
-				dialogue_text.typewrite("Follow me.")
-				_player_touched = true
-				
-			silhouette_animation_mover.play(movement[next_location_index])
-			await silhouette_animation_mover.animation_finished
-			silhouette_animation_player.play_backwards("transform")
-			await silhouette_animation_player.animation_finished
-			next_location_index += 1
+		if not _player_touched:
+			await get_tree().create_timer(0.5).timeout
+			dialogue_text.typewrite("Follow me.")
+			_player_touched = true
+
+		await silhouette_animation_player.animation_finished
+		silhouette_animation_mover.play(movement[next_location_index])
+		await silhouette_animation_mover.animation_finished
+		silhouette_animation_player.play_backwards("transform")
+		await silhouette_animation_player.animation_finished
+		next_location_index += 1
+
+		_loop_alr_running = false
+		vestige_scene_var.entered_vestige_before_animation = false
 			
 
 
