@@ -5,6 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://dusa3364l7lua" path="res://assets/tracks/background.mp3" id="2_ouxva"]
 [ext_resource type="AudioStream" uid="uid://dr3agn65imrh0" path="res://assets/sfx/walking.mp3" id="3_d5dr7"]
 [ext_resource type="AudioStream" uid="uid://3fq23oeknu8j" path="res://assets/sfx/type.mp3" id="3_v2miy"]
+[ext_resource type="AudioStream" uid="uid://xtgqo12qbnaj" path="res://assets/sfx/walk_stairs.mp3" id="6_toylo"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d6veg"]
 
@@ -149,7 +150,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_toylo"]
 resource_name = "walk"
-length = 0.96666664
+length = 0.8666667
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -170,6 +171,44 @@ _data = {
 &"delete": SubResource("Animation_d5dr7"),
 &"type": SubResource("Animation_ouxva"),
 &"walk": SubResource("Animation_toylo")
+}
+
+[sub_resource type="Animation" id="Animation_tb4ck"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamNode3D/WalkingStairsAudioStreamPlayer3D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_kwvpd"]
+resource_name = "walk_stairs"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamNode3D/WalkingStairsAudioStreamPlayer3D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_op4fd"]
+_data = {
+&"RESET": SubResource("Animation_tb4ck"),
+&"walk_stairs": SubResource("Animation_kwvpd")
 }
 
 [node name="Player3D" type="CharacterBody3D" unique_id=1421963457 groups=["player"]]
@@ -237,6 +276,12 @@ stream = ExtResource("3_d5dr7")
 max_db = -2.0
 parameters/looping = true
 
+[node name="WalkingStairsAudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="AudioStreamNode3D" unique_id=1251587437]
+stream = ExtResource("6_toylo")
+max_db = -4.0
+pitch_scale = 0.8
+parameters/looping = true
+
 [node name="PlayerAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1485871315]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_d5dr7")
@@ -244,3 +289,7 @@ libraries/ = SubResource("AnimationLibrary_d5dr7")
 [node name="WalkAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1501054264]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_d5dr7")
+
+[node name="WalkStairsAnimationPlayer" type="AnimationPlayer" parent="." unique_id=537494327]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_op4fd")

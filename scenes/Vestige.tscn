@@ -1131,6 +1131,30 @@ tracks/25/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("SubViewport/Player3D/WindAudioStreamPlayer3D:max_db")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-17.0]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("SubViewport/Player3D/WindAudioStreamPlayer3D:volume_db")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="Animation" id="Animation_3bx4b"]
 resource_name = "any_key_continue_animation"
@@ -1426,6 +1450,34 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_cwcys"]
+resource_name = "fade_wind_sound"
+length = 5.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/Player3D/WindAudioStreamPlayer3D:max_db")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-17.0, -24.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/Player3D/WindAudioStreamPlayer3D:volume_db")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.3333334, 5.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -80.0]
+}
+
 [sub_resource type="Animation" id="Animation_0daru"]
 resource_name = "remove_main_map"
 tracks/0/type = "value"
@@ -1595,6 +1647,7 @@ _data = {
 &"ending_camera_cut_scene": SubResource("Animation_f7phn"),
 &"ending_camera_move_invisible": SubResource("Animation_uhaqf"),
 &"fade_to_black": SubResource("Animation_gkgfg"),
+&"fade_wind_sound": SubResource("Animation_cwcys"),
 &"remove_main_map": SubResource("Animation_0daru"),
 &"show_secondary_map": SubResource("Animation_t4lnq")
 }
@@ -5743,17 +5796,8 @@ transform = Transform3D(0.89178765, 0, -0.4524544, 0, 1, 0, 0.4524544, 0, 0.8917
 [node name="lantern_hanging" parent="SubViewport/World/Bunker3D" unique_id=127450158 instance=ExtResource("28_kgo5s")]
 transform = Transform3D(0.70023316, 0, -0.71391433, 0, 1, 0, 0.71391433, 0, 0.70023316, -0.010101318, 1.1998813, -1.2295685)
 
-[node name="lantern_regular" parent="SubViewport/World/Bunker3D" unique_id=266304621 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.994847, -0.03384678, -0.09557382, 0.0339117, 0.9994244, -0.0009452164, 0.095550835, -0.0023007262, 0.9954218, -1.6454124, -8.98238, 11.070122)
-
 [node name="lantern_regular3" parent="SubViewport/World/Bunker3D" unique_id=900907967 instance=ExtResource("28_jh5a0")]
 transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, 1.689167, -15.863321, 21.721397)
-
-[node name="lantern_hanging2" parent="SubViewport/World/Bunker3D" unique_id=51408711 instance=ExtResource("28_kgo5s")]
-transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -0.07740402, -22.582453, 34.289658)
-
-[node name="lantern_hanging3" parent="SubViewport/World/Bunker3D" unique_id=1408499029 instance=ExtResource("28_kgo5s")]
-transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -0.009609222, -45.538475, 70.55767)
 
 [node name="lantern_hanging4" parent="SubViewport/World/Bunker3D" unique_id=1247002052 instance=ExtResource("28_kgo5s")]
 transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -0.16539383, -35.003292, 54.881905)

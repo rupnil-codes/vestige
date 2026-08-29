@@ -52,6 +52,7 @@ Todos:
 - [ ] Fix the UV of the beams and railings (Low)
 - [ ] Change the path texture to a trodden grass one.
 - [ ] Rework Torch Animations
+- [ ] Proper Area3D of the watchtower stairs
 
 ### Priority 3: Atmosphere
 
@@ -66,8 +67,9 @@ Todos:
   - [X] Piano (v0.6.4-beta)
   - [X] Wheelchair (v0.6.4-beta)
   - [X] Mirror (v0.6.4-beta)
+- [X] Stair sounds (v0.6.5-beta)
+- [X] Door close (v0.6.5-beta)
 - [ ] Ambience SFX 
-- [ ] Sound design for each.
 - [ ] Sounds on the Tunnel.
 - [ ] Add notes and pictures on the tunnel
 

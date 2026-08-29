@@ -147,6 +147,6 @@ draw_pass_1 = SubResource("QuadMesh_j6iig")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="11" unique_id=1544043906]
 stream = ExtResource("2_wixhv")
-max_db = -4.0
+max_db = -10.0
 autoplay = true
 parameters/looping = true

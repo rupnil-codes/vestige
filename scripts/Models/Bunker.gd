@@ -3,6 +3,7 @@ extends Node3D
 @export var _player_entered_bunker_stairs: bool = false
 @onready var weeping_silhouette_3d: Node3D = $"../WeepingSilhouette3D"
 @onready var bunker_animation_player: AnimationPlayer = %BunkerAnimationPlayer
+@onready var bunker_sound_player: AnimationPlayer = %BunkerSoundPlayer
 
 @onready var vestige_animation_player: AnimationPlayer = $"../../../VestigeAnimationPlayer"
 @onready var map_3d_1: Node3D = $"../Map3D"
@@ -23,11 +24,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if weeping_silhouette_3d.weeping_silhouette_animation_done and is_closed and not switch:
 		bunker_animation_player.play("open")
+		bunker_sound_player.play("door_creak")
 		is_closed = false
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("open_bunker") and OS.is_debug_build()	:
 		bunker_animation_player.play("open")
+		bunker_sound_player.play("door_creak")
 		is_closed = false
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
@@ -42,6 +45,12 @@ func _on_stairs_area_3d_body_exited(body: Node3D) -> void:
 func _on_door_close_area_3d_body_entered(body: Node3D) -> void:
 	if body.name == "Player3D" and not is_closed:
 		bunker_animation_player.play_backwards("open") # close
+		bunker_sound_player.play("door_slam")
+		vestige_animation_player.play("fade_wind_sound")
+		
+		await bunker_animation_player.animation_finished
+		await vestige_animation_player.animation_finished
+		
 		vestige_animation_player.play("remove_main_map")
 		map_3d_1.hide_main_map_meshes()
 		is_closed = true
@@ -58,7 +67,7 @@ func _on_jump_dialogue_area_3d_body_entered(body: Node3D) -> void:
 	if body.name == "Player3D" and not jump_dialogue:
 		dialogue_text.typewrite(
 				"Let go and fall free." + '\n' +
-				"-A-C-C-E-P-T-A-N-C-E-"
+				"-A-C-C-E-P-T-A-N-C-E-", true
 		)
 		jump_dialogue = true
 
@@ -66,3 +75,8 @@ func _on_jump_dialogue_area_3d_body_entered(body: Node3D) -> void:
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 	if hide_switch:
 		bunker_animation_player.play("hide_bunker")
+
+
+func _on_jumped_area_3d_body_entered(body: Node3D) -> void:
+	if body.name == "Player3D":
+		vestige_animation_player.play_backwards("fade_wind_sound")

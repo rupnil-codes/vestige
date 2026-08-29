@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://ckefpg1pmh8qh" path="res://assets/models/bunker/bunker.blend" id="1_xao48"]
 [ext_resource type="Script" uid="uid://b4r6iljuuhyf0" path="res://scripts/Models/Bunker.gd" id="2_76bb7"]
+[ext_resource type="AudioStream" uid="uid://t6xgk31gi40n" path="res://assets/sfx/bunker/door/door_creaks.mp3" id="3_yj3m1"]
+[ext_resource type="AudioStream" uid="uid://dglxhaukcxy8v" path="res://assets/sfx/bunker/door/door_slam.mp3" id="4_j1uei"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_yj3m1"]
 data = PackedVector3Array(-2.0913, -13.089999, -29.5098, -2.0913, -12.9052, -62.136898, -2.0913, -12.5405, -29.678999, -2.0913, -13.089999, -29.5098, -2.0913, -13.089999, -62.4082, -2.0913, -12.9052, -62.136898, -2.0913, -13.089999, -62.4082, 2.1448998, -12.9052, -62.136898, -2.0913, -12.9052, -62.136898, -2.0913, -13.089999, -62.4082, 2.1448998, -13.089999, -62.4082, 2.1448998, -12.9052, -62.136898, 2.1448998, -13.089999, -62.4082, 2.1448998, -12.5405, -29.678999, 2.1448998, -12.9052, -62.136898, 2.1448998, -13.089999, -62.4082, 2.1448998, -13.089999, -29.5098, 2.1448998, -12.5405, -29.678999, 2.1448998, -13.089999, -29.5098, -2.0913, -12.5405, -29.678999, 2.1448998, -12.5405, -29.678999, 2.1448998, -13.089999, -29.5098, -2.0913, -13.089999, -29.5098, -2.0913, -12.5405, -29.678999, -2.0913, -13.089999, -62.4082, 2.1448998, -13.089999, -29.5098, 2.1448998, -13.089999, -62.4082, -2.0913, -13.089999, -62.4082, -2.0913, -13.089999, -29.5098, 2.1448998, -13.089999, -29.5098, 2.1448998, -12.9052, -62.136898, -2.0913, -12.5405, -29.678999, -2.0913, -12.9052, -62.136898, 2.1448998, -12.9052, -62.136898, 2.1448998, -12.5405, -29.678999, -2.0913, -12.5405, -29.678999, -2.0913, -10.888, -26.178799, -2.0913, -12.5405, -29.678999, -2.1404, -10.2766, -26.1815, -2.0913, -10.888, -26.178799, -2.0913, -13.089999, -29.5098, -2.0913, -12.5405, -29.678999, 2.1448998, -13.089999, -29.5098, 2.0959, -10.2766, -26.1815, 2.1448998, -12.5405, -29.678999, 2.1448998, -13.089999, -29.5098, 2.0959, -10.877399, -26.1815, 2.0959, -10.2766, -26.1815, 2.0959, -10.877399, -26.1815, -2.1404, -10.2766, -26.1815, 2.0959, -10.2766, -26.1815, 2.0959, -10.877399, -26.1815, -2.0913, -10.888, -26.178799, -2.1404, -10.2766, -26.1815, -2.0913, -13.089999, -29.5098, 2.0959, -10.877399, -26.1815, 2.1448998, -13.089999, -29.5098, -2.0913, -13.089999, -29.5098, -2.0913, -10.888, -26.178799, 2.0959, -10.877399, -26.1815, 2.1448998, -12.5405, -29.678999, -2.1404, -10.2766, -26.1815, -2.0913, -12.5405, -29.678999, 2.1448998, -12.5405, -29.678999, 2.0959, -10.2766, -26.1815, -2.1404, -10.2766, -26.1815, -2.1404, -11.0109, 15.3129, -2.1404, -10.2766, -26.1815, -2.1404, -10.4614, 15.1435995, -2.1404, -11.0109, 15.3129, -2.0913, -10.888, -26.178799, -2.1404, -10.2766, -26.1815, 2.0959, -10.877399, -26.1815, 2.0959, -10.4614, 15.1435995, 2.0959, -10.2766, -26.1815, 2.0959, -10.877399, -26.1815, 2.0959, -11.0109, 15.3129, 2.0959, -10.4614, 15.1435995, 2.0959, -11.0109, 15.3129, -2.1404, -10.4614, 15.1435995, 2.0959, -10.4614, 15.1435995, 2.0959, -11.0109, 15.3129, -2.1404, -11.0109, 15.3129, -2.1404, -10.4614, 15.1435995, -2.0913, -10.888, -26.178799, 2.0959, -11.0109, 15.3129, 2.0959, -10.877399, -26.1815, -2.0913, -10.888, -26.178799, -2.1404, -11.0109, 15.3129, 2.0959, -11.0109, 15.3129, 2.0959, -10.2766, -26.1815, -2.1404, -10.4614, 15.1435995, -2.1404, -10.2766, -26.1815, 2.0959, -10.2766, -26.1815, 2.0959, -10.4614, 15.1435995, -2.1404, -10.4614, 15.1435995, -2.1404, 46.814697, 102.8871, -2.1404, -10.4614, 15.1435995, -2.1404, 47.3158, 102.556694, -2.1404, 46.814697, 102.8871, -2.1404, -11.0109, 15.3129, -2.1404, -10.4614, 15.1435995, 2.0959, -11.0109, 15.3129, 2.0959, 47.3158, 102.556694, 2.0959, -10.4614, 15.1435995, 2.0959, -11.0109, 15.3129, 2.0959, 46.814697, 102.8871, 2.0959, 47.3158, 102.556694, -2.1404, -11.0109, 15.3129, 2.0959, 46.814697, 102.8871, 2.0959, -11.0109, 15.3129, -2.1404, -11.0109, 15.3129, -2.1404, 46.814697, 102.8871, 2.0959, 46.814697, 102.8871, 2.0959, -10.4614, 15.1435995, -2.1404, 47.3158, 102.556694, -2.1404, -10.4614, 15.1435995, 2.0959, -10.4614, 15.1435995, 2.0959, 47.3158, 102.556694, -2.1404, 47.3158, 102.556694, 2.0959, 47.3158, 102.556694, -2.1404, 50.3131, 107.0937, -2.1404, 47.3158, 102.556694, 2.0959, 47.3158, 102.556694, 2.0959, 50.3131, 107.0937, -2.1404, 50.3131, 107.0937, -2.1404, 49.811897, 107.424095, 2.0959, 50.3131, 107.0937, 2.0959, 49.811897, 107.424095, -2.1404, 49.811897, 107.424095, -2.1404, 50.3131, 107.0937, 2.0959, 50.3131, 107.0937, 2.0959, 46.814697, 102.8871, 2.0959, 50.3131, 107.0937, 2.0959, 47.3158, 102.556694, 2.0959, 46.814697, 102.8871, 2.0959, 49.811897, 107.424095, 2.0959, 50.3131, 107.0937, -2.1404, 50.3131, 107.0937, -29.1971, 47.413498, 102.7044, -2.1404, 47.3158, 102.556694, -2.1404, 50.3131, 107.0937, -29.1971, 50.214397, 106.946, -29.1971, 47.413498, 102.7044, -2.1404, 46.814697, 102.8871, 2.0959, 49.811897, 107.424095, 2.0959, 46.814697, 102.8871, -2.1404, 46.814697, 102.8871, -2.1404, 49.811897, 107.424095, 2.0959, 49.811897, 107.424095, -29.1971, 50.214397, 106.946, -33.4609, 47.413498, 102.7044, -29.1971, 47.413498, 102.7044, -29.1971, 50.214397, 106.946, -33.4609, 50.214397, 106.946, -33.4609, 47.413498, 102.7044, -2.1404, 49.811897, 107.424095, -29.1971, 50.214397, 106.946, -2.1404, 50.3131, 107.0937, -2.1404, 49.811897, 107.424095, -29.1971, 49.7142, 107.2764, -29.1971, 50.214397, 106.946, -2.1404, 46.814697, 102.8871, -29.1971, 49.7142, 107.2764, -2.1404, 49.811897, 107.424095, -2.1404, 46.814697, 102.8871, -29.1971, 46.9124, 103.0348, -29.1971, 49.7142, 107.2764, -2.1404, 47.3158, 102.556694, -29.1971, 46.9124, 103.0348, -2.1404, 46.814697, 102.8871, -2.1404, 47.3158, 102.556694, -29.1971, 47.413498, 102.7044, -29.1971, 46.9124, 103.0348, -33.4609, 46.9124, 103.0348, -33.4609, 45.7747, 109.87669, -33.4609, 49.7142, 107.2764, -33.4609, 46.9124, 103.0348, -33.4609, 42.9738, 105.63509, -33.4609, 45.7747, 109.87669, -29.1971, 47.413498, 102.7044, -33.4609, 46.9124, 103.0348, -29.1971, 46.9124, 103.0348, -29.1971, 47.413498, 102.7044, -33.4609, 47.413498, 102.7044, -33.4609, 46.9124, 103.0348, -29.1971, 46.9124, 103.0348, -33.4609, 49.7142, 107.2764, -29.1971, 49.7142, 107.2764, -29.1971, 46.9124, 103.0348, -33.4609, 46.9124, 103.0348, -33.4609, 49.7142, 107.2764, -29.1971, 49.7142, 107.2764, -33.4609, 50.214397, 106.946, -29.1971, 50.214397, 106.946, -29.1971, 49.7142, 107.2764, -33.4609, 49.7142, 107.2764, -33.4609, 50.214397, 106.946, -33.9852, 47.413498, 102.7044, -33.9852, 49.7142, 107.2764, -33.9852, 46.9124, 103.0348, -33.9852, 47.413498, 102.7044, -33.9852, 50.214397, 106.946, -33.9852, 49.7142, 107.2764, -33.4609, 49.7142, 107.2764, -33.9852, 50.214397, 106.946, -33.4609, 50.214397, 106.946, -33.4609, 49.7142, 107.2764, -33.9852, 49.7142, 107.2764, -33.9852, 50.214397, 106.946, -33.4609, 50.214397, 106.946, -33.9852, 47.413498, 102.7044, -33.4609, 47.413498, 102.7044, -33.4609, 50.214397, 106.946, -33.9852, 50.214397, 106.946, -33.9852, 47.413498, 102.7044, -33.4609, 47.413498, 102.7044, -33.9852, 46.9124, 103.0348, -33.4609, 46.9124, 103.0348, -33.4609, 47.413498, 102.7044, -33.9852, 47.413498, 102.7044, -33.9852, 46.9124, 103.0348, -33.4609, 42.9738, 105.63509, -33.4609, 40.0869, 113.6347, -33.4609, 45.7747, 109.87669, -33.4609, 42.9738, 105.63509, -33.4609, 37.2861, 109.390495, -33.4609, 40.0869, 113.6347, -33.4609, 49.7142, 107.2764, -33.9852, 45.7747, 109.87669, -33.9852, 49.7142, 107.2764, -33.4609, 49.7142, 107.2764, -33.4609, 45.7747, 109.87669, -33.9852, 45.7747, 109.87669, -33.9852, 46.9124, 103.0348, -33.4609, 42.9738, 105.63509, -33.4609, 46.9124, 103.0348, -33.9852, 46.9124, 103.0348, -33.9852, 42.9738, 105.63509, -33.4609, 42.9738, 105.63509, -33.9852, 49.7142, 107.2764, -33.9852, 42.9738, 105.63509, -33.9852, 46.9124, 103.0348, -33.9852, 49.7142, 107.2764, -33.9852, 45.7747, 109.87669, -33.9852, 42.9738, 105.63509, -33.4609, 37.2861, 109.390495, -33.9852, 40.0869, 113.6347, -33.4609, 40.0869, 113.6347, -33.4609, 37.2861, 109.390495, -33.9852, 37.2861, 109.390495, -33.9852, 40.0869, 113.6347, -33.9852, 42.9738, 105.63509, -33.4609, 37.2861, 109.390495, -33.4609, 42.9738, 105.63509, -33.9852, 42.9738, 105.63509, -33.9852, 37.2861, 109.390495, -33.4609, 37.2861, 109.390495, -33.9852, 45.7747, 109.87669, -33.9852, 37.2861, 109.390495, -33.9852, 42.9738, 105.63509, -33.9852, 45.7747, 109.87669, -33.9852, 40.0869, 113.6347, -33.9852, 37.2861, 109.390495, -33.4609, 45.7747, 109.87669, -33.9852, 40.0869, 113.6347, -33.9852, 45.7747, 109.87669, -33.4609, 45.7747, 109.87669, -33.4609, 40.0869, 113.6347, -33.9852, 40.0869, 113.6347)
@@ -37,7 +39,7 @@ size = Vector3(5.3564453, 8.892914, 86.652794)
 size = Vector3(3.4558296, 7.516762, 2.0404663)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_57qmd"]
-size = Vector3(4.06279, 5.381531, 1.0327148)
+size = Vector3(6.305664, 6.248047, 1.0327148)
 
 [sub_resource type="Animation" id="Animation_xao48"]
 length = 0.001
@@ -149,8 +151,20 @@ tracks/8/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("AudioStreams/DoorCreakAudioStreamPlayer3D:playing")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
-[sub_resource type="Animation" id="Animation_yj3m1"]
+[sub_resource type="Animation" id="Animation_j1uei"]
 resource_name = "hide_bunker"
 length = 0.1
 tracks/0/type = "value"
@@ -238,7 +252,7 @@ tracks/6/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="Animation" id="Animation_76bb7"]
+[sub_resource type="Animation" id="Animation_2bfe4"]
 resource_name = "open"
 length = 0.43333334
 tracks/0/type = "value"
@@ -269,8 +283,73 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yj3m1"]
 _data = {
 &"RESET": SubResource("Animation_xao48"),
-&"hide_bunker": SubResource("Animation_yj3m1"),
-&"open": SubResource("Animation_76bb7")
+&"hide_bunker": SubResource("Animation_j1uei"),
+&"open": SubResource("Animation_2bfe4")
+}
+
+[sub_resource type="Animation" id="Animation_ldfiq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreams/DoorCreakAudioStreamPlayer3D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreams/DoorSlamAudioStreamPlayer3D:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_u23wu"]
+resource_name = "door_creak"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreams/DoorCreakAudioStreamPlayer3D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_igpw2"]
+resource_name = "door_slam"
+length = 0.43329999999999996
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreams/DoorSlamAudioStreamPlayer3D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.04),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xx107"]
+_data = {
+&"RESET": SubResource("Animation_ldfiq"),
+&"door_creak": SubResource("Animation_u23wu"),
+&"door_slam": SubResource("Animation_igpw2")
 }
 
 [node name="bunker" unique_id=708449342 instance=ExtResource("1_xao48")]
@@ -355,17 +434,43 @@ transform = Transform3D(2.9802322e-08, 0, -1, 0, 1, 0, 1, 0, 2.9802322e-08, -24.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034492493, 0.865448, 0.016357422)
 shape = SubResource("BoxShape3D_57qmd")
 
-[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="13" unique_id=1543503733]
+[node name="JumpedArea3D" type="Area3D" parent="." index="13" unique_id=1481493205]
+transform = Transform3D(-1.3027009e-15, 1, 4.371139e-08, -2.9802322e-08, -4.371139e-08, 1, 1, 0, 2.9802322e-08, -31.976458, -58.710606, 178.0219)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="JumpedArea3D" index="0" unique_id=661544702]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0028381348, 0.53495026, 0.016357422)
+shape = SubResource("BoxShape3D_57qmd")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="." index="14" unique_id=1543503733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.06122, -31.175602, 73.831726)
 aabb = AABB(-21.884722, -24.705502, -68.53037, 43.769444, 60.604607, 177.54585)
 
-[node name="BunkerAnimationPlayer" type="AnimationPlayer" parent="." index="14" unique_id=186549608]
+[node name="BunkerAnimationPlayer" type="AnimationPlayer" parent="." index="15" unique_id=186549608]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_yj3m1")
+
+[node name="BunkerSoundPlayer" type="AnimationPlayer" parent="." index="16" unique_id=634907724]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_xx107")
+
+[node name="AudioStreams" type="Node3D" parent="." index="17" unique_id=18663442]
+
+[node name="DoorCreakAudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="AudioStreams" index="0" unique_id=931734986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.1181967)
+stream = ExtResource("3_yj3m1")
+volume_db = 20.0
+max_db = 2.0
+
+[node name="DoorSlamAudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="AudioStreams" index="1" unique_id=1717792539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.1181967)
+stream = ExtResource("4_j1uei")
+volume_db = 20.0
+max_db = 2.0
 
 [connection signal="body_entered" from="StairsArea3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="StairsArea3D" to="." method="_on_stairs_area_3d_body_exited"]
 [connection signal="body_entered" from="DoorCloseArea3D" to="." method="_on_door_close_area_3d_body_entered"]
 [connection signal="body_entered" from="ShowSecondaryMapArea3D" to="." method="_on_show_secondary_map_area_3d_body_entered"]
 [connection signal="body_entered" from="JumpDialogueArea3D" to="." method="_on_jump_dialogue_area_3d_body_entered"]
+[connection signal="body_entered" from="JumpedArea3D" to="." method="_on_jumped_area_3d_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]

@@ -258,13 +258,24 @@ func _physics_process(delta: float) -> void:
 
 	if vestige_scene_var.cutscene:
 		return
-
-	if is_on_floor() and not player_on_stairs and not is_jumping and wish_dir.length() > 0.1:
-		is_walking = true
-		%WalkAnimationPlayer.play("walk", -1, get_move_speed()/4.25)
+	
+	if not is_jumping and wish_dir.length() > 0.1:
+		if player_on_stairs:
+			%WalkStairsAnimationPlayer.play("walk_stairs", -1, get_move_speed()/4.25)
+		else:
+			%WalkStairsAnimationPlayer.stop()
+		
+		if is_on_floor() and not player_on_stairs:
+			is_walking = true
+			%WalkAnimationPlayer.play("walk", -1, get_move_speed()/4.25)
+		else:
+			is_walking = false
+			%WalkAnimationPlayer.stop()
 	else:
 		is_walking = false
 		%WalkAnimationPlayer.stop()
+		%WalkStairsAnimationPlayer.stop()
+	
 
 	if interaction_ray_cast.is_colliding():
 		var target: Object = interaction_ray_cast.get_collider()
