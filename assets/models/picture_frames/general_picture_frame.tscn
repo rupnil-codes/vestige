@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b25qygn74v4j6"]
+
+[ext_resource type="PackedScene" uid="uid://c753cqf0lns8" path="res://assets/models/picture_frames/general_picture_frame.blend" id="1_oh81y"]
+
+[node name="general_picture_frame" unique_id=1202178499 instance=ExtResource("1_oh81y")]

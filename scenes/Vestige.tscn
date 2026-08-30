@@ -1655,6 +1655,10 @@ _data = {
 [node name="VestigeScene" type="Node3D" unique_id=1247047748]
 script = ExtResource("1_jrnm1")
 
+[node name="VestigeSceneVar" type="Node3D" parent="." unique_id=516042270]
+unique_name_in_owner = true
+script = ExtResource("36_0pfra")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1222793603]
 
 [node name="ShaderColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1871502195]
@@ -9817,7 +9821,3 @@ autoplay = &"RESET"
 [node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1710469678]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
-
-[node name="VestigeSceneVar" type="Node3D" parent="." unique_id=516042270]
-unique_name_in_owner = true
-script = ExtResource("36_0pfra")
