@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://dusa3364l7lua" path="res://assets/tracks/background.mp3" id="2_ouxva"]
 [ext_resource type="AudioStream" uid="uid://dr3agn65imrh0" path="res://assets/sfx/walking.mp3" id="3_d5dr7"]
 [ext_resource type="AudioStream" uid="uid://3fq23oeknu8j" path="res://assets/sfx/type.mp3" id="3_v2miy"]
-[ext_resource type="AudioStream" uid="uid://xtgqo12qbnaj" path="res://assets/sfx/walk_stairs.mp3" id="6_toylo"]
+[ext_resource type="AudioStream" uid="uid://cisfucc7dpohx" path="res://assets/sfx/walk_stairs.mp3" id="4_toylo"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d6veg"]
 
@@ -190,7 +190,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_kwvpd"]
 resource_name = "walk_stairs"
-length = 1.2
+length = 1.3333334
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -277,7 +277,7 @@ max_db = -2.0
 parameters/looping = true
 
 [node name="WalkingStairsAudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="AudioStreamNode3D" unique_id=1251587437]
-stream = ExtResource("6_toylo")
+stream = ExtResource("4_toylo")
 max_db = -4.0
 pitch_scale = 0.8
 parameters/looping = true
