@@ -1,7 +1,7 @@
 <!--
  Copyright (C) 2026 Rupnil Codes
  
- This file is part of Vestige.
+ This file is part of vestige.
  
  Vestige is free software: you can redistribute it and/or modify
  it under the terms of the AGPL-3.0 License.
@@ -47,6 +47,7 @@ vestige
     * [Pre-compiled](#pre-compiled)
     * [Building from Source](#building-from-source)
 * [Features](#features)
+  * [Unfinished Features](#unfinished-features)
 * [What I learnt](#what-i-learnt)
 * [Project Status](#project-status)
 * [Contributors](#contributors)
@@ -95,7 +96,7 @@ And I think thats a good thing, ideas are meant to evolve, grow and transform in
 
 - A Windows, Linux or macOS machine,
 - At least 8gb ram, No fancy GPU needed,
-- ~200mb of storage,
+- ~200mb of storage (or whatever the binary is),
 - A keyboard and a mouse,
 - Headphones for better experience, &
 - Curiosity and sheer will.
@@ -140,25 +141,81 @@ Then the final compiled webapp will be in the `bin/` directory. If you don't cha
 
 ## Features
 
+I wanted to do WAYY more than I could manage in this short amount of time aha. 
+Its not particularly short, but its short enough because I wanted to make ALL the assets by myself.
+THis was a kind of self-imposed challenge But i managed to keep the art time under 30%!
+I remember counting it before and it came out below 30% and im NOT gonna do that again yo.
 
+Anyways, here are some of the notable features, that I think are worth mentioning:
+
+- A start menu with a sleek animation.
+- Realistic walking and climbing mechanics with sounds.
+- Insane Shader.
+- Atmospheric overhaul and ambience.
+- Natural forest.
+- Elements of eeriness and spooks.
+- Hand made, organically grown models and assets.
+- Great Sound Effects.
+- Deep lore.
+
+### Unfinished features:
+
+- More stuff in the Bunker.
+- A proper pause menu.
+- Settings.
+- Optimizations.
+- Easter Eggs.
+- More lore.
+- Much more.
+
+> There are a TON of stuff that I did / did not do, most of them are documented in `TODO.md`
 
 ---
 
 ## What I learnt
 
+I think this project deserves a seat at my top 2 projects YET! I've learnt as much as I've learnt while getting into webdev.
 
+### Technical Skills
+- **Godot Engine:** Before starting this project I only knew about unity and unreal engine. I had tried making a game in unity before, but I completely followed a tutorial.
+                    This project taught me how to use Godot and I'd say I learnt a lot! from animations, to textures, shaders, meshes, players, so much!
+- **GDScript:** GDScript is the scripting language used to code in Godot, I also leant it while making this game, its like python but i loved it!
+
+### Problem Solving
+- Managing a huge codebase
+- Synchronizing so many Different components
+- Properly UV Unwrapping models
+- Animating in Godot
+
+### Personal Note:
+<p>
+Yeah so the format of this readme is made by me obv, its from another project, Override.exe.
+Although I reused the template each and every part has been rewritten from the ground up. 
+Anyways, I cant believe I am shipping another project! This is so fun. Thank you Hackclub!
+</p>
 
 ---
 
 ## Project Status
 
-
+<p><b>Version:</b> v1.1.0-release</p>
+<p><b>Latest Release Version:</b> v1.1.0-release</p> 
+<p><b>Status:</b> Finishing up</p>
 
 ---
 
 ## Contributors
 
+There are several well-wishers and playtesters who have helped me improve the app,
+either by playtesting or providing valuable feedback. I've listed them in no particular order.
 
+1. [@seb](https://github.com/sebashtioon),
+2. [@Flux3tor](https://github.com/Flux3tor),
+3. [@Snxhit_](https://github.com/Snxhit),
+4. [@Carlson](https://github.com/dinosaur890123),
+5. [@Kuzu](https://github.com/KuzuiYaridomi),
+
+> If i forgot to mention anyone, pls DM me on slack!
 
 ---
 
@@ -179,9 +236,12 @@ I have 4 stages of development:
 
 ---
 
-## License
-
-
-
----
-
+<h4 align="center">
+    Made with 💖 by @Rupnil
+</h4>
+<p align="center">
+    If you found this project interesting, consider giving it a star :D
+</p>
+<p align="center">
+    <a href="https://github.com/rupnil-codes/vestige/issues">Report a Bug</a> or <a href="https://github.com/rupnil-codes/vestige/issues">Suggest a new Feature</a>
+</p>

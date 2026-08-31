@@ -37,6 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://bxjf6qi6wjp5c" path="res://assets/models/vestiges/4_date/4_date.tscn" id="32_uhaqf"]
 [ext_resource type="PackedScene" uid="uid://cj14uiy2m2i3t" path="res://assets/models/vestiges/6_wheelchair/6_wheelchair.tscn" id="34_f7phn"]
 [ext_resource type="Script" uid="uid://b3i3w6pn08pac" path="res://scripts/Controllers/VestigeVar.gd" id="36_0pfra"]
+[ext_resource type="PackedScene" uid="uid://c5rmh27gm3yy" path="res://assets/models/notes/general_note.tscn" id="37_wn0by"]
 [ext_resource type="PackedScene" uid="uid://cqd4p7e550kc4" path="res://assets/models/picture_frames/silhouette_bunker/silhouette_bunker_picture_frame.tscn" id="38_or81c"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ke06p"]
@@ -6024,7 +6025,7 @@ transform = Transform3D(0.59416735, 0.0004956524, -0.28734112, -0.0007935387, 0.
 [node name="Map3D" parent="SubViewport/World" unique_id=697729204 instance=ExtResource("20_jrnm1")]
 
 [node name="Bunker3D" parent="SubViewport/World" unique_id=708449342 instance=ExtResource("23_p21k1")]
-transform = Transform3D(0.99731445, 0, 0.073238194, 0, 1, 0, -0.073238194, 0, 0.99731445, 39.108597, 3.011, 77.20058)
+transform = Transform3D(0.99731445, 0, 0.073238194, 0, 1, 0, -0.073238194, 0, 0.99731445, 39.16705, 2.9338598, 77.046455)
 
 [node name="lantern_regular2" parent="SubViewport/World/Bunker3D" unique_id=1429694207 instance=ExtResource("28_jh5a0")]
 transform = Transform3D(0.89178765, 0, -0.4524544, 0, 1, 0, 0.4524544, 0, 0.89178765, -2.7193909, -2.4797316, -3.9492264)
@@ -6044,8 +6045,23 @@ transform = Transform3D(0.68489325, 0, -0.7286436, 0, 1, 0, 0.7286436, 0, 0.6848
 [node name="lantern_regular5" parent="SubViewport/World/Bunker3D" unique_id=655746632 instance=ExtResource("28_jh5a0")]
 transform = Transform3D(0.68489325, 0, -0.7286436, 0, 1, 0, 0.7286436, 0, 0.68489325, 1.388176, -48.359123, 108.09792)
 
-[node name="lantern_regular" parent="SubViewport/World" unique_id=1615454229 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.96309626, 0, -0.26915708, 0, 1, 0, 0.26915708, 0, 0.96309626, 40.020668, -22.362417, 110.466736)
+[node name="lantern_regular" parent="SubViewport/World/Bunker3D" unique_id=1615454229 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.9407974, 0, -0.3389697, 0, 1, 0, 0.3389697, 0, 0.9407974, -1.5267334, -25.373417, 33.243614)
+
+[node name="silhouette_bunker_picture_frame" parent="SubViewport/World/Bunker3D" unique_id=73274601 instance=ExtResource("38_or81c")]
+transform = Transform3D(-0.9999446, 0, 0.010533623, 0, 1, 0, -0.010533623, 0, -0.9999446, 1.879837, -24.028114, 33.37216)
+
+[node name="lantern_regular6" parent="SubViewport/World/Bunker3D" unique_id=849382931 instance=ExtResource("28_jh5a0")]
+transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -1.71632, -48.27072, 126.46421)
+
+[node name="lantern_hanging2" parent="SubViewport/World/Bunker3D" unique_id=643958030 instance=ExtResource("28_kgo5s")]
+transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, 0.6856041, -45.57117, 179.33493)
+
+[node name="lantern_hanging3" parent="SubViewport/World/Bunker3D" unique_id=1437450868 instance=ExtResource("28_kgo5s")]
+transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -32.6636, -45.422474, 178.02148)
+
+[node name="general_note" parent="SubViewport/World/Bunker3D" unique_id=1634597757 instance=ExtResource("37_wn0by")]
+transform = Transform3D(0.9973147, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973147, -1.9063034, -47.096745, 108.12206)
 
 [node name="World2" type="Node3D" parent="SubViewport" unique_id=712196168]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 86.77846, -186.74603, 208.57669)
@@ -10046,6 +10062,3 @@ autoplay = &"RESET"
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
 autoplay = &"main_menu_silhouette"
-
-[node name="silhouette_bunker_picture_frame" parent="." unique_id=73274601 instance=ExtResource("38_or81c")]
-transform = Transform3D(-0.9980306, 0, -0.06272879, 0, 1, 0, 0.06272879, 0, -0.9980306, 43.427505, -21.017115, 110.34544)
