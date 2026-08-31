@@ -113,8 +113,8 @@ I've included all the major OS-es and their architectures so yeah! shouldn't be 
 ### Building from Source
 
 Building from source requires you to have the following two things installed:
-- Godot Engine 4.7
-- Blender
+- Godot Engine 4.7 [Download](https://godotengine.org/download/windows/)
+- Blender [Download](https://www.blender.org/download/)
 
 #### 1. Clone the repository
 ```bash
@@ -198,7 +198,7 @@ Anyways, I cant believe I am shipping another project! This is so fun. Thank you
 
 ## Project Status
 
-<p><b>Version:</b> v1.1.1-release</p>
+<p><b>Version:</b> v1.1.2-release</p>
 <p><b>Latest Release Version:</b> v1.1.0-release</p> 
 <p><b>Status:</b> Finishing up</p>
 
