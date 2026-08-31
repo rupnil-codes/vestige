@@ -5802,7 +5802,7 @@ transform = Transform3D(0.89178765, 0, -0.4524544, 0, 1, 0, 0.4524544, 0, 0.8917
 transform = Transform3D(0.70023316, 0, -0.71391433, 0, 1, 0, 0.71391433, 0, 0.70023316, -0.010101318, 1.1998813, -1.2295685)
 
 [node name="lantern_regular3" parent="SubViewport/World/Bunker3D" unique_id=900907967 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, 1.689167, -15.863321, 21.721397)
+transform = Transform3D(0.9996316, 0, 0.02717904, 0, 1, 0, -0.02717904, 0, 0.9996316, 1.7234039, -14.129643, 17.12033)
 
 [node name="lantern_hanging4" parent="SubViewport/World/Bunker3D" unique_id=1247002052 instance=ExtResource("28_kgo5s")]
 transform = Transform3D(0.9973146, 0, -0.0732382, 0, 1, 0, 0.0732382, 0, 0.9973146, -0.16539383, -35.003292, 54.881905)
@@ -5814,7 +5814,7 @@ transform = Transform3D(0.68489325, 0, -0.7286436, 0, 1, 0, 0.7286436, 0, 0.6848
 transform = Transform3D(0.68489325, 0, -0.7286436, 0, 1, 0, 0.7286436, 0, 0.68489325, 1.388176, -48.359123, 108.09792)
 
 [node name="lantern_regular" parent="SubViewport/World" unique_id=1615454229 instance=ExtResource("28_jh5a0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.23227, -21.769365, 110.466736)
+transform = Transform3D(0.96309626, 0, -0.26915708, 0, 1, 0, 0.26915708, 0, 0.96309626, 40.020668, -22.362417, 110.466736)
 
 [node name="World2" type="Node3D" parent="SubViewport" unique_id=712196168]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 86.77846, -186.74603, 208.57669)

@@ -87,11 +87,12 @@ func _unhandled_input(event: InputEvent) -> void:
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
 			rotate_y(-event.relative.x * look_sensitivity)
-			%Camera3D.rotate_x(-event.relative.y * look_sensitivity)
-			%Camera3D.rotation.x = clamp(
-					%Camera3D.rotation.x,
-					deg_to_rad(-70),
-					deg_to_rad(70)
+			
+			%Head.rotate_x(-event.relative.y * look_sensitivity)
+			%Head.rotation.x = clamp(
+				%Head.rotation.x,
+				deg_to_rad(-80),
+				deg_to_rad(80)
 			)
 
 	if event.is_action_pressed("interact") and _is_ending_bench_interacting:
@@ -119,10 +120,11 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _headbob_effect(delta: float):
 	headbob_time += delta * self.velocity.length()
-	%Camera3D.transform.origin = Vector3(
+	
+	%Camera3D.position = Vector3(
 			cos(headbob_time * HEADBOB_FREQUENCY * 0.5) * HEADBOB_MOVE_AMOUNT,
 			sin(headbob_time * HEADBOB_FREQUENCY) * HEADBOB_MOVE_AMOUNT,
-			0
+			0.0
 	)
 
 func _process(delta: float) -> void:
