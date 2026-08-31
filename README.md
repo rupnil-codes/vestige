@@ -198,7 +198,7 @@ Anyways, I cant believe I am shipping another project! This is so fun. Thank you
 
 ## Project Status
 
-<p><b>Version:</b> v1.1.0-release</p>
+<p><b>Version:</b> v1.1.1-release</p>
 <p><b>Latest Release Version:</b> v1.1.0-release</p> 
 <p><b>Status:</b> Finishing up</p>
 
