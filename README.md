@@ -37,9 +37,78 @@ vestige
 
 ---
 
+## Table of Contents
+* [Overview](#overview)
+* [Backstory](#backstory)
+* [Requirements](#requirements)
+* [Playing: Quick Start](#playing-quick-start)
+    * [Pre-compiled](#pre-compiled)
+    * [Building from Source](#building-from-source)
+* [Features](#features)
+* [What I learnt](#what-i-learnt)
+* [Project Status](#project-status)
+* [Contributors](#contributors)
+* [Versioning](#versioning)
+* [License](LICENSE)
 
-### How does versioning works?
-> well idk /s /j
+---
+
+## Overview
+
+**Vestige** is a psychological and atmospherical horror game with a retro low-poly PSX style game made in Godot engine.
+The word "vestige" refers to a trace of something; according to google its "a small part of something that is left after the rest of it has gone".
+I do not want to elaborate further on the correlation between a vestige (trace) and the vestige (game) but its about a faint memory of something you are trying to forget.
+
+The game itself is pretty straight-forward and its mostly story driven, there are barely any player interactions but thats the point.
+It has three main parts -- the ground, the watchtower and the bunker.
+
+---
+
+# Backstory
+
+
+
+---
+
+# Requirements
+
+
+
+---
+
+# Playing: Quick Start
+
+## Pre-compiled
+
+## Building from Source
+
+---
+
+# Features
+
+
+
+---
+
+# What I learnt
+
+
+
+---
+
+# Project Status
+
+
+
+---
+
+# Contributors
+
+
+
+---
+
+### Versioning
 
 lets consider vX.Y.Z(M)-[stage].
 Here the X is the major release
@@ -53,4 +122,12 @@ I have 4 stages of development:
 2. Alpha: One two scenes some assets `v0.Y.Z(M)-alpha` **usually** Y is less than 10.
 3. Beta: Completed scenes / chapters ready for bug testing `v0.Y.Z(M)-beta`
 4. Release: Bug tests passed fixed one two stuff - polishes `vX.Y.Z(M)-release`
+
+---
+
+# License
+
+
+
+---
 
