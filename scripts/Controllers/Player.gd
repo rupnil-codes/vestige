@@ -74,7 +74,17 @@ func _ready():
 		child.set_layer_mask_value(2, true)
 
 func _unhandled_input(event: InputEvent) -> void:
-	if captured:
+	if vestige_scene_var.cutscene and event.is_action_pressed("enter"):
+		%VestigeAnimationPlayer.play("start_game")
+		await %VestigeAnimationPlayer.animation_finished
+
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		vestige_scene_var.cutscene = false
+		vestige_scene_var.intro = true
+
+		%VestigeAnimationPlayer.play_backwards("fade_to_black")
+	
+	if captured and not vestige_scene_var.cutscene:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	if event is InputEventMouseButton:
 		captured = true
@@ -84,7 +94,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if vestige_scene_var.cutscene:
 		return
 
-	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED and not vestige_scene_var.cutscene:
 		if event is InputEventMouseMotion:
 			rotate_y(-event.relative.x * look_sensitivity)
 			

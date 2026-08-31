@@ -1,7 +1,7 @@
 extends Node3D
 
-var cutscene: bool = false
-var intro: bool = true
+var cutscene: bool = true
+var intro: bool = false
 
 var vestige_count: int = 0
 var entered_vestige_before_animation: bool = false

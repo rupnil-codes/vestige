@@ -11,13 +11,19 @@ func _input(event):
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	pass
+		
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
 	if vestige_scene_var.intro:
+		%VestigeAnimationPlayer.stop()
+		%MainMenuSilhouette.visible = false
+		
 		await get_tree().create_timer(1).timeout
 		await dialogue_text.typewrite("Greetings, wanderer!")
 		vestige_scene_var.cutscene = false
 		vestige_scene_var.intro = false
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+	
 	var fps: int = int(Engine.get_frames_per_second())
 	fps_counter.text = "%d fps" % [fps]

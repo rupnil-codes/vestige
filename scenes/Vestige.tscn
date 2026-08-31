@@ -39,6 +39,9 @@
 [ext_resource type="Script" uid="uid://b3i3w6pn08pac" path="res://scripts/Controllers/VestigeVar.gd" id="36_0pfra"]
 [ext_resource type="PackedScene" uid="uid://cqd4p7e550kc4" path="res://assets/models/picture_frames/silhouette_bunker/silhouette_bunker_picture_frame.tscn" id="38_or81c"]
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_ke06p"]
+viewport_path = NodePath("SubViewport")
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lm1we"]
 shader = ExtResource("2_wi37k")
 shader_parameter/screen_size = Vector2(448, 336)
@@ -103,9 +106,6 @@ volumetric_fog_albedo = Color(0.7724397, 0.77243954, 0.7724396, 1)
 volumetric_fog_emission = Color(0.75093335, 0.8066675, 0.82810485, 1)
 volumetric_fog_length = 300.0
 adjustment_contrast = 1.15
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_ke06p"]
-viewport_path = NodePath("SubViewport")
 
 [sub_resource type="Animation" id="Animation_jrnm1"]
 length = 0.001
@@ -318,30 +318,6 @@ tracks/17/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector3(22.918228, -1.8871906, 33.43976)]
-}
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("SubViewport/Player3D:position")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-26.309216, -0.02446144, -52.831)]
-}
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("SubViewport/World/Bench3D:position")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(-27.397053, 0.1608203, -52.425636)]
 }
 
 [sub_resource type="Animation" id="Animation_u4jeo"]
@@ -971,7 +947,7 @@ tracks/11/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 1.5056461, 0)]
+"values": [Vector3(0.1394127, 0.0033647239, -0.00516528)]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
@@ -980,10 +956,10 @@ tracks/12/path = NodePath("SubViewport/Player3D:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(0, 0.0009999999),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(-26.97766, -0.056738503, -52.831), Vector3(-31.107868, -0.056738503, -52.831)]
+"values": [Vector3(66.20065, 32.33707, 30.991463)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
@@ -995,7 +971,7 @@ tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(1, 0.99999964, 0.99999964)]
+"values": [Vector3(1.0000001, 1.0000002, 1.0000001)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
@@ -1155,6 +1131,78 @@ tracks/27/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CanvasLayer/MainMenu/StartGameText:modulate")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CanvasLayer/ColorRect/Controls:modulate")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("CanvasLayer/Pointer:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("MainMenuSilhouette:rotation")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.27570343, 0)]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("MainMenuSilhouette:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(51.280926, 32.143925, 53.64242)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("MainMenuSilhouette:visible")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_3bx4b"]
@@ -1438,6 +1486,7 @@ tracks/6/keys = {
 
 [sub_resource type="Animation" id="Animation_gkgfg"]
 resource_name = "fade_to_black"
+length = 1.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -1445,7 +1494,7 @@ tracks/0/path = NodePath("CanvasLayer/ColorRect:modulate")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
+"times": PackedFloat32Array(0, 1.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -1477,6 +1526,47 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, -80.0]
+}
+
+[sub_resource type="Animation" id="Animation_wn0by"]
+resource_name = "main_menu_silhouette"
+length = 5.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainMenuSilhouette:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.26, 2.3333333, 4.7533336),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.27570343, 0), Vector3(0, 0.27570343, 0), Vector3(0, 0.58866686, 0), Vector3(0, 0.58866686, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MainMenuSilhouette:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.26, 2.3333333, 4.7533336),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(51.280926, 32.143925, 53.64242), Vector3(51.280926, 32.143925, 53.64242), Vector3(45.282295, 32.030003, 54.298977), Vector3(45.282295, 32.030003, 54.298977)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MainMenuSilhouette:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.6333334, 0.76666665, 0.88, 1.0133333, 1.1333333, 2.4666667, 4.086667, 4.2200003, 4.3333335, 4.4666667, 4.586667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, false, true, false, true, false, true, false, true, false, true, false]
 }
 
 [sub_resource type="Animation" id="Animation_0daru"]
@@ -1641,6 +1731,94 @@ tracks/1/keys = {
 "values": [false, true]
 }
 
+[sub_resource type="Animation" id="Animation_or81c"]
+resource_name = "start_game"
+length = 6.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/Player3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.51, 3.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(66.20065, 32.33707, 30.991463), Vector3(66.20065, 32.33707, 30.991463), Vector3(-26.456785, -0.056738503, -52.831)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/Player3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.51, 3.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.1394127, 0.0033647239, -0.00516528), Vector3(0.1394127, 0.0033647239, -0.00516528), Vector3(0, 1.5056461, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/Player3D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.51),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(1.0000001, 1.0000002, 1.0000001), Vector3(1.0000001, 1.0000002, 1.0000001)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/ColorRect:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.43333334, 1.5, 6.4333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/MainMenu/StartGameText:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/ColorRect/Controls:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.81, 1.99, 5.99, 6.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/Pointer:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 6.31, 6.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t4lnq"]
 _data = {
 &"RESET": SubResource("Animation_kgo5s"),
@@ -1649,8 +1827,10 @@ _data = {
 &"ending_camera_move_invisible": SubResource("Animation_uhaqf"),
 &"fade_to_black": SubResource("Animation_gkgfg"),
 &"fade_wind_sound": SubResource("Animation_cwcys"),
+&"main_menu_silhouette": SubResource("Animation_wn0by"),
 &"remove_main_map": SubResource("Animation_0daru"),
-&"show_secondary_map": SubResource("Animation_t4lnq")
+&"show_secondary_map": SubResource("Animation_t4lnq"),
+&"start_game": SubResource("Animation_or81c")
 }
 
 [node name="VestigeScene" type="Node3D" unique_id=1247047748]
@@ -1659,6 +1839,17 @@ script = ExtResource("1_jrnm1")
 [node name="VestigeSceneVar" type="Node3D" parent="." unique_id=516042270]
 unique_name_in_owner = true
 script = ExtResource("36_0pfra")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1477322359]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("ViewportTexture_ke06p")
+expand_mode = 1
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1222793603]
 
@@ -1671,6 +1862,25 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="MainMenu" type="Control" parent="CanvasLayer" unique_id=792868750]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartGameText" type="Label" parent="CanvasLayer/MainMenu" unique_id=311186584]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 503.0
+offset_right = 814.0
+offset_bottom = 529.0
+theme_override_fonts/font = ExtResource("4_afll4")
+theme_override_font_sizes/font_size = 20
+text = "Press [Enter] when you are ready..."
+horizontal_alignment = 1
 
 [node name="UserInterface" type="Control" parent="CanvasLayer" unique_id=963711010]
 layout_mode = 3
@@ -1732,6 +1942,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+
+[node name="Controls" type="Label" parent="CanvasLayer/ColorRect" unique_id=632301260]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 371.0
+offset_top = 280.0
+offset_right = 814.0
+offset_bottom = 380.0
+theme_override_fonts/font = ExtResource("4_afll4")
+theme_override_font_sizes/font_size = 20
+text = "W, A, S, D - to move
+[Shift] - to sprint
+[Ctrl/Cmd] - to crouch"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Credits" type="Control" parent="CanvasLayer" unique_id=1160769451]
 layout_mode = 3
@@ -1804,14 +2029,16 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Pointer" type="ColorRect" parent="CanvasLayer" unique_id=1459562046]
+modulate = Color(1, 1, 1, 0)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_top = -2.0
-offset_right = 4.0
-offset_bottom = 2.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 5.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.7812746, 0.78127456, 0.78127456, 1)
@@ -1825,7 +2052,7 @@ size = Vector2i(544, 306)
 render_target_update_mode = 4
 
 [node name="Player3D" parent="SubViewport" unique_id=1421963457 instance=ExtResource("4_tm726")]
-transform = Transform3D(0.065104134, 0, 0.99787813, 0, 0.99999964, 0, -0.9978785, 0, 0.06510411, -26.97766, -0.056738503, -52.831)
+transform = Transform3D(0.99997866, 0.0056327893, 0.0033320729, -0.005115143, 0.9902848, -0.13896155, -0.004082441, 0.13894154, 0.9902923, 66.20065, 32.33707, 30.991463)
 
 [node name="GPUSnow3D" type="GPUParticles3D" parent="SubViewport/Player3D" unique_id=1677585479]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018831253, 32.93535, 0.06018448)
@@ -9807,17 +10034,6 @@ shadow_blur = 1.32
 [node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport" unique_id=1473765954]
 environment = SubResource("Environment_gmphc")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1477322359]
-texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-texture = SubResource("ViewportTexture_ke06p")
-expand_mode = 1
-
 [node name="SilhouetteAnimationMover" type="AnimationPlayer" parent="." unique_id=1139800193]
 libraries/ = SubResource("AnimationLibrary_ke06p")
 autoplay = &"RESET"
@@ -9825,6 +10041,11 @@ autoplay = &"RESET"
 [node name="VestigeAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1710469678]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_t4lnq")
+autoplay = &"main_menu_silhouette"
 
 [node name="silhouette_bunker_picture_frame" parent="." unique_id=73274601 instance=ExtResource("38_or81c")]
 transform = Transform3D(-0.9980306, 0, -0.06272879, 0, 1, 0, 0.06272879, 0, -0.9980306, 43.427505, -21.017115, 110.34544)
+
+[node name="MainMenuSilhouette" parent="." unique_id=743621549 instance=ExtResource("19_wn0by")]
+unique_name_in_owner = true
+transform = Transform3D(0.96223396, 0, 0.27222386, 0, 1, 0, -0.27222386, 0, 0.96223396, 51.280926, 32.143925, 53.64242)

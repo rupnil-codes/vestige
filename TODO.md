@@ -75,7 +75,8 @@ Todos:
 ### Priority 4: Final Touches
 
 - [X] Sometimes the camera glitches and it weirds out at extreme angles. (v0.7.1-beta)
-- [ ] Main menu and pause menu
+- [X] Main menu (v0.7.2-beta)
+- [ ] Pause menu
   - [ ] Option for shader (default: on)
   - [ ] Option for V-Sync (default: off)
   - [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
