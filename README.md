@@ -40,6 +40,8 @@ vestige
 ## Table of Contents
 * [Overview](#overview)
 * [Backstory](#backstory)
+    * [About me](#about-me)
+    * [About the Game](#about-the-game)
 * [Requirements](#requirements)
 * [Playing: Quick Start](#playing-quick-start)
     * [Pre-compiled](#pre-compiled)
@@ -64,51 +66,63 @@ It has three main parts -- the ground, the watchtower and the bunker.
 
 ---
 
-# Backstory
+## Backstory
+
+### About me:
+> I've worked on webapps, backends and frontends but never quite on games yk and it has been my _dream_ to learn game dev and make a game that I'd call mine.
+> This has been my goal for a long time and I initially waited for stardance to start working on this game, did just that.
+> However, after a month I got to know about Macondo and it was a no-brainer to not switch, and here i am! shipping to macondo.
+> Macondo gave me the motivation I needed to start working on the game and actually finish it!
+>
+
+### About the Game:
+
+> You wake up in the middle of the woods, no memories of past experiences or life... Or is it?
+> There's no one else in the forest other than you. Right?
+> Is it all your imagination? or is there something, that someone or something is trying to tell you.
+>
+
+---
+
+## Requirements
 
 
 
 ---
 
-# Requirements
+## Playing: Quick Start
+
+### Pre-compiled
+
+### Building from Source
+
+---
+
+## Features
 
 
 
 ---
 
-# Playing: Quick Start
-
-## Pre-compiled
-
-## Building from Source
-
----
-
-# Features
+## What I learnt
 
 
 
 ---
 
-# What I learnt
+## Project Status
 
 
 
 ---
 
-# Project Status
+## Contributors
 
 
 
 ---
 
-# Contributors
-
-
-
----
-
-### Versioning
+## Versioning
 
 lets consider vX.Y.Z(M)-[stage].
 Here the X is the major release
@@ -125,7 +139,7 @@ I have 4 stages of development:
 
 ---
 
-# License
+## License
 
 
 
