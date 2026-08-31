@@ -14,10 +14,13 @@ config/name="Vestige"
 run/main_scene="res://scenes/Vestige.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/show_image=false
-config/icon="res://icon.svg"
+config/icon="uid://vsancdvfrj6k"
+config/macos_native_icon="res://icon.icns"
+config/windows_native_icon="res://icon.ico"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [input]

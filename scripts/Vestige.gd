@@ -6,6 +6,8 @@ extends Node3D
 @onready var dialogue_text: Label = %DialogueText
 @onready var vestige_scene_var: Node3D = %VestigeSceneVar
 
+var intro_running: bool = false
+
 func _input(event):
 	subviewport.push_input(event)
 
@@ -16,14 +18,24 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if vestige_scene_var.intro:
-		%VestigeAnimationPlayer.stop()
-		%MainMenuSilhouette.visible = false
-		
-		await get_tree().create_timer(1).timeout
-		await dialogue_text.typewrite("Greetings, wanderer!")
-		vestige_scene_var.cutscene = false
-		vestige_scene_var.intro = false
+	if vestige_scene_var.intro and not intro_running:
+		start_intro()
 	
 	var fps: int = int(Engine.get_frames_per_second())
 	fps_counter.text = "%d fps" % [fps]
+
+
+func start_intro() -> void:
+	intro_running = true
+	
+	%VestigeAnimationPlayer.stop()
+	%MainMenuSilhouette.visible = false
+
+	await get_tree().create_timer(1.0).timeout
+	
+	await dialogue_text.typewrite("Greetings, wanderer!")
+	
+	vestige_scene_var.cutscene = false
+	vestige_scene_var.intro = false
+	
+	intro_running = false

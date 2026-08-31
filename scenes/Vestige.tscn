@@ -1171,7 +1171,7 @@ tracks/30/keys = {
 tracks/31/type = "value"
 tracks/31/imported = false
 tracks/31/enabled = true
-tracks/31/path = NodePath("MainMenuSilhouette:rotation")
+tracks/31/path = NodePath("SubViewport/MainMenuSilhouette:rotation")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/keys = {
@@ -1183,7 +1183,7 @@ tracks/31/keys = {
 tracks/32/type = "value"
 tracks/32/imported = false
 tracks/32/enabled = true
-tracks/32/path = NodePath("MainMenuSilhouette:position")
+tracks/32/path = NodePath("SubViewport/MainMenuSilhouette:position")
 tracks/32/interp = 1
 tracks/32/loop_wrap = true
 tracks/32/keys = {
@@ -1195,7 +1195,7 @@ tracks/32/keys = {
 tracks/33/type = "value"
 tracks/33/imported = false
 tracks/33/enabled = true
-tracks/33/path = NodePath("MainMenuSilhouette:visible")
+tracks/33/path = NodePath("SubViewport/MainMenuSilhouette:visible")
 tracks/33/interp = 1
 tracks/33/loop_wrap = true
 tracks/33/keys = {
@@ -1535,7 +1535,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("MainMenuSilhouette:rotation")
+tracks/0/path = NodePath("SubViewport/MainMenuSilhouette:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -1547,7 +1547,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("MainMenuSilhouette:position")
+tracks/1/path = NodePath("SubViewport/MainMenuSilhouette:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -1559,7 +1559,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("MainMenuSilhouette:visible")
+tracks/2/path = NodePath("SubViewport/MainMenuSilhouette:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -2050,6 +2050,10 @@ anisotropic_filtering_level = 0
 audio_listener_enable_3d = true
 size = Vector2i(544, 306)
 render_target_update_mode = 4
+
+[node name="MainMenuSilhouette" parent="SubViewport" unique_id=743621549 instance=ExtResource("19_wn0by")]
+unique_name_in_owner = true
+transform = Transform3D(0.96223396, 0, 0.27222386, 0, 1, 0, -0.27222386, 0, 0.96223396, 51.280926, 32.143925, 53.64242)
 
 [node name="Player3D" parent="SubViewport" unique_id=1421963457 instance=ExtResource("4_tm726")]
 transform = Transform3D(0.99997866, 0.0056327893, 0.0033320729, -0.005115143, 0.9902848, -0.13896155, -0.004082441, 0.13894154, 0.9902923, 66.20065, 32.33707, 30.991463)
@@ -10045,7 +10049,3 @@ autoplay = &"main_menu_silhouette"
 
 [node name="silhouette_bunker_picture_frame" parent="." unique_id=73274601 instance=ExtResource("38_or81c")]
 transform = Transform3D(-0.9980306, 0, -0.06272879, 0, 1, 0, 0.06272879, 0, -0.9980306, 43.427505, -21.017115, 110.34544)
-
-[node name="MainMenuSilhouette" parent="." unique_id=743621549 instance=ExtResource("19_wn0by")]
-unique_name_in_owner = true
-transform = Transform3D(0.96223396, 0, 0.27222386, 0, 1, 0, -0.27222386, 0, 0.96223396, 51.280926, 32.143925, 53.64242)
