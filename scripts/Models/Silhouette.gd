@@ -35,7 +35,7 @@ func _process(delta: float) -> void:
 	
 func _on_area_3d_body_entered(body: Node3D) -> void:
 
-	if not body.name == "Player3D":
+	if body.name != "Player3D":
 		return
 
 	if _loop_alr_running:
@@ -44,28 +44,31 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	_loop_alr_running = true
 	
 	while vestige_scene_var.intro:
-		await get_tree().create_timer(0.1).timeout
-	
-	if next_location_index < len(movement):
-		if _player_touched and not vestige_scene_var.entered_vestige_before_animation:
+		await get_tree().process_frame
+
+	if next_location_index >= len(movement):
+		_loop_alr_running = false
+		return
+		
+	if _player_touched and not vestige_scene_var.entered_vestige_before_animation:
 			await get_tree().create_timer(3).timeout
 		
-		silhouette_animation_player.play("transform")
+	silhouette_animation_player.play("transform")
 			
-		if not _player_touched:
-			await get_tree().create_timer(0.5).timeout
-			dialogue_text.typewrite("Follow me.")
-			_player_touched = true
+	if not _player_touched:
+		await get_tree().create_timer(0.5).timeout
+		dialogue_text.typewrite("Follow me.")
+		_player_touched = true
 
-		await silhouette_animation_player.animation_finished
-		silhouette_animation_mover.play(movement[next_location_index])
-		await silhouette_animation_mover.animation_finished
-		silhouette_animation_player.play_backwards("transform")
-		await silhouette_animation_player.animation_finished
-		next_location_index += 1
-
-		_loop_alr_running = false
-		vestige_scene_var.entered_vestige_before_animation = false
+	await silhouette_animation_player.animation_finished
+	silhouette_animation_mover.play(movement[next_location_index])
+	await silhouette_animation_mover.animation_finished
+	silhouette_animation_player.play_backwards("transform")
+	await silhouette_animation_player.animation_finished
+	next_location_index += 1
+	
+	_loop_alr_running = false
+	vestige_scene_var.entered_vestige_before_animation = false
 			
 
 
