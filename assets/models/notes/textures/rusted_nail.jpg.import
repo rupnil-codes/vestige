@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://deokxt5rpr17k"
-path.s3tc="res://.godot/imported/rusted_nail.jpg-7337ec7c35dc7cf4baf5c17c47ea6771.s3tc.ctex"
-path.etc2="res://.godot/imported/rusted_nail.jpg-7337ec7c35dc7cf4baf5c17c47ea6771.etc2.ctex"
+path.s3tc="res://.godot/imported/rusted_nail.jpg-60ede2d41624c03af42e50683d812293.s3tc.ctex"
+path.etc2="res://.godot/imported/rusted_nail.jpg-60ede2d41624c03af42e50683d812293.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/notes/rusted_nail.jpg"
-dest_files=["res://.godot/imported/rusted_nail.jpg-7337ec7c35dc7cf4baf5c17c47ea6771.s3tc.ctex", "res://.godot/imported/rusted_nail.jpg-7337ec7c35dc7cf4baf5c17c47ea6771.etc2.ctex"]
+source_file="res://assets/models/notes/textures/rusted_nail.jpg"
+dest_files=["res://.godot/imported/rusted_nail.jpg-60ede2d41624c03af42e50683d812293.s3tc.ctex", "res://.godot/imported/rusted_nail.jpg-60ede2d41624c03af42e50683d812293.etc2.ctex"]
 
 [params]
 

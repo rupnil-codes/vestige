@@ -382,9 +382,6 @@ shape = SubResource("ConcavePolygonShape3D_ldfiq")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bunker_exposed/StaticBody3D" index="0" unique_id=1157474365]
 shape = SubResource("ConcavePolygonShape3D_76bb7")
 
-[node name="general_note" parent="bunker_exposed/StaticBody3D" index="1" unique_id=2120764868 instance=ExtResource("3_ldfiq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.667424, -3.1509755, 1.8843092)
-
 [node name="StaticBody3D" type="StaticBody3D" parent="exposed_roof" parent_id_path=PackedInt32Array(2117380717) index="0" unique_id=346507637]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="exposed_roof/StaticBody3D" index="0" unique_id=505026213]
@@ -474,6 +471,9 @@ max_db = 2.0
 
 [node name="general_picture_frame" parent="." index="18" unique_id=1202178499 instance=ExtResource("5_2bfe4")]
 transform = Transform3D(0.99959826, 0.016312128, -0.023180429, -0.01630774, 0.9998669, 0.00037817244, 0.023183513, 0, 0.99973124, -1.6183612, -3.051271, 0.82293683)
+
+[node name="general_note" parent="." index="19" unique_id=2120764868 instance=ExtResource("3_ldfiq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.667424, -3.1509755, 1.8843092)
 
 [connection signal="body_entered" from="StairsArea3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="StairsArea3D" to="." method="_on_stairs_area_3d_body_exited"]

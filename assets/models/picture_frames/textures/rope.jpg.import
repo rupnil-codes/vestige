@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chayxvva7e3cp"
-path.s3tc="res://.godot/imported/old_paper.jpg-a099c454f69e5be33426444c701ebe41.s3tc.ctex"
-path.etc2="res://.godot/imported/old_paper.jpg-a099c454f69e5be33426444c701ebe41.etc2.ctex"
+uid="uid://c2a1ospsqh88d"
+path.s3tc="res://.godot/imported/rope.jpg-00969936a2b3d52206e2bb367e8ce27d.s3tc.ctex"
+path.etc2="res://.godot/imported/rope.jpg-00969936a2b3d52206e2bb367e8ce27d.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/notes/old_paper.jpg"
-dest_files=["res://.godot/imported/old_paper.jpg-a099c454f69e5be33426444c701ebe41.s3tc.ctex", "res://.godot/imported/old_paper.jpg-a099c454f69e5be33426444c701ebe41.etc2.ctex"]
+source_file="res://assets/models/picture_frames/textures/rope.jpg"
+dest_files=["res://.godot/imported/rope.jpg-00969936a2b3d52206e2bb367e8ce27d.s3tc.ctex", "res://.godot/imported/rope.jpg-00969936a2b3d52206e2bb367e8ce27d.etc2.ctex"]
 
 [params]
 

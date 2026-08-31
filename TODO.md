@@ -69,24 +69,23 @@ Todos:
   - [X] Mirror (v0.6.4-beta)
 - [X] Stair sounds (v0.6.5-beta)
 - [X] Door close (v0.6.5-beta)
-- [ ] Ambience SFX 
 - [ ] Sounds on the Tunnel.
 - [ ] Add notes and pictures on the tunnel
 
 ### Priority 4: Final Touches
 
+- [ ] Main menu and pause menu
+  - [ ] Option for shader (default: on)
+  - [ ] Option for V-Sync (default: off)
+  - [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
+  - [ ] Camera Shake Option
+- [ ] Sometimes the camera glitches and it weirds out at extreme angles.
 - [ ] LightMapGI - enable
 - [ ] Easter Eggs
 - [ ] Better Animations like Blinking, Waking up.
-- [ ] Main menu and pause menu
-	- [ ] Option for shader (default: on)
-	- [ ] Option for V-Sync (default: off)
-	- [ ] Shadows (Directional light, torch, silhouette, off gives 60fps)
-	- [ ] Camera Shake Option
 - [ ] Butter in the forest (Easter egg)
 - [ ] UI Revamp
 - [ ] Particle Polish
-- [ ] Sometimes the camera glitches and it weirds out at extreme angles.
 - [ ] The Dither becomes weird sometimes - Debug and fix
 - [ ] Working Press any key to return (credit scene)
 - [ ] Resizing the screen on a release distorts it
