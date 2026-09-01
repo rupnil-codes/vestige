@@ -12,7 +12,7 @@ vestige
 </h1>
 <h4 align="center">
     <a 
-        href=""
+        href="https://github.com/rupnil-codes/vestige/releases/latest"
         target="_blank" 
     >
         <b>🡽 Play Now! 🡽</b>
@@ -198,9 +198,9 @@ Anyways, I cant believe I am shipping another project! This is so fun. Thank you
 
 ## Project Status
 
-<p><b>Version:</b> v1.1.2-release</p>
+<p><b>Version:</b> v1.1.3-release</p>
 <p><b>Latest Release Version:</b> v1.1.0-release</p> 
-<p><b>Status:</b> Finishing up</p>
+<p><b>Status:</b> Shipped</p>
 
 ---
 
